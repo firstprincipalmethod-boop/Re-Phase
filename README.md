@@ -7,12 +7,12 @@ It turns fibers, projections, path lifts, bridge obstructions, recoverability gu
 ## Current Focus
 
 - DOI series index and conceptual reading guide
-- Recoverability completion
-- Minimal sufficient context
-- Windowed path fibers
+- Vol.6.1 finite witness suite preparation
 - Vol.5.3 pathwise witness lane
 - Vol.5.4 selector witness lane
-- Vol.6.1 finite witness suite preparation
+- Canonical finite specs
+- Generated JSON outputs
+- Reproducibility harness
 
 ## Archive
 
