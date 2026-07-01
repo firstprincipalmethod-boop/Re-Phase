@@ -19,6 +19,20 @@ Fixed versions are available on [Zenodo](https://zenodo.org/).
 
 - **volumes/** — Research volumes (Vol.1 through Vol.6+)
 - **notes/** — Definitions, notation, examples, and unresolved topics
+- **docs/** — Labels and milestones specification
 - **CHANGELOG.md** — Change log and version history
 - **ROADMAP.md** — Future directions
 - **living-index.md** — Cross-volume index and DOI references
+
+## GitHub Workflow
+
+- **Issues**: Track definitions, notation changes, proofs, examples, cross-volume consistency, and release preparation. See [docs/labels.md](docs/labels.md) for label taxonomy.
+- **Pull Requests**: Submit changes for review. Use the [PR template](.github/PULL_REQUEST_TEMPLATE.md).
+- **Milestones**: Organize issues into major development phases. See [docs/milestones.md](docs/milestones.md).
+- **Discussions**: [Coming soon]
+
+## License
+
+All non-code materials (text, figures, notation, documentation, examples) are licensed under [CC BY 4.0](LICENSE.md).
+
+Future code and scripts may be licensed separately—see [LICENSE.md](LICENSE.md) for details.
