@@ -1,15 +1,15 @@
 # License
 
-## Non-Code Materials (CC BY 4.0)
+## Non-Code Materials (CC BY-NC 4.0)
 
-All non-code materials in this repository—including research text, figures, mathematical notation, documentation, and examples—are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+All non-code materials in this repository—including research text, figures, mathematical notation, documentation, and examples—are licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).
 
 You are free to:
-- Share and adapt these materials
-- Use them for any purpose, including commercial purposes
+- Share and adapt these materials for non-commercial purposes
 
 Under the condition that you:
 - Provide appropriate credit to the author(s)
+- Do not use these materials for commercial purposes
 - Include a copy of the license
 
 ## Code and Scripts (Future)
