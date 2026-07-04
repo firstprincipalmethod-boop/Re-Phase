@@ -45,6 +45,6 @@ See [docs/series.md](docs/series.md) for the complete publication chronology and
 
 ## License
 
-All non-code materials (text, figures, notation, documentation, examples) are licensed under [CC BY 4.0](LICENSE.md).
+All non-code materials (text, figures, notation, documentation, examples) are licensed under [CC BY-NC 4.0](LICENSE.md).
 
 Future code and scripts may be licensed separately—see [LICENSE.md](LICENSE.md) for details.
