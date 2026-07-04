@@ -20,16 +20,6 @@ For conceptual reading order, see [docs/reading-guide.md](docs/reading-guide.md)
 
 **Current role:** Foundational framework
 
-### Vol.1.10 — Orientation Note
-
-**DOI:** https://doi.org/10.5281/zenodo.20688130
-
-**Status:** Archived on Zenodo
-
-**Core themes:** From Map/Fiber/Kernel to Compatibility-Based Design
-
-**Current role:** Orientation and conceptual bridge
-
 ---
 
 ## Vol.1 — Foundations
@@ -127,6 +117,16 @@ For conceptual reading order, see [docs/reading-guide.md](docs/reading-guide.md)
 **Core themes:** Lattice structures, hierarchy
 
 **Current role:** Order-theoretic foundation
+
+### Vol.1.10 — Orientation Note
+
+**DOI:** https://doi.org/10.5281/zenodo.20688130
+
+**Status:** Archived on Zenodo
+
+**Core themes:** From Map/Fiber/Kernel to Compatibility-Based Design
+
+**Current role:** Orientation and conceptual bridge
 
 ---
 
