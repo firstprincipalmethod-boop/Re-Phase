@@ -24,6 +24,6 @@ When using materials from this repository, please cite:
 
 ```
 Re-Phase: Relation-first diagnostic framework for reconstructing compatible worlds under partial observation
-Author(s): [To be determined]
+Author: Takashi Ito, Independent Researcher
 Repository: https://github.com/firstprincipalmethod-boop/Re-Phase
 ```
