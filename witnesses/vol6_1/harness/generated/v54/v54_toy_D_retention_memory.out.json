@@ -1,0 +1,127 @@
+{
+  "compute_status": "ok",
+  "computed": {
+    "choice_kind": "action",
+    "variants": {
+      "silent_augmented": {
+        "cells": {
+          "mode:P": {
+            "cell_id": "mode:P",
+            "choice_kind": "action",
+            "choice_sets": {
+              "slip": [
+                "r"
+              ]
+            },
+            "common_choice_set": [
+              "r"
+            ],
+            "members": [
+              "slip"
+            ],
+            "obstructed_property": "action_valued_selector",
+            "status": "no_conflict"
+          },
+          "mode:S": {
+            "cell_id": "mode:S",
+            "choice_kind": "action",
+            "choice_sets": {
+              "stable": [
+                "n"
+              ]
+            },
+            "common_choice_set": [
+              "n"
+            ],
+            "members": [
+              "stable"
+            ],
+            "obstructed_property": "action_valued_selector",
+            "status": "no_conflict"
+          }
+        },
+        "selector_exists": true,
+        "selector_table": {
+          "mode:P": "r",
+          "mode:S": "n"
+        }
+      },
+      "silent_original": {
+        "cells": {
+          "tilt:0,0,1": {
+            "cell_id": "tilt:0,0,1",
+            "choice_kind": "action",
+            "choice_sets": {
+              "slip": [
+                "r"
+              ],
+              "stable": [
+                "n"
+              ]
+            },
+            "common_choice_set": [],
+            "members": [
+              "slip",
+              "stable"
+            ],
+            "obstructed_property": "action_valued_selector",
+            "status": "conflict"
+          }
+        },
+        "selector_exists": false
+      },
+      "traceable_original": {
+        "cells": {
+          "tilt:0,0,1": {
+            "cell_id": "tilt:0,0,1",
+            "choice_kind": "action",
+            "choice_sets": {
+              "stable": [
+                "n"
+              ]
+            },
+            "common_choice_set": [
+              "n"
+            ],
+            "members": [
+              "stable"
+            ],
+            "obstructed_property": "action_valued_selector",
+            "status": "no_conflict"
+          },
+          "tilt:0,1,1": {
+            "cell_id": "tilt:0,1,1",
+            "choice_kind": "action",
+            "choice_sets": {
+              "slip": [
+                "r"
+              ]
+            },
+            "common_choice_set": [
+              "r"
+            ],
+            "members": [
+              "slip"
+            ],
+            "obstructed_property": "action_valued_selector",
+            "status": "no_conflict"
+          }
+        },
+        "selector_exists": true,
+        "selector_table": {
+          "tilt:0,0,1": "n",
+          "tilt:0,1,1": "r"
+        }
+      }
+    },
+    "verdict": "retention_memory_separation"
+  },
+  "generated_by": "witnesses/vol6_1/harness/compute.py",
+  "id": "v54_toy_D_retention_memory",
+  "kind": "selector",
+  "source_volume": "Vol.5.4",
+  "verification": {
+    "checked_by": "run_all.py",
+    "status": "pass"
+  }
+}
