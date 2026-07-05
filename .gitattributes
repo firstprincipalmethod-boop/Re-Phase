@@ -1,0 +1,11 @@
+# Normalize text files in the repository.
+* text=auto
+
+# Vol.6.1 harness and reproducibility artifacts use LF for stable diffs.
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf

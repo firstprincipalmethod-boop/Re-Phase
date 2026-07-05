@@ -15,5 +15,5 @@ def write_output(spec, computed, compute_status, out_dir, verification_status="p
         "verification": {"checked_by": "run_all.py", "status": verification_status},
     }
     path = os.path.join(out_dir, f"{spec.get('id')}.out.json")
-    json.dump(rec, open(path, "w"), indent=2, sort_keys=True, ensure_ascii=False)
+    json.dump(rec, open(path, "w", newline="\n"), indent=2, sort_keys=True, ensure_ascii=False)
     return rec

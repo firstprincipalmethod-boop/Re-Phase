@@ -26,7 +26,7 @@ def build_tables(records, out_dir):
         rows = [_row(r, cols) for r in records if r.get("kind") == kind]
         p = os.path.join(out_dir, fname)
         with open(p, "w", newline="") as f:
-            w = csv.DictWriter(f, fieldnames=cols); w.writeheader()
+            w = csv.DictWriter(f, fieldnames=cols, lineterminator="\n"); w.writeheader()
             for r in rows: w.writerow(r)
         paths[kind] = (p, len(rows))
     return paths
