@@ -1,0 +1,42 @@
+{
+  "computed": {
+    "choice_kind": "action",
+    "choice_sets": {
+      "x0": [
+        "a"
+      ],
+      "x1": [
+        "b"
+      ]
+    },
+    "cpre_claim_status": "not_certified",
+    "display_images": {
+      "x0": "y",
+      "x1": "y"
+    },
+    "display_quotient": "identity",
+    "exact": false,
+    "quotient_cells": {
+      "z": [
+        "x0",
+        "x1"
+      ]
+    },
+    "quotient_common_choice_set": {
+      "z": []
+    },
+    "quotient_display": {
+      "z": "y"
+    },
+    "quotient_selector_exists": false,
+    "selector_preserving_action": false,
+    "square_commutes": true,
+    "target_sound": true,
+    "target_verdict_by_member": {
+      "x0": "good",
+      "x1": "good"
+    },
+    "verdict": "target_sound_not_selector_preserving"
+  },
+  "id": "v54_toy_E_target_sound_not_selector"
+}
