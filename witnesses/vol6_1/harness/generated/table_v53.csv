@@ -1,0 +1,2 @@
+id,pt_size,lift_size,lift_status,feature_image_pt,feature_image_lift,target,target_check,tau_pre_status,tau_pre_k,recoverable,verdict
+v53_collapse,2,0,infeasible,['t'],[],['t'],vacuous_empty_lift,finite,2,False,collapse

@@ -9,7 +9,7 @@ def write_output(spec, computed, compute_status, out_dir, verification_status="p
         "id": spec.get("id"),
         "source_volume": spec.get("source_volume"),
         "kind": spec.get("kind"),
-        "generated_by": "vol61_harness/compute.py",
+        "generated_by": "witnesses/vol6_1/harness/compute.py",
         "compute_status": compute_status,
         "computed": computed,
         "verification": {"checked_by": "run_all.py", "status": verification_status},
