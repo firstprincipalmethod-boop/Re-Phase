@@ -128,6 +128,21 @@ def _(spec):
     common_left_support = _intersect_all(left)
     common_right_support = _intersect_all(right)
 
+    # D-v54-08: left_support/right_support are declared as spec input alongside
+    # bridge_edges (a redundant restatement, not a separate assumption) -- cross-check
+    # rather than silently ignore, so a spec typo surfaces as a compute error, not a
+    # silently-diverged golden.
+    declared_left = s.get("left_support")
+    if declared_left is not None:
+        assert sorted(declared_left) == common_left_support, (
+            f"declared left_support {sorted(declared_left)!r} != derived from "
+            f"bridge_edges {common_left_support!r}")
+    declared_right = s.get("right_support")
+    if declared_right is not None:
+        assert sorted(declared_right) == common_right_support, (
+            f"declared right_support {sorted(declared_right)!r} != derived from "
+            f"bridge_edges {common_right_support!r}")
+
     members_choice = {m: edge_tuples[m] for m in members}
     cert, exists = _cell_conflict(
         members_choice, cell_id=cell_name, choice_kind=choice_kind,
@@ -170,6 +185,15 @@ def _(spec):
     for future_name, info in futures.items():
         terminal = info["terminal"]
         members_choice[future_name] = [c for c in reachable_choices if (c, terminal) in t1]
+
+        # D-v54-08: required_prefix_choice is declared alongside transitions (a
+        # redundant restatement of what T0/T1 already imply, not a separate
+        # assumption) -- cross-check rather than silently ignore.
+        declared = info.get("required_prefix_choice")
+        if declared is not None:
+            assert declared in members_choice[future_name], (
+                f"declared required_prefix_choice for {future_name!r} = {declared!r} "
+                f"not in derived continuation set {members_choice[future_name]!r}")
 
     cert, exists = _cell_conflict(
         members_choice, cell_id=f"{shared_prefix}:futures",
@@ -222,17 +246,70 @@ def _toy_d_variant(world, display_model, choice_kind):
     return result
 
 
+# lookback_r keeps the last r+1 observations (Vol.5.4 q_lookback(k,r,y) = y[max(0,k-r):k+1],
+# see 00_index/External_Claude_Context/Re-Phase_vol5_1_to_5_4_summary_for_external_Claude_py.md
+# SS6.4); memoryless is lookback_0 (current observation only).
+_LOOKBACK_R = {"memoryless": 0, "lookback_1": 1, "lookback_2": 2}
+
+
+def _lookback_window(tilt_history, memory_class):
+    window = _LOOKBACK_R[memory_class] + 1
+    return tuple(tilt_history[-window:]) if window <= len(tilt_history) else tuple(tilt_history)
+
+
+def _toy_d_memory_class_variant(world, memory_class, choice_kind):
+    """Groups world members by what a given memory_class can see of their
+    tilt_history under the ORIGINAL display (M1 SS1.2 mode recoverability classes:
+    bounded-lookback vs offline) -- NOT the full history unconditionally."""
+    cells = {}
+    for member, info in world.items():
+        key = "tilt:" + ",".join(str(x) for x in _lookback_window(info["tilt_history"], memory_class))
+        cells.setdefault(key, []).append(member)
+
+    per_cell = {}
+    overall_exists = True
+    for cell_id, members in sorted(cells.items()):
+        members_choice = {m: [world[m]["required_action"]] for m in members}
+        cert, exists = _cell_conflict(
+            members_choice, cell_id=cell_id,
+            choice_kind=choice_kind, obstructed_property="action_valued_selector")
+        per_cell[cell_id] = cert
+        overall_exists = overall_exists and exists
+
+    result = {"cells": per_cell, "selector_exists": overall_exists}
+    if overall_exists:
+        result["selector_table"] = {cid: cert["common_choice_set"][0] for cid, cert in per_cell.items()}
+    return result
+
+
+def _toy_d_original_variant(world, choice_kind, memory_classes):
+    """'_original' variants (D-v54-07): graduated across the spec's OWN declared
+    memory_classes rather than a single full-history check, so a bounded-lookback
+    success (M1's "traceable-bounded" row) is actually exercised, not just the
+    offline/full-history case. Top-level selector_exists asks "does ANY declared
+    memory_class suffice" -- true for traceable (bounded lookback already
+    separates), false for silent (identical history at every window size)."""
+    memory_results = {mc: _toy_d_memory_class_variant(world, mc, choice_kind) for mc in memory_classes}
+    overall_exists = any(r["selector_exists"] for r in memory_results.values())
+    return {"memory_results": memory_results, "selector_exists": overall_exists}
+
+
 @witness("v54_toy_D_retention_memory")
 def _(spec):
     """Toy D (Vol.5.4 SS5.8): retained coordinate and selector memory are different
     resources (M1), and Toy D's failure certification depends on M2's action-level
     cell_conflict, not on M1's type distinction alone (M1 SS1.3 Must-fix 2: SILENT
     alone does not imply selector failure). Three variants (D-v54-03):
-      traceable_original    -- differing tilt_history separates stable/slip under
-                                the ORIGINAL display; no augmentation needed.
+      traceable_original    -- graduated over the declared memory_classes under the
+                                ORIGINAL display (D-v54-07): stable/slip's
+                                tilt_history differs at the last 2 observations, so
+                                lookback_1 already separates them -- no augmentation
+                                needed, and no need to wait for full offline history.
       silent_original       -- IDENTICAL tilt_history under the original display ->
-                                forced action conflict (stable requires 'n', slip
-                                requires 'r').
+                                forced action conflict at EVERY memory_class (stable
+                                requires 'n', slip requires 'r'); memory can never
+                                substitute for retention here, mechanically shown by
+                                testing all declared classes, not asserted.
       silent_augmented      -- retained mode breaks the tie even though
                                 tilt_history is identical -> conflict resolved, with
                                 an explicit selector_table witness (D-v54-04:
@@ -240,10 +317,11 @@ def _(spec):
     s = spec["spec"]
     choice_kind = s.get("choice_kind", "action")
     worlds = s["worlds"]
+    memory_classes = s.get("memory_classes", list(_LOOKBACK_R))
 
     variants = {
-        "traceable_original": _toy_d_variant(worlds["traceable"], "original", choice_kind),
-        "silent_original": _toy_d_variant(worlds["silent"], "original", choice_kind),
+        "traceable_original": _toy_d_original_variant(worlds["traceable"], choice_kind, memory_classes),
+        "silent_original": _toy_d_original_variant(worlds["silent"], choice_kind, memory_classes),
         "silent_augmented": _toy_d_variant(worlds["silent"], "augmented_retained_mode", choice_kind),
     }
 
