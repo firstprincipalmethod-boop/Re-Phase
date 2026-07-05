@@ -3,7 +3,7 @@
 M1-M3 (retained-coordinate typing / cell-level selector inconsistency / CPre exclusion) are
 LOCKED (2026-07-05, Obsidian 03_Working_Memos/Vol6_1/v54_selector_model_resolution_M1_M3.md,
 D-v54-01..06). Canonical specs land in specs/v54/ FIRST, then the compute function for that
-witness is filled in (D13 sequencing) -- Toy A and Toy B are live; Toy C-F remain as
+witness is filled in (D13 sequencing) -- Toy A, Toy B and Toy C are live; Toy D-F remain as
 specs/v54/*.json.example until their own compute functions are added.
 
 Convention (D12/D-v54-02/03): family-level, not |Pt|/|Lift|. Counted objects are the
@@ -146,5 +146,46 @@ def _(spec):
     }
 
 
-# --- Toy C-F: specs/v54/*.json.example only so far; compute functions land with their
+@witness("v54_toy_C_nonblocking")
+def _(spec):
+    """Toy C (Vol.5.4 SS5.7): local common feasibility does not imply causal
+    non-blocking choice. A shared prefix has locally-feasible choices (both reachable
+    via T0), but each future admits continuation (via T1) through a DIFFERENT prefix
+    choice -- so the nonblocking-prefix choice set must be member-relative (V_k^nb(y),
+    not a bare V_k^nb) or this conflict can't be represented (M2 SS2.1 point 3).
+    choice_kind=nonblocking_prefix: a conflict here (as in this witness) IS a sound
+    nonexistence certificate, but the converse -- selector_exists=true -- is NOT
+    certified for this choice_kind without additionally showing cross-time
+    consistency (M2 point 6, still deferred). This witness is nonexistence-only."""
+    s = spec["spec"]
+    choice_kind = s.get("choice_kind", "nonblocking_prefix")
+    shared_prefix = s["shared_prefix"]
+    local_choices = set(s["local_choices"])
+    futures = s["futures"]
+    t0 = {tuple(e) for e in s["transitions"]["T0"]}
+    t1 = {tuple(e) for e in s["transitions"]["T1"]}
+
+    reachable_choices = {c for (frm, c) in t0 if frm == shared_prefix and c in local_choices}
+
+    members_choice = {}
+    for future_name, info in futures.items():
+        terminal = info["terminal"]
+        members_choice[future_name] = [c for c in reachable_choices if (c, terminal) in t1]
+
+    cert, exists = _cell_conflict(
+        members_choice, cell_id=f"{shared_prefix}:futures",
+        choice_kind=choice_kind, obstructed_property="nonblocking_selector")
+
+    return {
+        "choice_kind": choice_kind,
+        "time": s.get("time"),
+        "selector_class": s.get("selector_class"),
+        "shared_prefix": shared_prefix,
+        "cell_conflict": cert,
+        "selector_exists": exists,
+        "verdict": VERDICT_BY_WITNESS[spec["id"]],
+    }
+
+
+# --- Toy D-F: specs/v54/*.json.example only so far; compute functions land with their
 # own live-spec promotion (D13 sequencing), one witness at a time. ---
