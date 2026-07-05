@@ -1,0 +1,59 @@
+{
+  "compute_status": "ok",
+  "computed": {
+    "cell_conflict": {
+      "cell_id": "I_bridge",
+      "choice_kind": "bridge_edge",
+      "choice_sets": {
+        "u": [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "C",
+            "D"
+          ]
+        ],
+        "v": [
+          [
+            "A",
+            "D"
+          ],
+          [
+            "C",
+            "B"
+          ]
+        ]
+      },
+      "common_choice_set": [],
+      "members": [
+        "u",
+        "v"
+      ],
+      "obstructed_property": "bridge_valid_selector",
+      "status": "conflict"
+    },
+    "choice_kind": "bridge_edge",
+    "common_left_support": [
+      "A",
+      "C"
+    ],
+    "common_right_support": [
+      "B",
+      "D"
+    ],
+    "selector_class": "memoryless",
+    "selector_exists": false,
+    "time": 1,
+    "verdict": "bridge_cell_conflict"
+  },
+  "generated_by": "witnesses/vol6_1/harness/compute.py",
+  "id": "v54_toy_B_bridge_conflict",
+  "kind": "selector",
+  "source_volume": "Vol.5.4",
+  "verification": {
+    "checked_by": "run_all.py",
+    "status": "pass"
+  }
+}
