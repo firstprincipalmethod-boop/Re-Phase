@@ -1,2 +1,3 @@
 id,choice_kind,verdict,verification_status
 v54_toy_A_memoryless_fail,state,memoryless_selector_failure,pass
+v54_toy_B_bridge_conflict,bridge_edge,bridge_cell_conflict,pass

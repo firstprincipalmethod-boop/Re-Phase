@@ -3,7 +3,7 @@
 M1-M3 (retained-coordinate typing / cell-level selector inconsistency / CPre exclusion) are
 LOCKED (2026-07-05, Obsidian 03_Working_Memos/Vol6_1/v54_selector_model_resolution_M1_M3.md,
 D-v54-01..06). Canonical specs land in specs/v54/ FIRST, then the compute function for that
-witness is filled in (D13 sequencing) -- Toy A is the first live witness; Toy B-F remain as
+witness is filled in (D13 sequencing) -- Toy A and Toy B are live; Toy C-F remain as
 specs/v54/*.json.example until their own compute functions are added.
 
 Convention (D12/D-v54-02/03): family-level, not |Pt|/|Lift|. Counted objects are the
@@ -26,6 +26,13 @@ from compute import witness
 from schema import VERDICT_BY_WITNESS
 
 
+def _jsonable(choice):
+    """Tuples (e.g. bridge edges) must serialize the same way whether freshly computed
+    or round-tripped through golden JSON (which only knows lists) -- otherwise golden
+    compare() sees ('A','B') != ['A','B'] and reports a false drift."""
+    return list(choice) if isinstance(choice, tuple) else choice
+
+
 def _cell_conflict(members_choice, cell_id, choice_kind, obstructed_property):
     """members_choice: {member: [choice, ...]} -- the member-relative admissible choice set
     V^Q(member) for one information cell under one choice_kind Q. Returns the M2 nonexistence
@@ -42,10 +49,26 @@ def _cell_conflict(members_choice, cell_id, choice_kind, obstructed_property):
         "choice_kind": choice_kind,
         "obstructed_property": obstructed_property,
         "members": sorted(members_choice),
-        "choice_sets": {m: sorted(v) for m, v in members_choice.items()},
-        "common_choice_set": common_sorted,
+        "choice_sets": {m: [_jsonable(c) for c in sorted(v)] for m, v in members_choice.items()},
+        "common_choice_set": [_jsonable(c) for c in common_sorted],
     }
     return cert, (not conflict)
+
+
+def _split_edges(bridge_edges):
+    """bridge_edges: {member: [[left, right], ...]}. Returns each member's left-endpoint
+    set, right-endpoint set, and edge set (as hashable tuples)."""
+    left = {m: {e[0] for e in edges} for m, edges in bridge_edges.items()}
+    right = {m: {e[1] for e in edges} for m, edges in bridge_edges.items()}
+    edge_tuples = {m: [tuple(e) for e in edges] for m, edges in bridge_edges.items()}
+    return left, right, edge_tuples
+
+
+def _intersect_all(sets_by_member):
+    common = None
+    for s in sets_by_member.values():
+        common = set(s) if common is None else (common & set(s))
+    return sorted(common) if common else []
 
 
 @witness("v54_toy_A_memoryless_fail")
@@ -90,5 +113,38 @@ def _(spec):
     }
 
 
-# --- Toy B-F: specs/v54/*.json.example only so far; compute functions land with their
+@witness("v54_toy_B_bridge_conflict")
+def _(spec):
+    """Toy B (Vol.5.4 SS5.6): common state support does not imply common bridge-valid
+    selector. Members u, v of a single information cell have overlapping left-endpoint
+    and right-endpoint support (derived from bridge_edges, not asserted) -- but their
+    allowed (left,right) EDGE pairs don't overlap, so the bridge_edge cell_conflict is
+    nonempty statewise support / empty common edge choice."""
+    s = spec["spec"]
+    choice_kind = s.get("choice_kind", "bridge_edge")
+    cell_name, members = next(iter(s["information_cell"].items()))
+    bridge_edges = s["bridge_edges"]
+
+    left, right, edge_tuples = _split_edges(bridge_edges)
+    common_left_support = _intersect_all(left)
+    common_right_support = _intersect_all(right)
+
+    members_choice = {m: edge_tuples[m] for m in members}
+    cert, exists = _cell_conflict(
+        members_choice, cell_id=cell_name, choice_kind=choice_kind,
+        obstructed_property="bridge_valid_selector")
+
+    return {
+        "choice_kind": choice_kind,
+        "time": s.get("time"),
+        "selector_class": s.get("selector_class"),
+        "common_left_support": common_left_support,
+        "common_right_support": common_right_support,
+        "cell_conflict": cert,
+        "selector_exists": exists,
+        "verdict": VERDICT_BY_WITNESS[spec["id"]],
+    }
+
+
+# --- Toy C-F: specs/v54/*.json.example only so far; compute functions land with their
 # own live-spec promotion (D13 sequencing), one witness at a time. ---
