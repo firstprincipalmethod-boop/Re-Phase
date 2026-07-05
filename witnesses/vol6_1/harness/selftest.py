@@ -112,6 +112,45 @@ with tempfile.TemporaryDirectory() as d:
     ok &= check("D15 placement mismatch rejected by spec_loader",
                 loaded_ids == {"v53_ok"} and placement_flagged)
 
+# 13. D-v54-08: Toy B/C declare a redundant restatement of derivable data
+#     (left_support/right_support alongside bridge_edges; required_prefix_choice
+#     alongside transitions). The real compute functions must reject a spec where
+#     the declared value diverges from what's actually derivable -- same
+#     discipline as D13's "expected value rejected" tests, but for a
+#     cross-consistency invariant rather than a forbidden key. Field SHAPES here
+#     mirror the real Toy B/C specs; the values are deliberately wrong synthetic
+#     fixtures, not canonical witness content.
+import compute_v54  # noqa: F401  (import registers the real Toy A-F functions)
+from compute import REGISTRY as _v54_registry
+
+def _raises_assertion(fn, spec):
+    try:
+        fn(spec); return False
+    except AssertionError:
+        return True
+
+toy_b_tampered = {"id": "v54_toy_B_bridge_conflict", "spec": {
+    "choice_kind": "bridge_edge",
+    "information_cell": {"I_bridge": ["u", "v"]},
+    "bridge_edges": {"u": [["A", "B"], ["C", "D"]], "v": [["A", "D"], ["C", "B"]]},
+    "left_support": ["A", "Z"],   # WRONG: derived common_left_support is ["A","C"]
+    "right_support": ["B", "D"],
+}}
+ok &= check("D-v54-08: Toy B mismatched declared left_support is rejected",
+            _raises_assertion(_v54_registry["v54_toy_B_bridge_conflict"], toy_b_tampered))
+
+toy_c_tampered = {"id": "v54_toy_C_nonblocking", "spec": {
+    "choice_kind": "nonblocking_prefix",
+    "shared_prefix": "s", "local_choices": ["m", "n"],
+    "futures": {
+        "alpha": {"terminal": "a", "required_prefix_choice": "n"},  # WRONG: derived is "m"
+        "beta": {"terminal": "b", "required_prefix_choice": "n"},
+    },
+    "transitions": {"T0": [["s", "m"], ["s", "n"]], "T1": [["m", "a"], ["n", "b"]]},
+}}
+ok &= check("D-v54-08: Toy C mismatched declared required_prefix_choice is rejected",
+            _raises_assertion(_v54_registry["v54_toy_C_nonblocking"], toy_c_tampered))
+
 REGISTRY.clear()
 print("ALL PASS" if ok else "SOME FAILED")
 sys.exit(0 if ok else 1)

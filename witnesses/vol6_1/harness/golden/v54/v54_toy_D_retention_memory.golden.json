@@ -46,71 +46,196 @@
         }
       },
       "silent_original": {
-        "cells": {
-          "tilt:0,0,1": {
-            "cell_id": "tilt:0,0,1",
-            "choice_kind": "action",
-            "choice_sets": {
-              "slip": [
-                "r"
-              ],
-              "stable": [
-                "n"
-              ]
+        "memory_results": {
+          "lookback_1": {
+            "cells": {
+              "tilt:0,1": {
+                "cell_id": "tilt:0,1",
+                "choice_kind": "action",
+                "choice_sets": {
+                  "slip": [
+                    "r"
+                  ],
+                  "stable": [
+                    "n"
+                  ]
+                },
+                "common_choice_set": [],
+                "members": [
+                  "slip",
+                  "stable"
+                ],
+                "obstructed_property": "action_valued_selector",
+                "status": "conflict"
+              }
             },
-            "common_choice_set": [],
-            "members": [
-              "slip",
-              "stable"
-            ],
-            "obstructed_property": "action_valued_selector",
-            "status": "conflict"
+            "selector_exists": false
+          },
+          "lookback_2": {
+            "cells": {
+              "tilt:0,0,1": {
+                "cell_id": "tilt:0,0,1",
+                "choice_kind": "action",
+                "choice_sets": {
+                  "slip": [
+                    "r"
+                  ],
+                  "stable": [
+                    "n"
+                  ]
+                },
+                "common_choice_set": [],
+                "members": [
+                  "slip",
+                  "stable"
+                ],
+                "obstructed_property": "action_valued_selector",
+                "status": "conflict"
+              }
+            },
+            "selector_exists": false
+          },
+          "memoryless": {
+            "cells": {
+              "tilt:1": {
+                "cell_id": "tilt:1",
+                "choice_kind": "action",
+                "choice_sets": {
+                  "slip": [
+                    "r"
+                  ],
+                  "stable": [
+                    "n"
+                  ]
+                },
+                "common_choice_set": [],
+                "members": [
+                  "slip",
+                  "stable"
+                ],
+                "obstructed_property": "action_valued_selector",
+                "status": "conflict"
+              }
+            },
+            "selector_exists": false
           }
         },
         "selector_exists": false
       },
       "traceable_original": {
-        "cells": {
-          "tilt:0,0,1": {
-            "cell_id": "tilt:0,0,1",
-            "choice_kind": "action",
-            "choice_sets": {
-              "stable": [
-                "n"
-              ]
+        "memory_results": {
+          "lookback_1": {
+            "cells": {
+              "tilt:0,1": {
+                "cell_id": "tilt:0,1",
+                "choice_kind": "action",
+                "choice_sets": {
+                  "stable": [
+                    "n"
+                  ]
+                },
+                "common_choice_set": [
+                  "n"
+                ],
+                "members": [
+                  "stable"
+                ],
+                "obstructed_property": "action_valued_selector",
+                "status": "no_conflict"
+              },
+              "tilt:1,1": {
+                "cell_id": "tilt:1,1",
+                "choice_kind": "action",
+                "choice_sets": {
+                  "slip": [
+                    "r"
+                  ]
+                },
+                "common_choice_set": [
+                  "r"
+                ],
+                "members": [
+                  "slip"
+                ],
+                "obstructed_property": "action_valued_selector",
+                "status": "no_conflict"
+              }
             },
-            "common_choice_set": [
-              "n"
-            ],
-            "members": [
-              "stable"
-            ],
-            "obstructed_property": "action_valued_selector",
-            "status": "no_conflict"
+            "selector_exists": true,
+            "selector_table": {
+              "tilt:0,1": "n",
+              "tilt:1,1": "r"
+            }
           },
-          "tilt:0,1,1": {
-            "cell_id": "tilt:0,1,1",
-            "choice_kind": "action",
-            "choice_sets": {
-              "slip": [
-                "r"
-              ]
+          "lookback_2": {
+            "cells": {
+              "tilt:0,0,1": {
+                "cell_id": "tilt:0,0,1",
+                "choice_kind": "action",
+                "choice_sets": {
+                  "stable": [
+                    "n"
+                  ]
+                },
+                "common_choice_set": [
+                  "n"
+                ],
+                "members": [
+                  "stable"
+                ],
+                "obstructed_property": "action_valued_selector",
+                "status": "no_conflict"
+              },
+              "tilt:0,1,1": {
+                "cell_id": "tilt:0,1,1",
+                "choice_kind": "action",
+                "choice_sets": {
+                  "slip": [
+                    "r"
+                  ]
+                },
+                "common_choice_set": [
+                  "r"
+                ],
+                "members": [
+                  "slip"
+                ],
+                "obstructed_property": "action_valued_selector",
+                "status": "no_conflict"
+              }
             },
-            "common_choice_set": [
-              "r"
-            ],
-            "members": [
-              "slip"
-            ],
-            "obstructed_property": "action_valued_selector",
-            "status": "no_conflict"
+            "selector_exists": true,
+            "selector_table": {
+              "tilt:0,0,1": "n",
+              "tilt:0,1,1": "r"
+            }
+          },
+          "memoryless": {
+            "cells": {
+              "tilt:1": {
+                "cell_id": "tilt:1",
+                "choice_kind": "action",
+                "choice_sets": {
+                  "slip": [
+                    "r"
+                  ],
+                  "stable": [
+                    "n"
+                  ]
+                },
+                "common_choice_set": [],
+                "members": [
+                  "slip",
+                  "stable"
+                ],
+                "obstructed_property": "action_valued_selector",
+                "status": "conflict"
+              }
+            },
+            "selector_exists": false
           }
         },
-        "selector_exists": true,
-        "selector_table": {
-          "tilt:0,0,1": "n",
-          "tilt:0,1,1": "r"
-        }
+        "selector_exists": true
       }
     },
     "verdict": "retention_memory_separation"
