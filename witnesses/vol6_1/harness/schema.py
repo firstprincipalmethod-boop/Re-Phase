@@ -11,6 +11,12 @@ FORBIDDEN_IN_SPEC = {
     "feature_image_pt", "feature_image_lift",
     "lift_status", "target_check", "tau_pre", "verdict",
     "recoverable", "selector_verdict", "verdicts",
+    # v54 (Vol.5.4 selector) generated fields, locked 2026-07-05 (M1-M3 + Toy A-F spec policy):
+    # these are compute_v54.py output only, never handwritten in specs/v54/*.json (D13).
+    "cell_conflict", "common_choice_set", "selector_exists",
+    "selector_preserving_action", "exact", "target_sound", "square_commutes",
+    "quotient_selector_exists", "selector_table", "cpre_claim_status",
+    "quotient_common_choice_set",
 }
 
 REQUIRED_SPEC_KEYS = ["id", "source_volume", "kind", "role", "status", "count_objects", "spec"]
