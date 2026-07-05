@@ -3,8 +3,8 @@
 M1-M3 (retained-coordinate typing / cell-level selector inconsistency / CPre exclusion) are
 LOCKED (2026-07-05, Obsidian 03_Working_Memos/Vol6_1/v54_selector_model_resolution_M1_M3.md,
 D-v54-01..06). Canonical specs land in specs/v54/ FIRST, then the compute function for that
-witness is filled in (D13 sequencing) -- Toy A, Toy B, Toy C and Toy D are live; Toy E-F
-remain as specs/v54/*.json.example until their own compute functions are added.
+witness is filled in (D13 sequencing) -- Toy A, Toy B, Toy C, Toy D and Toy E are live; Toy F
+remains as specs/v54/*.json.example until its own compute function is added.
 
 Convention (D12/D-v54-02/03): family-level, not |Pt|/|Lift|. Counted objects are the
 admissible base-path family, per-selector-class information cells, and member-relative
@@ -255,5 +255,86 @@ def _(spec):
     }
 
 
-# --- Toy E-F: specs/v54/*.json.example only so far; compute functions land with their
-# own live-spec promotion (D13 sequencing), one witness at a time. ---
+def _toy_ef_quotient(s, choice_kind):
+    """Shared M3 quotient/selector-preservation compute for Toy E/F (M3 lock SS3.1-3.2):
+    groups hidden_members by quotient_map, derives exact/target_sound/square_commutes
+    generically from the spec's own display_images/target_verdict (never hardcoded),
+    and certifies an action cell_conflict per quotient cell via the same M2 Gamma
+    machinery used by Toy A/B/C/D. cpre_claim_status is always 'not_certified' (M3:
+    CPre inclusion is out of scope unless a must/may abstraction mode is fixed)."""
+    hidden_members = s["hidden_members"]
+    quotient_map = s["quotient_map"]
+    display_images = s["display_images"]
+    target_verdict = s["target_verdict"]
+    required_actions = s["required_actions"]
+    display_quotient = s.get("display_quotient")
+
+    # exact(rho_A) iff rho_A is injective on admissible full paths (M3 SS4).
+    exact = len(set(quotient_map.values())) == len(hidden_members)
+
+    quotient_cells = {}
+    for m in hidden_members:
+        quotient_cells.setdefault(quotient_map[m], []).append(m)
+    quotient_cells = {z: sorted(ms) for z, ms in quotient_cells.items()}
+
+    # target_sound(rho_A) iff members merged into the same cell share one target
+    # verdict (M3 SS5).
+    target_sound = all(len({target_verdict[m] for m in ms}) == 1
+                        for ms in quotient_cells.values())
+
+    # square_commutes, grounded for the identity display quotient (M3 SS3.1): members
+    # merged into the same quotient cell must already share one displayed image.
+    square_commutes = None
+    quotient_display = None
+    if display_quotient == "identity":
+        square_commutes = all(len({display_images[m] for m in ms}) == 1
+                               for ms in quotient_cells.values())
+        if square_commutes:
+            quotient_display = {z: display_images[ms[0]] for z, ms in quotient_cells.items()}
+
+    quotient_common_choice_set = {}
+    overall_exists = True
+    for z, ms in quotient_cells.items():
+        members_choice = {m: [required_actions[m]] for m in ms}
+        cert, exists = _cell_conflict(
+            members_choice, cell_id=z, choice_kind=choice_kind,
+            obstructed_property="quotient_selector_preserving")
+        quotient_common_choice_set[z] = cert["common_choice_set"]
+        overall_exists = overall_exists and exists
+
+    result = {
+        "choice_kind": choice_kind,
+        "display_quotient": display_quotient,
+        "display_images": dict(display_images),
+        "quotient_display": quotient_display,
+        "square_commutes": square_commutes,
+        "exact": exact,
+        "quotient_cells": quotient_cells,
+        "target_verdict_by_member": dict(target_verdict),
+        "target_sound": target_sound,
+        "choice_sets": {m: [required_actions[m]] for m in hidden_members},
+        "quotient_common_choice_set": quotient_common_choice_set,
+        "quotient_selector_exists": overall_exists,
+        "selector_preserving_action": overall_exists,
+        "cpre_claim_status": "not_certified",
+    }
+    if overall_exists:
+        result["selector_table"] = {z: v[0] for z, v in quotient_common_choice_set.items()}
+    return result
+
+
+@witness("v54_toy_E_target_sound_not_selector")
+def _(spec):
+    """Toy E (Vol.5.4 SS5.9, M3 lock SS8): target-sound quotient need not preserve
+    selector existence. x0, x1 merge into one quotient cell z (target-sound: both
+    target verdicts are 'good'), but their required actions (a vs b) conflict ->
+    quotient selector does not exist. CPre inclusion is not certified here (M3)."""
+    s = spec["spec"]
+    choice_kind = s.get("choice_kind", "action")
+    result = _toy_ef_quotient(s, choice_kind)
+    result["verdict"] = VERDICT_BY_WITNESS[spec["id"]]
+    return result
+
+
+# --- Toy F: specs/v54/*.json.example only so far; compute function lands with its
+# own live-spec promotion (D13 sequencing). ---
