@@ -12,11 +12,11 @@ Under the condition that you:
 - Do not use these materials for commercial purposes
 - Include a copy of the license
 
-## Code and Scripts (Future)
+## Code and Scripts (MIT License)
 
-Any code, scripts, or executable implementations added to this repository in the future may be licensed under a different license (e.g., MIT, Apache 2.0, or other open-source licenses). The specific license for code will be clearly stated when such materials are introduced.
+All code, scripts, and executable implementations in this repository — including the Vol.6.1 finite witness harness — are licensed under the [MIT License](LICENSE-CODE.md).
 
-Current status: No separate code license is in effect yet.
+Current status: decided 2026-07-05, ahead of the Vol.6.1 harness scaffold import.
 
 ## Attribution
 
