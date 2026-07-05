@@ -1,0 +1,55 @@
+{
+  "compute_status": "ok",
+  "computed": {
+    "choice_kind": "action",
+    "choice_sets": {
+      "x0": [
+        "n"
+      ],
+      "x1": [
+        "n"
+      ]
+    },
+    "cpre_claim_status": "not_certified",
+    "display_images": {
+      "x0": "y",
+      "x1": "y"
+    },
+    "display_quotient": "identity",
+    "exact": false,
+    "quotient_cells": {
+      "z": [
+        "x0",
+        "x1"
+      ]
+    },
+    "quotient_common_choice_set": {
+      "z": [
+        "n"
+      ]
+    },
+    "quotient_display": {
+      "z": "y"
+    },
+    "quotient_selector_exists": true,
+    "selector_preserving_action": true,
+    "selector_table": {
+      "z": "n"
+    },
+    "square_commutes": true,
+    "target_sound": true,
+    "target_verdict_by_member": {
+      "x0": "good",
+      "x1": "good"
+    },
+    "verdict": "safe_nonexact_forgetting"
+  },
+  "generated_by": "witnesses/vol6_1/harness/compute.py",
+  "id": "v54_toy_F_safe_nonexact",
+  "kind": "selector",
+  "source_volume": "Vol.5.4",
+  "verification": {
+    "checked_by": "run_all.py",
+    "status": "pass"
+  }
+}
