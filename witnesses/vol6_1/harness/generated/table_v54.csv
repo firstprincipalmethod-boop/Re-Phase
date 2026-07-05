@@ -1,1 +1,2 @@
-id,offline,causal,lookback_1,memoryless,quotient_selector,verdict
+id,choice_kind,verdict,verification_status
+v54_toy_A_memoryless_fail,state,memoryless_selector_failure,pass

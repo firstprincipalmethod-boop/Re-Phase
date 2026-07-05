@@ -1,32 +1,94 @@
 """Vol.5.4 (selector) witness compute functions.
 
-EMPTY ON PURPOSE (D13 sequencing): canonical specs land in specs/v54/ FIRST, then the
-compute functions below are filled in. Each @witness registers into the shared REGISTRY
-in compute.py; run_all.py imports this module for that side-effect.
+M1-M3 (retained-coordinate typing / cell-level selector inconsistency / CPre exclusion) are
+LOCKED (2026-07-05, Obsidian 03_Working_Memos/Vol6_1/v54_selector_model_resolution_M1_M3.md,
+D-v54-01..06). Canonical specs land in specs/v54/ FIRST, then the compute function for that
+witness is filled in (D13 sequencing) -- Toy A is the first live witness; Toy B-F remain as
+specs/v54/*.json.example until their own compute functions are added.
 
-Convention (D12): family-level. Counted objects are Y_adm, lift fibers, information cells,
-projected choice sets V_k(y), and per-class selector verdicts — do NOT force |Pt|/|Lift|.
+Convention (D12/D-v54-02/03): family-level, not |Pt|/|Lift|. Counted objects are the
+admissible base-path family, per-selector-class information cells, and member-relative
+projected choice sets V^Q(y) for a fixed choice_kind Q. Every witness returns a flat dict
+with a top-level 'verdict' (schema.VERDICT_BY_WITNESS) plus witness-specific detail; for
+variant-bearing witnesses (Toy A, Toy D -- D-v54-03) the verdict is the PRIMARY certified
+claim (D-v54-06), and full per-variant detail lives under 'variants', never flattened into
+the verdict itself.
 
-CERTIFICATION HOLD (D15): golden freeze for Vol.5.4 witnesses is HELD until the open
-must-fix items are resolved:
-  - M1: retained-coordinate selectors do not fit the q_k^C : Y_adm -> I_k^C factorization
-        (blocks the retention-vs-memory witness, Toy D).
-  - M2: selector inconsistency must be existential, not tied to one specific offline selector.
-  - M3: CPre inclusion direction depends on an unspecified must/may abstraction.
-Additional caveats to carry on the sheets (not blockers, but flagged):
-  - Toy C: pure "non-blocking-only" reading of the local-choice / no-continuation gap.
-  - Toy E: CPre direction misread in the target-sound-but-not-selector-preserving case.
-
-    from compute import witness
-
-    @witness("v54_toy_A_memoryless_fail")
-    def _(spec):
-        # enumerate Y_adm, lift fibers, information cells, projected choice sets;
-        # decide per-class selector existence (memoryless / lookback_1 / causal / offline /
-        # quotient). Return a flat dict; GENERATED here, never in the spec.
-        return {"offline": ..., "causal": ..., "lookback_1": ..., "memoryless": ...,
-                "quotient_selector": ..., "verdict": ...}
+cell_conflict certificate shape (M2 lock, §2.1): for an information cell with member ->
+choice-set data, the common choice set is the intersection across members; cell_conflict
+is true iff that intersection is empty. Absence of conflict is NOT an existence proof in
+general (M2 point 6) -- but for choice_kind in {state, bridge_edge, action} a nonempty
+common choice set IS itself a constructive witness (pick any element), so selector_exists
+:= not cell_conflict is sound for those kinds. choice_kind=nonblocking_prefix existence is
+NOT certified this way (cross-time consistency required, still deferred).
 """
-from compute import witness  # noqa: F401  (imported for @witness availability)
+from compute import witness
+from schema import VERDICT_BY_WITNESS
 
-# --- Vol.5.4 witnesses register below (none yet; golden held per D15 until M1-M3 close) ---
+
+def _cell_conflict(members_choice, cell_id, choice_kind, obstructed_property):
+    """members_choice: {member: [choice, ...]} -- the member-relative admissible choice set
+    V^Q(member) for one information cell under one choice_kind Q. Returns the M2 nonexistence
+    certificate object (dict) plus whether a selector_exists witness is constructible."""
+    common = None
+    for choices in members_choice.values():
+        s = set(choices)
+        common = s if common is None else (common & s)
+    common_sorted = sorted(common) if common else []
+    conflict = len(common_sorted) == 0
+    cert = {
+        "status": "conflict" if conflict else "no_conflict",
+        "cell_id": cell_id,
+        "choice_kind": choice_kind,
+        "obstructed_property": obstructed_property,
+        "members": sorted(members_choice),
+        "choice_sets": {m: sorted(v) for m, v in members_choice.items()},
+        "common_choice_set": common_sorted,
+    }
+    return cert, (not conflict)
+
+
+@witness("v54_toy_A_memoryless_fail")
+def _(spec):
+    """Toy A (Vol.5.4 SS5.5): fiberwise liftability does not imply memoryless selector
+    existence. Two variants over the SAME family (D-v54-03): memoryless (one shared
+    information cell -> conflict) and lookback_1 (two singleton cells -> no conflict,
+    trivially constructible witness). choice_kind=state, so selector_exists :=
+    not cell_conflict is sound (M2 point 6)."""
+    s = spec["spec"]
+    choice_kind = s.get("choice_kind", "state")
+    time_k = s["time"]
+    lifts = s["lifts"]
+    info_cells = s["information_cells"]
+
+    # V_k^state(path) = {the path's own lift value at time_k} -- each path has a unique
+    # lift, so this is a singleton; the memoryless cell's conflict comes purely from
+    # grouping two DIFFERENT paths' singletons into one information cell (see below).
+    choice_at_k = {path: [lifts[path][time_k]] for path in lifts}
+
+    variants = {}
+    for cell_name, cells in info_cells.items():
+        per_cell = {}
+        cells_exist = True
+        for label, members in cells.items():
+            members_choice = {m: choice_at_k[m] for m in members}
+            cert, exists = _cell_conflict(
+                members_choice, cell_id=f"{cell_name}:{label}",
+                choice_kind=choice_kind, obstructed_property="plain_adapted_selector")
+            per_cell[label] = cert
+            cells_exist = cells_exist and exists
+        variants[cell_name] = {"cells": per_cell, "selector_exists": cells_exist}
+
+    return {
+        "choice_kind": choice_kind,
+        "time": time_k,
+        "variants": {
+            "memoryless": variants["memoryless_t1"],
+            "lookback_1": variants["lookback_1_t1"],
+        },
+        "verdict": VERDICT_BY_WITNESS[spec["id"]],
+    }
+
+
+# --- Toy B-F: specs/v54/*.json.example only so far; compute functions land with their
+# own live-spec promotion (D13 sequencing), one witness at a time. ---

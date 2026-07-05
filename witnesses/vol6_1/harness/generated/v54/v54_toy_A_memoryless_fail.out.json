@@ -1,0 +1,81 @@
+{
+  "compute_status": "ok",
+  "computed": {
+    "choice_kind": "state",
+    "time": 1,
+    "variants": {
+      "lookback_1": {
+        "cells": {
+          "0,*": {
+            "cell_id": "lookback_1_t1:0,*",
+            "choice_kind": "state",
+            "choice_sets": {
+              "path0": [
+                "0b"
+              ]
+            },
+            "common_choice_set": [
+              "0b"
+            ],
+            "members": [
+              "path0"
+            ],
+            "obstructed_property": "plain_adapted_selector",
+            "status": "no_conflict"
+          },
+          "1,*": {
+            "cell_id": "lookback_1_t1:1,*",
+            "choice_kind": "state",
+            "choice_sets": {
+              "path1": [
+                "1b"
+              ]
+            },
+            "common_choice_set": [
+              "1b"
+            ],
+            "members": [
+              "path1"
+            ],
+            "obstructed_property": "plain_adapted_selector",
+            "status": "no_conflict"
+          }
+        },
+        "selector_exists": true
+      },
+      "memoryless": {
+        "cells": {
+          "*": {
+            "cell_id": "memoryless_t1:*",
+            "choice_kind": "state",
+            "choice_sets": {
+              "path0": [
+                "0b"
+              ],
+              "path1": [
+                "1b"
+              ]
+            },
+            "common_choice_set": [],
+            "members": [
+              "path0",
+              "path1"
+            ],
+            "obstructed_property": "plain_adapted_selector",
+            "status": "conflict"
+          }
+        },
+        "selector_exists": false
+      }
+    },
+    "verdict": "memoryless_selector_failure"
+  },
+  "generated_by": "witnesses/vol6_1/harness/compute.py",
+  "id": "v54_toy_A_memoryless_fail",
+  "kind": "selector",
+  "source_volume": "Vol.5.4",
+  "verification": {
+    "checked_by": "run_all.py",
+    "status": "pass"
+  }
+}
