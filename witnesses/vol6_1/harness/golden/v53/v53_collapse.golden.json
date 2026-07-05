@@ -1,0 +1,22 @@
+{
+  "computed": {
+    "feature_image_lift": [],
+    "feature_image_pt": [
+      "t"
+    ],
+    "lift_size": 0,
+    "lift_status": "infeasible",
+    "pt_size": 2,
+    "recoverable": false,
+    "target": [
+      "t"
+    ],
+    "target_check": "vacuous_empty_lift",
+    "tau_pre": {
+      "k": 2,
+      "status": "finite"
+    },
+    "verdict": "collapse"
+  },
+  "id": "v53_collapse"
+}

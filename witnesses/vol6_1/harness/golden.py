@@ -9,7 +9,7 @@ def load_golden(golden_dir, wid):
 def freeze_golden(golden_dir, wid, computed):
     os.makedirs(golden_dir, exist_ok=True)
     p = os.path.join(golden_dir, f"{wid}.golden.json")
-    json.dump({"id": wid, "computed": computed}, open(p, "w"), indent=2, sort_keys=True, ensure_ascii=False)
+    json.dump({"id": wid, "computed": computed}, open(p, "w", newline="\n"), indent=2, sort_keys=True, ensure_ascii=False)
     return p
 
 def compare(computed, golden):

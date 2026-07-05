@@ -1,0 +1,19 @@
+{
+  "id": "v53_collapse",
+  "source_volume": "Vol.5.3",
+  "source_section": "2",
+  "kind": "pathwise",
+  "role": "pointwise compatible choices do not necessarily form a compatible path",
+  "status": "core",
+  "count_objects": {
+    "pt_object": "full pointwise relaxation Pt(y)=product_k F_k(y_k)",
+    "lift_object": "transition-compatible subset Lift(y) of Pt(y)",
+    "feature_object": "image of Pt(y) and Lift(y) under the terminal-state feature map"
+  },
+  "spec": {
+    "state_sets": { "X0": ["s"], "X1": ["u", "v"], "X2": ["t"] },
+    "transitions": { "T0": [["s", "u"]], "T1": [["v", "t"]] },
+    "feature": "terminal_state",
+    "target": ["t"]
+  }
+}
