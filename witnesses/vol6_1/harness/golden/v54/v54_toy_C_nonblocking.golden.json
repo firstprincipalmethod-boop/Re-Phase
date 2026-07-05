@@ -1,0 +1,30 @@
+{
+  "computed": {
+    "cell_conflict": {
+      "cell_id": "s:futures",
+      "choice_kind": "nonblocking_prefix",
+      "choice_sets": {
+        "alpha": [
+          "m"
+        ],
+        "beta": [
+          "n"
+        ]
+      },
+      "common_choice_set": [],
+      "members": [
+        "alpha",
+        "beta"
+      ],
+      "obstructed_property": "nonblocking_selector",
+      "status": "conflict"
+    },
+    "choice_kind": "nonblocking_prefix",
+    "selector_class": "causal",
+    "selector_exists": false,
+    "shared_prefix": "s",
+    "time": 1,
+    "verdict": "nonblocking_failure"
+  },
+  "id": "v54_toy_C_nonblocking"
+}

@@ -1,0 +1,38 @@
+{
+  "compute_status": "ok",
+  "computed": {
+    "cell_conflict": {
+      "cell_id": "s:futures",
+      "choice_kind": "nonblocking_prefix",
+      "choice_sets": {
+        "alpha": [
+          "m"
+        ],
+        "beta": [
+          "n"
+        ]
+      },
+      "common_choice_set": [],
+      "members": [
+        "alpha",
+        "beta"
+      ],
+      "obstructed_property": "nonblocking_selector",
+      "status": "conflict"
+    },
+    "choice_kind": "nonblocking_prefix",
+    "selector_class": "causal",
+    "selector_exists": false,
+    "shared_prefix": "s",
+    "time": 1,
+    "verdict": "nonblocking_failure"
+  },
+  "generated_by": "witnesses/vol6_1/harness/compute.py",
+  "id": "v54_toy_C_nonblocking",
+  "kind": "selector",
+  "source_volume": "Vol.5.4",
+  "verification": {
+    "checked_by": "run_all.py",
+    "status": "pass"
+  }
+}
