@@ -3,8 +3,8 @@
 M1-M3 (retained-coordinate typing / cell-level selector inconsistency / CPre exclusion) are
 LOCKED (2026-07-05, Obsidian 03_Working_Memos/Vol6_1/v54_selector_model_resolution_M1_M3.md,
 D-v54-01..06). Canonical specs land in specs/v54/ FIRST, then the compute function for that
-witness is filled in (D13 sequencing) -- Toy A, Toy B and Toy C are live; Toy D-F remain as
-specs/v54/*.json.example until their own compute functions are added.
+witness is filled in (D13 sequencing) -- Toy A, Toy B, Toy C and Toy D are live; Toy E-F
+remain as specs/v54/*.json.example until their own compute functions are added.
 
 Convention (D12/D-v54-02/03): family-level, not |Pt|/|Lift|. Counted objects are the
 admissible base-path family, per-selector-class information cells, and member-relative
@@ -187,5 +187,73 @@ def _(spec):
     }
 
 
-# --- Toy D-F: specs/v54/*.json.example only so far; compute functions land with their
+def _display_cell_key(display_model, info):
+    """What a given display_model actually SHOWS about a world member -- the key two
+    members share iff that display model cannot tell them apart."""
+    tilt = tuple(info["tilt_history"])
+    if display_model == "original":
+        return "tilt:" + ",".join(str(x) for x in tilt)
+    if display_model == "augmented_retained_mode":
+        return f"mode:{info['mode']}"
+    raise ValueError(f"unknown display_model {display_model!r}")
+
+
+def _toy_d_variant(world, display_model, choice_kind):
+    """world: {member: {tilt_history, mode, required_action}}. Groups members into
+    information cells by what display_model shows, then certifies the M2 action-level
+    cell_conflict per cell. D-v54-04: an existence claim (selector_exists=true) is
+    only made alongside an explicit selector_table witness -- never bare."""
+    cells = {}
+    for member, info in world.items():
+        cells.setdefault(_display_cell_key(display_model, info), []).append(member)
+
+    per_cell = {}
+    overall_exists = True
+    for cell_id, members in sorted(cells.items()):
+        members_choice = {m: [world[m]["required_action"]] for m in members}
+        cert, exists = _cell_conflict(
+            members_choice, cell_id=cell_id,
+            choice_kind=choice_kind, obstructed_property="action_valued_selector")
+        per_cell[cell_id] = cert
+        overall_exists = overall_exists and exists
+
+    result = {"cells": per_cell, "selector_exists": overall_exists}
+    if overall_exists:
+        result["selector_table"] = {cid: cert["common_choice_set"][0] for cid, cert in per_cell.items()}
+    return result
+
+
+@witness("v54_toy_D_retention_memory")
+def _(spec):
+    """Toy D (Vol.5.4 SS5.8): retained coordinate and selector memory are different
+    resources (M1), and Toy D's failure certification depends on M2's action-level
+    cell_conflict, not on M1's type distinction alone (M1 SS1.3 Must-fix 2: SILENT
+    alone does not imply selector failure). Three variants (D-v54-03):
+      traceable_original    -- differing tilt_history separates stable/slip under
+                                the ORIGINAL display; no augmentation needed.
+      silent_original       -- IDENTICAL tilt_history under the original display ->
+                                forced action conflict (stable requires 'n', slip
+                                requires 'r').
+      silent_augmented      -- retained mode breaks the tie even though
+                                tilt_history is identical -> conflict resolved, with
+                                an explicit selector_table witness (D-v54-04:
+                                selector_exists=true alone is not enough)."""
+    s = spec["spec"]
+    choice_kind = s.get("choice_kind", "action")
+    worlds = s["worlds"]
+
+    variants = {
+        "traceable_original": _toy_d_variant(worlds["traceable"], "original", choice_kind),
+        "silent_original": _toy_d_variant(worlds["silent"], "original", choice_kind),
+        "silent_augmented": _toy_d_variant(worlds["silent"], "augmented_retained_mode", choice_kind),
+    }
+
+    return {
+        "choice_kind": choice_kind,
+        "variants": variants,
+        "verdict": VERDICT_BY_WITNESS[spec["id"]],
+    }
+
+
+# --- Toy E-F: specs/v54/*.json.example only so far; compute functions land with their
 # own live-spec promotion (D13 sequencing), one witness at a time. ---
