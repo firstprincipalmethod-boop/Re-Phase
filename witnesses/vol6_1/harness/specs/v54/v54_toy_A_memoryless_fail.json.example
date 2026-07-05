@@ -1,0 +1,32 @@
+{
+  "id": "v54_toy_A_memoryless_fail",
+  "source_volume": "Vol.5.4",
+  "source_section": "5.5",
+  "kind": "selector",
+  "role": "fiberwise liftability does not imply memoryless selector existence",
+  "status": "core",
+  "count_objects": {
+    "family_object": "admissible base-path family Y_adm = {path0, path1}",
+    "lift_object": "unique lift trajectory per path",
+    "info_cells": "information cells per selector class (memoryless, lookback_1)",
+    "choice_sets": "projected state choice sets V_1^state(y)",
+    "verdict_object": "per-class selector existence (memoryless vs lookback_1)"
+  },
+  "spec": {
+    "choice_kind": "state",
+    "time": 1,
+    "variants": ["memoryless", "lookback_1"],
+    "displayed_paths": {
+      "path0": ["0", "*", "0"],
+      "path1": ["1", "*", "1"]
+    },
+    "lifts": {
+      "path0": ["0a", "0b", "0c"],
+      "path1": ["1a", "1b", "1c"]
+    },
+    "information_cells": {
+      "memoryless_t1": { "*": ["path0", "path1"] },
+      "lookback_1_t1": { "0,*": ["path0"], "1,*": ["path1"] }
+    }
+  }
+}

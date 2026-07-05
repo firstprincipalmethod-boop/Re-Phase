@@ -1,0 +1,30 @@
+{
+  "id": "v54_toy_C_nonblocking",
+  "source_volume": "Vol.5.4",
+  "source_section": "5.7",
+  "kind": "selector",
+  "role": "local common feasibility does not imply causal non-blocking choice",
+  "status": "core",
+  "count_objects": {
+    "family_object": "shared prefix s with two continuations (futures alpha, beta)",
+    "lift_object": "member-relative continuations Cont_k(c;y)",
+    "info_cells": "single information cell over futures {alpha, beta}",
+    "choice_sets": "member-relative nonblocking-prefix choice sets V_k^nb(y)",
+    "verdict_object": "nonblocking selector existence (nonexistence witness only; existence side deferred, requires cross-time consistency)"
+  },
+  "spec": {
+    "choice_kind": "nonblocking_prefix",
+    "time": 1,
+    "selector_class": "causal",
+    "shared_prefix": "s",
+    "local_choices": ["m", "n"],
+    "futures": {
+      "alpha": { "terminal": "a", "required_prefix_choice": "m" },
+      "beta": { "terminal": "b", "required_prefix_choice": "n" }
+    },
+    "transitions": {
+      "T0": [["s", "m"], ["s", "n"]],
+      "T1": [["m", "a"], ["n", "b"]]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "v54_toy_D_retention_memory",
+  "source_volume": "Vol.5.4",
+  "source_section": "5.8",
+  "kind": "selector",
+  "role": "retained coordinate and selector memory are different resources",
+  "status": "core",
+  "count_objects": {
+    "family_object": "traceable / silent worlds, each with hidden modes {stable, slip}",
+    "lift_object": "tilt-history trajectories per world/member",
+    "info_cells": "information cells under original vs augmented (retained-mode) display",
+    "choice_sets": "per-mode required actions (action choice_kind)",
+    "verdict_object": "selector existence per world/display/memory-class variant"
+  },
+  "spec": {
+    "choice_kind": "action",
+    "variants": ["traceable_original", "silent_original", "silent_augmented"],
+    "worlds": {
+      "traceable": {
+        "stable": { "tilt_history": [0, 0, 1], "mode": "S", "required_action": "n" },
+        "slip":   { "tilt_history": [0, 1, 1], "mode": "P", "required_action": "r" }
+      },
+      "silent": {
+        "stable": { "tilt_history": [0, 0, 1], "mode": "S", "required_action": "n" },
+        "slip":   { "tilt_history": [0, 0, 1], "mode": "P", "required_action": "r" }
+      }
+    },
+    "display_models": ["original", "augmented_retained_mode"],
+    "memory_classes": ["memoryless", "lookback_1", "lookback_2"]
+  }
+}

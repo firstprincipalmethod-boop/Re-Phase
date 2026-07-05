@@ -46,7 +46,7 @@ VERDICT_BY_WITNESS = {
     "v54_toy_A_memoryless_fail": "memoryless_selector_failure",
     "v54_toy_B_bridge_conflict": "bridge_cell_conflict",
     "v54_toy_C_nonblocking": "nonblocking_failure",
-    "v54_toy_D_traceable_silent": "retention_memory_separation",
+    "v54_toy_D_retention_memory": "retention_memory_separation",
     "v54_toy_E_target_sound_not_selector": "target_sound_not_selector_preserving",
     "v54_toy_F_safe_nonexact": "safe_nonexact_forgetting",
 }
