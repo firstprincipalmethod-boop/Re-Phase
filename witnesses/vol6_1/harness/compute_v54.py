@@ -3,8 +3,7 @@
 M1-M3 (retained-coordinate typing / cell-level selector inconsistency / CPre exclusion) are
 LOCKED (2026-07-05, Obsidian 03_Working_Memos/Vol6_1/v54_selector_model_resolution_M1_M3.md,
 D-v54-01..06). Canonical specs land in specs/v54/ FIRST, then the compute function for that
-witness is filled in (D13 sequencing) -- Toy A, Toy B, Toy C, Toy D and Toy E are live; Toy F
-remains as specs/v54/*.json.example until its own compute function is added.
+witness is filled in (D13 sequencing) -- Toy A through Toy F are all live.
 
 Convention (D12/D-v54-02/03): family-level, not |Pt|/|Lift|. Counted objects are the
 admissible base-path family, per-selector-class information cells, and member-relative
@@ -336,5 +335,16 @@ def _(spec):
     return result
 
 
-# --- Toy F: specs/v54/*.json.example only so far; compute function lands with its
-# own live-spec promotion (D13 sequencing). ---
+@witness("v54_toy_F_safe_nonexact")
+def _(spec):
+    """Toy F (Vol.5.4 SS5.9, M3 lock SS9): non-exact forgetting can still be
+    target-sound and action-selector-preserving (positive control for Toy E). x0,
+    x1 merge into one quotient cell (target-sound: both 'good', so still not
+    exact), but this time both require the SAME action 'n' -> quotient selector
+    exists, with an explicit selector_table witness. CPre inclusion is not
+    certified here (M3)."""
+    s = spec["spec"]
+    choice_kind = s.get("choice_kind", "action")
+    result = _toy_ef_quotient(s, choice_kind)
+    result["verdict"] = VERDICT_BY_WITNESS[spec["id"]]
+    return result
