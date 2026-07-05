@@ -1,0 +1,20 @@
+{
+  "id": "v53_xxx",
+  "source_volume": "Vol.5.3",
+  "source_section": "12.x",
+  "kind": "pathwise",
+  "role": "<one precise Re-Phase distinction>",
+  "status": "core",
+  "count_objects": {
+    "pt_object": "full pointwise relaxation Pt(y)=product_k F_k(y_k)",
+    "lift_object": "transition-compatible subset Lift(y) of Pt(y)",
+    "feature_object": "image of Pt(y) and Lift(y) under H"
+  },
+  "spec": {
+    "state_sets": { "X0": [], "X1": [], "X2": [] },
+    "observation": { "comment": "stagewise observation-consistent candidate sets F_k(y_k)" },
+    "transitions": { "T0": [], "T1": [] },
+    "feature": { "comment": "H definition (may merge terminal states, e.g. A.4)" },
+    "target": []
+  }
+}
