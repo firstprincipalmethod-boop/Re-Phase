@@ -1,0 +1,27 @@
+{
+  "computed": {
+    "feature_image_lift": [
+      "good",
+      "ok"
+    ],
+    "feature_image_pt": [
+      "bad",
+      "good",
+      "ok"
+    ],
+    "lift_size": 2,
+    "lift_status": "ambiguous",
+    "pt_size": 27,
+    "recoverable": false,
+    "target": [
+      "good"
+    ],
+    "target_check": "outside_target",
+    "tau_pre": {
+      "k": null,
+      "status": "no_failure"
+    },
+    "verdict": "feature_effective_unresolved"
+  },
+  "id": "v53_missing_cell"
+}

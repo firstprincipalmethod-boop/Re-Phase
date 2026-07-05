@@ -1,0 +1,30 @@
+{
+  "compute_status": "ok",
+  "computed": {
+    "feature_image_lift": [],
+    "feature_image_pt": [
+      "r"
+    ],
+    "lift_size": 0,
+    "lift_status": "infeasible",
+    "pt_size": 2,
+    "recoverable": false,
+    "target": [
+      "r"
+    ],
+    "target_check": "vacuous_empty_lift",
+    "tau_pre": {
+      "k": 2,
+      "status": "finite"
+    },
+    "verdict": "gap_collapse"
+  },
+  "generated_by": "witnesses/vol6_1/harness/compute.py",
+  "id": "v53_gap_collapse",
+  "kind": "pathwise",
+  "source_volume": "Vol.5.3",
+  "verification": {
+    "checked_by": "run_all.py",
+    "status": "pass"
+  }
+}

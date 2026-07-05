@@ -1,0 +1,25 @@
+{
+  "computed": {
+    "feature_image_lift": [
+      "c1"
+    ],
+    "feature_image_pt": [
+      "c1",
+      "c2"
+    ],
+    "lift_size": 1,
+    "lift_status": "unique",
+    "pt_size": 4,
+    "recoverable": true,
+    "target": [
+      "c1"
+    ],
+    "target_check": "within_target",
+    "tau_pre": {
+      "k": null,
+      "status": "no_failure"
+    },
+    "verdict": "unique_lift"
+  },
+  "id": "v53_unique_lift"
+}

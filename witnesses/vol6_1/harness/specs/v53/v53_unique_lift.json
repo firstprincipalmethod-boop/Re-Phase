@@ -1,0 +1,19 @@
+{
+  "id": "v53_unique_lift",
+  "source_volume": "Vol.5.3",
+  "source_section": "4.4",
+  "kind": "pathwise",
+  "role": "transition compatibility can collapse a multivalued pointwise fiber down to a unique path",
+  "status": "core",
+  "count_objects": {
+    "pt_object": "full pointwise relaxation Pt(y)=product_k F_k(y_k)",
+    "lift_object": "transition-compatible subset Lift(y) of Pt(y)",
+    "feature_object": "image of Pt(y) and Lift(y) under the terminal-state feature map"
+  },
+  "spec": {
+    "state_sets": { "X0": ["a1", "a2"], "X1": ["b"], "X2": ["c1", "c2"] },
+    "transitions": { "T0": [["a1", "b"]], "T1": [["b", "c1"]] },
+    "feature": "terminal_state",
+    "target": ["c1"]
+  }
+}

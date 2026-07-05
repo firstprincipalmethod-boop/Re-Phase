@@ -1,0 +1,22 @@
+{
+  "id": "v53_missing_cell",
+  "source_volume": "Vol.5.3",
+  "source_section": "12.5",
+  "kind": "pathwise",
+  "role": "feature narrowing is not the same as target hitting: feature_image_lift is a strict subset of feature_image_pt, but is not a subset of the target",
+  "status": "core",
+  "count_objects": {
+    "pt_object": "full pointwise relaxation Pt(y)=product_k F_k(y_k)",
+    "lift_object": "transition-compatible subset Lift(y) of Pt(y)",
+    "feature_object": "image of Pt(y) and Lift(y) under the terminal-state feature map"
+  },
+  "spec": {
+    "state_sets": { "X0": ["a0", "b0", "c0"], "X1": ["a1", "b1", "c1"], "X2": ["good", "ok", "bad"] },
+    "transitions": {
+      "T0": [["a0", "a1"], ["b0", "b1"], ["c0", "c1"]],
+      "T1": [["a1", "good"], ["b1", "ok"]]
+    },
+    "feature": "terminal_state",
+    "target": ["good"]
+  }
+}
