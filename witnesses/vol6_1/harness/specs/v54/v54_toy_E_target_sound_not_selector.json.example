@@ -1,0 +1,24 @@
+{
+  "id": "v54_toy_E_target_sound_not_selector",
+  "source_volume": "Vol.5.4",
+  "source_section": "5.9",
+  "kind": "selector",
+  "role": "target-sound quotient need not preserve selector existence",
+  "status": "core",
+  "count_objects": {
+    "family_object": "hidden members x0, x1 merged by rho_A into quotient cell z",
+    "lift_object": "quotient map rho_A and identity display quotient rho_Y",
+    "info_cells": "single quotient cell z = {x0, x1}",
+    "choice_sets": "member-relative required actions",
+    "verdict_object": "quotient selector existence (action choice_kind); square_commutes, exact, target_sound"
+  },
+  "spec": {
+    "choice_kind": "action",
+    "hidden_members": ["x0", "x1"],
+    "display_images": { "x0": "y", "x1": "y" },
+    "quotient_map": { "x0": "z", "x1": "z" },
+    "target_verdict": { "x0": "good", "x1": "good" },
+    "required_actions": { "x0": "a", "x1": "b" },
+    "display_quotient": "identity"
+  }
+}
