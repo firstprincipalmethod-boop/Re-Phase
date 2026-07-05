@@ -1,0 +1,19 @@
+{
+  "id": "v53_feature_ambiguous_recoverable",
+  "source_volume": "Vol.5.3",
+  "source_section": "11",
+  "kind": "pathwise",
+  "role": "full path uniqueness is not necessary for target-feature recoverability: Lift(y) is ambiguous but every surviving path's feature lands in the target",
+  "status": "core",
+  "count_objects": {
+    "pt_object": "full pointwise relaxation Pt(y)=product_k F_k(y_k)",
+    "lift_object": "transition-compatible subset Lift(y) of Pt(y)",
+    "feature_object": "image of Pt(y) and Lift(y) under the terminal-state feature map"
+  },
+  "spec": {
+    "state_sets": { "X0": ["a"], "X1": ["b1", "b2"], "X2": ["c1", "c2"] },
+    "transitions": { "T0": [["a", "b1"], ["a", "b2"]], "T1": [["b1", "c1"], ["b2", "c2"]] },
+    "feature": "terminal_state",
+    "target": ["c1", "c2"]
+  }
+}

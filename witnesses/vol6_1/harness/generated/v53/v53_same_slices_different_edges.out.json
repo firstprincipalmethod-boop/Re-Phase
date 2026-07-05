@@ -1,0 +1,64 @@
+{
+  "compute_status": "ok",
+  "computed": {
+    "feature_image_pt": [
+      "r",
+      "s"
+    ],
+    "pt_size": 4,
+    "target": [
+      "r"
+    ],
+    "variant_a": {
+      "feature_image_lift": [
+        "r"
+      ],
+      "feature_image_pt": [
+        "r",
+        "s"
+      ],
+      "lift_size": 1,
+      "lift_status": "unique",
+      "pt_size": 4,
+      "recoverable": true,
+      "target": [
+        "r"
+      ],
+      "target_check": "within_target",
+      "tau_pre": {
+        "k": null,
+        "status": "no_failure"
+      }
+    },
+    "variant_b": {
+      "feature_image_lift": [
+        "s"
+      ],
+      "feature_image_pt": [
+        "r",
+        "s"
+      ],
+      "lift_size": 1,
+      "lift_status": "unique",
+      "pt_size": 4,
+      "recoverable": false,
+      "target": [
+        "r"
+      ],
+      "target_check": "outside_target",
+      "tau_pre": {
+        "k": null,
+        "status": "no_failure"
+      }
+    },
+    "verdict": "same_slices_different_edges"
+  },
+  "generated_by": "witnesses/vol6_1/harness/compute.py",
+  "id": "v53_same_slices_different_edges",
+  "kind": "pathwise",
+  "source_volume": "Vol.5.3",
+  "verification": {
+    "checked_by": "run_all.py",
+    "status": "pass"
+  }
+}

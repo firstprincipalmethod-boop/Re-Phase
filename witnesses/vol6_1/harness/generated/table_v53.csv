@@ -1,2 +1,8 @@
 id,pt_size,lift_size,lift_status,feature_image_pt,feature_image_lift,target,target_check,tau_pre_status,tau_pre_k,recoverable,verdict
 v53_collapse,2,0,infeasible,['t'],[],['t'],vacuous_empty_lift,finite,2,False,collapse
+v53_constant_velocity,8,,,"['c1', 'c2']",,"['c1', 'c2']",,,,,observation_thinning
+v53_feature_ambiguous_recoverable,4,2,ambiguous,"['c1', 'c2']","['c1', 'c2']","['c1', 'c2']",within_target,no_failure,,True,feature_sufficient_ambiguity
+v53_gap_collapse,2,0,infeasible,['r'],[],['r'],vacuous_empty_lift,finite,2,False,gap_collapse
+v53_missing_cell,27,2,ambiguous,"['bad', 'good', 'ok']","['good', 'ok']",['good'],outside_target,no_failure,,False,feature_effective_unresolved
+v53_same_slices_different_edges,4,,,"['r', 's']",,['r'],,,,,same_slices_different_edges
+v53_unique_lift,4,1,unique,"['c1', 'c2']",['c1'],['c1'],within_target,no_failure,,True,unique_lift

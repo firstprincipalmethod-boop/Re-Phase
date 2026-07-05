@@ -1,0 +1,19 @@
+{
+  "id": "v53_constant_velocity",
+  "source_volume": "Vol.5.3",
+  "source_section": "13",
+  "kind": "pathwise",
+  "role": "full observation may be sufficient but not minimal: composing out the intermediate stage (observing only the endpoints) reaches the same recoverable verdict as observing every stage",
+  "status": "core",
+  "count_objects": {
+    "pt_object": "full pointwise relaxation Pt(y)=product_k F_k(y_k) over the full 3-stage context",
+    "lift_object": "transition-compatible subset Lift(y) of Pt(y), computed for both the full and the thinned (endpoints-only) context",
+    "feature_object": "image of Pt(y) and Lift(y) under the terminal-state feature map"
+  },
+  "spec": {
+    "state_sets": { "X0": ["a1", "a2"], "X1": ["m1", "m2"], "X2": ["c1", "c2"] },
+    "transitions": { "T0": [["a1", "m1"], ["a2", "m2"]], "T1": [["m1", "c1"], ["m2", "c2"]] },
+    "feature": "terminal_state",
+    "target": ["c1", "c2"]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "compute_status": "ok",
+  "computed": {
+    "feature_image_lift": [
+      "c1",
+      "c2"
+    ],
+    "feature_image_pt": [
+      "c1",
+      "c2"
+    ],
+    "lift_size": 2,
+    "lift_status": "ambiguous",
+    "pt_size": 4,
+    "recoverable": true,
+    "target": [
+      "c1",
+      "c2"
+    ],
+    "target_check": "within_target",
+    "tau_pre": {
+      "k": null,
+      "status": "no_failure"
+    },
+    "verdict": "feature_sufficient_ambiguity"
+  },
+  "generated_by": "witnesses/vol6_1/harness/compute.py",
+  "id": "v53_feature_ambiguous_recoverable",
+  "kind": "pathwise",
+  "source_volume": "Vol.5.3",
+  "verification": {
+    "checked_by": "run_all.py",
+    "status": "pass"
+  }
+}

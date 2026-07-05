@@ -1,0 +1,72 @@
+{
+  "compute_status": "ok",
+  "computed": {
+    "feature_image_pt": [
+      "c1",
+      "c2"
+    ],
+    "full_context": {
+      "context_size": 3,
+      "feature_image_lift": [
+        "c1",
+        "c2"
+      ],
+      "feature_image_pt": [
+        "c1",
+        "c2"
+      ],
+      "lift_size": 2,
+      "lift_status": "ambiguous",
+      "pt_size": 8,
+      "recoverable": true,
+      "target": [
+        "c1",
+        "c2"
+      ],
+      "target_check": "within_target",
+      "tau_pre": {
+        "k": null,
+        "status": "no_failure"
+      }
+    },
+    "observation_thinning_confirmed": true,
+    "pt_size": 8,
+    "target": [
+      "c1",
+      "c2"
+    ],
+    "thinned_context": {
+      "context_size": 2,
+      "feature_image_lift": [
+        "c1",
+        "c2"
+      ],
+      "feature_image_pt": [
+        "c1",
+        "c2"
+      ],
+      "lift_size": 2,
+      "lift_status": "ambiguous",
+      "pt_size": 4,
+      "recoverable": true,
+      "target": [
+        "c1",
+        "c2"
+      ],
+      "target_check": "within_target",
+      "tau_pre": {
+        "k": null,
+        "status": "no_failure"
+      }
+    },
+    "verdict": "observation_thinning"
+  },
+  "generated_by": "witnesses/vol6_1/harness/compute.py",
+  "id": "v53_constant_velocity",
+  "kind": "pathwise",
+  "source_volume": "Vol.5.3",
+  "verification": {
+    "checked_by": "run_all.py",
+    "status": "pass"
+  }
+}

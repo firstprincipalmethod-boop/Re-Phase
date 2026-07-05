@@ -1,0 +1,20 @@
+{
+  "id": "v53_same_slices_different_edges",
+  "source_volume": "Vol.5.3",
+  "source_section": "4.9",
+  "kind": "pathwise",
+  "role": "time-slice supports do not determine the path fiber: two edge relations share identical state_sets (slices) but produce different Lift(y) and different recoverability verdicts",
+  "status": "core",
+  "count_objects": {
+    "pt_object": "full pointwise relaxation Pt(y)=product_k F_k(y_k), identical across both variants",
+    "lift_object": "transition-compatible subset Lift(y) of Pt(y), computed once per edge-relation variant",
+    "feature_object": "image of Pt(y) and Lift(y) under the terminal-state feature map"
+  },
+  "spec": {
+    "state_sets": { "X0": ["a"], "X1": ["p", "q"], "X2": ["r", "s"] },
+    "transitions_variant_a": { "T0": [["a", "p"], ["a", "q"]], "T1": [["p", "r"]] },
+    "transitions_variant_b": { "T0": [["a", "p"], ["a", "q"]], "T1": [["q", "s"]] },
+    "feature": "terminal_state",
+    "target": ["r"]
+  }
+}

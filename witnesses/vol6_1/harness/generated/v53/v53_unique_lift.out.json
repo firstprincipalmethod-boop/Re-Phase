@@ -1,0 +1,33 @@
+{
+  "compute_status": "ok",
+  "computed": {
+    "feature_image_lift": [
+      "c1"
+    ],
+    "feature_image_pt": [
+      "c1",
+      "c2"
+    ],
+    "lift_size": 1,
+    "lift_status": "unique",
+    "pt_size": 4,
+    "recoverable": true,
+    "target": [
+      "c1"
+    ],
+    "target_check": "within_target",
+    "tau_pre": {
+      "k": null,
+      "status": "no_failure"
+    },
+    "verdict": "unique_lift"
+  },
+  "generated_by": "witnesses/vol6_1/harness/compute.py",
+  "id": "v53_unique_lift",
+  "kind": "pathwise",
+  "source_volume": "Vol.5.3",
+  "verification": {
+    "checked_by": "run_all.py",
+    "status": "pass"
+  }
+}
