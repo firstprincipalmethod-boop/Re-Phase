@@ -1,0 +1,21 @@
+{
+  "id": "v54_xxx",
+  "source_volume": "Vol.5.4",
+  "source_section": "x",
+  "kind": "selector",
+  "role": "<selector-level distinction>",
+  "status": "core",
+  "count_objects": {
+    "family_object": "admissible base-path family Y_adm",
+    "lift_object": "lift fibers Lift(y)",
+    "info_cells": "information cells per class",
+    "choice_sets": "projected choice sets V_k(y)",
+    "verdict_object": "selector verdict by information class"
+  },
+  "spec": {
+    "base_paths": [],
+    "lift_fibers": {},
+    "information_classes": ["memoryless", "lookback_1", "causal", "offline", "quotient"],
+    "conflict": { "comment": "information cell + required choices + intersection" }
+  }
+}
