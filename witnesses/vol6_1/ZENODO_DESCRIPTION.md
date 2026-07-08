@@ -6,7 +6,7 @@ Author: Takashi Ito, Independent Researcher
 Software DOI: 10.5281/zenodo.21220093
 Associated manuscript DOI: 10.5281/zenodo.21220080
 License: MIT License
-Archived source state: git commit `15a9d1a` (main, PR #24 merge — v53+v54 repository-complete, 13/13 release-gate PASS)
+Archived source state: git tag `vol6.1-v0.4.2` (main, v53+v54 repository-complete, 13/13 release-gate PASS)
 
 ## Description
 
