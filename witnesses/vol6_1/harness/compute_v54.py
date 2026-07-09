@@ -133,13 +133,13 @@ def _(spec):
     # rather than silently ignore, so a spec typo surfaces as a compute error, not a
     # silently-diverged golden.
     declared_left = s.get("left_support")
-    if declared_left is not None:
-        assert sorted(declared_left) == common_left_support, (
+    if declared_left is not None and sorted(declared_left) != common_left_support:
+        raise ValueError(
             f"declared left_support {sorted(declared_left)!r} != derived from "
             f"bridge_edges {common_left_support!r}")
     declared_right = s.get("right_support")
-    if declared_right is not None:
-        assert sorted(declared_right) == common_right_support, (
+    if declared_right is not None and sorted(declared_right) != common_right_support:
+        raise ValueError(
             f"declared right_support {sorted(declared_right)!r} != derived from "
             f"bridge_edges {common_right_support!r}")
 
@@ -190,8 +190,8 @@ def _(spec):
         # redundant restatement of what T0/T1 already imply, not a separate
         # assumption) -- cross-check rather than silently ignore.
         declared = info.get("required_prefix_choice")
-        if declared is not None:
-            assert declared in members_choice[future_name], (
+        if declared is not None and declared not in members_choice[future_name]:
+            raise ValueError(
                 f"declared required_prefix_choice for {future_name!r} = {declared!r} "
                 f"not in derived continuation set {members_choice[future_name]!r}")
 

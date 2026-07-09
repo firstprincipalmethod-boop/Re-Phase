@@ -37,8 +37,8 @@ ALLOWED_LIFT_STATUS = {"infeasible", "unique", "ambiguous"}
 # collapsing it into the same value as a genuine within_target result.
 ALLOWED_TARGET_CHECK = {"vacuous_empty_lift", "within_target", "outside_target"}
 
-# id -> locked verdict string. v53 entries are certified; v54 entries are locked vocabulary
-# but golden is still on hold pending M1-M3 upstream selector issues (Vol.5.4 content summary §8).
+# id -> locked verdict string. v53 and v54 entries are both certified as of v0.4.2
+# (M1-M3 resolved; all six v54 golden snapshots frozen and content-audited).
 VERDICT_BY_WITNESS = {
     # v53 (Vol.5.3 pathwise)
     "v53_collapse": "collapse",
@@ -48,7 +48,7 @@ VERDICT_BY_WITNESS = {
     "v53_missing_cell": "feature_effective_unresolved",
     "v53_same_slices_different_edges": "same_slices_different_edges",
     "v53_constant_velocity": "observation_thinning",
-    # v54 (Vol.5.4 selector) -- vocabulary locked, golden on hold
+    # v54 (Vol.5.4 selector) -- vocabulary locked, golden certified (v0.4.2)
     "v54_toy_A_memoryless_fail": "memoryless_selector_failure",
     "v54_toy_B_bridge_conflict": "bridge_cell_conflict",
     "v54_toy_C_nonblocking": "nonblocking_failure",
@@ -56,6 +56,20 @@ VERDICT_BY_WITNESS = {
     "v54_toy_E_target_sound_not_selector": "target_sound_not_selector_preserving",
     "v54_toy_F_safe_nonexact": "safe_nonexact_forgetting",
 }
+
+# --- Release manifest (minimal D14, added v0.4.2 pre-submission audit) ---
+# The certified release REQUIRES exactly this witness-id set to be loaded. The verdict
+# registry above is the single source of truth: every certified witness has a locked
+# verdict, and every locked verdict names a required witness. run_all.py --release
+# fails on any missing or unexpected id (an empty spec directory is 13 missing ids).
+# Deferred refinement (Section 14): hash-pinned golden manifest (full D14).
+REQUIRED_WITNESS_IDS = frozenset(VERDICT_BY_WITNESS)
+
+def required_id_check(loaded_ids):
+    """Return (missing, unexpected) as sorted lists, compared against the release
+    manifest. Both empty iff the loaded id set is exactly REQUIRED_WITNESS_IDS."""
+    loaded = set(loaded_ids)
+    return (sorted(REQUIRED_WITNESS_IDS - loaded), sorted(loaded - REQUIRED_WITNESS_IDS))
 
 # D15: Vol.6.1 certifies exactly two witness groups. source_volume picks the certification
 # bucket (specs/<b>, generated/<b>, golden/<b>). The volume<->kind coupling is definitional

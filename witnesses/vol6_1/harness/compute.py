@@ -1,7 +1,9 @@
 """Compute layer — the ONLY place where a spec's inputs are turned into outputs.
-EMPTY ON PURPOSE: no witness compute function is registered yet. Canonical specs are
-fixed from the source volumes first (D13 sequencing); compute functions are added then,
-so source-reading mistakes are never frozen into code ahead of the specs.
+This module holds only the registry; the witness compute functions live in
+compute_v53.py and compute_v54.py and register themselves here on import (D15).
+Historical note (D13 sequencing): canonical specs were fixed from the source volumes
+first, and compute functions were added after, so source-reading mistakes were never
+frozen into code ahead of the specs. As of v0.4.2 all 13 witnesses are registered.
 
 To add a witness later:
 

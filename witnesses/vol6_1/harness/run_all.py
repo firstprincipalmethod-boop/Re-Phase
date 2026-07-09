@@ -15,7 +15,7 @@ from compute import compute, REGISTRY
 from output_writer import write_output
 from golden import load_golden, compare
 from report import build_tables
-from schema import ALLOWED_VERIFICATION_STATUS, bucket
+from schema import ALLOWED_VERIFICATION_STATUS, bucket, REQUIRED_WITNESS_IDS, required_id_check
 
 # Populate the compute REGISTRY by importing the per-volume witness modules for their
 # @witness registration side-effect (D15). If this import is removed, the witnesses are
@@ -30,8 +30,9 @@ GOLD  = os.path.join(HERE, "golden")
 # verification states that are NOT acceptable in a certified release
 RELEASE_BLOCKING = {"fail", "pending", "no-golden", "no-compute-registered", "error", "invalid"}
 # every non-"invalid" blocking/terminal status run_all can assign must be a schema-allowed output status
-assert (RELEASE_BLOCKING - {"invalid"}) <= ALLOWED_VERIFICATION_STATUS, \
-    "run_all status set drifted from schema.ALLOWED_VERIFICATION_STATUS"
+# (explicit raise, not assert: must hold under python -O as well)
+if not (RELEASE_BLOCKING - {"invalid"}) <= ALLOWED_VERIFICATION_STATUS:
+    raise RuntimeError("run_all status set drifted from schema.ALLOWED_VERIFICATION_STATUS")
 
 def main(argv=None):
     ap = argparse.ArgumentParser()
@@ -71,11 +72,20 @@ def main(argv=None):
     print("summary: " + " ".join(f"{k}={v}" for k,v in counts.items()) + f" | invalid_specs={len(problems)}")
 
     if args.strict:
+        # Release manifest check (minimal D14): the certified suite is exactly the
+        # REQUIRED_WITNESS_IDS set. A deleted spec (or an empty spec directory) must
+        # fail the gate, not silently shrink the suite; an unexpected id must not
+        # silently grow it.
+        missing, unexpected = required_id_check(s["id"] for s in specs)
+        for wid in missing:    print(f"  [MISSING REQUIRED] {wid}")
+        for wid in unexpected: print(f"  [UNEXPECTED SPEC ] {wid}")
         blocking = len(problems) + sum(counts.get(s,0) for s in RELEASE_BLOCKING)
-        if blocking:
-            print(f"RELEASE GATE: FAIL ({blocking} blocking item(s): invalid/fail/pending/no-compute/no-golden)")
+        if blocking or missing or unexpected:
+            print(f"RELEASE GATE: FAIL ({blocking} blocking, {len(missing)} missing required, "
+                  f"{len(unexpected)} unexpected)")
             return 2
-        print("RELEASE GATE: PASS (all witnesses generated, golden-verified)")
+        print(f"RELEASE GATE: PASS (all {len(REQUIRED_WITNESS_IDS)} required witnesses present, "
+              "generated, golden-verified)")
         return 0
     # scaffold mode: only hard errors fail the run
     return 1 if (counts["error"] or len(problems)) else 0

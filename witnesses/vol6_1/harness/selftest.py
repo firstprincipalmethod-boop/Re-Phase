@@ -123,10 +123,12 @@ with tempfile.TemporaryDirectory() as d:
 import compute_v54  # noqa: F401  (import registers the real Toy A-F functions)
 from compute import REGISTRY as _v54_registry
 
-def _raises_assertion(fn, spec):
+def _raises_value_error(fn, spec):
+    # D-v54-08 rejection must be an explicit ValueError: assert-based rejection is
+    # disabled under `python -O`, which would silently void the audit guarantee.
     try:
         fn(spec); return False
-    except AssertionError:
+    except ValueError:
         return True
 
 toy_b_tampered = {"id": "v54_toy_B_bridge_conflict", "spec": {
@@ -137,7 +139,7 @@ toy_b_tampered = {"id": "v54_toy_B_bridge_conflict", "spec": {
     "right_support": ["B", "D"],
 }}
 ok &= check("D-v54-08: Toy B mismatched declared left_support is rejected",
-            _raises_assertion(_v54_registry["v54_toy_B_bridge_conflict"], toy_b_tampered))
+            _raises_value_error(_v54_registry["v54_toy_B_bridge_conflict"], toy_b_tampered))
 
 toy_c_tampered = {"id": "v54_toy_C_nonblocking", "spec": {
     "choice_kind": "nonblocking_prefix",
@@ -149,7 +151,21 @@ toy_c_tampered = {"id": "v54_toy_C_nonblocking", "spec": {
     "transitions": {"T0": [["s", "m"], ["s", "n"]], "T1": [["m", "a"], ["n", "b"]]},
 }}
 ok &= check("D-v54-08: Toy C mismatched declared required_prefix_choice is rejected",
-            _raises_assertion(_v54_registry["v54_toy_C_nonblocking"], toy_c_tampered))
+            _raises_value_error(_v54_registry["v54_toy_C_nonblocking"], toy_c_tampered))
+
+# 14. Release manifest (minimal D14): --release must fail when a required witness
+#     is missing, when the spec directory is empty, and when an unexpected id appears.
+from schema import REQUIRED_WITNESS_IDS, required_id_check
+FULL = set(REQUIRED_WITNESS_IDS)
+m, u = required_id_check(FULL)
+ok &= check("release manifest: exact 13-id set -> no missing/unexpected", m == [] and u == [])
+m, u = required_id_check(FULL - {"v54_toy_F_safe_nonexact"})
+ok &= check("release manifest: one deleted witness is reported missing",
+            m == ["v54_toy_F_safe_nonexact"] and u == [])
+m, u = required_id_check(set())
+ok &= check("release manifest: empty spec set -> all 13 reported missing", len(m) == 13 and u == [])
+m, u = required_id_check(FULL | {"v99_rogue_witness"})
+ok &= check("release manifest: unexpected id is reported", m == [] and u == ["v99_rogue_witness"])
 
 REGISTRY.clear()
 print("ALL PASS" if ok else "SOME FAILED")

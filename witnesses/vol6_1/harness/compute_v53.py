@@ -23,7 +23,7 @@ recoverable, verdict. (target_check replaces boolean target_included -- v0.1 fee
 positive next to recoverable=false. See schema.ALLOWED_TARGET_CHECK.)
 
 All 7 v53 witnesses are registered here; the Vol.5.4 selector lane (compute_v54.py) is a
-separate, still-empty module (golden held pending M1-M3).
+separate module, compute_v54.py (certified as of v0.4.2).
 """
 import itertools
 from compute import witness
@@ -153,8 +153,10 @@ def _(spec):
     state_sets = s["state_sets"]
     var_a = _compute_variant(state_sets, s["transitions_variant_a"], feature, target)
     var_b = _compute_variant(state_sets, s["transitions_variant_b"], feature, target)
-    assert var_a["pt_size"] == var_b["pt_size"], "same state_sets must give identical Pt size"
-    assert var_a["feature_image_pt"] == var_b["feature_image_pt"], "same state_sets must give identical feature_image_pt"
+    if var_a["pt_size"] != var_b["pt_size"]:
+        raise ValueError("same state_sets must give identical Pt size")
+    if var_a["feature_image_pt"] != var_b["feature_image_pt"]:
+        raise ValueError("same state_sets must give identical feature_image_pt")
     return {
         "pt_size": var_a["pt_size"],
         "feature_image_pt": var_a["feature_image_pt"],
