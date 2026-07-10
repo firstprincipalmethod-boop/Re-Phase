@@ -7,7 +7,7 @@ It turns fibers, projections, path lifts, bridge obstructions, recoverability gu
 ## Current Focus
 
 - DOI series index and conceptual reading guide
-- Vol.6.1 finite witness suite preparation
+- Vol.6.1 certified finite witness suite (published)
 - Vol.5.3 pathwise witness lane
 - Vol.5.4 selector witness lane
 - Canonical finite specs

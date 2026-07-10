@@ -42,6 +42,8 @@ GitHub serves as the public navigation hub, living index, coordination layer, an
 | 29 | Vol.6 | Re-Phase Vol.6: Computational Compatibility — Feasibility, Recoverability, and Representation-Sound Approximation | https://doi.org/10.5281/zenodo.20745456 | Archived on Zenodo |
 | 30 | Vol.5.3 | Re-Phase Vol.5.3: Pathwise Compatibility Lifting — Path Fibers, Bridge Worlds, and Nonempty-Guarded Recoverability | https://doi.org/10.5281/zenodo.20956126 | Archived on Zenodo |
 | 31 | Vol.5.4 | Re-Phase Vol.5.4: Information-Adapted Selection — Selector Classes, Retention, and Safe Forgetting | https://doi.org/10.5281/zenodo.20986204 | Archived on Zenodo |
+| 32 | Vol.6.1 | Re-Phase Vol.6.1: A Certified Finite Witness Suite for Vol.5.3 and Vol.5.4 | https://doi.org/10.5281/zenodo.21220080 | Archived on Zenodo |
+| 33 | Vol.6.1 (harness) | Re-Phase Vol.6.1 Witness Harness: v53/v54 Certified Finite Witness Suite | https://doi.org/10.5281/zenodo.21220093 | Archived on Zenodo |
 
 ## Version History and Superseded Records
 

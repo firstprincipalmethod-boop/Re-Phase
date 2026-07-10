@@ -12,6 +12,11 @@ live, golden-frozen, and release-gate certified, including a golden **content au
 just internally self-consistent with its own compute. `run_all.py --release` reports
 **13/13 PASS** (7 v53 + 6 v54).
 
+## Archive
+- Manuscript: https://doi.org/10.5281/zenodo.21220080 (v0.4.2)
+- Witness harness (this directory): https://doi.org/10.5281/zenodo.21220093
+- git tag: `vol6.1-v0.4.2`
+
 ## Layout (per-volume split, D15)
 ```
 specs/v53/       specs/v54/          canonical specs, input-only (NO numbers, D13)
