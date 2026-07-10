@@ -60,9 +60,12 @@ audit, D-v54-07~09, below).
                        `SELECTOR_COLS` is a summary row (`id`/`choice_kind`/`verdict`/
                        `verification_status`) — variant-level detail lives only in the JSON.
 - `run_all.py`       — orchestrator. Imports `compute_v53`/`compute_v54` for @witness registration,
-                       routes generated/golden per bucket. Runs cleanly with zero specs.
+                       routes generated/golden per bucket. In `--release` mode the loaded id set
+                       must equal `schema.REQUIRED_WITNESS_IDS` exactly: missing or unexpected
+                       ids fail the gate, and zero specs fail as 13 missing ids.
 - `selftest.py`      — exercises the machinery with synthetic fixtures (no canonical content);
-                       24 checks, including negative cases for the D-v54-08 cross-check discipline.
+                       28 checks, including negative cases for the D-v54-08 cross-check discipline
+                       and for the release manifest (missing / empty / unexpected id sets).
 - `specs/v53/_TEMPLATE_pathwise.json.example`, `specs/v54/_TEMPLATE_selector.json.example`
                      — input-only spec shapes for adding a new witness.
 
@@ -75,13 +78,16 @@ audit, D-v54-07~09, below).
 ```
 python3 run_all.py            # load specs -> compute -> verify -> report -> pass/fail summary
 python3 run_all.py --release   # certified-release gate (non-zero exit on any blocking item)
-python3 selftest.py            # verify the harness machinery itself (24 checks)
+python3 selftest.py            # verify the harness machinery itself (28 checks)
+python3 -O selftest.py         # rejection guarantees must also hold under optimized mode
+python3 -O run_all.py --release
 ```
 
-**Not yet added:** a `core_manifest.json` of required witness ids, so the `--release` gate fails
-when a *present* witness is invalid/unverified but would not yet catch a required witness being
-entirely *missing* from `specs/`. Not a correctness gap for the current 13 witnesses (all are
-present and passing) — just a planned strict-gate hardening.
+**Required-id manifest (implemented):** `schema.REQUIRED_WITNESS_IDS` (derived from the
+registered verdict vocabulary, so there is no second list to drift) is enforced by the
+`--release` gate: a required witness missing from `specs/`, an unexpected id, or an empty spec
+directory all fail the gate with a non-zero exit. Exercised by selftest negative cases; holds
+under `python -O`. Remaining deferred hardening: a hash-pinned golden manifest.
 
 ## Conventions
 
@@ -124,8 +130,8 @@ is out of scope unless a must/may abstraction mode is fixed.
 **Redundant declared inputs are cross-checked, not just ignored** (D-v54-08): Toy B's
 `left_support`/`right_support` and Toy C's `required_prefix_choice` restate values that are
 independently derivable from `bridge_edges`/`transitions`. Compute derives its own values and
-asserts they match the declaration; a mismatch surfaces as a compute error, not a silent
-divergence.
+checks them against the declaration; a mismatch raises an explicit `ValueError` (effective
+under `python -O` as well), surfacing as a compute error, not a silent divergence.
 
 **`lookback_r` window convention** (D-v54-09): `lookback_r` means the current observation plus
 the `r` preceding observations (window `r+1`); `memoryless` is `lookback_0` (window 1). This
