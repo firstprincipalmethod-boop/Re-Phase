@@ -19,6 +19,8 @@ This document is the single reference for this pre-publication documentation syn
 
 The filename, byte count, SHA-256, and MD5 of each Vol.5.3 artifact above were verified from the external `noheader_r1` PDF and Source ZIP before this update.
 
+See [the headered-to-noheader provenance record](vol53-noheader-provenance-2026-10-22.md) for both artifact identities and the unchanged Vol.5.4 validation-input history. Prior hashes inside the Vol.5.4 archive are preserved as historical inputs, not rewritten. The candidate update is separate from the Zenodo draft replacement; completion of that replacement requires its own before/after execution receipt.
+
 ## Vol.5.4 — corrected edition prepared; publication pending
 
 - Edition date: 2026-10-21.
