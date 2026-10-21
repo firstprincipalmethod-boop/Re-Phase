@@ -7,6 +7,7 @@ This index tracks the relationship between Re-Phase volumes, including DOI refer
 Zenodo DOI records are the authoritative fixed archived versions.
 For publication chronology, see [docs/series.md](docs/series.md).
 For conceptual reading order, see [docs/reading-guide.md](docs/reading-guide.md).
+For prepared editions and correction boundaries, see the [2026-10-21 pre-publication status](docs/prepublication-status-2026-10-21.md).
 
 ## Root / Orientation
 
@@ -316,9 +317,9 @@ For conceptual reading order, see [docs/reading-guide.md](docs/reading-guide.md)
 
 ### Vol.5.3 — Pathwise Compatibility Lifting
 
-**DOI:** https://doi.org/10.5281/zenodo.20956126
+**Published historical DOI:** https://doi.org/10.5281/zenodo.20956126
 
-**Status:** Archived on Zenodo
+**Prepared corrected edition (2026-10-21):** owner-designated DOI 10.5281/zenodo.23499738 — prepared / publication pending; not yet published.
 
 **Core themes:** Path fibers, bridge worlds, nonempty-guarded recoverability
 
@@ -326,9 +327,9 @@ For conceptual reading order, see [docs/reading-guide.md](docs/reading-guide.md)
 
 ### Vol.5.4 — Information-Adapted Selection
 
-**DOI:** https://doi.org/10.5281/zenodo.20986204
+**Published historical DOI:** https://doi.org/10.5281/zenodo.20986204
 
-**Status:** Archived on Zenodo
+**Prepared corrected edition (2026-10-21):** owner-designated DOI 10.5281/zenodo.23499819 — prepared / publication pending; not yet published.
 
 **Core themes:** Selector classes, retention, safe forgetting
 
@@ -350,15 +351,23 @@ For conceptual reading order, see [docs/reading-guide.md](docs/reading-guide.md)
 
 ---
 
-## Vol.6.1 — Finite Witness Suite Preparation
+## Vol.6.1 — Historical Finite Witness Suite and Corrective Revision
 
-**Status:** Working / Planned
+**Historical status:** v0.4.2 archived release.
 
-**DOI:** TBD
+- Manuscript: https://doi.org/10.5281/zenodo.21220080
+- Software / witness harness: https://doi.org/10.5281/zenodo.21220093
+
+**Corrective revision:** In progress; synchronized manuscript/software publication pending.
+
+**Owner-designated successor records:**
+
+- Manuscript: 10.5281/zenodo.23499925 — corrective revision in progress / publication pending (CC-BY-NC).
+- Software / witness harness: 10.5281/zenodo.23499964 — corrective revision in progress / publication pending (MIT).
 
 **Core themes:** Vol.5.3 pathwise witness lane, Vol.5.4 selector witness lane, canonical finite specs, generated JSON outputs, reproducibility harness, release-gate verification
 
-**Current role:** Preparing the certified finite witness release for the Vol.5.3 / Vol.5.4 pathwise and selector distinctions
+**Current role:** Preserving the historical suite while a synchronized corrective revision is in progress. The historical 13/13 PASS is not certification against the corrected 2026-10-21 Vol.5.3 and Vol.5.4. See [Vol.6.1 correction status](witnesses/vol6_1/CORRECTION_STATUS.md).
 
 ---
 
@@ -370,11 +379,11 @@ For conceptual reading order, see [docs/reading-guide.md](docs/reading-guide.md)
 - **Risk and Posterior** (Vol.4) extend to probabilistic and directional settings
 - **Path-Space and Selection** (Vol.5) develop pathwise and selector frameworks
 - **Computational** (Vol.6) realizes feasibility and recoverability
-- **Vol.6.1** (in progress) prepares finite witness suite for Vol.5.3 / Vol.5.4 pathwise and selector distinctions
+- **Vol.6.1** preserves the historical v0.4.2 finite witness suite; its synchronized manuscript/software corrective revision is in progress
 
 ---
 
 ## Zenodo Authority and GitHub Role
 
 - **Zenodo:** Authoritative fixed archived versions with DOI
-- **GitHub:** Public navigation hub, living index, coordination layer, future reproducibility layer
+- **GitHub:** Public navigation, living documentation, and development repository
