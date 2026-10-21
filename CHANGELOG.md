@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### 2026-10-22 — Vol.5.3 prepared artifact identity update
+
+- Updated the prepared Vol.5.3 PDF/Source ZIP identities after layout-only removal of running headers and header rules from pages 2–37. Mathematical content, DOI, and publication status are unchanged; Zenodo publication remains pending (not yet published).
+
 ### 2026-10-21 — Pre-publication documentation sync
 
 - Recorded prepared corrected editions for Vol.5.3 and Vol.5.4, including owner-supplied frozen PDF/ZIP identities; Zenodo publication is pending.
