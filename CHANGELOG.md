@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 2026-10-22 — Vol.5.3 prepared artifact identity update
 
 - Updated the prepared Vol.5.3 PDF/Source ZIP identities after layout-only removal of running headers and header rules from pages 2–37. Mathematical content, DOI, and publication status are unchanged; Zenodo publication remains pending (not yet published).
+- Added the [headered-to-noheader provenance record](docs/vol53-noheader-provenance-2026-10-22.md), retaining both file identities and the historical Vol.5.3 validation inputs inside the unchanged Vol.5.4 archive. This documentation record does not certify a Zenodo draft replacement; remote execution requires a separate before/after receipt. No publication artifacts, Vol.6.1 code/spec/golden files, Zenodo records, tags, or GitHub Releases were changed by this addition.
 
 ### 2026-10-21 — Pre-publication documentation sync
 
