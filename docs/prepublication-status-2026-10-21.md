@@ -12,8 +12,12 @@ This document is the single reference for this pre-publication documentation syn
 
 | Artifact | Filename | Bytes | SHA-256 | MD5 |
 |---|---|---:|---|---|
-| PDF | `Re_Phase_Vol_5_3_Corrected_2026-10-21.pdf` | 6,359,551 | `d91c8eb5139bb4c65f4cddb7db282ce25518214f6f740dfd0b2525c8dc0286a5` | `67bbed8a324538896858bc8dec3feb3a` |
-| Source ZIP | `Re_Phase_Vol_5_3_Source_2026-10-21.zip` | 6,008,616 | `c75e9b39f5eaa35f2280683647149c3c6594541ff2784f1b8bf3bce5a37634fb` | `26619d06a230404cc6c30fbfd290aab1` |
+| PDF | `Re_Phase_Vol_5_3_Corrected_2026-10-21_noheader_r1.pdf` | 6,356,099 | `4a2dd6ed2fa2f93a07d195220f203359b5989137fc8d758022e3a02551d2f6f3` | `b8b7cd1c7ec15e85eb3eb6ce72568af5` |
+| Source ZIP | `Re_Phase_Vol_5_3_Source_2026-10-21_noheader_r1.zip` | 6,037,993 | `b544ffd7a31f5a0213b7b1306251f24b4cb73ee8016674a5df98ae08fbcf81ec` | `1b29cc9bb18c8ad9d6c8ce3eabac01ab` |
+
+**2026-10-22 artifact-identity update:** Running headers and header rules were removed from pages 2–37. No mathematical content, figures, pagination, DOI, or publication status changed. Zenodo publication remains pending.
+
+The filename, byte count, SHA-256, and MD5 of each Vol.5.3 artifact above were verified from the external `noheader_r1` PDF and Source ZIP before this update.
 
 ## Vol.5.4 — corrected edition prepared; publication pending
 
@@ -28,7 +32,9 @@ This document is the single reference for this pre-publication documentation syn
 | PDF | `Re_Phase_Vol_5_4_Corrected_2026-10-21.pdf` | 535,386 | `f692f7dc4b129a3647562bdeab020db1aa6c82b894f88fcf4e0fea2c22a0aa01` | `1bb3b3d3e1cedb5b9c54150406d2c800` |
 | Source ZIP | `Re_Phase_Vol_5_4_Source_2026-10-21.zip` | 168,433 | `a0947e0d7d05206666a2f6470b7aa3a1c6e65e96f7e02adca19910c61ca80ef2` | `900113afab17a0624f9c22e4b985875a` |
 
-These four publication artifacts are frozen externally. Filenames, byte counts, and hashes above are the identities supplied by the owner for this sync; this documentation update does not independently verify the external binary files, regenerate them, or add them to GitHub.
+## Artifact identity provenance
+
+These four publication artifacts are frozen externally. The original 2026-10-21 sync recorded owner-supplied filenames, byte counts, and hashes without independently verifying the external binary files. The subsequent Vol.5.3 identity verification is recorded above. This documentation update does not regenerate publication artifacts or add them to GitHub.
 
 ## Vol.6.1 — historical archive and corrective revision
 
