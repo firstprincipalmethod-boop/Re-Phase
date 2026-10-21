@@ -7,16 +7,16 @@ It turns fibers, projections, path lifts, bridge obstructions, recoverability gu
 ## Current Focus
 
 - DOI series index and conceptual reading guide
-- Vol.6.1 certified finite witness suite (published)
-- Vol.5.3 pathwise witness lane
-- Vol.5.4 selector witness lane
-- Canonical finite specs
-- Generated JSON outputs
-- Reproducibility harness
+- Vol.5.3 corrected edition 2026-10-21 — prepared; Zenodo publication pending
+- Vol.5.4 corrected edition 2026-10-21 — prepared; Zenodo publication pending
+- Vol.6.1 v0.4.2 — historical archived release
+- Vol.6.1 corrective revision — in progress; successor publication pending
+
+See the [2026-10-21 pre-publication status](docs/prepublication-status-2026-10-21.md) for the designated DOI identifiers, frozen artifact metadata, and correction boundaries.
 
 ## Archive
 
-Fixed versions are available on [Zenodo](https://zenodo.org/).
+Zenodo fixed records are authoritative for published releases. GitHub is the public navigation, living documentation, and development repository; it does not claim to contain byte-identical publication PDF/ZIP copies unless explicitly stated.
 
 See [docs/series.md](docs/series.md) for the complete publication chronology and DOI registry.
 
@@ -30,9 +30,8 @@ See [docs/series.md](docs/series.md) for the complete publication chronology and
 
 ## Repository Structure
 
-- **volumes/** — Research volumes (Vol.1 through Vol.6+)
-- **notes/** — Definitions, notation, examples, and unresolved topics
-- **docs/** — Labels, milestones, reading guides, and series index
+- **docs/** — Labels, milestones, reading guides, series index, and pre-publication status
+- **witnesses/** — Vol.6.1 historical witness harness and current correction status
 - **.github/ISSUE_TEMPLATE/** — Issue templates for structured collaboration
 - **.github/PULL_REQUEST_TEMPLATE.md** — PR review template
 
@@ -47,4 +46,4 @@ See [docs/series.md](docs/series.md) for the complete publication chronology and
 
 All non-code materials (text, figures, notation, documentation, examples) are licensed under [CC BY-NC 4.0](LICENSE.md).
 
-Future code and scripts may be licensed separately—see [LICENSE.md](LICENSE.md) for details.
+All code, scripts, and executable implementations, including the Vol.6.1 witness harness, are licensed under the [MIT License](LICENSE-CODE.md). See [LICENSE.md](LICENSE.md) for the existing license policy.

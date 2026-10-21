@@ -1,13 +1,15 @@
 # Re-Phase Series — Publication Chronology
 
-**Publication order:** Zenodo archival sequence (DOI assignment order).
+**Publication order:** Zenodo archival sequence of published records. Designated but unpublished DOI identifiers are listed separately below.
 
 **Conceptual reading order:** Different from publication order. See [docs/reading-guide.md](reading-guide.md).
 
 **Authority:** Zenodo DOI records are the authoritative fixed archived versions.
-GitHub serves as the public navigation hub, living index, coordination layer, and future reproducibility layer.
+GitHub serves as the public navigation, living documentation, and development repository.
 
 ## Publication Chronology Table
+
+This table contains published historical records only. The pending corrected editions and successor records below have not yet been published.
 
 | No. | Series item | Title | DOI | Status |
 |---:|---|---|---|---|
@@ -44,6 +46,28 @@ GitHub serves as the public navigation hub, living index, coordination layer, an
 | 31 | Vol.5.4 | Re-Phase Vol.5.4: Information-Adapted Selection — Selector Classes, Retention, and Safe Forgetting | https://doi.org/10.5281/zenodo.20986204 | Archived on Zenodo |
 | 32 | Vol.6.1 | Re-Phase Vol.6.1: A Certified Finite Witness Suite for Vol.5.3 and Vol.5.4 | https://doi.org/10.5281/zenodo.21220080 | Archived on Zenodo |
 | 33 | Vol.6.1 (harness) | Re-Phase Vol.6.1 Witness Harness: v53/v54 Certified Finite Witness Suite | https://doi.org/10.5281/zenodo.21220093 | Archived on Zenodo |
+
+## Prepared corrected editions — publication pending
+
+| Edition | Owner-designated DOI | Status |
+|---|---|---|
+| Vol.5.3 corrected 2026-10-21 | 10.5281/zenodo.23499738 | Prepared / publication pending |
+| Vol.5.4 corrected 2026-10-21 | 10.5281/zenodo.23499819 | Prepared / publication pending |
+
+The published historical records remain Vol.5.3 DOI 10.5281/zenodo.20956126 and Vol.5.4 DOI 10.5281/zenodo.20986204. They are not marked superseded while publication of the corrected editions is pending.
+
+See the [2026-10-21 pre-publication status](prepublication-status-2026-10-21.md) for frozen PDF/ZIP identities and the publication boundary.
+
+## Vol.6.1 corrective revision
+
+Historical v0.4.2 remains an archived release: manuscript DOI 10.5281/zenodo.21220080 and software / witness-harness DOI 10.5281/zenodo.21220093.
+
+| Owner-designated successor record | DOI | Status |
+|---|---|---|
+| Manuscript (CC-BY-NC) | 10.5281/zenodo.23499925 | Corrective revision in progress / publication pending |
+| Software / witness harness (MIT) | 10.5281/zenodo.23499964 | Corrective revision in progress / publication pending |
+
+The historical 13/13 PASS is a regression-gate result, not certification against the corrected 2026-10-21 Vol.5.3 and Vol.5.4. The successor records are not yet published and are not a current certified release. See [Vol.6.1 correction status](../witnesses/vol6_1/CORRECTION_STATUS.md).
 
 ## Version History and Superseded Records
 

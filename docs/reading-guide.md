@@ -57,10 +57,14 @@ Develops pathwise compatibility and computational feasibility.
 1. **Vol.5** — Path-Space Compatibility — A First Note on Admissible Paths (10.5281/zenodo.20628584)
 2. **Vol.5.1** — Forward–Backward Path Compatibility — Reachability, Survivability, and Admissible Path Projections (10.5281/zenodo.20716544)
 3. **Vol.5.2** — State-Equation Compatibility — Transition Relations, Common Parameters, and State Augmentation (10.5281/zenodo.20732578)
-4. **Vol.5.3** — Pathwise Compatibility Lifting — Path Fibers, Bridge Worlds, and Nonempty-Guarded Recoverability (10.5281/zenodo.20956126)
-5. **Vol.5.4** — Information-Adapted Selection — Selector Classes, Retention, and Safe Forgetting (10.5281/zenodo.20986204)
+4. **Vol.5.3** — Pathwise Compatibility Lifting — Path Fibers, Bridge Worlds, and Nonempty-Guarded Recoverability (published historical DOI: [10.5281/zenodo.20956126](https://doi.org/10.5281/zenodo.20956126)). Corrected edition 2026-10-21 prepared for publication: owner-designated DOI 10.5281/zenodo.23499738 — publication pending.
+5. **Vol.5.4** — Information-Adapted Selection — Selector Classes, Retention, and Safe Forgetting (published historical DOI: [10.5281/zenodo.20986204](https://doi.org/10.5281/zenodo.20986204)). Corrected edition 2026-10-21 prepared for publication: owner-designated DOI 10.5281/zenodo.23499819 — publication pending.
 6. **Vol.6** — Computational Compatibility — Feasibility, Recoverability, and Representation-Sound Approximation (10.5281/zenodo.20745456)
-7. **Vol.6.1** — *Working / Planned / DOI TBD*
+7. **Vol.6.1** — v0.4.2 historical archived release: manuscript [10.5281/zenodo.21220080](https://doi.org/10.5281/zenodo.21220080); software / witness harness [10.5281/zenodo.21220093](https://doi.org/10.5281/zenodo.21220093). A synchronized corrective revision is in progress. The historical 13/13 PASS is not certification against the corrected 2026-10-21 Vol.5.3 and Vol.5.4.
+
+The Vol.5.3 and Vol.5.4 reading links above remain on the published historical editions. They are planned to switch to the corrected editions only after Zenodo publication is confirmed. The corrected editions are not yet published.
+
+Vol.6.1 owner-designated successor manuscript DOI 10.5281/zenodo.23499925 and software DOI 10.5281/zenodo.23499964 are both publication pending, with corrective revision in progress. See the [2026-10-21 pre-publication status](prepublication-status-2026-10-21.md) for the current boundary.
 
 ---
 

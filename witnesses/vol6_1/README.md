@@ -1,10 +1,27 @@
 # Vol.6.1 Witness Verification Harness
 
+## Current status — 2026-10-21
+
+This directory represents the historical archived v0.4.2 harness. Its historical release gate reported **13/13 PASS** (7 v53 + 6 v54).
+
+Later review identified source-correspondence, output-typing, and input-validation issues. The historical PASS must not be interpreted as certification against the corrected 2026-10-21 Vol.5.3 and Vol.5.4.
+
+A synchronized corrected manuscript/software release is in progress. The owner-designated successor DOI identifiers are:
+
+- Manuscript: 10.5281/zenodo.23499925 — corrective revision in progress / publication pending (CC-BY-NC).
+- Software / witness harness: 10.5281/zenodo.23499964 — corrective revision in progress / publication pending (MIT).
+
+Neither successor is yet published in this workflow. See [CORRECTION_STATUS.md](CORRECTION_STATUS.md) and the [2026-10-21 pre-publication status](../../docs/prepublication-status-2026-10-21.md).
+
+The remaining description documents the historical v0.4.2 implementation and release claims; it is not renewed certification. [ZENODO_DESCRIPTION.md](ZENODO_DESCRIPTION.md) records the historical v0.4.2 archive description and remains unchanged.
+
+## Historical purpose
+
 Purpose: enforce D11/D12/D13 — every certified number in Vol.6.1 is **generated from a finite
 witness spec and verified**, never handwritten. Content is split per source volume (**D15**);
 the verification machinery is shared.
 
-## Status
+## Historical v0.4.2 status (as recorded at release)
 **Repository-complete for both lanes.** Vol.5.3 (v53, pathwise) has all 7 witnesses live,
 golden-frozen, and release-gate certified. Vol.5.4 (v54, selector) has all 6 Toy A–F witnesses
 live, golden-frozen, and release-gate certified, including a golden **content audit** pass
