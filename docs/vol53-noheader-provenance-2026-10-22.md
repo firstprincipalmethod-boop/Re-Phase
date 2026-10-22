@@ -1,5 +1,7 @@
 # Vol.5.3 noheader-r1: prepared-artifact provenance
 
+> **Later publication update — 2026-10-22.** The noheader Vol.5.3 pair and unchanged Vol.5.4 pair are now recorded as published; see the [publication status and evidence scope](publication-status-2026-10-22.md). The original checkpoint below is preserved, including its then-pending Zenodo execution. Those earlier non-execution statements do not describe the later completed owner publication workflow.
+
 Record date: 2026-10-22. Manuscript edition date: 2026-10-21.
 DOI retained: `10.5281/zenodo.23499738`.
 

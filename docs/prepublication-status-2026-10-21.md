@@ -1,5 +1,7 @@
 # Re-Phase Pre-Publication Status — 2026-10-21
 
+> **Historical checkpoint — later publication recorded on 2026-10-22.** Vol.5.3 and Vol.5.4 are now recorded as published in the [publication status](publication-status-2026-10-22.md). The original text below is retained to document the earlier pre-publication state and evidence; its pending/non-execution statements are not current status. Vol.6.1 remains a separate corrective revision in progress.
+
 This document is the single reference for this pre-publication documentation sync. Vol.5.3 and Vol.5.4 corrected editions are prepared, but Zenodo publication has not yet occurred. Vol.6.1 corrective revision remains in progress.
 
 ## Vol.5.3 — corrected edition prepared; publication pending

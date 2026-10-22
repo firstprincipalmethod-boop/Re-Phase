@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### 2026-10-22 — Vol.5.3/Vol.5.4 post-publication documentation sync
+
+- Updated current navigation to the published corrected Vol.5.3 DOI `10.5281/zenodo.23499738` (`noheader_r1`) and Vol.5.4 DOI `10.5281/zenodo.23499819` (unchanged 2026-10-21 PDF/source pair).
+- Added the [publication status and artifact registry](docs/publication-status-2026-10-22.md), based on owner confirmation, supplied post-publication screenshots, and separately identified pre-publication verification records. This sync does not claim a new direct Zenodo readback or remote SHA-256 measurement.
+- Preserved historical DOI records and the original pre-publication/provenance checkpoint bodies; added notices linking those checkpoints to the later publication record. Earlier pending statements below describe their own checkpoints, not the current Vol.5.3/Vol.5.4 state.
+- Retained the accepted Vol.5.4 reference [6] edition-note variant and the old Vol.5.3 hashes inside the unchanged Vol.5.4 validation archive.
+- Vol.6.1 corrective revision and successor publication remain pending. No research code, witness specs, golden snapshots, generated outputs, schemas, publication binaries, Zenodo records, Git tags, or GitHub Releases were changed by this sync.
+
 ### 2026-10-22 — Vol.5.3 prepared artifact identity update
 
 - Updated the prepared Vol.5.3 PDF/Source ZIP identities after layout-only removal of running headers and header rules from pages 2–37. Mathematical content, DOI, and publication status are unchanged; Zenodo publication remains pending (not yet published).
