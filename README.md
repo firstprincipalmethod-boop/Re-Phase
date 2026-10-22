@@ -7,12 +7,12 @@ It turns fibers, projections, path lifts, bridge obstructions, recoverability gu
 ## Current Focus
 
 - DOI series index and conceptual reading guide
-- Vol.5.3 corrected edition 2026-10-21 — prepared; Zenodo publication pending
-- Vol.5.4 corrected edition 2026-10-21 — prepared; Zenodo publication pending
+- Vol.5.3 corrected edition 2026-10-21 (`noheader_r1`) — published on Zenodo: [10.5281/zenodo.23499738](https://doi.org/10.5281/zenodo.23499738)
+- Vol.5.4 corrected edition 2026-10-21 — published on Zenodo: [10.5281/zenodo.23499819](https://doi.org/10.5281/zenodo.23499819)
 - Vol.6.1 v0.4.2 — historical archived release
 - Vol.6.1 corrective revision — in progress; successor publication pending
 
-See the [2026-10-21 pre-publication status](docs/prepublication-status-2026-10-21.md) for the designated DOI identifiers, frozen artifact metadata, and correction boundaries.
+See the [2026-10-22 publication status](docs/publication-status-2026-10-22.md) for the published DOI identifiers, frozen artifact identities, evidence scope, and correction boundaries. The [pre-publication checkpoint](docs/prepublication-status-2026-10-21.md) is retained as history, not current publication status.
 
 ## Archive
 
@@ -25,12 +25,13 @@ See [docs/series.md](docs/series.md) for the complete publication chronology and
 - **[docs/series.md](docs/series.md)** — Publication chronology and Zenodo DOI registry
 - **[docs/reading-guide.md](docs/reading-guide.md)** — Conceptual reading paths (not publication order)
 - **[living-index.md](living-index.md)** — Cross-volume index and references
+- **[docs/publication-status-2026-10-22.md](docs/publication-status-2026-10-22.md)** — Vol.5.3/Vol.5.4 published artifacts, evidence scope, and retained history
 - **[ROADMAP.md](ROADMAP.md)** — Future directions
 - **[CHANGELOG.md](CHANGELOG.md)** — Change history
 
 ## Repository Structure
 
-- **docs/** — Labels, milestones, reading guides, series index, and pre-publication status
+- **docs/** — Labels, milestones, reading guides, series index, publication status, and historical checkpoints
 - **witnesses/** — Vol.6.1 historical witness harness and current correction status
 - **.github/ISSUE_TEMPLATE/** — Issue templates for structured collaboration
 - **.github/PULL_REQUEST_TEMPLATE.md** — PR review template

@@ -7,7 +7,7 @@ This index tracks the relationship between Re-Phase volumes, including DOI refer
 Zenodo DOI records are the authoritative fixed archived versions.
 For publication chronology, see [docs/series.md](docs/series.md).
 For conceptual reading order, see [docs/reading-guide.md](docs/reading-guide.md).
-For prepared editions and correction boundaries, see the [2026-10-21 pre-publication status](docs/prepublication-status-2026-10-21.md).
+For published corrected editions, artifact identities, and correction boundaries, see the [2026-10-22 publication status](docs/publication-status-2026-10-22.md). The [pre-publication checkpoint](docs/prepublication-status-2026-10-21.md) is retained as history.
 
 ## Root / Orientation
 
@@ -317,9 +317,11 @@ For prepared editions and correction boundaries, see the [2026-10-21 pre-publica
 
 ### Vol.5.3 — Pathwise Compatibility Lifting
 
-**Published historical DOI:** https://doi.org/10.5281/zenodo.20956126
+**Current published corrected DOI:** https://doi.org/10.5281/zenodo.23499738
 
-**Prepared corrected edition (2026-10-21):** owner-designated DOI 10.5281/zenodo.23499738 — prepared / publication pending; not yet published.
+**Status:** Published corrected edition 2026-10-21; distribution pair `noheader_r1`. See the [publication status](docs/publication-status-2026-10-22.md) for artifact identities and confirmation scope.
+
+**Published historical DOI:** https://doi.org/10.5281/zenodo.20956126
 
 **Core themes:** Path fibers, bridge worlds, nonempty-guarded recoverability
 
@@ -327,9 +329,11 @@ For prepared editions and correction boundaries, see the [2026-10-21 pre-publica
 
 ### Vol.5.4 — Information-Adapted Selection
 
-**Published historical DOI:** https://doi.org/10.5281/zenodo.20986204
+**Current published corrected DOI:** https://doi.org/10.5281/zenodo.23499819
 
-**Prepared corrected edition (2026-10-21):** owner-designated DOI 10.5281/zenodo.23499819 — prepared / publication pending; not yet published.
+**Status:** Published corrected edition 2026-10-21; fixed PDF/source pair unchanged. See the [publication status](docs/publication-status-2026-10-22.md) for artifact identities and confirmation scope.
+
+**Published historical DOI:** https://doi.org/10.5281/zenodo.20986204
 
 **Core themes:** Selector classes, retention, safe forgetting
 

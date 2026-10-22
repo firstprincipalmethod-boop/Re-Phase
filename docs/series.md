@@ -9,7 +9,7 @@ GitHub serves as the public navigation, living documentation, and development re
 
 ## Publication Chronology Table
 
-This table contains published historical records only. The pending corrected editions and successor records below have not yet been published.
+This table retains historical published records and adds the published Vol.5.3/Vol.5.4 corrected editions. Entries 34–35 follow the owner-reported publication sequence, supported by the supplied post-publication screenshots; see the [2026-10-22 publication status](publication-status-2026-10-22.md) for the evidence scope. Vol.6.1 successor records remain separate and publication pending.
 
 | No. | Series item | Title | DOI | Status |
 |---:|---|---|---|---|
@@ -46,17 +46,16 @@ This table contains published historical records only. The pending corrected edi
 | 31 | Vol.5.4 | Re-Phase Vol.5.4: Information-Adapted Selection — Selector Classes, Retention, and Safe Forgetting | https://doi.org/10.5281/zenodo.20986204 | Archived on Zenodo |
 | 32 | Vol.6.1 | Re-Phase Vol.6.1: A Certified Finite Witness Suite for Vol.5.3 and Vol.5.4 | https://doi.org/10.5281/zenodo.21220080 | Archived on Zenodo |
 | 33 | Vol.6.1 (harness) | Re-Phase Vol.6.1 Witness Harness: v53/v54 Certified Finite Witness Suite | https://doi.org/10.5281/zenodo.21220093 | Archived on Zenodo |
+| 34 | Vol.5.3 corrected 2026-10-21 | Re-Phase Vol.5.3: Pathwise Compatibility Lifting — Path Fibers, R × S Bridge Worlds, and Nonempty-Guarded Path Recoverability | https://doi.org/10.5281/zenodo.23499738 | Published corrected edition; current reading target (`noheader_r1`) |
+| 35 | Vol.5.4 corrected 2026-10-21 | Re-Phase Vol.5.4: Information-Adapted Selection — Selector Classes, Retention, and Safe Forgetting | https://doi.org/10.5281/zenodo.23499819 | Published corrected edition; current reading target |
 
-## Prepared corrected editions — publication pending
+## Published corrected editions — 2026-10-22 documentation checkpoint
 
-| Edition | Owner-designated DOI | Status |
-|---|---|---|
-| Vol.5.3 corrected 2026-10-21 | 10.5281/zenodo.23499738 | Prepared / publication pending |
-| Vol.5.4 corrected 2026-10-21 | 10.5281/zenodo.23499819 | Prepared / publication pending |
+Vol.5.3 DOI [10.5281/zenodo.23499738](https://doi.org/10.5281/zenodo.23499738) and Vol.5.4 DOI [10.5281/zenodo.23499819](https://doi.org/10.5281/zenodo.23499819) are the current published corrected editions. Their manuscript edition date, Zenodo Publication date, and Version remain **2026-10-21**. The documentation checkpoint date does not change those fields or assert an exact Publish timestamp.
 
-The published historical records remain Vol.5.3 DOI 10.5281/zenodo.20956126 and Vol.5.4 DOI 10.5281/zenodo.20986204. They are not marked superseded while publication of the corrected editions is pending.
+The previous records, Vol.5.3 DOI 10.5281/zenodo.20956126 and Vol.5.4 DOI 10.5281/zenodo.20986204, remain historical archives; the corrected editions replace them as the current reading targets. No historical record is deleted or rewritten.
 
-See the [2026-10-21 pre-publication status](prepublication-status-2026-10-21.md) for frozen PDF/ZIP identities and the publication boundary.
+See the [publication status and artifact registry](publication-status-2026-10-22.md) for the four fixed files and the screenshot-based post-publication confirmation scope. The [pre-publication status](prepublication-status-2026-10-21.md) is retained as a historical checkpoint.
 
 ## Vol.6.1 corrective revision
 
@@ -76,3 +75,9 @@ The historical 13/13 PASS is a regression-gate result, not certification against
 - **Current DOI:** https://doi.org/10.5281/zenodo.20627326
 - **Previous version DOI:** https://doi.org/10.5281/zenodo.20558115 (superseded)
 - **Note:** This volume was reposted with updates. The current DOI above is the authoritative version. Older archived volumes may still reference the previous DOI, which is acceptable.
+
+### Vol.5.3 and Vol.5.4 corrected editions
+
+- **Vol.5.3 current:** https://doi.org/10.5281/zenodo.23499738; **historical:** https://doi.org/10.5281/zenodo.20956126; **all versions:** https://doi.org/10.5281/zenodo.20956125.
+- **Vol.5.4 current:** https://doi.org/10.5281/zenodo.23499819; **historical:** https://doi.org/10.5281/zenodo.20986204; **all versions:** https://doi.org/10.5281/zenodo.20986203.
+- Version-specific DOI identifiers above identify the corrected records; all-versions identifiers are kept distinct. Earlier validation receipts and archived source packages retain the input identities actually used at the time.
