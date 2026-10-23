@@ -1,0 +1,34 @@
+{
+  "goldens": {
+    "v53_collapse": "4456ac64c085aa042b2ea8d59d8630685bba0cc36296c76bdcd4c278afcdaf63",
+    "v53_constant_velocity": "0bdce9e79fdefffc6999d29f95e36f6b9e1b55082952ab06a8e1a3ce7187e119",
+    "v53_feature_ambiguous_recoverable": "9210660ce9970ab660beef21a9702ce39acf691bf9fb25d71ce561c8b3b779e0",
+    "v53_gap_collapse": "0fe6cd1b37a428500bfb38d933848fd0d4113ca64b84c62659c6e9489d6f1263",
+    "v53_missing_cell": "d343759a9c8f923a45e830ded2791deae1dcfa086f9ffda7f54058466fef9fa6",
+    "v53_same_slices_different_edges": "c7ae664ab51581231025ecf4bff75dc13cfeb4956bbafdceff7332e63bde51af",
+    "v53_unique_lift": "e3220179e082d890c7f5602a861a91058d8c89528199f0042c5d850d4c97f633",
+    "v54_toy_A_memoryless_fail": "c4695c6e29ca777f8defc85d3f8c4bfc9ea65c72f2cb8cc20137293aa862e4d5",
+    "v54_toy_B_bridge_conflict": "a318f201203f9a7e6cfc33dcdfa3e09efe3f4e3cffe73b4d5e54b0b49013b851",
+    "v54_toy_C_nonblocking": "7339db887c4e23104d0bec3e6c55abe7d3faeab3aab7a9821e2cd062497604e5",
+    "v54_toy_D_retention_memory": "61e37fc01fd0191b8072b3c1f3e41cc5b38c08d19046f8d53a74ecb6a21ff777",
+    "v54_toy_E_target_sound_not_selector": "786e113563955aa982f29e813ec8e935944a4d607ff031596b5d22b93df97856",
+    "v54_toy_F_safe_nonexact": "7be6951b248c21b2250287327c58dd5c8ec243469f234391d37209cd6698c718"
+  },
+  "scope": "local_candidate_second_implementation_check; no_external_approval",
+  "specs": {
+    "v53_collapse": "487316a1209e8e8a772bba0219c88664f84bebcc770229015275da11b768504a",
+    "v53_constant_velocity": "1d1a4f91e957f7f1efc22a7b735a591864a9d32be95317510e237c52e2babdd5",
+    "v53_feature_ambiguous_recoverable": "93b5ae347dd63a499f2c7ff575c3cc9ac727da215cf069f2372c23cb962e83ab",
+    "v53_gap_collapse": "de3b208b632e1f52feeec27dbe836a3b3e1c8a85924cc10df4445533def1456d",
+    "v53_missing_cell": "d13643e06ba0dde7a2184a038691f1df7468be932c0996ff15b3910eb08d7a9d",
+    "v53_same_slices_different_edges": "0325f1f0f69f454fc8a3da93746285302c573e3dfc6bab842cfc3c18ed81c145",
+    "v53_unique_lift": "b6168afd230a50513fe5b528a5f0d49998e04a511564cae73b933ad4ea38e33d",
+    "v54_toy_A_memoryless_fail": "0f243edc5d2951a7a45b9d7ff3e335440a8598c12d59312c238b0fbccffc91d6",
+    "v54_toy_B_bridge_conflict": "10d8be2252f1e58efa24dee5072a1d6a2e2dc6a083caffadd995098f89d187ce",
+    "v54_toy_C_nonblocking": "fd4d594f52639165453b62e7d3e30d52020bff9c6c4cfc4bae34198b0086499d",
+    "v54_toy_D_retention_memory": "76f9da5f60f7573a0b09916ba5c9b1106705429fbc16ff6f53ff347ce75a9743",
+    "v54_toy_E_target_sound_not_selector": "554d48a823ea70f358a8772fa9182d2e887f9792d0de7c944c6ac88fe2bc06c0",
+    "v54_toy_F_safe_nonexact": "8f65262fe85a5a19e6ff0207f3b5b6e8148b3b8f1e4d30c42d8e9b117c4143c5"
+  },
+  "suite_version": "2026-10-23"
+}

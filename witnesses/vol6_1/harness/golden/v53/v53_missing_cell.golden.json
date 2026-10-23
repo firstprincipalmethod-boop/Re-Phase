@@ -1,5 +1,25 @@
 {
   "computed": {
+    "backward_survivable": [
+      [
+        "a0",
+        "b0"
+      ],
+      [
+        "a1",
+        "b1"
+      ],
+      [
+        "bad",
+        "good",
+        "ok"
+      ]
+    ],
+    "claim_checks": {
+      "nonempty_lift": true,
+      "not_recoverable": true,
+      "strict_feature_narrowing": true
+    },
     "feature_image_lift": [
       "good",
       "ok"
@@ -9,10 +29,83 @@
       "good",
       "ok"
     ],
+    "feature_lift_counts": [
+      {
+        "count": 1,
+        "value": "good"
+      },
+      {
+        "count": 1,
+        "value": "ok"
+      }
+    ],
+    "fibers": [
+      [
+        "a0",
+        "b0",
+        "c0"
+      ],
+      [
+        "a1",
+        "b1",
+        "c1"
+      ],
+      [
+        "bad",
+        "good",
+        "ok"
+      ]
+    ],
+    "forward_reachable": [
+      [
+        "a0",
+        "b0",
+        "c0"
+      ],
+      [
+        "a1",
+        "b1",
+        "c1"
+      ],
+      [
+        "good",
+        "ok"
+      ]
+    ],
     "lift_size": 2,
     "lift_status": "ambiguous",
+    "lifts": [
+      [
+        "a0",
+        "a1",
+        "good"
+      ],
+      [
+        "b0",
+        "b1",
+        "ok"
+      ]
+    ],
+    "live_cone_obstructions": [],
+    "obligation_type": "path_feature_recoverability",
     "pt_size": 27,
     "recoverable": false,
+    "registered_claim_holds": true,
+    "retrospective_break": [],
+    "surviving_slices": [
+      [
+        "a0",
+        "b0"
+      ],
+      [
+        "a1",
+        "b1"
+      ],
+      [
+        "good",
+        "ok"
+      ]
+    ],
     "target": [
       "good"
     ],
@@ -21,7 +114,34 @@
       "k": null,
       "status": "no_failure"
     },
-    "verdict": "feature_effective_unresolved"
+    "viable_bridges": [
+      [
+        [
+          "a0",
+          "a1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      [
+        [
+          "a1",
+          "good"
+        ],
+        [
+          "b1",
+          "ok"
+        ]
+      ]
+    ]
   },
-  "id": "v53_missing_cell"
+  "id": "v53_missing_cell",
+  "kind": "pathwise",
+  "role_label": "feature_narrowing_without_recoverability",
+  "schema_version": 2,
+  "source_volume": "Vol.5.3",
+  "spec_sha256": "d13643e06ba0dde7a2184a038691f1df7468be932c0996ff15b3910eb08d7a9d",
+  "suite_version": "2026-10-23"
 }

@@ -1,19 +1,54 @@
 {
-  "id": "v53_collapse",
-  "source_volume": "Vol.5.3",
-  "source_section": "2",
-  "kind": "pathwise",
-  "role": "pointwise compatible choices do not necessarily form a compatible path",
-  "status": "core",
   "count_objects": {
-    "pt_object": "full pointwise relaxation Pt(y)=product_k F_k(y_k)",
-    "lift_object": "transition-compatible subset Lift(y) of Pt(y)",
-    "feature_object": "image of Pt(y) and Lift(y) under the terminal-state feature map"
+    "scope": "finite input objects in spec; counts and claims are computed, not embedded expectations"
   },
+  "id": "v53_collapse",
+  "kind": "pathwise",
+  "role": "pointwise_nonempty_pathwise_empty",
+  "schema_version": 2,
+  "source": {
+    "doi": "10.5281/zenodo.23499738",
+    "edition": "2026-10-21",
+    "layout": "noheader_r1",
+    "pdf_sha256": "4a2dd6ed2fa2f93a07d195220f203359b5989137fc8d758022e3a02551d2f6f3",
+    "relation": "source_fibers_and_relations; harness_terminal_feature_and_target"
+  },
+  "source_section": "12.1",
+  "source_volume": "Vol.5.3",
   "spec": {
-    "state_sets": { "X0": ["s"], "X1": ["u", "v"], "X2": ["t"] },
-    "transitions": { "T0": [["s", "u"]], "T1": [["v", "t"]] },
-    "feature": "terminal_state",
-    "target": ["t"]
-  }
+    "feature": {
+      "kind": "terminal_state"
+    },
+    "state_sets": {
+      "X0": [
+        "s"
+      ],
+      "X1": [
+        "u",
+        "v"
+      ],
+      "X2": [
+        "t"
+      ]
+    },
+    "target": [
+      "t"
+    ],
+    "transitions": {
+      "T0": [
+        [
+          "s",
+          "u"
+        ]
+      ],
+      "T1": [
+        [
+          "v",
+          "t"
+        ]
+      ]
+    }
+  },
+  "status": "correction_candidate",
+  "suite_version": "2026-10-23"
 }

@@ -1,64 +1,319 @@
 {
-  "compute_status": "ok",
-  "computed": {
-    "feature_image_pt": [
-      "r",
-      "s"
-    ],
-    "pt_size": 4,
-    "target": [
-      "r"
-    ],
-    "variant_a": {
-      "feature_image_lift": [
-        "r"
-      ],
-      "feature_image_pt": [
-        "r",
-        "s"
-      ],
-      "lift_size": 1,
-      "lift_status": "unique",
-      "pt_size": 4,
-      "recoverable": true,
-      "target": [
-        "r"
-      ],
-      "target_check": "within_target",
-      "tau_pre": {
-        "k": null,
-        "status": "no_failure"
+  "result": {
+    "computed": {
+      "claim_checks": {
+        "a_recovers_b_does_not": true,
+        "different_features": true,
+        "different_lifts": true,
+        "nonempty_both": true,
+        "same_surviving_slices": true
+      },
+      "different_viable_bridges": true,
+      "obligation_type": "path_feature_recoverability_comparison",
+      "registered_claim_holds": true,
+      "same_input_fibers": true,
+      "same_surviving_slices": true,
+      "variant_a": {
+        "backward_survivable": [
+          [
+            "a0",
+            "b0"
+          ],
+          [
+            "a1",
+            "b1"
+          ],
+          [
+            "a2",
+            "b2"
+          ]
+        ],
+        "feature_image_lift": [
+          "same"
+        ],
+        "feature_image_pt": [
+          "different",
+          "same"
+        ],
+        "feature_lift_counts": [
+          {
+            "count": 2,
+            "value": "same"
+          }
+        ],
+        "fibers": [
+          [
+            "a0",
+            "b0"
+          ],
+          [
+            "a1",
+            "b1"
+          ],
+          [
+            "a2",
+            "b2"
+          ]
+        ],
+        "forward_reachable": [
+          [
+            "a0",
+            "b0"
+          ],
+          [
+            "a1",
+            "b1"
+          ],
+          [
+            "a2",
+            "b2"
+          ]
+        ],
+        "lift_size": 2,
+        "lift_status": "ambiguous",
+        "lifts": [
+          [
+            "a0",
+            "a1",
+            "a2"
+          ],
+          [
+            "b0",
+            "b1",
+            "b2"
+          ]
+        ],
+        "live_cone_obstructions": [],
+        "pt_size": 8,
+        "recoverable": true,
+        "retrospective_break": [],
+        "surviving_slices": [
+          [
+            "a0",
+            "b0"
+          ],
+          [
+            "a1",
+            "b1"
+          ],
+          [
+            "a2",
+            "b2"
+          ]
+        ],
+        "target": [
+          "same"
+        ],
+        "target_check": "within_target",
+        "tau_pre": {
+          "k": null,
+          "status": "no_failure"
+        },
+        "viable_bridges": [
+          [
+            [
+              "a0",
+              "a1"
+            ],
+            [
+              "b0",
+              "b1"
+            ]
+          ],
+          [
+            [
+              "a1",
+              "a2"
+            ],
+            [
+              "b1",
+              "b2"
+            ]
+          ]
+        ]
+      },
+      "variant_b": {
+        "backward_survivable": [
+          [
+            "a0",
+            "b0"
+          ],
+          [
+            "a1",
+            "b1"
+          ],
+          [
+            "a2",
+            "b2"
+          ]
+        ],
+        "feature_image_lift": [
+          "different",
+          "same"
+        ],
+        "feature_image_pt": [
+          "different",
+          "same"
+        ],
+        "feature_lift_counts": [
+          {
+            "count": 6,
+            "value": "different"
+          },
+          {
+            "count": 2,
+            "value": "same"
+          }
+        ],
+        "fibers": [
+          [
+            "a0",
+            "b0"
+          ],
+          [
+            "a1",
+            "b1"
+          ],
+          [
+            "a2",
+            "b2"
+          ]
+        ],
+        "forward_reachable": [
+          [
+            "a0",
+            "b0"
+          ],
+          [
+            "a1",
+            "b1"
+          ],
+          [
+            "a2",
+            "b2"
+          ]
+        ],
+        "lift_size": 8,
+        "lift_status": "ambiguous",
+        "lifts": [
+          [
+            "a0",
+            "a1",
+            "a2"
+          ],
+          [
+            "a0",
+            "a1",
+            "b2"
+          ],
+          [
+            "a0",
+            "b1",
+            "a2"
+          ],
+          [
+            "a0",
+            "b1",
+            "b2"
+          ],
+          [
+            "b0",
+            "a1",
+            "a2"
+          ],
+          [
+            "b0",
+            "a1",
+            "b2"
+          ],
+          [
+            "b0",
+            "b1",
+            "a2"
+          ],
+          [
+            "b0",
+            "b1",
+            "b2"
+          ]
+        ],
+        "live_cone_obstructions": [],
+        "pt_size": 8,
+        "recoverable": false,
+        "retrospective_break": [],
+        "surviving_slices": [
+          [
+            "a0",
+            "b0"
+          ],
+          [
+            "a1",
+            "b1"
+          ],
+          [
+            "a2",
+            "b2"
+          ]
+        ],
+        "target": [
+          "same"
+        ],
+        "target_check": "outside_target",
+        "tau_pre": {
+          "k": null,
+          "status": "no_failure"
+        },
+        "viable_bridges": [
+          [
+            [
+              "a0",
+              "a1"
+            ],
+            [
+              "a0",
+              "b1"
+            ],
+            [
+              "b0",
+              "a1"
+            ],
+            [
+              "b0",
+              "b1"
+            ]
+          ],
+          [
+            [
+              "a1",
+              "a2"
+            ],
+            [
+              "a1",
+              "b2"
+            ],
+            [
+              "b1",
+              "a2"
+            ],
+            [
+              "b1",
+              "b2"
+            ]
+          ]
+        ]
       }
     },
-    "variant_b": {
-      "feature_image_lift": [
-        "s"
-      ],
-      "feature_image_pt": [
-        "r",
-        "s"
-      ],
-      "lift_size": 1,
-      "lift_status": "unique",
-      "pt_size": 4,
-      "recoverable": false,
-      "target": [
-        "r"
-      ],
-      "target_check": "outside_target",
-      "tau_pre": {
-        "k": null,
-        "status": "no_failure"
-      }
-    },
-    "verdict": "same_slices_different_edges"
+    "id": "v53_same_slices_different_edges",
+    "kind": "pathwise",
+    "role_label": "same_surviving_slices_different_path_features",
+    "schema_version": 2,
+    "source_volume": "Vol.5.3",
+    "spec_sha256": "0325f1f0f69f454fc8a3da93746285302c573e3dfc6bab842cfc3c18ed81c145",
+    "suite_version": "2026-10-23"
   },
-  "generated_by": "witnesses/vol6_1/harness/compute.py",
-  "id": "v53_same_slices_different_edges",
-  "kind": "pathwise",
-  "source_volume": "Vol.5.3",
   "verification": {
-    "checked_by": "run_all.py",
-    "status": "pass"
+    "finite_claims": "pass",
+    "scope": "fixed_finite_fixture_not_general_proof",
+    "strict_golden": "pass"
   }
 }

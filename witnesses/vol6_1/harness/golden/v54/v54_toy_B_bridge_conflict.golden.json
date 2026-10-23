@@ -1,39 +1,47 @@
 {
   "computed": {
-    "cell_conflict": {
-      "cell_id": "I_bridge",
-      "choice_kind": "bridge_edge",
-      "choice_sets": {
-        "u": [
-          [
-            "A",
-            "B"
-          ],
-          [
-            "C",
-            "D"
+    "choice": {
+      "cells": {
+        "I_bridge": {
+          "allowed_by_member": {
+            "u": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "D"
+              ]
+            ],
+            "v": [
+              [
+                "A",
+                "D"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          "common_choices": [],
+          "conflict": true,
+          "members": [
+            "u",
+            "v"
           ]
-        ],
-        "v": [
-          [
-            "A",
-            "D"
-          ],
-          [
-            "C",
-            "B"
-          ]
-        ]
+        }
       },
-      "common_choice_set": [],
-      "members": [
-        "u",
-        "v"
-      ],
-      "obstructed_property": "bridge_valid_selector",
-      "status": "conflict"
+      "count": 0,
+      "exists": false,
+      "obligation_type": "abstract_edge_choice",
+      "table": null
     },
-    "choice_kind": "bridge_edge",
+    "claim_checks": {
+      "common_edge_choice_fails": true,
+      "nonempty_common_coordinate_supports": true
+    },
     "common_left_support": [
       "A",
       "C"
@@ -42,10 +50,17 @@
       "B",
       "D"
     ],
-    "selector_class": "memoryless",
-    "selector_exists": false,
-    "time": 1,
-    "verdict": "bridge_cell_conflict"
+    "fixed_transition_bridge_realization_claimed": false,
+    "full_path_selector_status": "not_checked",
+    "obligation_type": "abstract_member_dependent_edge_choice",
+    "registered_claim_holds": true,
+    "same_member_left_supports": true
   },
-  "id": "v54_toy_B_bridge_conflict"
+  "id": "v54_toy_B_bridge_conflict",
+  "kind": "selector",
+  "role_label": "abstract_member_dependent_common_edge_conflict",
+  "schema_version": 2,
+  "source_volume": "Vol.5.4",
+  "spec_sha256": "10d8be2252f1e58efa24dee5072a1d6a2e2dc6a083caffadd995098f89d187ce",
+  "suite_version": "2026-10-23"
 }

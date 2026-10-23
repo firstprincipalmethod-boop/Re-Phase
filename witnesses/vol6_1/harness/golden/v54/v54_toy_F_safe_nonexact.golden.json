@@ -1,47 +1,158 @@
 {
   "computed": {
-    "choice_kind": "action",
-    "choice_sets": {
-      "x0": [
-        "n"
-      ],
-      "x1": [
-        "n"
-      ]
+    "claim_checks": {
+      "commuting_square": true,
+      "nonexact": true,
+      "original_section_exists": true,
+      "post_policy_retained": true,
+      "pre_policy_exists": true,
+      "quotient_section_exists": true,
+      "target_sound": true
     },
+    "common_action_policy_preserved": true,
     "cpre_claim_status": "not_certified",
-    "display_images": {
-      "x0": "y",
-      "x1": "y"
-    },
-    "display_quotient": "identity",
     "exact": false,
+    "obligation_type": "separate_sections_and_action_policies",
+    "original_display_policy": {
+      "cells": {
+        "\"y\"": {
+          "allowed_by_member": {
+            "x0": [
+              "n"
+            ],
+            "x1": [
+              "n"
+            ]
+          },
+          "common_choices": [
+            "n"
+          ],
+          "conflict": false,
+          "members": [
+            "x0",
+            "x1"
+          ]
+        }
+      },
+      "count": 1,
+      "exists": true,
+      "obligation_type": "original_display_common_action_policy",
+      "table": {
+        "\"y\"": "n"
+      }
+    },
+    "original_display_section": {
+      "count": 2,
+      "exists": true,
+      "fibers": {
+        "\"y\"": [
+          "x0",
+          "x1"
+        ]
+      },
+      "table": {
+        "\"y\"": "x0"
+      }
+    },
+    "post_information": "quotient_map",
+    "post_quotient_policy": {
+      "cells": {
+        "\"z\"": {
+          "allowed_by_member": {
+            "x0": [
+              "n"
+            ],
+            "x1": [
+              "n"
+            ]
+          },
+          "common_choices": [
+            "n"
+          ],
+          "conflict": false,
+          "members": [
+            "x0",
+            "x1"
+          ]
+        }
+      },
+      "count": 1,
+      "exists": true,
+      "obligation_type": "quotient_common_action_policy",
+      "table": {
+        "\"z\"": "n"
+      }
+    },
+    "pre_information": "member_identity",
+    "pre_member_policy": {
+      "cells": {
+        "\"x0\"": {
+          "allowed_by_member": {
+            "x0": [
+              "n"
+            ]
+          },
+          "common_choices": [
+            "n"
+          ],
+          "conflict": false,
+          "members": [
+            "x0"
+          ]
+        },
+        "\"x1\"": {
+          "allowed_by_member": {
+            "x1": [
+              "n"
+            ]
+          },
+          "common_choices": [
+            "n"
+          ],
+          "conflict": false,
+          "members": [
+            "x1"
+          ]
+        }
+      },
+      "count": 1,
+      "exists": true,
+      "obligation_type": "member_identifying_common_action_policy",
+      "table": {
+        "\"x0\"": "n",
+        "\"x1\"": "n"
+      }
+    },
     "quotient_cells": {
       "z": [
         "x0",
         "x1"
       ]
     },
-    "quotient_common_choice_set": {
-      "z": [
-        "n"
-      ]
-    },
     "quotient_display": {
       "z": "y"
     },
-    "quotient_selector_exists": true,
-    "selector_preserving_action": true,
-    "selector_table": {
-      "z": "n"
+    "quotient_display_section": {
+      "count": 1,
+      "exists": true,
+      "fibers": {
+        "\"y\"": [
+          "z"
+        ]
+      },
+      "table": {
+        "\"y\"": "z"
+      }
     },
+    "registered_claim_holds": true,
     "square_commutes": true,
-    "target_sound": true,
-    "target_verdict_by_member": {
-      "x0": "good",
-      "x1": "good"
-    },
-    "verdict": "safe_nonexact_forgetting"
+    "target_sound": true
   },
-  "id": "v54_toy_F_safe_nonexact"
+  "id": "v54_toy_F_safe_nonexact",
+  "kind": "selector",
+  "role_label": "nonexact_target_sound_action_policy_retained",
+  "schema_version": 2,
+  "source_volume": "Vol.5.4",
+  "spec_sha256": "8f65262fe85a5a19e6ff0207f3b5b6e8148b3b8f1e4d30c42d8e9b117c4143c5",
+  "suite_version": "2026-10-23"
 }

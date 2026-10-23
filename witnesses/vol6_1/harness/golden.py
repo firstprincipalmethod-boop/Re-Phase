@@ -1,24 +1,23 @@
-"""Optional golden-snapshot comparator. A golden file freezes a previously-approved 'computed'.
-run_all compares freshly recomputed output against golden; mismatch => fail (catches drift)."""
-import json, os
+"""Strict, recursive type/key/value comparison of complete deterministic records. MIT.
 
-def load_golden(golden_dir, wid):
-    p = os.path.join(golden_dir, f"{wid}.golden.json")
-    return json.load(open(p)) if os.path.exists(p) else None
+All envelope fields, including id, schema/suite version and spec digest, are compared.
+No missing/null coercion, bool/int coercion, ignored keys, or auto-rebaseline operation.
+"""
+from contract import typed_equal
 
-def freeze_golden(golden_dir, wid, computed):
-    os.makedirs(golden_dir, exist_ok=True)
-    p = os.path.join(golden_dir, f"{wid}.golden.json")
-    json.dump({"id": wid, "computed": computed}, open(p, "w", newline="\n"), indent=2, sort_keys=True, ensure_ascii=False)
-    return p
+def differences(a,b,path='$'):
+    if type(a) is not type(b):return [path+': type mismatch']
+    if type(a) is dict:
+        ds=[path+': key set mismatch'] if set(a)!=set(b) else []
+        for k in sorted(set(a)&set(b)):ds.extend(differences(a[k],b[k],path+'.'+k))
+        return ds
+    if type(a) is list:
+        ds=[path+': array length mismatch'] if len(a)!=len(b) else []
+        for k,(x,y) in enumerate(zip(a,b)):ds.extend(differences(x,y,f'{path}[{k}]'))
+        return ds
+    return [] if a==b else [path+': value mismatch']
 
-def compare(computed, golden):
-    """Return (status, diffs). status in {'pass','fail','no-golden'}."""
-    if golden is None:
-        return "no-golden", []
-    g = golden.get("computed", {})
-    diffs = []
-    for k in sorted(set(g) | set(computed)):
-        if g.get(k) != computed.get(k):
-            diffs.append((k, g.get(k), computed.get(k)))
-    return ("pass" if not diffs else "fail"), diffs
+def compare(record,golden):
+    if golden is None:return 'no-golden',['missing golden record']
+    ds=differences(record,golden)
+    return ('pass' if not ds else 'fail'),ds

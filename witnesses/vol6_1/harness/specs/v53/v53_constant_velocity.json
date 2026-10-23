@@ -1,19 +1,61 @@
 {
-  "id": "v53_constant_velocity",
-  "source_volume": "Vol.5.3",
-  "source_section": "13",
-  "kind": "pathwise",
-  "role": "full observation may be sufficient but not minimal: composing out the intermediate stage (observing only the endpoints) reaches the same recoverable verdict as observing every stage",
-  "status": "core",
   "count_objects": {
-    "pt_object": "full pointwise relaxation Pt(y)=product_k F_k(y_k) over the full 3-stage context",
-    "lift_object": "transition-compatible subset Lift(y) of Pt(y), computed for both the full and the thinned (endpoints-only) context",
-    "feature_object": "image of Pt(y) and Lift(y) under the terminal-state feature map"
+    "scope": "finite input objects in spec; counts and claims are computed, not embedded expectations"
   },
+  "id": "v53_constant_velocity",
+  "kind": "pathwise",
+  "role": "constant_velocity_observation_schedule_comparison",
+  "schema_version": 2,
+  "source": {
+    "doi": "10.5281/zenodo.23499738",
+    "edition": "2026-10-21",
+    "layout": "noheader_r1",
+    "pdf_sha256": "4a2dd6ed2fa2f93a07d195220f203359b5989137fc8d758022e3a02551d2f6f3",
+    "relation": "reproduction_of_declared_finite_example"
+  },
+  "source_section": "12.7",
+  "source_volume": "Vol.5.3",
   "spec": {
-    "state_sets": { "X0": ["a1", "a2"], "X1": ["m1", "m2"], "X2": ["c1", "c2"] },
-    "transitions": { "T0": [["a1", "m1"], ["a2", "m2"]], "T1": [["m1", "c1"], ["m2", "c2"]] },
-    "feature": "terminal_state",
-    "target": ["c1", "c2"]
-  }
+    "displayed_positions": [
+      0,
+      1,
+      2
+    ],
+    "feature": "initial_velocity",
+    "full_schedule": [
+      0,
+      1,
+      2
+    ],
+    "horizon": 2,
+    "position_domain": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "target": [
+      1
+    ],
+    "thinned_schedule": [
+      0,
+      2
+    ],
+    "velocity_domain": [
+      0,
+      1,
+      2
+    ]
+  },
+  "status": "correction_candidate",
+  "suite_version": "2026-10-23"
 }

@@ -1,19 +1,25 @@
-"""Write generated output JSON (computed numbers + provenance). Never edited by hand.
-The verification status is passed in AFTER golden comparison, so the file on disk
-always reflects the final verdict (not a stale 'pending')."""
-import json, os
+"""Constrained path writes after all validation succeeds. MIT."""
+from pathlib import Path
+import os,tempfile
+from contract import require
 
-def write_output(spec, computed, compute_status, out_dir, verification_status="pending"):
-    os.makedirs(out_dir, exist_ok=True)
-    rec = {
-        "id": spec.get("id"),
-        "source_volume": spec.get("source_volume"),
-        "kind": spec.get("kind"),
-        "generated_by": "witnesses/vol6_1/harness/compute.py",
-        "compute_status": compute_status,
-        "computed": computed,
-        "verification": {"checked_by": "run_all.py", "status": verification_status},
-    }
-    path = os.path.join(out_dir, f"{spec.get('id')}.out.json")
-    json.dump(rec, open(path, "w", newline="\n"), indent=2, sort_keys=True, ensure_ascii=False)
-    return rec
+def write_outputs(root,files):
+    root=Path(root);require(not root.is_symlink(),'output root cannot be a symlink')
+    resolved=root.resolve()
+    for name in files:
+        rel=Path(name)
+        require(not rel.is_absolute() and '..' not in rel.parts,'unsafe generated path')
+        target=root/rel
+        require(target.resolve().is_relative_to(resolved),'generated path escapes root')
+        # Reject symlinks even when currently pointing back within the root.
+        cur=target
+        while cur!=root:
+            require(not cur.is_symlink(),'symlink in generated path');cur=cur.parent
+    for name,data in sorted(files.items()):
+        p=root/name;p.parent.mkdir(parents=True,exist_ok=True)
+        fd,tmp=tempfile.mkstemp(prefix='.'+p.name+'.',dir=p.parent)
+        try:
+            with os.fdopen(fd,'wb') as f:f.write(data)
+            os.replace(tmp,p)
+        finally:
+            if os.path.exists(tmp):os.unlink(tmp)

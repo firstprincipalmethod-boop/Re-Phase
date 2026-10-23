@@ -1,22 +1,75 @@
 {
   "computed": {
+    "backward_survivable": [
+      [],
+      [],
+      [
+        "r"
+      ]
+    ],
+    "claim_checks": {
+      "lift_empty": true,
+      "live_cone_obstructions_absent": true,
+      "pointwise_nonempty": true
+    },
     "feature_image_lift": [],
     "feature_image_pt": [
       "r"
     ],
+    "feature_lift_counts": [],
+    "fibers": [
+      [
+        "p"
+      ],
+      [
+        "m"
+      ],
+      [
+        "r"
+      ]
+    ],
+    "forward_reachable": [
+      [
+        "p"
+      ],
+      [],
+      []
+    ],
     "lift_size": 0,
     "lift_status": "infeasible",
-    "pt_size": 2,
+    "lifts": [],
+    "live_cone_obstructions": [],
+    "obligation_type": "path_feature_recoverability",
+    "pt_size": 1,
     "recoverable": false,
+    "registered_claim_holds": true,
+    "retrospective_break": [
+      0,
+      1
+    ],
+    "surviving_slices": [
+      [],
+      [],
+      []
+    ],
     "target": [
       "r"
     ],
     "target_check": "vacuous_empty_lift",
     "tau_pre": {
-      "k": 2,
+      "k": 1,
       "status": "finite"
     },
-    "verdict": "gap_collapse"
+    "viable_bridges": [
+      [],
+      []
+    ]
   },
-  "id": "v53_gap_collapse"
+  "id": "v53_gap_collapse",
+  "kind": "pathwise",
+  "role_label": "empty_lift_without_live_cone_obstruction",
+  "schema_version": 2,
+  "source_volume": "Vol.5.3",
+  "spec_sha256": "de3b208b632e1f52feeec27dbe836a3b3e1c8a85924cc10df4445533def1456d",
+  "suite_version": "2026-10-23"
 }

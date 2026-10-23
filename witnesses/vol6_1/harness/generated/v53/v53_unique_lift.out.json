@@ -1,33 +1,123 @@
 {
-  "compute_status": "ok",
-  "computed": {
-    "feature_image_lift": [
-      "c1"
-    ],
-    "feature_image_pt": [
-      "c1",
-      "c2"
-    ],
-    "lift_size": 1,
-    "lift_status": "unique",
-    "pt_size": 4,
-    "recoverable": true,
-    "target": [
-      "c1"
-    ],
-    "target_check": "within_target",
-    "tau_pre": {
-      "k": null,
-      "status": "no_failure"
+  "result": {
+    "computed": {
+      "backward_survivable": [
+        [
+          "a0"
+        ],
+        [
+          "a1"
+        ],
+        [
+          "a2",
+          "b2"
+        ]
+      ],
+      "claim_checks": {
+        "multiple_pointwise_candidates": true,
+        "recovers": true,
+        "unique_lift": true
+      },
+      "feature_image_lift": [
+        "a2"
+      ],
+      "feature_image_pt": [
+        "a2",
+        "b2"
+      ],
+      "feature_lift_counts": [
+        {
+          "count": 1,
+          "value": "a2"
+        }
+      ],
+      "fibers": [
+        [
+          "a0",
+          "b0"
+        ],
+        [
+          "a1",
+          "b1"
+        ],
+        [
+          "a2",
+          "b2"
+        ]
+      ],
+      "forward_reachable": [
+        [
+          "a0",
+          "b0"
+        ],
+        [
+          "a1",
+          "b1"
+        ],
+        [
+          "a2"
+        ]
+      ],
+      "lift_size": 1,
+      "lift_status": "unique",
+      "lifts": [
+        [
+          "a0",
+          "a1",
+          "a2"
+        ]
+      ],
+      "live_cone_obstructions": [],
+      "obligation_type": "path_feature_recoverability",
+      "pt_size": 8,
+      "recoverable": true,
+      "registered_claim_holds": true,
+      "retrospective_break": [],
+      "surviving_slices": [
+        [
+          "a0"
+        ],
+        [
+          "a1"
+        ],
+        [
+          "a2"
+        ]
+      ],
+      "target": [
+        "a2"
+      ],
+      "target_check": "within_target",
+      "tau_pre": {
+        "k": null,
+        "status": "no_failure"
+      },
+      "viable_bridges": [
+        [
+          [
+            "a0",
+            "a1"
+          ]
+        ],
+        [
+          [
+            "a1",
+            "a2"
+          ]
+        ]
+      ]
     },
-    "verdict": "unique_lift"
+    "id": "v53_unique_lift",
+    "kind": "pathwise",
+    "role_label": "unique_lift_from_multiple_pointwise_candidates",
+    "schema_version": 2,
+    "source_volume": "Vol.5.3",
+    "spec_sha256": "b6168afd230a50513fe5b528a5f0d49998e04a511564cae73b933ad4ea38e33d",
+    "suite_version": "2026-10-23"
   },
-  "generated_by": "witnesses/vol6_1/harness/compute.py",
-  "id": "v53_unique_lift",
-  "kind": "pathwise",
-  "source_volume": "Vol.5.3",
   "verification": {
-    "checked_by": "run_all.py",
-    "status": "pass"
+    "finite_claims": "pass",
+    "scope": "fixed_finite_fixture_not_general_proof",
+    "strict_golden": "pass"
   }
 }

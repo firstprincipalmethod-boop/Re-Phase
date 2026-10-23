@@ -1,31 +1,81 @@
 {
-  "id": "v54_toy_D_retention_memory",
-  "source_volume": "Vol.5.4",
-  "source_section": "5.8",
-  "kind": "selector",
-  "role": "retained coordinate and selector memory are different resources",
-  "status": "core",
   "count_objects": {
-    "family_object": "traceable / silent worlds, each with hidden modes {stable, slip}",
-    "lift_object": "tilt-history trajectories per world/member",
-    "info_cells": "information cells under original vs augmented (retained-mode) display",
-    "choice_sets": "per-mode required actions (action choice_kind)",
-    "verdict_object": "selector existence per world/display/memory-class variant"
+    "policies": "terminal common-action policies under declared information, not dynamic controllers",
+    "sections": "sections of the full-history display and of its history-plus-mode augmentation"
   },
+  "id": "v54_toy_D_retention_memory",
+  "kind": "selector",
+  "role": "terminal_action_policy_memory_retention_separation",
+  "schema_version": 2,
+  "source": {
+    "doi": "10.5281/zenodo.23499819",
+    "edition": "2026-10-21",
+    "layout": "original_2026-10-21",
+    "pdf_sha256": "f692f7dc4b129a3647562bdeab020db1aa6c82b894f88fcf4e0fea2c22a0aa01",
+    "relation": "reproduction_of_declared_finite_example"
+  },
+  "source_section": "11; 12",
+  "source_volume": "Vol.5.4",
   "spec": {
     "choice_kind": "action",
-    "variants": ["traceable_original", "silent_original", "silent_augmented"],
+    "display_models": [
+      "original",
+      "augmented_retained_mode"
+    ],
+    "memory_classes": [
+      "memoryless",
+      "lookback_1",
+      "lookback_2",
+      "offline"
+    ],
+    "variants": [
+      "traceable_original",
+      "silent_original",
+      "silent_augmented"
+    ],
     "worlds": {
-      "traceable": {
-        "stable": { "tilt_history": [0, 0, 1], "mode": "S", "required_action": "n" },
-        "slip":   { "tilt_history": [0, 1, 1], "mode": "P", "required_action": "r" }
-      },
       "silent": {
-        "stable": { "tilt_history": [0, 0, 1], "mode": "S", "required_action": "n" },
-        "slip":   { "tilt_history": [0, 0, 1], "mode": "P", "required_action": "r" }
+        "slip": {
+          "mode": "P",
+          "required_action": "r",
+          "tilt_history": [
+            0,
+            0,
+            1
+          ]
+        },
+        "stable": {
+          "mode": "S",
+          "required_action": "n",
+          "tilt_history": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "traceable": {
+        "slip": {
+          "mode": "P",
+          "required_action": "r",
+          "tilt_history": [
+            0,
+            1,
+            1
+          ]
+        },
+        "stable": {
+          "mode": "S",
+          "required_action": "n",
+          "tilt_history": [
+            0,
+            0,
+            1
+          ]
+        }
       }
-    },
-    "display_models": ["original", "augmented_retained_mode"],
-    "memory_classes": ["memoryless", "lookback_1", "lookback_2"]
-  }
+    }
+  },
+  "status": "correction_candidate",
+  "suite_version": "2026-10-23"
 }
