@@ -1,3 +1,5 @@
+> **Later status — Vol.6.1 published; documentation sync 2026-10-24.** See the [Vol.6.1 post-publication record](vol61-publication-sync-2026-10-24.md) for the published manuscript/software and merged PR #29. All text and notices below retain their earlier checkpoint meaning, including pending publication and merge statements. The complete previous content is preserved below.
+
 > Historical 2026-10-22 checkpoint. For the later Vol.6.1 source integration, see [2026-10-24 status](publication-status-2026-10-24.md). The original body below is retained unchanged.
 
 # Re-Phase Vol.5.3 / Vol.5.4 — Publication Status

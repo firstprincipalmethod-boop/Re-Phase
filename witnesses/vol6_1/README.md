@@ -5,12 +5,14 @@ corrected implementation, not the historical v0.4.2 implementation. Its 59
 harness files are unchanged copies of the fixed MIT Software ZIP (SHA-256
 `48abc2ae97e1cf0ea5089f7e9610dfef0d4b6c14194f41e85a8660c4086c181e`).
 
-This is the phase-3 integration checkpoint, not a publication announcement.
-The manuscript DOI `10.5281/zenodo.23499925` (CC BY-NC 4.0) and software DOI
-`10.5281/zenodo.23499964` (MIT) remain **publication pending** at the supplied
-2026-10-24 Zenodo checkpoint. PR/merge is a separate step. See
-[publication status](../../docs/publication-status-2026-10-24.md) and
-[CORRECTION_STATUS.md](CORRECTION_STATUS.md).
+The corrected manuscript [10.5281/zenodo.23499925](https://doi.org/10.5281/zenodo.23499925)
+(CC BY-NC 4.0) and software [10.5281/zenodo.23499964](https://doi.org/10.5281/zenodo.23499964)
+(MIT) are **published**, edition/version 2026-10-23. The implementation was
+merged into main through [PR #29](https://github.com/firstprincipalmethod-boop/Re-Phase/pull/29),
+commit `854c3dda22830c7cde3ab51efc9a5a8440b1cc33`.
+See the [post-publication evidence and limits](../../docs/vol61-publication-sync-2026-10-24.md)
+and [CORRECTION_STATUS.md](CORRECTION_STATUS.md). This documentation sync does
+not rerun the harness or transfer prior reviews to new artifact bytes.
 
 ## Reproduce from a repository checkout
 

@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### 2026-10-24 — Vol.6.1 post-publication documentation sync
+
+- Record the published corrected 2026-10-23 manuscript DOI `10.5281/zenodo.23499925` (CC BY-NC 4.0) and software DOI `10.5281/zenodo.23499964` (MIT), after PR #29 merged as `854c3dda22830c7cde3ab51efc9a5a8440b1cc33`.
+- Update README, publication chronology, living index, reading guide and Vol.6.1 status navigation. The [post-publication record](docs/vol61-publication-sync-2026-10-24.md) distinguishes owner confirmation and fresh DataCite metadata from earlier artifact identities and runtime evidence.
+- Preserve historical DOI rows, v0.4.2 materials and complete earlier checkpoint bodies. Pending statements in earlier entries below describe their own checkpoints, not the current Vol.6.1 publication or PR #29 merge state.
+- Limit this change to documentation on a review branch and PR; no direct main push or merge. No Toy/harness/spec/golden/generated changes, runtime rerun, distribution rebuild, Zenodo mutation, tag or Release operation.
+
 ### 2026-10-24 — Vol.6.1 corrected implementation integration (phases 2–3)
 
 - Stage the fixed 2026-10-23 schema-2 harness: 59 files plus unchanged Toy D helper and package synchronization contract. All remain byte-identical to the fixed source package.
