@@ -7,7 +7,7 @@ This index tracks the relationship between Re-Phase volumes, including DOI refer
 Zenodo DOI records are the authoritative fixed archived versions.
 For publication chronology, see [docs/series.md](docs/series.md).
 For conceptual reading order, see [docs/reading-guide.md](docs/reading-guide.md).
-For current correction/integration boundaries, see the [2026-10-24 checkpoint](docs/publication-status-2026-10-24.md); fixed Vol.5.3/5.4 identities remain in the [2026-10-22 publication record](docs/publication-status-2026-10-22.md). The [pre-publication checkpoint](docs/prepublication-status-2026-10-21.md) is retained as history.
+For current publication/integration facts, see the [Vol.6.1 publication status](docs/vol61-publication-sync-2026-10-24.md); fixed Vol.5.3/5.4 identities remain in the [2026-10-22 publication record](docs/publication-status-2026-10-22.md). The [phase-3 checkpoint](docs/publication-status-2026-10-24.md) and [pre-publication checkpoint](docs/prepublication-status-2026-10-21.md) are retained as history.
 
 ## Root / Orientation
 
@@ -362,12 +362,12 @@ For current correction/integration boundaries, see the [2026-10-24 checkpoint](d
 - Manuscript: https://doi.org/10.5281/zenodo.21220080
 - Software / witness harness: https://doi.org/10.5281/zenodo.21220093
 
-**Corrected edition:** 2026-10-23 implementation in this tree; synchronized manuscript/software Zenodo publication pending. PR/merge is a separate gate.
+**Corrected edition:** 2026-10-23 manuscript and software published on Zenodo. The source integration was merged in [PR #29](https://github.com/firstprincipalmethod-boop/Re-Phase/pull/29), commit `854c3dda22830c7cde3ab51efc9a5a8440b1cc33`. See the [publication status](docs/vol61-publication-sync-2026-10-24.md) for the separate publication and integration evidence.
 
-**Owner-designated successor records:**
+**Current published corrected records:**
 
-- Manuscript: 10.5281/zenodo.23499925 — corrected 2026-10-23 artifacts prepared / publication pending (CC-BY-NC).
-- Software / witness harness: 10.5281/zenodo.23499964 — corrected 2026-10-23 artifacts prepared / publication pending (MIT).
+- Manuscript: [10.5281/zenodo.23499925](https://doi.org/10.5281/zenodo.23499925) — published corrected edition 2026-10-23 (CC BY-NC 4.0).
+- Software / witness harness: [10.5281/zenodo.23499964](https://doi.org/10.5281/zenodo.23499964) — published corrected edition 2026-10-23 (MIT).
 
 **Core themes:** Vol.5.3 pathwise witness lane, Vol.5.4 selector witness lane, canonical finite specs, generated JSON outputs, reproducibility harness, release-gate verification
 
@@ -383,7 +383,7 @@ For current correction/integration boundaries, see the [2026-10-24 checkpoint](d
 - **Risk and Posterior** (Vol.4) extend to probabilistic and directional settings
 - **Path-Space and Selection** (Vol.5) develop pathwise and selector frameworks
 - **Computational** (Vol.6) realizes feasibility and recoverability
-- **Vol.6.1** contains the corrected 2026-10-23 finite witness harness; v0.4.2 remains historical and paired Zenodo publication is pending
+- **Vol.6.1** contains the corrected 2026-10-23 finite witness harness integrated through PR #29; the paired manuscript/software are published on Zenodo and v0.4.2 remains historical
 
 ---
 

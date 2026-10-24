@@ -1,6 +1,6 @@
 # Re-Phase Series — Publication Chronology
 
-**Publication order:** Zenodo archival sequence of published records. Designated but unpublished DOI identifiers are listed separately below.
+**Publication order:** Zenodo archival sequence of published records, retaining earlier editions alongside published corrected editions.
 
 **Conceptual reading order:** Different from publication order. See [docs/reading-guide.md](reading-guide.md).
 
@@ -9,7 +9,7 @@ GitHub serves as the public navigation, living documentation, and development re
 
 ## Publication Chronology Table
 
-This table retains historical published records and adds the published Vol.5.3/Vol.5.4 corrected editions. Entries 34–35 follow the owner-reported publication sequence, supported by the supplied post-publication screenshots; see the [2026-10-22 publication status](publication-status-2026-10-22.md) for the evidence scope. Vol.6.1 successor records remain separate and publication pending.
+This table retains historical published records and the published Vol.5.3/Vol.5.4 corrected editions. Entries 34–35 follow the owner-reported publication sequence, supported by the supplied post-publication screenshots; see the [2026-10-22 publication status](publication-status-2026-10-22.md) for the evidence scope. Entries 36–37 add the corrected Vol.6.1 software, then manuscript, following the owner's confirmed publication sequence; public DataCite registration timestamps corroborate that order. See the [Vol.6.1 publication status](vol61-publication-sync-2026-10-24.md) for verification scope and date distinctions.
 
 | No. | Series item | Title | DOI | Status |
 |---:|---|---|---|---|
@@ -48,6 +48,8 @@ This table retains historical published records and adds the published Vol.5.3/V
 | 33 | Vol.6.1 (harness) | Re-Phase Vol.6.1 Witness Harness: v53/v54 Certified Finite Witness Suite | https://doi.org/10.5281/zenodo.21220093 | Archived on Zenodo |
 | 34 | Vol.5.3 corrected 2026-10-21 | Re-Phase Vol.5.3: Pathwise Compatibility Lifting — Path Fibers, R × S Bridge Worlds, and Nonempty-Guarded Path Recoverability | https://doi.org/10.5281/zenodo.23499738 | Published corrected edition; current reading target (`noheader_r1`) |
 | 35 | Vol.5.4 corrected 2026-10-21 | Re-Phase Vol.5.4: Information-Adapted Selection — Selector Classes, Retention, and Safe Forgetting | https://doi.org/10.5281/zenodo.23499819 | Published corrected edition; current reading target |
+| 36 | Vol.6.1 software corrected 2026-10-23 | Re-Phase Vol.6.1 — A Finite Witness Harness for Vol.5.3 and Vol.5.4 | https://doi.org/10.5281/zenodo.23499964 | Published corrected software; MIT |
+| 37 | Vol.6.1 manuscript corrected 2026-10-23 | Re-Phase Vol.6.1: A Finite Witness Harness for Vol.5.3 and Vol.5.4 | https://doi.org/10.5281/zenodo.23499925 | Published corrected manuscript; CC BY-NC 4.0 |
 
 ## Published corrected editions — 2026-10-22 documentation checkpoint
 
@@ -57,16 +59,16 @@ The previous records, Vol.5.3 DOI 10.5281/zenodo.20956126 and Vol.5.4 DOI 10.528
 
 See the [publication status and artifact registry](publication-status-2026-10-22.md) for the four fixed files and the screenshot-based post-publication confirmation scope. The [pre-publication status](prepublication-status-2026-10-21.md) is retained as a historical checkpoint.
 
-## Vol.6.1 corrected implementation / publication pending
+## Vol.6.1 published corrected edition — 2026-10-23
 
 Historical v0.4.2 remains an archived release: manuscript DOI 10.5281/zenodo.21220080 and software / witness-harness DOI 10.5281/zenodo.21220093.
 
-| Owner-designated successor record | DOI | Status |
+| Published corrected record | DOI | Status |
 |---|---|---|
-| Manuscript (CC-BY-NC) | 10.5281/zenodo.23499925 | Corrected 2026-10-23 artifacts prepared / publication pending |
-| Software / witness harness (MIT) | 10.5281/zenodo.23499964 | Corrected 2026-10-23 artifacts prepared / publication pending |
+| Manuscript (CC BY-NC 4.0) | [10.5281/zenodo.23499925](https://doi.org/10.5281/zenodo.23499925) | Published corrected edition 2026-10-23; current reading target |
+| Software / witness harness (MIT) | [10.5281/zenodo.23499964](https://doi.org/10.5281/zenodo.23499964) | Published corrected edition 2026-10-23; current software archive |
 
-The corrected implementation is present in this source tree; see the [2026-10-24 checkpoint](publication-status-2026-10-24.md) for the separate PR/merge and publication gates. The historical 13/13 PASS is a regression-gate result, not certification against the corrected 2026-10-21 Vol.5.3 and Vol.5.4. The successor records are not yet published and are not a current certified release. See [Vol.6.1 correction status](../witnesses/vol6_1/CORRECTION_STATUS.md).
+The corrected implementation was merged through [PR #29](https://github.com/firstprincipalmethod-boop/Re-Phase/pull/29), commit `854c3dda22830c7cde3ab51efc9a5a8440b1cc33`. The [publication status](vol61-publication-sync-2026-10-24.md) records the separate Zenodo publication evidence. The edition, Zenodo Publication date, and Version remain **2026-10-23**; the documentation checkpoint is **2026-10-24**. Neither date is an inferred exact Publish-click timestamp. The historical 13/13 PASS remains a regression-gate result for its original target; publication does not establish external institutional certification or a general proof. See [Vol.6.1 correction status](../witnesses/vol6_1/CORRECTION_STATUS.md).
 
 ## Version History and Superseded Records
 

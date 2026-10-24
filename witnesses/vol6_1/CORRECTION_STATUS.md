@@ -1,30 +1,34 @@
-# Vol.6.1 correction / integration status — 2026-10-24
+# Vol.6.1 publication / integration status — 2026-10-24
 
 The current cross-volume reference is the
-[2026-10-24 publication and integration checkpoint](../../docs/publication-status-2026-10-24.md).
-The [2026-10-22 record](../../docs/publication-status-2026-10-22.md) remains the
-frozen Vol.5.3/Vol.5.4 publication evidence; the
+[Vol.6.1 post-publication record](../../docs/vol61-publication-sync-2026-10-24.md).
+The [earlier integration checkpoint](../../docs/publication-status-2026-10-24.md),
+[2026-10-22 record](../../docs/publication-status-2026-10-22.md), and
 [2026-10-21 pre-publication page](../../docs/prepublication-status-2026-10-21.md)
-is historical, not the current overall status (C2).
+retain their original checkpoint bodies and evidence scope.
 
-## Current source tree
+## Current source tree and published pair
 
-Phase 2 imported the fixed 2026-10-23 software at commit `8411834aa7ddf82ae0792740bdc7e98d4d73008a`.
-Phase 3 synchronizes documentation and supplies a repository-layout replay.
-The 59 harness files, Toy D helper and original SYNC_CONTRACT remain unchanged
-from phase 2. Runtime success must be supported by the phase-3 report and
-corresponding action/job outcome, not inferred from this status page.
-PR review and main merge are phase 4; this checkpoint does not claim either.
+The corrected 2026-10-23 implementation was merged through
+[PR #29](https://github.com/firstprincipalmethod-boop/Re-Phase/pull/29) on
+2026-10-24 at 12:57:57 JST, commit `854c3dda22830c7cde3ab51efc9a5a8440b1cc33`.
+Phase-2 import commit `8411834aa7ddf82ae0792740bdc7e98d4d73008a` and the
+phase-3 repository replay remain separately identified historical work.
+The 59 harness files, Toy D helper and original SYNC_CONTRACT are unchanged
+by this documentation sync. No new runtime validation is claimed.
 
-| Paired artifact | DOI | License | Zenodo checkpoint |
+| Paired artifact | Published version DOI | License | Edition / Version |
 |---|---|---|---|
-| Manuscript | 10.5281/zenodo.23499925 | CC BY-NC 4.0 | publication pending |
-| Software | 10.5281/zenodo.23499964 | MIT | publication pending |
+| Manuscript | [10.5281/zenodo.23499925](https://doi.org/10.5281/zenodo.23499925) | CC BY-NC 4.0 | 2026-10-23 |
+| Software | [10.5281/zenodo.23499964](https://doi.org/10.5281/zenodo.23499964) | MIT | 2026-10-23 |
 
-The supplied Keywords receipt observed both drafts unpublished on
-2026-10-24 at 00:58:16 JST. This integration does not re-read or mutate Zenodo,
-and does not infer publication from its date field. Vol.5.3 and Vol.5.4 retain
-their already-recorded published status and frozen files.
+The owner confirmed software publication followed by manuscript publication.
+Fresh public DataCite metadata confirms both DOIs as active/findable, with
+matching versions, licenses and reciprocal supplement relations. Direct
+Zenodo retrieval was unavailable; remote PDF/ZIP bytes and SHA-256 were not
+remeasured. See the linked publication record for the exact evidence boundary.
+The earlier unpublished-draft receipts remain historical; Vol.5.3 and Vol.5.4
+retain their already-recorded published status and frozen files.
 
 ## Current golden paths and historical recovery (G1)
 
@@ -60,8 +64,9 @@ G1 is addressed explicitly above and in README. Old README/status bytes are
 preserved in `historical/`; the old Zenodo description remains unchanged.
 
 The original package contract and historical verification records retain their
-creation-time claims; a new repository replay does not retroactively change
-external-review or platform statuses. No golden refresh, original artifact
-rebuild, license redefinition, Zenodo Publish, tag or Release is performed.
+creation-time claims; publication does not retroactively change external-review
+or platform statuses. This documentation sync performs no harness replay,
+golden refresh, original artifact rebuild, license redefinition, Zenodo edit
+or Publish, tag or Release operation.
 Temporary transfer branches are outside this implementation tree; cleanup is
 a separate owner decision, not part of this PR's verification.

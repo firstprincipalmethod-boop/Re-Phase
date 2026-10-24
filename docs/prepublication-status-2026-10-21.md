@@ -1,3 +1,5 @@
+> **Later status — Vol.6.1 published; documentation sync 2026-10-24.** See the [Vol.6.1 post-publication record](vol61-publication-sync-2026-10-24.md) for the published manuscript/software and merged PR #29. All text and notices below retain their earlier checkpoint meaning, including pending publication and merge statements. The complete previous content is preserved below.
+
 # Re-Phase Pre-Publication Status — 2026-10-21
 
 > **Historical checkpoint — later publication recorded on 2026-10-22.** Vol.5.3 and Vol.5.4 are now recorded as published in the [publication status](publication-status-2026-10-22.md). The original text below is retained to document the earlier pre-publication state and evidence; its pending/non-execution statements are not current status. Vol.6.1 remains a separate corrective revision in progress.

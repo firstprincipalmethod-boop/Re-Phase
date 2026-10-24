@@ -10,9 +10,9 @@ It turns fibers, projections, path lifts, bridge obstructions, recoverability gu
 - Vol.5.3 corrected edition 2026-10-21 (`noheader_r1`) — published on Zenodo: [10.5281/zenodo.23499738](https://doi.org/10.5281/zenodo.23499738)
 - Vol.5.4 corrected edition 2026-10-21 — published on Zenodo: [10.5281/zenodo.23499819](https://doi.org/10.5281/zenodo.23499819)
 - Vol.6.1 v0.4.2 — historical archived release
-- Vol.6.1 corrected 2026-10-23 implementation — present in this tree; paired Zenodo publication pending
+- Vol.6.1 corrected edition 2026-10-23 — published on Zenodo: manuscript [10.5281/zenodo.23499925](https://doi.org/10.5281/zenodo.23499925) (CC BY-NC 4.0); software [10.5281/zenodo.23499964](https://doi.org/10.5281/zenodo.23499964) (MIT). The corrected source integration was merged in [PR #29](https://github.com/firstprincipalmethod-boop/Re-Phase/pull/29).
 
-See the [2026-10-24 publication/integration checkpoint](docs/publication-status-2026-10-24.md) for current correction boundaries and the [2026-10-22 record](docs/publication-status-2026-10-22.md) for frozen Vol.5.3/Vol.5.4 publication evidence. The [pre-publication checkpoint](docs/prepublication-status-2026-10-21.md) is retained as history, not current publication status.
+See the [Vol.6.1 publication status and evidence scope](docs/vol61-publication-sync-2026-10-24.md) for current publication and integration facts and the [2026-10-22 record](docs/publication-status-2026-10-22.md) for frozen Vol.5.3/Vol.5.4 publication evidence. The [phase-3 checkpoint](docs/publication-status-2026-10-24.md) and [pre-publication checkpoint](docs/prepublication-status-2026-10-21.md) are retained as history.
 
 ## Archive
 
@@ -25,6 +25,7 @@ See [docs/series.md](docs/series.md) for the complete publication chronology and
 - **[docs/series.md](docs/series.md)** — Publication chronology and Zenodo DOI registry
 - **[docs/reading-guide.md](docs/reading-guide.md)** — Conceptual reading paths (not publication order)
 - **[living-index.md](living-index.md)** — Cross-volume index and references
+- **[docs/vol61-publication-sync-2026-10-24.md](docs/vol61-publication-sync-2026-10-24.md)** — Vol.6.1 published manuscript/software, PR #29 integration, and evidence scope
 - **[docs/publication-status-2026-10-22.md](docs/publication-status-2026-10-22.md)** — Vol.5.3/Vol.5.4 published artifacts, evidence scope, and retained history
 - **[ROADMAP.md](ROADMAP.md)** — Future directions
 - **[CHANGELOG.md](CHANGELOG.md)** — Change history
