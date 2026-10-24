@@ -1,21 +1,21 @@
-# Vol.6.1 imported software: license scope
+# Vol.6.1 software — scoped MIT notice
 
-The 59 files under `harness/`, `checks/toy_d_information_correspondence.py`,
-and `SYNC_CONTRACT.json` identified in `integration/phase2-source-map.json`
-are copied without content changes from the MIT-licensed
-`Re_Phase_Vol_6_1_Software_2026-10-23.zip`
-(SHA-256 `48abc2ae97e1cf0ea5089f7e9610dfef0d4b6c14194f41e85a8660c4086c181e`).
-Their source MIT license applies to the code AND the included machine-readable
-specifications, golden snapshots, generated results and synchronization data.
-They are not relicensed as CC BY-NC by the repository's general non-code notice.
-This license-scope notice and the phase-2 source mapping are also provided under MIT.
+The 61 unchanged phase-2 imports listed in `integration/phase2-source-map.json`
+retain their original MIT license, including specifications, golden snapshots,
+generated results, the Toy D helper and synchronization data. The exact
+additional copies listed in `integration/phase3-manifest.json` also retain MIT:
+operational software notes, the manuscript's MIT-exception table generator,
+and machine-readable source/verification records. The new repository replay
+wrapper, integration mappings and current Vol.6.1 operational README/status
+are supplied under MIT.
 
-Existing research text, figures, manuscript and historical documents outside
-that imported file list retain their existing licenses. No manuscript PDF or
-TeX source is included in this implementation import. The root license files
-are unchanged in phase 2; their explanatory synchronization is a phase-3 task.
+These explicit software exceptions are not overridden by the root non-code
+CC BY-NC notice. They do not relicense manuscript text, exposition, figures,
+tables or PDF, or historical research documents. Historical copies retain
+their existing licenses. No manuscript PDF or authored TeX body is imported.
+Root LICENSE.md points to this scoped exception; LICENSE-CODE.md is unchanged.
 
-The original software archive license is reproduced below without modification.
+Original software license:
 
 MIT License
 

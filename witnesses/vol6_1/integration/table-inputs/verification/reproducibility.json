@@ -1,0 +1,76 @@
+{
+  "edition_id": "2026-10-23",
+  "files": 17,
+  "files_sha256": {
+    "run_summary.json": {
+      "bytes": 181,
+      "sha256": "8976a211221e095d70e0cbf41c81c9c2d103b189e234d85a399c7ed83710a494"
+    },
+    "table_v53.csv": {
+      "bytes": 2743,
+      "sha256": "1b4f8f506e7f436593cc46c629a3c65ddad3eacb74993e3db0f363cdd8ab36de"
+    },
+    "table_v54.csv": {
+      "bytes": 771,
+      "sha256": "8500da6160ce5661eb81c4207760343cbf48cdb8182303ce9361c3b5b7c14a4d"
+    },
+    "table_v54_choices.csv": {
+      "bytes": 2645,
+      "sha256": "f4544a574353933c883a61d148f1ce0b24d6b4a5b70fa36ff91559f91d787d77"
+    },
+    "v53/v53_collapse.out.json": {
+      "bytes": 1722,
+      "sha256": "d7ac967f8fef024e0a59c41e8c498b494d161a86775996a5276c26811f9fdeb2"
+    },
+    "v53/v53_constant_velocity.out.json": {
+      "bytes": 137321,
+      "sha256": "b9a293d64c486efd809f7f931f3c2eca4cbd31e1e4aad182bc908aa2b83a97dc"
+    },
+    "v53/v53_feature_ambiguous_recoverable.out.json": {
+      "bytes": 2577,
+      "sha256": "543c707179160e6a692b116eea7495598bce0b61203b49fadbc950d5fcb2df75"
+    },
+    "v53/v53_gap_collapse.out.json": {
+      "bytes": 1658,
+      "sha256": "6517b836484d1ac3f71aa97e56a79115d1e841ac2afdc536d5116cddfab94696"
+    },
+    "v53/v53_missing_cell.out.json": {
+      "bytes": 2714,
+      "sha256": "75d4cc1467fc46eb2281c33dd47c1b5999dbf1fb147af50378969fc73ae21501"
+    },
+    "v53/v53_same_slices_different_edges.out.json": {
+      "bytes": 5901,
+      "sha256": "d1ac6d0e9f2bed4defb3998d93936f791fe85ce9b8290f98b4c62379b6999af4"
+    },
+    "v53/v53_unique_lift.out.json": {
+      "bytes": 2211,
+      "sha256": "7ff4849ab0923bff181d27d5125695c247ef3a4e1d7bcbf3a744924b3d3a2564"
+    },
+    "v54/v54_toy_A_memoryless_fail.out.json": {
+      "bytes": 16495,
+      "sha256": "a8614af0725b5376e2fdefdf0beb94b78b22c5110056eafccd7873e4350f7097"
+    },
+    "v54/v54_toy_B_bridge_conflict.out.json": {
+      "bytes": 1807,
+      "sha256": "b8f8925f70c80561b84ef2a4471a288bd2081edd86ad97d62d3302c8d5bacbba"
+    },
+    "v54/v54_toy_C_nonblocking.out.json": {
+      "bytes": 1563,
+      "sha256": "b1461eba8636521d3ef286e0711a8c0d7aeff672b291ad4bf98cea6a3561f1eb"
+    },
+    "v54/v54_toy_D_retention_memory.out.json": {
+      "bytes": 11582,
+      "sha256": "dd302c0f2cb4ea3a16c4341d9412932774be809fd9d48d6f3c17504a5217455c"
+    },
+    "v54/v54_toy_E_target_sound_not_selector.out.json": {
+      "bytes": 3688,
+      "sha256": "6ddb9b3d83f02d1eadfa76f8c2c925a3ffe554bc1fe5ffdf6e7f133be74dfe91"
+    },
+    "v54/v54_toy_F_safe_nonexact.out.json": {
+      "bytes": 3799,
+      "sha256": "d3731d2702f71911a133c659a98adbd8fd3a3c45cce324867d2b8d8aae7ebe2b"
+    }
+  },
+  "normal_vs_optimized_equal": true,
+  "status": "PASS_GENERATED_BYTES"
+}

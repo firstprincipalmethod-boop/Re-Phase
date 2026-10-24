@@ -1,3 +1,5 @@
+> Historical 2026-10-22 checkpoint. For the later Vol.6.1 source integration, see [2026-10-24 status](publication-status-2026-10-24.md). The original body below is retained unchanged.
+
 # Re-Phase Vol.5.3 / Vol.5.4 — Publication Status
 
 Documentation checkpoint: **2026-10-22 (Asia/Tokyo)**.

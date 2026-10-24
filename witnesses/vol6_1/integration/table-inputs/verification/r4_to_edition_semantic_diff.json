@@ -1,0 +1,395 @@
+{
+  "cases": [
+    {
+      "computed_strict_equal": true,
+      "generated_difference": [
+        {
+          "after": "487316a1209e8e8a772bba0219c88664f84bebcc770229015275da11b768504a",
+          "before": "87e65942b9d4f0c7f8f8eab56de7aa91abc03712d91098274c23cebd017ca764",
+          "path": "/result/spec_sha256"
+        },
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/result/suite_version"
+        }
+      ],
+      "id": "v53_collapse",
+      "spec_difference": [
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/suite_version"
+        }
+      ]
+    },
+    {
+      "computed_strict_equal": true,
+      "generated_difference": [
+        {
+          "after": "1d1a4f91e957f7f1efc22a7b735a591864a9d32be95317510e237c52e2babdd5",
+          "before": "3d2b6bbdf85004b5f48c3299923195c5510d914cc5a3d566ed37849578c57e63",
+          "path": "/result/spec_sha256"
+        },
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/result/suite_version"
+        }
+      ],
+      "id": "v53_constant_velocity",
+      "spec_difference": [
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/suite_version"
+        }
+      ]
+    },
+    {
+      "computed_strict_equal": true,
+      "generated_difference": [
+        {
+          "after": "93b5ae347dd63a499f2c7ff575c3cc9ac727da215cf069f2372c23cb962e83ab",
+          "before": "b41312fe1f650c0412a3f841113009df3253f277b02931fdbd24de4856075c79",
+          "path": "/result/spec_sha256"
+        },
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/result/suite_version"
+        }
+      ],
+      "id": "v53_feature_ambiguous_recoverable",
+      "spec_difference": [
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/suite_version"
+        }
+      ]
+    },
+    {
+      "computed_strict_equal": true,
+      "generated_difference": [
+        {
+          "after": "de3b208b632e1f52feeec27dbe836a3b3e1c8a85924cc10df4445533def1456d",
+          "before": "a55875492304d8350b76ef1a923d41b854dbcc4b194ca57fd17e3738fc4242c5",
+          "path": "/result/spec_sha256"
+        },
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/result/suite_version"
+        }
+      ],
+      "id": "v53_gap_collapse",
+      "spec_difference": [
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/suite_version"
+        }
+      ]
+    },
+    {
+      "computed_strict_equal": true,
+      "generated_difference": [
+        {
+          "after": "d13643e06ba0dde7a2184a038691f1df7468be932c0996ff15b3910eb08d7a9d",
+          "before": "1fda5d0c30dfe15f41ed15851cd59ed4b1b991dcef4b1dfb1578f92ba264835a",
+          "path": "/result/spec_sha256"
+        },
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/result/suite_version"
+        }
+      ],
+      "id": "v53_missing_cell",
+      "spec_difference": [
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/suite_version"
+        }
+      ]
+    },
+    {
+      "computed_strict_equal": true,
+      "generated_difference": [
+        {
+          "after": "0325f1f0f69f454fc8a3da93746285302c573e3dfc6bab842cfc3c18ed81c145",
+          "before": "208a87dc043282ba4f37ee0507de8ec7a890ac099182b670cff8928740673070",
+          "path": "/result/spec_sha256"
+        },
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/result/suite_version"
+        }
+      ],
+      "id": "v53_same_slices_different_edges",
+      "spec_difference": [
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/suite_version"
+        }
+      ]
+    },
+    {
+      "computed_strict_equal": true,
+      "generated_difference": [
+        {
+          "after": "b6168afd230a50513fe5b528a5f0d49998e04a511564cae73b933ad4ea38e33d",
+          "before": "0ab772fc221615e0896e8493a6a48121f0e80cc4d588c91f143a589bde73a161",
+          "path": "/result/spec_sha256"
+        },
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/result/suite_version"
+        }
+      ],
+      "id": "v53_unique_lift",
+      "spec_difference": [
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/suite_version"
+        }
+      ]
+    },
+    {
+      "computed_strict_equal": true,
+      "generated_difference": [
+        {
+          "after": "0f243edc5d2951a7a45b9d7ff3e335440a8598c12d59312c238b0fbccffc91d6",
+          "before": "206b5151037938b6546dc0af0aec338ed24a40db0d184126c6f060650b2c590d",
+          "path": "/result/spec_sha256"
+        },
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/result/suite_version"
+        }
+      ],
+      "id": "v54_toy_A_memoryless_fail",
+      "spec_difference": [
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/suite_version"
+        }
+      ]
+    },
+    {
+      "computed_strict_equal": true,
+      "generated_difference": [
+        {
+          "after": "10d8be2252f1e58efa24dee5072a1d6a2e2dc6a083caffadd995098f89d187ce",
+          "before": "4de79a78aa61d5f53f3db0a5f50be4eda261c4339ce572ce90bd341f7562de83",
+          "path": "/result/spec_sha256"
+        },
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/result/suite_version"
+        }
+      ],
+      "id": "v54_toy_B_bridge_conflict",
+      "spec_difference": [
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/suite_version"
+        }
+      ]
+    },
+    {
+      "computed_strict_equal": true,
+      "generated_difference": [
+        {
+          "after": "fd4d594f52639165453b62e7d3e30d52020bff9c6c4cfc4bae34198b0086499d",
+          "before": "9149a6dd846bf9daab6cb41f6f87e96d2f9690e8d48667fcc995e433d14a348f",
+          "path": "/result/spec_sha256"
+        },
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/result/suite_version"
+        }
+      ],
+      "id": "v54_toy_C_nonblocking",
+      "spec_difference": [
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/suite_version"
+        }
+      ]
+    },
+    {
+      "computed_strict_equal": true,
+      "generated_difference": [
+        {
+          "after": "76f9da5f60f7573a0b09916ba5c9b1106705429fbc16ff6f53ff347ce75a9743",
+          "before": "1eba6f1cf135f0df5e22e1693eae82a2568cf4ad9862f89c2a82f43d10243325",
+          "path": "/result/spec_sha256"
+        },
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/result/suite_version"
+        }
+      ],
+      "id": "v54_toy_D_retention_memory",
+      "spec_difference": [
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/suite_version"
+        }
+      ]
+    },
+    {
+      "computed_strict_equal": true,
+      "generated_difference": [
+        {
+          "after": "554d48a823ea70f358a8772fa9182d2e887f9792d0de7c944c6ac88fe2bc06c0",
+          "before": "37852193b95577a070e7db21a6d12dac339f98f7eff5407d0eec4da47428eb59",
+          "path": "/result/spec_sha256"
+        },
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/result/suite_version"
+        }
+      ],
+      "id": "v54_toy_E_target_sound_not_selector",
+      "spec_difference": [
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/suite_version"
+        }
+      ]
+    },
+    {
+      "computed_strict_equal": true,
+      "generated_difference": [
+        {
+          "after": "8f65262fe85a5a19e6ff0207f3b5b6e8148b3b8f1e4d30c42d8e9b117c4143c5",
+          "before": "98d3bb5c92a779de2a7ee9e26e5885f167392ec04b31335c9db8882c6558ccd0",
+          "path": "/result/spec_sha256"
+        },
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/result/suite_version"
+        }
+      ],
+      "id": "v54_toy_F_safe_nonexact",
+      "spec_difference": [
+        {
+          "after": "2026-10-23",
+          "before": "2026-10-23-r4",
+          "path": "/suite_version"
+        }
+      ]
+    }
+  ],
+  "csv_byte_identical": {
+    "table_v53.csv": true,
+    "table_v54.csv": true,
+    "table_v54_choices.csv": true
+  },
+  "from_id": "2026-10-23-r4",
+  "python_files": [
+    {
+      "byte_identical": true,
+      "file": "bounded_check.py",
+      "identifier_only": false
+    },
+    {
+      "byte_identical": true,
+      "file": "checker_selftest.py",
+      "identifier_only": false
+    },
+    {
+      "byte_identical": true,
+      "file": "compute.py",
+      "identifier_only": false
+    },
+    {
+      "byte_identical": true,
+      "file": "compute_v53.py",
+      "identifier_only": false
+    },
+    {
+      "byte_identical": true,
+      "file": "compute_v54.py",
+      "identifier_only": false
+    },
+    {
+      "byte_identical": false,
+      "file": "contract.py",
+      "identifier_only": true
+    },
+    {
+      "byte_identical": true,
+      "file": "freeze_candidate.py",
+      "identifier_only": false
+    },
+    {
+      "byte_identical": true,
+      "file": "golden.py",
+      "identifier_only": false
+    },
+    {
+      "byte_identical": true,
+      "file": "independent_check.py",
+      "identifier_only": false
+    },
+    {
+      "byte_identical": true,
+      "file": "output_writer.py",
+      "identifier_only": false
+    },
+    {
+      "byte_identical": true,
+      "file": "report.py",
+      "identifier_only": false
+    },
+    {
+      "byte_identical": true,
+      "file": "run_all.py",
+      "identifier_only": false
+    },
+    {
+      "byte_identical": true,
+      "file": "schema.py",
+      "identifier_only": false
+    },
+    {
+      "byte_identical": true,
+      "file": "selftest.py",
+      "identifier_only": false
+    },
+    {
+      "byte_identical": true,
+      "file": "spec_loader.py",
+      "identifier_only": false
+    }
+  ],
+  "record_allowed_paths": [
+    "/suite_version",
+    "/spec_sha256"
+  ],
+  "spec_allowed_paths": [
+    "/suite_version"
+  ],
+  "status": "PASS_STRICT_MATHEMATICAL_RETENTION",
+  "to_id": "2026-10-23"
+}

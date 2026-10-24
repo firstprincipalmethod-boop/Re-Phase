@@ -1,0 +1,114 @@
+{
+  "augmented_section_map": "full tilt history and retained mode",
+  "candidate_id": "2026-10-23",
+  "general_equivalence_claimed": false,
+  "implementation_policy_map": "full tilt history and retained mode",
+  "information_value_keys_identical": false,
+  "primary_or_golden_imported": false,
+  "scope": "two fixed member sets only; not general controller synthesis",
+  "source_doi": "10.5281/zenodo.23499819",
+  "source_policy_map": "current tilt and retained mode",
+  "source_policy_section": "12",
+  "spec_sha256": "76f9da5f60f7573a0b09916ba5c9b1106705429fbc16ff6f53ff347ce75a9743",
+  "status": "PASS_FIXED_TOY_D_INFORMATION_CORRESPONDENCE",
+  "worlds": [
+    {
+      "current_tilt_plus_mode": {
+        "cells": [
+          {
+            "common_actions": [
+              "r"
+            ],
+            "members": [
+              "slip"
+            ]
+          },
+          {
+            "common_actions": [
+              "n"
+            ],
+            "members": [
+              "stable"
+            ]
+          }
+        ],
+        "policy_count": 1
+      },
+      "history_plus_mode": {
+        "cells": [
+          {
+            "common_actions": [
+              "r"
+            ],
+            "members": [
+              "slip"
+            ]
+          },
+          {
+            "common_actions": [
+              "n"
+            ],
+            "members": [
+              "stable"
+            ]
+          }
+        ],
+        "policy_count": 1
+      },
+      "same_allowed_intersections_and_count": true,
+      "same_member_partition": true,
+      "status": "PASS",
+      "two_singleton_cells": true,
+      "world": "silent"
+    },
+    {
+      "current_tilt_plus_mode": {
+        "cells": [
+          {
+            "common_actions": [
+              "r"
+            ],
+            "members": [
+              "slip"
+            ]
+          },
+          {
+            "common_actions": [
+              "n"
+            ],
+            "members": [
+              "stable"
+            ]
+          }
+        ],
+        "policy_count": 1
+      },
+      "history_plus_mode": {
+        "cells": [
+          {
+            "common_actions": [
+              "r"
+            ],
+            "members": [
+              "slip"
+            ]
+          },
+          {
+            "common_actions": [
+              "n"
+            ],
+            "members": [
+              "stable"
+            ]
+          }
+        ],
+        "policy_count": 1
+      },
+      "same_allowed_intersections_and_count": true,
+      "same_member_partition": true,
+      "status": "PASS",
+      "two_singleton_cells": true,
+      "world": "traceable"
+    }
+  ]
+}

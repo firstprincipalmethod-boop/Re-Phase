@@ -1,0 +1,9 @@
+{
+  "edition_id": "2026-10-23",
+  "prior_record_sha256": "fc0653b369970a74a1c23948ed6d56ad756f7fbf50b162721147ecc8c639e812",
+  "r4_source_map_sha256": "84eeadb3634eee3e2221e21d537ca8feeb58d4a353df726bf752ca11932ca0d1",
+  "scope": "source map and mathematical fixtures unchanged from exact r4; no new remote fetch or general re-proof",
+  "source_map_byte_identical": true,
+  "source_map_sha256": "84eeadb3634eee3e2221e21d537ca8feeb58d4a353df726bf752ca11932ca0d1",
+  "status": "PASS_RETAINED_SOURCE_MAP"
+}

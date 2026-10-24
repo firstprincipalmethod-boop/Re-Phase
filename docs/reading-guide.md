@@ -60,11 +60,11 @@ Develops pathwise compatibility and computational feasibility.
 4. **Vol.5.3** — Pathwise Compatibility Lifting — Path Fibers, R × S Bridge Worlds, and Nonempty-Guarded Path Recoverability. Published corrected edition 2026-10-21 (`noheader_r1`): [10.5281/zenodo.23499738](https://doi.org/10.5281/zenodo.23499738). Historical edition: [10.5281/zenodo.20956126](https://doi.org/10.5281/zenodo.20956126).
 5. **Vol.5.4** — Information-Adapted Selection — Selector Classes, Retention, and Safe Forgetting. Published corrected edition 2026-10-21: [10.5281/zenodo.23499819](https://doi.org/10.5281/zenodo.23499819). Historical edition: [10.5281/zenodo.20986204](https://doi.org/10.5281/zenodo.20986204).
 6. **Vol.6** — Computational Compatibility — Feasibility, Recoverability, and Representation-Sound Approximation (10.5281/zenodo.20745456)
-7. **Vol.6.1** — v0.4.2 historical archived release: manuscript [10.5281/zenodo.21220080](https://doi.org/10.5281/zenodo.21220080); software / witness harness [10.5281/zenodo.21220093](https://doi.org/10.5281/zenodo.21220093). A synchronized corrective revision is in progress. The historical 13/13 PASS is not certification against the corrected 2026-10-21 Vol.5.3 and Vol.5.4.
+7. **Vol.6.1** — v0.4.2 historical archived release: manuscript [10.5281/zenodo.21220080](https://doi.org/10.5281/zenodo.21220080); software / witness harness [10.5281/zenodo.21220093](https://doi.org/10.5281/zenodo.21220093). The [corrected 2026-10-23 harness](../witnesses/vol6_1/README.md) is in this source tree; paired Zenodo publication is pending. The historical 13/13 PASS is not certification against the corrected 2026-10-21 Vol.5.3 and Vol.5.4.
 
 The Vol.5.3 and Vol.5.4 current reading links now point to the published corrected editions. Their previous DOI links remain explicitly historical. See the [2026-10-22 publication status](publication-status-2026-10-22.md) for artifact identities and the scope of publication confirmation; the [pre-publication checkpoint](prepublication-status-2026-10-21.md) is retained as history.
 
-Vol.6.1 owner-designated successor manuscript DOI 10.5281/zenodo.23499925 and software DOI 10.5281/zenodo.23499964 are both publication pending, with corrective revision in progress. See [Vol.6.1 correction status](../witnesses/vol6_1/CORRECTION_STATUS.md) for that separate boundary.
+Vol.6.1 owner-designated successor manuscript DOI 10.5281/zenodo.23499925 and software DOI 10.5281/zenodo.23499964 are both publication pending; the corrected implementation and [phase-3 checkpoint](publication-status-2026-10-24.md) are distinct from a main merge or Zenodo release. See [Vol.6.1 correction status](../witnesses/vol6_1/CORRECTION_STATUS.md) for that separate boundary.
 
 ---
 

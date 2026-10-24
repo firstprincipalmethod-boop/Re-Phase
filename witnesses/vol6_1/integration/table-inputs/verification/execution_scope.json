@@ -1,0 +1,6 @@
+{
+  "edition_id": "2026-10-23",
+  "operation": "publication wording and Appendix C readability",
+  "scope": "Fresh local Linux execution; earlier execution-scope bytes retained in pre_presentation_checkpoint. Normal and optimized repeats are not distinct models.",
+  "status": "PASS_SCOPED_LOCAL_CHECKS"
+}

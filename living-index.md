@@ -7,7 +7,7 @@ This index tracks the relationship between Re-Phase volumes, including DOI refer
 Zenodo DOI records are the authoritative fixed archived versions.
 For publication chronology, see [docs/series.md](docs/series.md).
 For conceptual reading order, see [docs/reading-guide.md](docs/reading-guide.md).
-For published corrected editions, artifact identities, and correction boundaries, see the [2026-10-22 publication status](docs/publication-status-2026-10-22.md). The [pre-publication checkpoint](docs/prepublication-status-2026-10-21.md) is retained as history.
+For current correction/integration boundaries, see the [2026-10-24 checkpoint](docs/publication-status-2026-10-24.md); fixed Vol.5.3/5.4 identities remain in the [2026-10-22 publication record](docs/publication-status-2026-10-22.md). The [pre-publication checkpoint](docs/prepublication-status-2026-10-21.md) is retained as history.
 
 ## Root / Orientation
 
@@ -355,23 +355,23 @@ For published corrected editions, artifact identities, and correction boundaries
 
 ---
 
-## Vol.6.1 — Historical Finite Witness Suite and Corrective Revision
+## Vol.6.1 — Corrected Finite Witness Harness and Retained History
 
 **Historical status:** v0.4.2 archived release.
 
 - Manuscript: https://doi.org/10.5281/zenodo.21220080
 - Software / witness harness: https://doi.org/10.5281/zenodo.21220093
 
-**Corrective revision:** In progress; synchronized manuscript/software publication pending.
+**Corrected edition:** 2026-10-23 implementation in this tree; synchronized manuscript/software Zenodo publication pending. PR/merge is a separate gate.
 
 **Owner-designated successor records:**
 
-- Manuscript: 10.5281/zenodo.23499925 — corrective revision in progress / publication pending (CC-BY-NC).
-- Software / witness harness: 10.5281/zenodo.23499964 — corrective revision in progress / publication pending (MIT).
+- Manuscript: 10.5281/zenodo.23499925 — corrected 2026-10-23 artifacts prepared / publication pending (CC-BY-NC).
+- Software / witness harness: 10.5281/zenodo.23499964 — corrected 2026-10-23 artifacts prepared / publication pending (MIT).
 
 **Core themes:** Vol.5.3 pathwise witness lane, Vol.5.4 selector witness lane, canonical finite specs, generated JSON outputs, reproducibility harness, release-gate verification
 
-**Current role:** Preserving the historical suite while a synchronized corrective revision is in progress. The historical 13/13 PASS is not certification against the corrected 2026-10-21 Vol.5.3 and Vol.5.4. See [Vol.6.1 correction status](witnesses/vol6_1/CORRECTION_STATUS.md).
+**Current role:** Reproducing 13 typed finite cases using the corrected harness; historical snapshots remain at the fixed predecessor commit and old Zenodo archive, not at the current golden paths. The historical 13/13 PASS is not certification against the corrected 2026-10-21 Vol.5.3 and Vol.5.4. See [Vol.6.1 correction status](witnesses/vol6_1/CORRECTION_STATUS.md).
 
 ---
 
@@ -383,7 +383,7 @@ For published corrected editions, artifact identities, and correction boundaries
 - **Risk and Posterior** (Vol.4) extend to probabilistic and directional settings
 - **Path-Space and Selection** (Vol.5) develop pathwise and selector frameworks
 - **Computational** (Vol.6) realizes feasibility and recoverability
-- **Vol.6.1** preserves the historical v0.4.2 finite witness suite; its synchronized manuscript/software corrective revision is in progress
+- **Vol.6.1** contains the corrected 2026-10-23 finite witness harness; v0.4.2 remains historical and paired Zenodo publication is pending
 
 ---
 
