@@ -1,0 +1,9 @@
+{
+  "edition_id": "2026-10-23",
+  "execution_platform": "Linux",
+  "native_windows_execution_current_presentation": false,
+  "new_artifact_external_review_completed": false,
+  "prior_exact_artifact_review": "provenance/reviews/pre_presentation_review_summary.json",
+  "python": "3.13.5",
+  "remote_operations": 0
+}

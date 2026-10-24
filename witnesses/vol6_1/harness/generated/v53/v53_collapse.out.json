@@ -1,30 +1,90 @@
 {
-  "compute_status": "ok",
-  "computed": {
-    "feature_image_lift": [],
-    "feature_image_pt": [
-      "t"
-    ],
-    "lift_size": 0,
-    "lift_status": "infeasible",
-    "pt_size": 2,
-    "recoverable": false,
-    "target": [
-      "t"
-    ],
-    "target_check": "vacuous_empty_lift",
-    "tau_pre": {
-      "k": 2,
-      "status": "finite"
+  "result": {
+    "computed": {
+      "backward_survivable": [
+        [],
+        [
+          "v"
+        ],
+        [
+          "t"
+        ]
+      ],
+      "claim_checks": {
+        "lift_empty": true,
+        "not_recoverable": true,
+        "pointwise_nonempty": true
+      },
+      "feature_image_lift": [],
+      "feature_image_pt": [
+        "t"
+      ],
+      "feature_lift_counts": [],
+      "fibers": [
+        [
+          "s"
+        ],
+        [
+          "u",
+          "v"
+        ],
+        [
+          "t"
+        ]
+      ],
+      "forward_reachable": [
+        [
+          "s"
+        ],
+        [
+          "u"
+        ],
+        []
+      ],
+      "lift_size": 0,
+      "lift_status": "infeasible",
+      "lifts": [],
+      "live_cone_obstructions": [
+        0,
+        1
+      ],
+      "obligation_type": "path_feature_recoverability",
+      "pt_size": 2,
+      "recoverable": false,
+      "registered_claim_holds": true,
+      "retrospective_break": [
+        0,
+        1
+      ],
+      "surviving_slices": [
+        [],
+        [],
+        []
+      ],
+      "target": [
+        "t"
+      ],
+      "target_check": "vacuous_empty_lift",
+      "tau_pre": {
+        "k": 2,
+        "status": "finite"
+      },
+      "viable_bridges": [
+        [],
+        []
+      ]
     },
-    "verdict": "collapse"
+    "id": "v53_collapse",
+    "kind": "pathwise",
+    "role_label": "pointwise_nonempty_pathwise_empty",
+    "schema_version": 2,
+    "source_volume": "Vol.5.3",
+    "spec_sha256": "487316a1209e8e8a772bba0219c88664f84bebcc770229015275da11b768504a",
+    "suite_version": "2026-10-23"
   },
-  "generated_by": "witnesses/vol6_1/harness/compute.py",
-  "id": "v53_collapse",
-  "kind": "pathwise",
-  "source_volume": "Vol.5.3",
   "verification": {
-    "checked_by": "run_all.py",
-    "status": "pass"
+    "finite_claims": "pass",
+    "scope": "fixed_finite_fixture_not_general_proof",
+    "strict_golden": "pass"
   }
 }

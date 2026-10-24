@@ -1,0 +1,1116 @@
+{
+  "failed": 0,
+  "mode": "normal",
+  "passed": 116,
+  "results": [
+    {
+      "category": "POSITIVE_CONTROL",
+      "details": {
+        "claim_check_count": 3,
+        "comparison": "complete_record_keys_types_values",
+        "id": "v53_collapse",
+        "registered_claim_holds": true,
+        "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+      },
+      "status": "PASS",
+      "test": "valid record v53_collapse"
+    },
+    {
+      "category": "POSITIVE_CONTROL",
+      "details": {
+        "claim_check_count": 4,
+        "comparison": "complete_record_keys_types_values",
+        "id": "v53_constant_velocity",
+        "registered_claim_holds": true,
+        "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+      },
+      "status": "PASS",
+      "test": "valid record v53_constant_velocity"
+    },
+    {
+      "category": "POSITIVE_CONTROL",
+      "details": {
+        "claim_check_count": 2,
+        "comparison": "complete_record_keys_types_values",
+        "id": "v53_feature_ambiguous_recoverable",
+        "registered_claim_holds": true,
+        "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+      },
+      "status": "PASS",
+      "test": "valid record v53_feature_ambiguous_recoverable"
+    },
+    {
+      "category": "POSITIVE_CONTROL",
+      "details": {
+        "claim_check_count": 3,
+        "comparison": "complete_record_keys_types_values",
+        "id": "v53_gap_collapse",
+        "registered_claim_holds": true,
+        "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+      },
+      "status": "PASS",
+      "test": "valid record v53_gap_collapse"
+    },
+    {
+      "category": "POSITIVE_CONTROL",
+      "details": {
+        "claim_check_count": 3,
+        "comparison": "complete_record_keys_types_values",
+        "id": "v53_missing_cell",
+        "registered_claim_holds": true,
+        "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+      },
+      "status": "PASS",
+      "test": "valid record v53_missing_cell"
+    },
+    {
+      "category": "POSITIVE_CONTROL",
+      "details": {
+        "claim_check_count": 5,
+        "comparison": "complete_record_keys_types_values",
+        "id": "v53_same_slices_different_edges",
+        "registered_claim_holds": true,
+        "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+      },
+      "status": "PASS",
+      "test": "valid record v53_same_slices_different_edges"
+    },
+    {
+      "category": "POSITIVE_CONTROL",
+      "details": {
+        "claim_check_count": 3,
+        "comparison": "complete_record_keys_types_values",
+        "id": "v53_unique_lift",
+        "registered_claim_holds": true,
+        "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+      },
+      "status": "PASS",
+      "test": "valid record v53_unique_lift"
+    },
+    {
+      "category": "POSITIVE_CONTROL",
+      "details": {
+        "claim_check_count": 3,
+        "comparison": "complete_record_keys_types_values",
+        "id": "v54_toy_A_memoryless_fail",
+        "registered_claim_holds": true,
+        "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+      },
+      "status": "PASS",
+      "test": "valid record v54_toy_A_memoryless_fail"
+    },
+    {
+      "category": "POSITIVE_CONTROL",
+      "details": {
+        "claim_check_count": 2,
+        "comparison": "complete_record_keys_types_values",
+        "id": "v54_toy_B_bridge_conflict",
+        "registered_claim_holds": true,
+        "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+      },
+      "status": "PASS",
+      "test": "valid record v54_toy_B_bridge_conflict"
+    },
+    {
+      "category": "POSITIVE_CONTROL",
+      "details": {
+        "claim_check_count": 3,
+        "comparison": "complete_record_keys_types_values",
+        "id": "v54_toy_C_nonblocking",
+        "registered_claim_holds": true,
+        "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+      },
+      "status": "PASS",
+      "test": "valid record v54_toy_C_nonblocking"
+    },
+    {
+      "category": "POSITIVE_CONTROL",
+      "details": {
+        "claim_check_count": 5,
+        "comparison": "complete_record_keys_types_values",
+        "id": "v54_toy_D_retention_memory",
+        "registered_claim_holds": true,
+        "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+      },
+      "status": "PASS",
+      "test": "valid record v54_toy_D_retention_memory"
+    },
+    {
+      "category": "POSITIVE_CONTROL",
+      "details": {
+        "claim_check_count": 7,
+        "comparison": "complete_record_keys_types_values",
+        "id": "v54_toy_E_target_sound_not_selector",
+        "registered_claim_holds": true,
+        "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+      },
+      "status": "PASS",
+      "test": "valid record v54_toy_E_target_sound_not_selector"
+    },
+    {
+      "category": "POSITIVE_CONTROL",
+      "details": {
+        "claim_check_count": 7,
+        "comparison": "complete_record_keys_types_values",
+        "id": "v54_toy_F_safe_nonexact",
+        "registered_claim_holds": true,
+        "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+      },
+      "status": "PASS",
+      "test": "valid record v54_toy_F_safe_nonexact"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants: key set mismatch; missing=['memoryless'] extra=[]",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A remove memoryless"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants/memoryless/selector_count: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A corrupt count memoryless"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants/memoryless/full_path_selector_exists: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A corrupt existence memoryless"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants/memoryless/per_time/0/count: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A corrupt per-time memoryless"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants/memoryless/selector_tables: type mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A corrupt tables memoryless"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants/memoryless/selected_paths: type mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A corrupt selected paths memoryless"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants: key set mismatch; missing=['lookback_1'] extra=[]",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A remove lookback_1"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants/lookback_1/selector_count: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A corrupt count lookback_1"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants/lookback_1/full_path_selector_exists: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A corrupt existence lookback_1"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants/lookback_1/per_time/0/count: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A corrupt per-time lookback_1"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants/lookback_1/selector_tables: type mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A corrupt tables lookback_1"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants/lookback_1/selected_paths: key set mismatch; missing=['path0', 'path1'] extra=[]",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A corrupt selected paths lookback_1"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants: key set mismatch; missing=['causal'] extra=[]",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A remove causal"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants/causal/selector_count: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A corrupt count causal"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants/causal/full_path_selector_exists: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A corrupt existence causal"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants/causal/per_time/0/count: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A corrupt per-time causal"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants/causal/selector_tables: type mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A corrupt tables causal"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants/causal/selected_paths: key set mismatch; missing=['path0', 'path1'] extra=[]",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A corrupt selected paths causal"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants: key set mismatch; missing=['offline'] extra=[]",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A remove offline"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants/offline/selector_count: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A corrupt count offline"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants/offline/full_path_selector_exists: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A corrupt existence offline"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants/offline/per_time/0/count: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A corrupt per-time offline"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants/offline/selector_tables: type mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A corrupt tables offline"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants/offline/selected_paths: key set mismatch; missing=['path0', 'path1'] extra=[]",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A corrupt selected paths offline"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants: key set mismatch; missing=['causal', 'offline'] extra=[]",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A remove causal and offline"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/variants: key set mismatch; missing=[] extra=['extra']",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A add variant"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed: key set mismatch; missing=[] extra=['extra']",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "A extra computed key"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/common_action_policy_preserved: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_E_target_sound_not_selector preserved flip"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/cpre_claim_status: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_E_target_sound_not_selector CPre promoted"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed: key set mismatch; missing=['cpre_claim_status'] extra=[]",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_E_target_sound_not_selector CPre removed"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/pre_information: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_E_target_sound_not_selector pre information wrong"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/post_information: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_E_target_sound_not_selector post information wrong"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/exact: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_E_target_sound_not_selector exact flip control"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/quotient_display_section/count: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_E_target_sound_not_selector section count"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/claim_checks/target_sound: type mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_E_target_sound_not_selector derived claim integer"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/common_action_policy_preserved: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_F_safe_nonexact preserved flip"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/cpre_claim_status: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_F_safe_nonexact CPre promoted"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed: key set mismatch; missing=['cpre_claim_status'] extra=[]",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_F_safe_nonexact CPre removed"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/pre_information: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_F_safe_nonexact pre information wrong"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/post_information: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_F_safe_nonexact post information wrong"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/exact: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_F_safe_nonexact exact flip control"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/quotient_display_section/count: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_F_safe_nonexact section count"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/claim_checks/target_sound: type mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_F_safe_nonexact derived claim integer"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$: key set mismatch; missing=[] extra=['extra']",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "extra outer null"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$: key set mismatch; missing=['kind'] extra=[]",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "missing outer"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/id: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "wrong ID"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/spec_sha256: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "wrong digest"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/schema_version: type mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "schema float"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed: type mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "computed null"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/recoverable: type mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "bool to int"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/pt_size: type mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "integer to bool"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/pt_size: type mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "integer to float"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/tau_pre: key set mismatch; missing=['k'] extra=[]",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "missing nested"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/tau_pre: key set mismatch; missing=[] extra=['extra']",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "extra nested null"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/live_cone_obstructions: array length mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "empty set modified"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/registered_claim_holds: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "registered claim flip"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed: key set mismatch; missing=[] extra=['hidden_extra']",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v53_collapse extra computed"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed: key set mismatch; missing=[] extra=['hidden_extra']",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v53_constant_velocity extra computed"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed: key set mismatch; missing=[] extra=['hidden_extra']",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v53_feature_ambiguous_recoverable extra computed"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed: key set mismatch; missing=[] extra=['hidden_extra']",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v53_gap_collapse extra computed"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed: key set mismatch; missing=[] extra=['hidden_extra']",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v53_missing_cell extra computed"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed: key set mismatch; missing=[] extra=['hidden_extra']",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v53_same_slices_different_edges extra computed"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed: key set mismatch; missing=[] extra=['hidden_extra']",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v53_unique_lift extra computed"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed: key set mismatch; missing=[] extra=['hidden_extra']",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_A_memoryless_fail extra computed"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed: key set mismatch; missing=[] extra=['hidden_extra']",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_B_bridge_conflict extra computed"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed: key set mismatch; missing=[] extra=['hidden_extra']",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_C_nonblocking extra computed"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed: key set mismatch; missing=[] extra=['hidden_extra']",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_D_retention_memory extra computed"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed: key set mismatch; missing=[] extra=['hidden_extra']",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_E_target_sound_not_selector extra computed"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed: key set mismatch; missing=[] extra=['hidden_extra']",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "v54_toy_F_safe_nonexact extra computed"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/full_path_selector_status: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "B full-path claim promotion"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/fixed_transition_bridge_realization_claimed: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "B fixed-transition promotion"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/general_controller_synthesis_claimed: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "C controller promotion"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/full_path_selector_exists: type mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "C null versus false"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/worlds: key set mismatch; missing=['silent'] extra=[]",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "D missing world"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/closed_loop_guarantee_claimed: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "D closed-loop promotion"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/intermediate_state_removed: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "velocity remove state stage"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/schedules: array length mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "velocity delete schedule"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/state_stage_count: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "velocity wrong stage count"
+    },
+    {
+      "category": "DIRECT_CHECK_NO_FIXED_HASH_SHORTCUT",
+      "details": {
+        "reason": "$/computed/different_viable_bridges: value mismatch",
+        "rejection": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "same slices bridge flag"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 0,
+        "prior_report_preserved_on_failure": false,
+        "reported_status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+      },
+      "status": "PASS",
+      "test": "CLI valid full suite"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 2,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INPUT_CONTRACT"
+      },
+      "status": "PASS",
+      "test": "CLI nonexistent specs"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 2,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INPUT_CONTRACT"
+      },
+      "status": "PASS",
+      "test": "CLI nonexistent results"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 2,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INPUT_CONTRACT"
+      },
+      "status": "PASS",
+      "test": "CLI empty specs"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 2,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INPUT_CONTRACT"
+      },
+      "status": "PASS",
+      "test": "CLI empty results"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 2,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INPUT_CONTRACT"
+      },
+      "status": "PASS",
+      "test": "CLI one spec only"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 2,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INPUT_CONTRACT"
+      },
+      "status": "PASS",
+      "test": "CLI one spec missing"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 2,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INPUT_CONTRACT"
+      },
+      "status": "PASS",
+      "test": "CLI one result missing"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 2,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INPUT_CONTRACT"
+      },
+      "status": "PASS",
+      "test": "CLI duplicate ID"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 2,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INPUT_CONTRACT"
+      },
+      "status": "PASS",
+      "test": "CLI extra ID"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 2,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INPUT_CONTRACT"
+      },
+      "status": "PASS",
+      "test": "CLI wrong lane"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 2,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INPUT_CONTRACT"
+      },
+      "status": "PASS",
+      "test": "CLI wrong filename"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 2,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INPUT_CONTRACT"
+      },
+      "status": "PASS",
+      "test": "CLI extra result"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 2,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INPUT_CONTRACT"
+      },
+      "status": "PASS",
+      "test": "CLI result wrong lane"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 2,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INPUT_CONTRACT"
+      },
+      "status": "PASS",
+      "test": "CLI result wrong ID"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 2,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INPUT_CONTRACT"
+      },
+      "status": "PASS",
+      "test": "CLI unknown result sidecar"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 2,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INPUT_CONTRACT"
+      },
+      "status": "PASS",
+      "test": "CLI duplicate JSON key"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 2,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INPUT_CONTRACT"
+      },
+      "status": "PASS",
+      "test": "CLI nonfinite JSON"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 2,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INPUT_CONTRACT"
+      },
+      "status": "PASS",
+      "test": "CLI extra wrapper"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 3,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "CLI altered verification"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 3,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "CLI A missing variants"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 3,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "CLI E preserved flip"
+    },
+    {
+      "category": "FULL_SUITE_CLI",
+      "details": {
+        "exit_code": 3,
+        "prior_report_preserved_on_failure": true,
+        "reported_status": "FAIL_INDEPENDENT_MISMATCH"
+      },
+      "status": "PASS",
+      "test": "CLI E CPre promotion"
+    },
+    {
+      "category": "CALLER_INTEGRATION",
+      "details": {
+        "rejection": "shared independent check; no output created"
+      },
+      "status": "PASS",
+      "test": "freeze call path rejects missing A class"
+    }
+  ],
+  "scope": "named auxiliary-checker adversarial cases; not distinct mathematical models",
+  "status": "PASS_CHECKER_SELFTEST",
+  "suite_version": "2026-10-23",
+  "tests": 116
+}

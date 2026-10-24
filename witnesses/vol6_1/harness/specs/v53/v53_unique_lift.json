@@ -1,19 +1,60 @@
 {
-  "id": "v53_unique_lift",
-  "source_volume": "Vol.5.3",
-  "source_section": "4.4",
-  "kind": "pathwise",
-  "role": "transition compatibility can collapse a multivalued pointwise fiber down to a unique path",
-  "status": "core",
   "count_objects": {
-    "pt_object": "full pointwise relaxation Pt(y)=product_k F_k(y_k)",
-    "lift_object": "transition-compatible subset Lift(y) of Pt(y)",
-    "feature_object": "image of Pt(y) and Lift(y) under the terminal-state feature map"
+    "scope": "finite input objects in spec; counts and claims are computed, not embedded expectations"
   },
+  "id": "v53_unique_lift",
+  "kind": "pathwise",
+  "role": "unique_lift_from_multiple_pointwise_candidates",
+  "schema_version": 2,
+  "source": {
+    "doi": "10.5281/zenodo.23499738",
+    "edition": "2026-10-21",
+    "layout": "noheader_r1",
+    "pdf_sha256": "4a2dd6ed2fa2f93a07d195220f203359b5989137fc8d758022e3a02551d2f6f3",
+    "relation": "reproduction_of_declared_finite_example"
+  },
+  "source_section": "12.3",
+  "source_volume": "Vol.5.3",
   "spec": {
-    "state_sets": { "X0": ["a1", "a2"], "X1": ["b"], "X2": ["c1", "c2"] },
-    "transitions": { "T0": [["a1", "b"]], "T1": [["b", "c1"]] },
-    "feature": "terminal_state",
-    "target": ["c1"]
-  }
+    "feature": {
+      "kind": "terminal_state"
+    },
+    "state_sets": {
+      "X0": [
+        "a0",
+        "b0"
+      ],
+      "X1": [
+        "a1",
+        "b1"
+      ],
+      "X2": [
+        "a2",
+        "b2"
+      ]
+    },
+    "target": [
+      "a2"
+    ],
+    "transitions": {
+      "T0": [
+        [
+          "a0",
+          "a1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "T1": [
+        [
+          "a1",
+          "a2"
+        ]
+      ]
+    }
+  },
+  "status": "correction_candidate",
+  "suite_version": "2026-10-23"
 }

@@ -1,0 +1,233 @@
+{
+  "C1_section_unchanged": true,
+  "computed_objects_strictly_identical": 13,
+  "edition_id": "2026-10-23",
+  "generated_files_byte_identical": 17,
+  "goldens_byte_identical": 13,
+  "harness_files_byte_identical": 59,
+  "license_files_unchanged": true,
+  "native_windows_execution": false,
+  "normal_and_optimized_not_distinct_models": true,
+  "numeric_tables_unchanged": 6,
+  "platform": "Linux",
+  "python": "3.13.5",
+  "remote_reads": 0,
+  "remote_writes": 0,
+  "runs": [
+    {
+      "command": [
+        "python",
+        "-I",
+        "-B",
+        "<WORKDIR>/edited/Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/run_all.py",
+        "--release",
+        "--out-dir",
+        "<WORKDIR>/new_validation/generated_normal"
+      ],
+      "label": "gate_normal",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-I",
+        "-B",
+        "<WORKDIR>/edited/Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/selftest.py",
+        "--out",
+        "<WORKDIR>/new_validation/selftest_normal.json"
+      ],
+      "label": "selftest_normal",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-I",
+        "-B",
+        "<WORKDIR>/edited/Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/checker_selftest.py",
+        "--out",
+        "<WORKDIR>/new_validation/checker_selftest_normal.json"
+      ],
+      "label": "checker_selftest_normal",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-I",
+        "-B",
+        "<WORKDIR>/edited/Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/bounded_check.py",
+        "--out",
+        "<WORKDIR>/new_validation/bounded_normal.json"
+      ],
+      "label": "bounded_check_normal",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-I",
+        "-B",
+        "<WORKDIR>/edited/Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/independent_check.py",
+        "--specs",
+        "<WORKDIR>/edited/Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/specs",
+        "--results",
+        "<WORKDIR>/new_validation/generated_normal",
+        "--out",
+        "<WORKDIR>/new_validation/independent_normal.json",
+        "--coverage-out",
+        "<WORKDIR>/new_validation/independent_coverage.json"
+      ],
+      "label": "independent_normal",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-I",
+        "-B",
+        "<WORKDIR>/edited/Re_Phase_Vol_6_1_Software_2026-10-23/checks/toy_d_information_correspondence.py",
+        "--out",
+        "<WORKDIR>/new_validation/toy_d_normal.json"
+      ],
+      "label": "toy_d_normal",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-I",
+        "-B",
+        "<WORKDIR>/edited/Re_Phase_Vol_6_1_Manuscript_Source_2026-10-23/portability_selftest.py",
+        "--out",
+        "<WORKDIR>/new_validation/portability_manuscript_normal.json"
+      ],
+      "label": "portability_manuscript_normal",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-I",
+        "-B",
+        "<WORKDIR>/edited/Re_Phase_Vol_6_1_Software_2026-10-23/portability_selftest.py",
+        "--out",
+        "<WORKDIR>/new_validation/portability_software_normal.json"
+      ],
+      "label": "portability_software_normal",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-I",
+        "-B",
+        "-O",
+        "<WORKDIR>/edited/Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/run_all.py",
+        "--release",
+        "--out-dir",
+        "<WORKDIR>/new_validation/generated_optimized"
+      ],
+      "label": "gate_optimized",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-I",
+        "-B",
+        "-O",
+        "<WORKDIR>/edited/Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/selftest.py",
+        "--out",
+        "<WORKDIR>/new_validation/selftest_optimized.json"
+      ],
+      "label": "selftest_optimized",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-I",
+        "-B",
+        "-O",
+        "<WORKDIR>/edited/Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/checker_selftest.py",
+        "--out",
+        "<WORKDIR>/new_validation/checker_selftest_optimized.json"
+      ],
+      "label": "checker_selftest_optimized",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-I",
+        "-B",
+        "-O",
+        "<WORKDIR>/edited/Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/bounded_check.py",
+        "--out",
+        "<WORKDIR>/new_validation/bounded_optimized.json"
+      ],
+      "label": "bounded_check_optimized",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-I",
+        "-B",
+        "-O",
+        "<WORKDIR>/edited/Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/independent_check.py",
+        "--specs",
+        "<WORKDIR>/edited/Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/specs",
+        "--results",
+        "<WORKDIR>/new_validation/generated_optimized",
+        "--out",
+        "<WORKDIR>/new_validation/independent_optimized.json"
+      ],
+      "label": "independent_optimized",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-I",
+        "-B",
+        "-O",
+        "<WORKDIR>/edited/Re_Phase_Vol_6_1_Software_2026-10-23/checks/toy_d_information_correspondence.py",
+        "--out",
+        "<WORKDIR>/new_validation/toy_d_optimized.json"
+      ],
+      "label": "toy_d_optimized",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-I",
+        "-B",
+        "-O",
+        "<WORKDIR>/edited/Re_Phase_Vol_6_1_Manuscript_Source_2026-10-23/portability_selftest.py",
+        "--out",
+        "<WORKDIR>/new_validation/portability_manuscript_optimized.json"
+      ],
+      "label": "portability_manuscript_optimized",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-I",
+        "-B",
+        "-O",
+        "<WORKDIR>/edited/Re_Phase_Vol_6_1_Software_2026-10-23/portability_selftest.py",
+        "--out",
+        "<WORKDIR>/new_validation/portability_software_optimized.json"
+      ],
+      "label": "portability_software_optimized",
+      "returncode": 0
+    }
+  ],
+  "source_scope": "fixed 13 fixtures and declared bounded models only",
+  "specs_byte_identical": 13,
+  "status": "PASS_LOCAL_PRESENTATION_REGRESSION"
+}

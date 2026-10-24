@@ -1,94 +1,66 @@
 #!/usr/bin/env python3
-"""Vol.6.1 verification harness orchestrator (EMPTY until canonical specs + compute are added).
-Pipeline (D11/D13):  specs -> compute -> golden compare -> write generated output (final status) -> report.
+"""Validate -> compute -> finite claims -> strict golden -> write -> tables. MIT.
 
-Modes:
-  scaffold (default): pending is allowed; exit 0 unless a hard error.
-  --strict / --release: certified release gate. ANY of
-      invalid spec, compute error, no-compute-registered, no-golden, fail, pending
-  causes a non-zero exit.
-Runs cleanly with zero specs (in scaffold mode)."""
-import sys, os, argparse
-HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
-from spec_loader import load_specs
-from compute import compute, REGISTRY
-from output_writer import write_output
-from golden import load_golden, compare
-from report import build_tables
-from schema import ALLOWED_VERIFICATION_STATUS, bucket, REQUIRED_WITNESS_IDS, required_id_check
+No partial output on a validation/computation/comparison failure. Atomicity of the
+entire multi-file write is not claimed if the operating system fails during writing.
+The --release spelling is retained for compatibility; it does not publish anything.
+"""
+from pathlib import Path
+import argparse,hashlib,json,sys
+HERE=Path(__file__).resolve().parent
+sys.path.insert(0,str(HERE))  # Explicit trusted local modules; supports python -I -B.
+from contract import load_suite,load_json,canonical_bytes,require,ContractError,SUITE_VERSION,REQUIRED_IDS
+from compute import compute
+from golden import compare
+from report import table_bytes
+from output_writer import write_outputs
 
-# Populate the compute REGISTRY by importing the per-volume witness modules for their
-# @witness registration side-effect (D15). If this import is removed, the witnesses are
-# never registered -> every witness reports 'no-compute-registered' -> the release gate
-# fails. Registration must happen here (or in compute.py), not only in the module files.
-import compute_v53, compute_v54  # noqa: F401  (imported for side-effect only)
 
-SPECS = os.path.join(HERE, "specs")
-GEN   = os.path.join(HERE, "generated")
-GOLD  = os.path.join(HERE, "golden")
-
-# verification states that are NOT acceptable in a certified release
-RELEASE_BLOCKING = {"fail", "pending", "no-golden", "no-compute-registered", "error", "invalid"}
-# every non-"invalid" blocking/terminal status run_all can assign must be a schema-allowed output status
-# (explicit raise, not assert: must hold under python -O as well)
-if not (RELEASE_BLOCKING - {"invalid"}) <= ALLOWED_VERIFICATION_STATUS:
-    raise RuntimeError("run_all status set drifted from schema.ALLOWED_VERIFICATION_STATUS")
+def execute(specs_dir,golden_dir,out_dir,manifest_path):
+    specs_dir=Path(specs_dir);golden_dir=Path(golden_dir);out_dir=Path(out_dir)
+    require(out_dir.resolve()!=HERE and not out_dir.resolve().is_relative_to(specs_dir.resolve()) and not out_dir.resolve().is_relative_to(golden_dir.resolve()),'output overlaps protected input')
+    specs=load_suite(specs_dir)  # Complete set / IDs / safe paths before ANY output.
+    expected={Path('v53' if w.startswith('v53_') else 'v54')/(w+'.golden.json') for w in REQUIRED_IDS}
+    got={p.relative_to(golden_dir) for p in golden_dir.rglob('*.json')}
+    require(got==expected,'golden file set differs from required suite')
+    manifest=load_json(manifest_path)
+    require(manifest['suite_version']==SUITE_VERSION,'manifest version mismatch')
+    require(set(manifest['specs'])==REQUIRED_IDS and set(manifest['goldens'])==REQUIRED_IDS,'manifest id set mismatch')
+    records=[];errors=[]
+    for s in specs:
+        wid=s['id'];lane='v53' if wid.startswith('v53_') else 'v54'
+        sp=specs_dir/lane/(wid+'.json');gp=golden_dir/lane/(wid+'.golden.json')
+        require(not gp.is_symlink(),'golden symlink unsupported')
+        g=load_json(gp)
+        # Compare the complete envelope, not only its computed member.
+        require(type(g) is dict and g.get('id')==wid,'golden outer ID mismatch')
+        r=compute(s);status,diffs=compare(r,g)
+        if not r['computed']['registered_claim_holds']:errors.append(wid+': registered finite claim failed')
+        if status!='pass':errors.extend(wid+': '+x for x in diffs)
+        if hashlib.sha256(sp.read_bytes()).hexdigest()!=manifest['specs'][wid]:errors.append(wid+': pinned spec bytes changed')
+        if hashlib.sha256(gp.read_bytes()).hexdigest()!=manifest['goldens'][wid]:errors.append(wid+': pinned golden bytes changed')
+        records.append(r)
+    require(not errors,'\n'.join(errors))
+    files={}
+    for r in records:
+        lane='v53' if r['id'].startswith('v53_') else 'v54'
+        files[f'{lane}/{r["id"]}.out.json']=canonical_bytes({'result':r,'verification':{'strict_golden':'pass','finite_claims':'pass','scope':'fixed_finite_fixture_not_general_proof'}})
+    files.update(table_bytes(records))
+    summary={'suite_version':SUITE_VERSION,'status':'PASS_FIXED_SUITE','required_witnesses':len(REQUIRED_IDS),'checked_witnesses':len(records),'claims_checked':sum(len(r['computed']['claim_checks']) for r in records),'publication_performed':False}
+    files['run_summary.json']=canonical_bytes(summary)
+    write_outputs(out_dir,files)
+    return summary
 
 def main(argv=None):
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--strict", "--release", dest="strict", action="store_true",
-                    help="certified-release gate: invalid/fail/pending/no-compute/no-golden -> non-zero exit")
-    args = ap.parse_args(argv)
-
-    specs, problems = load_specs(SPECS)
-    print("= Vol.6.1 witness harness =  (mode: %s)" % ("release/strict" if args.strict else "scaffold"))
-    print(f"specs loaded: {len(specs)} | invalid: {len(problems)} | compute fns registered: {len(REGISTRY)}")
-    for path, errs in problems:
-        print(f"  [INVALID] {os.path.basename(path)}")
-        for e in errs: print(f"            - {e}")
-
-    records = []
-    counts = {"pass":0,"fail":0,"pending":0,"no-golden":0,"no-compute-registered":0,"error":0}
-    for spec in specs:
-        b = bucket(spec)                                           # 0) certification bucket (D15)
-        gen_dir, gold_dir = os.path.join(GEN, b), os.path.join(GOLD, b)
-        computed, cstatus = compute(spec)                          # 1) compute
-        if cstatus == "ok":
-            gstatus, diffs = compare(computed, load_golden(gold_dir, spec["id"]))  # 2) verify vs golden/<b>
-        else:
-            gstatus, diffs = cstatus, []                           # no-compute-registered / error
-        final = {"pass":"pass","fail":"fail","no-golden":"no-golden",
-                 "no-compute-registered":"no-compute-registered","error":"error"}.get(gstatus,"pending")
-        rec = write_output(spec, computed, cstatus, gen_dir, verification_status=final)  # 3) write into generated/<b>
-        records.append(rec)
-        counts[final if final in counts else "pending"] = counts.get(final,0) + 1
-        print(f"  [{final.upper():22s}] {spec['id']:40s} compute={cstatus}")
-        for k, g, c in diffs: print(f"          diff {k}: golden={g!r} != computed={c!r}")
-
-    if specs:
-        tables = build_tables(records, GEN)
-        for kind, (p, n) in tables.items(): print(f"table[{kind}]: {n} rows -> {p}")
-
-    print("summary: " + " ".join(f"{k}={v}" for k,v in counts.items()) + f" | invalid_specs={len(problems)}")
-
-    if args.strict:
-        # Release manifest check (minimal D14): the certified suite is exactly the
-        # REQUIRED_WITNESS_IDS set. A deleted spec (or an empty spec directory) must
-        # fail the gate, not silently shrink the suite; an unexpected id must not
-        # silently grow it.
-        missing, unexpected = required_id_check(s["id"] for s in specs)
-        for wid in missing:    print(f"  [MISSING REQUIRED] {wid}")
-        for wid in unexpected: print(f"  [UNEXPECTED SPEC ] {wid}")
-        blocking = len(problems) + sum(counts.get(s,0) for s in RELEASE_BLOCKING)
-        if blocking or missing or unexpected:
-            print(f"RELEASE GATE: FAIL ({blocking} blocking, {len(missing)} missing required, "
-                  f"{len(unexpected)} unexpected)")
-            return 2
-        print(f"RELEASE GATE: PASS (all {len(REQUIRED_WITNESS_IDS)} required witnesses present, "
-              "generated, golden-verified)")
-        return 0
-    # scaffold mode: only hard errors fail the run
-    return 1 if (counts["error"] or len(problems)) else 0
-
-if __name__ == "__main__":
-    raise SystemExit(main())
+    p=argparse.ArgumentParser(description=__doc__)
+    p.add_argument('--release','--strict',action='store_true',help='compatibility flag: checks are always strict')
+    p.add_argument('--specs-dir',type=Path,default=HERE/'specs')
+    p.add_argument('--golden-dir',type=Path,default=HERE/'golden')
+    p.add_argument('--out-dir',type=Path,default=HERE/'generated')
+    p.add_argument('--manifest',type=Path,default=HERE/'suite_manifest.json')
+    a=p.parse_args(argv)
+    try:summary=execute(a.specs_dir,a.golden_dir,a.out_dir,a.manifest)
+    except (OSError,ValueError,KeyError,TypeError) as e:
+        print('FIXED SUITE: FAIL\n'+str(e),file=sys.stderr);return 2
+    print(json.dumps(summary,indent=2));return 0
+if __name__=='__main__':raise SystemExit(main())

@@ -1,24 +1,47 @@
 {
-  "id": "v54_toy_E_target_sound_not_selector",
-  "source_volume": "Vol.5.4",
-  "source_section": "5.9",
-  "kind": "selector",
-  "role": "target-sound quotient need not preserve selector existence",
-  "status": "core",
   "count_objects": {
-    "family_object": "hidden members x0, x1 merged by rho_A into quotient cell z",
-    "lift_object": "quotient map rho_A and identity display quotient rho_Y",
-    "info_cells": "single quotient cell z = {x0, x1}",
-    "choice_sets": "member-relative required actions",
-    "verdict_object": "quotient selector existence (action choice_kind); square_commutes, exact, target_sound"
+    "policies": "pre/member-identity, post/quotient, and original-display common-action policies",
+    "sections": "sections of original and quotient displays on their actual images"
   },
+  "id": "v54_toy_E_target_sound_not_selector",
+  "kind": "selector",
+  "role": "target_sound_section_exists_action_policy_lost",
+  "schema_version": 2,
+  "source": {
+    "doi": "10.5281/zenodo.23499819",
+    "edition": "2026-10-21",
+    "layout": "original_2026-10-21",
+    "pdf_sha256": "f692f7dc4b129a3647562bdeab020db1aa6c82b894f88fcf4e0fea2c22a0aa01",
+    "relation": "reproduction_of_declared_finite_example"
+  },
+  "source_section": "14; 15",
+  "source_volume": "Vol.5.4",
   "spec": {
     "choice_kind": "action",
-    "hidden_members": ["x0", "x1"],
-    "display_images": { "x0": "y", "x1": "y" },
-    "quotient_map": { "x0": "z", "x1": "z" },
-    "target_verdict": { "x0": "good", "x1": "good" },
-    "required_actions": { "x0": "a", "x1": "b" },
-    "display_quotient": "identity"
-  }
+    "display_images": {
+      "x0": "y",
+      "x1": "y"
+    },
+    "display_quotient": "identity",
+    "hidden_members": [
+      "x0",
+      "x1"
+    ],
+    "post_information": "quotient_map",
+    "pre_information": "member_identity",
+    "quotient_map": {
+      "x0": "z",
+      "x1": "z"
+    },
+    "required_actions": {
+      "x0": "a",
+      "x1": "b"
+    },
+    "target_verdict": {
+      "x0": "good",
+      "x1": "good"
+    }
+  },
+  "status": "correction_candidate",
+  "suite_version": "2026-10-23"
 }

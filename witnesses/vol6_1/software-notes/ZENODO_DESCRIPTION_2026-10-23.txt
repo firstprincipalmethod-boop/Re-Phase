@@ -1,0 +1,30 @@
+Re-Phase Vol.6.1 — A Finite Witness Harness for Vol.5.3 and Vol.5.4
+Corrected edition — 23 October 2026
+
+Software DOI: 10.5281/zenodo.23499964. License: MIT.
+Companion manuscript DOI: 10.5281/zenodo.23499925, CC BY-NC 4.0.
+Edition ID: 2026-10-23; schema: 2.
+
+The software synchronizes 13 finite specifications (7 v53 and 6 v54), typed
+computations, golden snapshots, generated JSON/CSV and reproducibility checks.
+The fixed sources are Vol.5.3 corrected 2026-10-21 noheader-r1 (DOI 23499738)
+and Vol.5.4 corrected 2026-10-21 (DOI 23499819). It reproduces the source gap,
+equal-surviving-slices comparison and constant-velocity observation schedules;
+separates sections from common-action policies; and distinguishes role metadata
+from fifty computed finite predicates. Strict JSON/ID/domain checks and a
+complete-record second implementation support the declared finite scope.
+
+Current packaging removes internal revision suffixes and private execution
+paths from public derivatives. The accompanying manuscript distinguishes old
+preparation records from later review and uses readable, copyable ASCII CLI commands.
+The thirteen computed objects and mathematical specifications are unchanged
+from the reviewed r4, apart from edition identifiers and dependent digests.
+Historical reviews remain evidence of their own target bytes, not a new review.
+
+File: Re_Phase_Vol_6_1_Software_2026-10-23.zip
+Project repository: https://github.com/firstprincipalmethod-boop/Re-Phase
+The GitHub checkpoint is historical and not a byte-identical mirror of this
+package. Current integration status is documented by the repository. The old software
+DOI 21220093 remains historical. The separately licensed manuscript is not
+included in this MIT archive. Finite tests are not a formal proof over arbitrary
+domains, a general controller synthesis result, or a performance claim.

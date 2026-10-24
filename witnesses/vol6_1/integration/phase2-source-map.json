@@ -1,0 +1,760 @@
+{
+  "base_commit": "cb592ad34ed6aa8db24fea02595793289919b6cf",
+  "companion_manuscript_artifacts": [
+    {
+      "bytes": 505665,
+      "filename": "Re_Phase_Vol_6_1_Manuscript_2026-10-23.pdf",
+      "md5": "1d627781b2312b8fb029924e6bdc8db5",
+      "sha256": "37aee8f308b5c57c8843f0482f079bbaaf44f5b3c4b47d4bb825587fbcd8e820"
+    },
+    {
+      "bytes": 491252,
+      "filename": "Re_Phase_Vol_6_1_Manuscript_Source_2026-10-23.zip",
+      "md5": "4cc9004ca6bba4504849586265656076",
+      "sha256": "a98cf7b51d5908632c65b14006211c3a404d409a57961f3e8a802b34c7a56130"
+    }
+  ],
+  "computation_or_golden_regeneration": false,
+  "deferred_to_phase3": [
+    "Existing README/CORRECTION_STATUS/schema/reading-guide/publication status synchronization",
+    "Full verification/provenance scope and repository replay tooling",
+    "Fresh normal/-O execution and generated-output comparisons",
+    "Manuscript integration correspondence and PR creation"
+  ],
+  "edition_id": "2026-10-23",
+  "git_tag_or_release_actions": 0,
+  "harness_after_tree": "d090e14611146294f941439ee8e8af49a28701e0",
+  "harness_before_tree": "2a08a08569cbed6bd097b776a1163f7499ba211e",
+  "harness_changes": {
+    "added": [
+      "witnesses/vol6_1/harness/bounded_check.py",
+      "witnesses/vol6_1/harness/checker_selftest.py",
+      "witnesses/vol6_1/harness/contract.py",
+      "witnesses/vol6_1/harness/freeze_candidate.py",
+      "witnesses/vol6_1/harness/generated/run_summary.json",
+      "witnesses/vol6_1/harness/generated/table_v54_choices.csv",
+      "witnesses/vol6_1/harness/independent_check.py",
+      "witnesses/vol6_1/harness/suite_manifest.json"
+    ],
+    "modified": [
+      "witnesses/vol6_1/harness/compute.py",
+      "witnesses/vol6_1/harness/compute_v53.py",
+      "witnesses/vol6_1/harness/compute_v54.py",
+      "witnesses/vol6_1/harness/generated/table_v53.csv",
+      "witnesses/vol6_1/harness/generated/table_v54.csv",
+      "witnesses/vol6_1/harness/generated/v53/v53_collapse.out.json",
+      "witnesses/vol6_1/harness/generated/v53/v53_constant_velocity.out.json",
+      "witnesses/vol6_1/harness/generated/v53/v53_feature_ambiguous_recoverable.out.json",
+      "witnesses/vol6_1/harness/generated/v53/v53_gap_collapse.out.json",
+      "witnesses/vol6_1/harness/generated/v53/v53_missing_cell.out.json",
+      "witnesses/vol6_1/harness/generated/v53/v53_same_slices_different_edges.out.json",
+      "witnesses/vol6_1/harness/generated/v53/v53_unique_lift.out.json",
+      "witnesses/vol6_1/harness/generated/v54/v54_toy_A_memoryless_fail.out.json",
+      "witnesses/vol6_1/harness/generated/v54/v54_toy_B_bridge_conflict.out.json",
+      "witnesses/vol6_1/harness/generated/v54/v54_toy_C_nonblocking.out.json",
+      "witnesses/vol6_1/harness/generated/v54/v54_toy_D_retention_memory.out.json",
+      "witnesses/vol6_1/harness/generated/v54/v54_toy_E_target_sound_not_selector.out.json",
+      "witnesses/vol6_1/harness/generated/v54/v54_toy_F_safe_nonexact.out.json",
+      "witnesses/vol6_1/harness/golden.py",
+      "witnesses/vol6_1/harness/golden/v53/v53_collapse.golden.json",
+      "witnesses/vol6_1/harness/golden/v53/v53_constant_velocity.golden.json",
+      "witnesses/vol6_1/harness/golden/v53/v53_feature_ambiguous_recoverable.golden.json",
+      "witnesses/vol6_1/harness/golden/v53/v53_gap_collapse.golden.json",
+      "witnesses/vol6_1/harness/golden/v53/v53_missing_cell.golden.json",
+      "witnesses/vol6_1/harness/golden/v53/v53_same_slices_different_edges.golden.json",
+      "witnesses/vol6_1/harness/golden/v53/v53_unique_lift.golden.json",
+      "witnesses/vol6_1/harness/golden/v54/v54_toy_A_memoryless_fail.golden.json",
+      "witnesses/vol6_1/harness/golden/v54/v54_toy_B_bridge_conflict.golden.json",
+      "witnesses/vol6_1/harness/golden/v54/v54_toy_C_nonblocking.golden.json",
+      "witnesses/vol6_1/harness/golden/v54/v54_toy_D_retention_memory.golden.json",
+      "witnesses/vol6_1/harness/golden/v54/v54_toy_E_target_sound_not_selector.golden.json",
+      "witnesses/vol6_1/harness/golden/v54/v54_toy_F_safe_nonexact.golden.json",
+      "witnesses/vol6_1/harness/output_writer.py",
+      "witnesses/vol6_1/harness/report.py",
+      "witnesses/vol6_1/harness/run_all.py",
+      "witnesses/vol6_1/harness/schema.py",
+      "witnesses/vol6_1/harness/selftest.py",
+      "witnesses/vol6_1/harness/spec_loader.py",
+      "witnesses/vol6_1/harness/specs/v53/v53_collapse.json",
+      "witnesses/vol6_1/harness/specs/v53/v53_constant_velocity.json",
+      "witnesses/vol6_1/harness/specs/v53/v53_feature_ambiguous_recoverable.json",
+      "witnesses/vol6_1/harness/specs/v53/v53_gap_collapse.json",
+      "witnesses/vol6_1/harness/specs/v53/v53_missing_cell.json",
+      "witnesses/vol6_1/harness/specs/v53/v53_same_slices_different_edges.json",
+      "witnesses/vol6_1/harness/specs/v53/v53_unique_lift.json",
+      "witnesses/vol6_1/harness/specs/v54/v54_toy_A_memoryless_fail.json",
+      "witnesses/vol6_1/harness/specs/v54/v54_toy_B_bridge_conflict.json",
+      "witnesses/vol6_1/harness/specs/v54/v54_toy_C_nonblocking.json",
+      "witnesses/vol6_1/harness/specs/v54/v54_toy_D_retention_memory.json",
+      "witnesses/vol6_1/harness/specs/v54/v54_toy_E_target_sound_not_selector.json",
+      "witnesses/vol6_1/harness/specs/v54/v54_toy_F_safe_nonexact.json"
+    ],
+    "removed": [
+      {
+        "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "path": "witnesses/vol6_1/harness/generated/v54/.gitkeep"
+      },
+      {
+        "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "path": "witnesses/vol6_1/harness/golden/v54/.gitkeep"
+      },
+      {
+        "git_blob_sha1": "ef819489e03ede8b7c57ba140c1723d709fcc415",
+        "path": "witnesses/vol6_1/harness/specs/v53/_TEMPLATE_pathwise.json.example"
+      },
+      {
+        "git_blob_sha1": "5380cf47b129638ca999470665e6dadc2766ec98",
+        "path": "witnesses/vol6_1/harness/specs/v54/_TEMPLATE_selector.json.example"
+      }
+    ],
+    "unchanged": []
+  },
+  "integration_branch": "integrate/vol61-corrected-2026-10-23",
+  "licensing": "Listed imported payloads retain the source MIT license; existing research/document licenses are not changed. See LICENSE-SOFTWARE.md.",
+  "main_merge_performed": false,
+  "path_mapping_notes": {
+    "source_sync_contract": "Exact standalone source contract, not a whole-repository manifest. Its paths are interpreted against the standalone package. Remaining verification/source documents are handled in phase 3.",
+    "toy_d_helper": "Run from repository root with --software-root .; its default BASE is the original standalone layout, not this relocated layout."
+  },
+  "schema": "rephase.vol61.integration.phase2.source-map.v1",
+  "software_archive": {
+    "bytes": 523545,
+    "filename": "Re_Phase_Vol_6_1_Software_2026-10-23.zip",
+    "md5": "3fc8f4f2aa5db343efb588a20507cb81",
+    "sha256": "48abc2ae97e1cf0ea5089f7e9610dfef0d4b6c14194f41e85a8660c4086c181e"
+  },
+  "source_archive_to_baseline_comparison": {
+    "comparison_only_line_endings": [
+      {
+        "archive_sha256": "da5d1e1e5fd10b503e969b55df3472c76a93f988963ca407683e1ca9015ded96",
+        "git_comparison_sha256": "8f384fcdae6e27ae1030190f2ba87323151d5f8bb910aaabe3aa941b99d77f5e",
+        "path": "witnesses/vol6_1/harness/specs/v53/_TEMPLATE_pathwise.json.example"
+      },
+      {
+        "archive_sha256": "d4378eb77fcceef33c1dd97b86566a3d55b7e0dcf2864f1c1ea420df2b041f38",
+        "git_comparison_sha256": "7992614fc8e1dd26c239f155427c3fe559fcfc56e46da2a8933fa77b3944de2a",
+        "path": "witnesses/vol6_1/harness/specs/v54/_TEMPLATE_selector.json.example"
+      }
+    ],
+    "historical_archive_modified": false,
+    "historical_archive_raw_harness_tree": "d9fd7d6ab21f301f1449e9cd8278595269c4b915",
+    "historical_archive_sha256": "82164beff12de69e1493ba558b30d2a840dd3cd01d2877346a6bbd27dc1cd8c4",
+    "normalized_comparison_tree_matches_observed_git_subtree": true
+  },
+  "source_contract_sha256": "e6345c20a22da251dda11dab2afbcd31982c972d7fd0620eb50547b4dc0278e6",
+  "source_files_copied_unchanged": [
+    {
+      "bytes": 2914,
+      "category": "harness",
+      "git_blob_sha1": "2d2923bb1be75ed3684f85ec5fb3adcac1aac56b",
+      "license": "MIT",
+      "md5": "08738c9ee0182b17408124e6858bad5b",
+      "repository_path": "witnesses/vol6_1/harness/bounded_check.py",
+      "sha256": "ac8e366eabaa99cf8c2f0b2a9d1e44407d0177e066cac0e34d239215e9fcedb2",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/bounded_check.py"
+    },
+    {
+      "bytes": 13406,
+      "category": "harness",
+      "git_blob_sha1": "8a69a887cdc1379ae957e4f10441d7efbb8d7751",
+      "license": "MIT",
+      "md5": "fa0b97037f1e3873848a68f6cb2a73b2",
+      "repository_path": "witnesses/vol6_1/harness/checker_selftest.py",
+      "sha256": "8312c3d504f9d47aa9a5ec035e9e59a2d4bcc2b2d5dffcff1b969d2390b61f60",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/checker_selftest.py"
+    },
+    {
+      "bytes": 604,
+      "category": "harness",
+      "git_blob_sha1": "b4ce906a9ed1e608f2a8d7b49781fa436d095cc7",
+      "license": "MIT",
+      "md5": "f467660bc71dff5039e67a07318f97aa",
+      "repository_path": "witnesses/vol6_1/harness/compute.py",
+      "sha256": "d5f15661dd3a0c3b803a995ca9a6df8c0eaa815bf69c78c4c28212be582ee6aa",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/compute.py"
+    },
+    {
+      "bytes": 6693,
+      "category": "harness",
+      "git_blob_sha1": "ba584a3da92282470a25ee4dc6fd37771c8a336d",
+      "license": "MIT",
+      "md5": "9c32cd077ddcfbebd2a93f39d571e406",
+      "repository_path": "witnesses/vol6_1/harness/compute_v53.py",
+      "sha256": "9144db2b190fb4d5c25eb6fac84cf9b601244c092b95b41cae909c7a4319c963",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/compute_v53.py"
+    },
+    {
+      "bytes": 8805,
+      "category": "harness",
+      "git_blob_sha1": "fc33a2810ce3d2c5686a0cd2d79317c20055921e",
+      "license": "MIT",
+      "md5": "e326b2d049dfa588b63e73798486901d",
+      "repository_path": "witnesses/vol6_1/harness/compute_v54.py",
+      "sha256": "c4983de4afa8cc5e7d83effbfe35582654c728835134fb806aa598148d7e8a69",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/compute_v54.py"
+    },
+    {
+      "bytes": 16520,
+      "category": "harness",
+      "git_blob_sha1": "d60dfe335bdc0036e523f499ffbe3e5605e26ff9",
+      "license": "MIT",
+      "md5": "62ec52379ecb5eb71b3b5b1a5c668a6f",
+      "repository_path": "witnesses/vol6_1/harness/contract.py",
+      "sha256": "279c53d0981534e189f8443cc3f687ec84280651705b6cedb43150565009cf7d",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/contract.py"
+    },
+    {
+      "bytes": 2020,
+      "category": "harness",
+      "git_blob_sha1": "7a6a364089162df09eafa7a1435f5568dc0e4ad2",
+      "license": "MIT",
+      "md5": "79960f7a491c1bb0f0328b7da2f34215",
+      "repository_path": "witnesses/vol6_1/harness/freeze_candidate.py",
+      "sha256": "2cce0fb165a71e7901e7d3d173a86e9d12c1d4605a8c8efaa3558548971198e7",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/freeze_candidate.py"
+    },
+    {
+      "bytes": 181,
+      "category": "harness",
+      "git_blob_sha1": "4c53f9bb102228d28088355f2e43e3909013ce86",
+      "license": "MIT",
+      "md5": "e7a0cc45cbaf72ee1784fc7fd6a0a8ad",
+      "repository_path": "witnesses/vol6_1/harness/generated/run_summary.json",
+      "sha256": "8976a211221e095d70e0cbf41c81c9c2d103b189e234d85a399c7ed83710a494",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/generated/run_summary.json"
+    },
+    {
+      "bytes": 2743,
+      "category": "harness",
+      "git_blob_sha1": "d44c2b1ee2d4393fc4454a3d206ddae8a3443133",
+      "license": "MIT",
+      "md5": "cce205168b759566a56d5a31a1a1b7dd",
+      "repository_path": "witnesses/vol6_1/harness/generated/table_v53.csv",
+      "sha256": "1b4f8f506e7f436593cc46c629a3c65ddad3eacb74993e3db0f363cdd8ab36de",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/generated/table_v53.csv"
+    },
+    {
+      "bytes": 771,
+      "category": "harness",
+      "git_blob_sha1": "145e0331ece0579ffe839a925cc48b1136346067",
+      "license": "MIT",
+      "md5": "913bb133ca7203b76cd56062306e1fe3",
+      "repository_path": "witnesses/vol6_1/harness/generated/table_v54.csv",
+      "sha256": "8500da6160ce5661eb81c4207760343cbf48cdb8182303ce9361c3b5b7c14a4d",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/generated/table_v54.csv"
+    },
+    {
+      "bytes": 2645,
+      "category": "harness",
+      "git_blob_sha1": "062128aa277545773fa18eb9332201db86444a56",
+      "license": "MIT",
+      "md5": "8c0cc7449653ea4a8ea4f73542cae548",
+      "repository_path": "witnesses/vol6_1/harness/generated/table_v54_choices.csv",
+      "sha256": "f4544a574353933c883a61d148f1ce0b24d6b4a5b70fa36ff91559f91d787d77",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/generated/table_v54_choices.csv"
+    },
+    {
+      "bytes": 1722,
+      "category": "harness",
+      "git_blob_sha1": "9ff6ec945b59f9d19781632edf348278ece10311",
+      "license": "MIT",
+      "md5": "c68cae86a2d47f5702a39e6388b745d8",
+      "repository_path": "witnesses/vol6_1/harness/generated/v53/v53_collapse.out.json",
+      "sha256": "d7ac967f8fef024e0a59c41e8c498b494d161a86775996a5276c26811f9fdeb2",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/generated/v53/v53_collapse.out.json"
+    },
+    {
+      "bytes": 137321,
+      "category": "harness",
+      "git_blob_sha1": "b922a7ddd1e2935fb89ef17fa711e2e8d30c59c1",
+      "license": "MIT",
+      "md5": "f873a116d7be56695b9f24080b3e25b6",
+      "repository_path": "witnesses/vol6_1/harness/generated/v53/v53_constant_velocity.out.json",
+      "sha256": "b9a293d64c486efd809f7f931f3c2eca4cbd31e1e4aad182bc908aa2b83a97dc",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/generated/v53/v53_constant_velocity.out.json"
+    },
+    {
+      "bytes": 2577,
+      "category": "harness",
+      "git_blob_sha1": "42b20d45a314915b6e27de0c826ac5c0ee08673d",
+      "license": "MIT",
+      "md5": "bccbd6daf3aae7b76e792d3fdd0592f7",
+      "repository_path": "witnesses/vol6_1/harness/generated/v53/v53_feature_ambiguous_recoverable.out.json",
+      "sha256": "543c707179160e6a692b116eea7495598bce0b61203b49fadbc950d5fcb2df75",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/generated/v53/v53_feature_ambiguous_recoverable.out.json"
+    },
+    {
+      "bytes": 1658,
+      "category": "harness",
+      "git_blob_sha1": "0a1e97afb1dd9d1f25389f92cfd279b6bb67e483",
+      "license": "MIT",
+      "md5": "faf97ece968318288f17bd06212c4577",
+      "repository_path": "witnesses/vol6_1/harness/generated/v53/v53_gap_collapse.out.json",
+      "sha256": "6517b836484d1ac3f71aa97e56a79115d1e841ac2afdc536d5116cddfab94696",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/generated/v53/v53_gap_collapse.out.json"
+    },
+    {
+      "bytes": 2714,
+      "category": "harness",
+      "git_blob_sha1": "bfdeb19acabdd5e1f95b140b9ad3ba70a2003447",
+      "license": "MIT",
+      "md5": "0c9676206938da7901d9c6cf5a326900",
+      "repository_path": "witnesses/vol6_1/harness/generated/v53/v53_missing_cell.out.json",
+      "sha256": "75d4cc1467fc46eb2281c33dd47c1b5999dbf1fb147af50378969fc73ae21501",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/generated/v53/v53_missing_cell.out.json"
+    },
+    {
+      "bytes": 5901,
+      "category": "harness",
+      "git_blob_sha1": "1890c57a2af968ba2bc872a3fcdd753befee73cf",
+      "license": "MIT",
+      "md5": "b1016993b720a95440df20a15cd7c32e",
+      "repository_path": "witnesses/vol6_1/harness/generated/v53/v53_same_slices_different_edges.out.json",
+      "sha256": "d1ac6d0e9f2bed4defb3998d93936f791fe85ce9b8290f98b4c62379b6999af4",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/generated/v53/v53_same_slices_different_edges.out.json"
+    },
+    {
+      "bytes": 2211,
+      "category": "harness",
+      "git_blob_sha1": "d2c0cdc57458243489d384a4657bce611af1f34e",
+      "license": "MIT",
+      "md5": "3fd48ddf76384bc230a9bb734168dd8f",
+      "repository_path": "witnesses/vol6_1/harness/generated/v53/v53_unique_lift.out.json",
+      "sha256": "7ff4849ab0923bff181d27d5125695c247ef3a4e1d7bcbf3a744924b3d3a2564",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/generated/v53/v53_unique_lift.out.json"
+    },
+    {
+      "bytes": 16495,
+      "category": "harness",
+      "git_blob_sha1": "202cf051a165e4afda5d6f7cf009197685d7de39",
+      "license": "MIT",
+      "md5": "184f7a2cef7a4a4e00a2c08d20b1cdde",
+      "repository_path": "witnesses/vol6_1/harness/generated/v54/v54_toy_A_memoryless_fail.out.json",
+      "sha256": "a8614af0725b5376e2fdefdf0beb94b78b22c5110056eafccd7873e4350f7097",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/generated/v54/v54_toy_A_memoryless_fail.out.json"
+    },
+    {
+      "bytes": 1807,
+      "category": "harness",
+      "git_blob_sha1": "9dad831273fd5c2624b25aee6bfc9d2d911bd8e7",
+      "license": "MIT",
+      "md5": "44b88d2da22feb1cb315ef10696f7f0d",
+      "repository_path": "witnesses/vol6_1/harness/generated/v54/v54_toy_B_bridge_conflict.out.json",
+      "sha256": "b8f8925f70c80561b84ef2a4471a288bd2081edd86ad97d62d3302c8d5bacbba",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/generated/v54/v54_toy_B_bridge_conflict.out.json"
+    },
+    {
+      "bytes": 1563,
+      "category": "harness",
+      "git_blob_sha1": "5698e019ac4373c40d55abb82996cc2324e17f45",
+      "license": "MIT",
+      "md5": "b2f2c0f73421acc857e206c878d0578a",
+      "repository_path": "witnesses/vol6_1/harness/generated/v54/v54_toy_C_nonblocking.out.json",
+      "sha256": "b1461eba8636521d3ef286e0711a8c0d7aeff672b291ad4bf98cea6a3561f1eb",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/generated/v54/v54_toy_C_nonblocking.out.json"
+    },
+    {
+      "bytes": 11582,
+      "category": "harness",
+      "git_blob_sha1": "994d52acc903a27a82c502e3fb3fe6b7b586a97e",
+      "license": "MIT",
+      "md5": "0741694d8196a3ab1265349a591e9633",
+      "repository_path": "witnesses/vol6_1/harness/generated/v54/v54_toy_D_retention_memory.out.json",
+      "sha256": "dd302c0f2cb4ea3a16c4341d9412932774be809fd9d48d6f3c17504a5217455c",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/generated/v54/v54_toy_D_retention_memory.out.json"
+    },
+    {
+      "bytes": 3688,
+      "category": "harness",
+      "git_blob_sha1": "8542f05a4c7c86ea5a6bfb11265540f2a567419f",
+      "license": "MIT",
+      "md5": "5b510b4d1e4c39206ea3778c01c0c33f",
+      "repository_path": "witnesses/vol6_1/harness/generated/v54/v54_toy_E_target_sound_not_selector.out.json",
+      "sha256": "6ddb9b3d83f02d1eadfa76f8c2c925a3ffe554bc1fe5ffdf6e7f133be74dfe91",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/generated/v54/v54_toy_E_target_sound_not_selector.out.json"
+    },
+    {
+      "bytes": 3799,
+      "category": "harness",
+      "git_blob_sha1": "58c3936bc4e7cae7a85e07cebffb345f24fd47f0",
+      "license": "MIT",
+      "md5": "fd8427136ac601856d41c0d30eb7621b",
+      "repository_path": "witnesses/vol6_1/harness/generated/v54/v54_toy_F_safe_nonexact.out.json",
+      "sha256": "d3731d2702f71911a133c659a98adbd8fd3a3c45cce324867d2b8d8aae7ebe2b",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/generated/v54/v54_toy_F_safe_nonexact.out.json"
+    },
+    {
+      "bytes": 1012,
+      "category": "harness",
+      "git_blob_sha1": "cb082a08658a4dd19d23a43f882dbc9376839808",
+      "license": "MIT",
+      "md5": "e78f476bd8950c0dabba5bf31a162dfd",
+      "repository_path": "witnesses/vol6_1/harness/golden.py",
+      "sha256": "e1676f30e0f692fa57d869841f07b0a09662e0a1e9ab22ad91afcc43e70b939e",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/golden.py"
+    },
+    {
+      "bytes": 1405,
+      "category": "harness",
+      "git_blob_sha1": "a9a2e9f222ad6879573d4490a6065c73f3ad7773",
+      "license": "MIT",
+      "md5": "d63f40b082e5a59b10778b7f79981214",
+      "repository_path": "witnesses/vol6_1/harness/golden/v53/v53_collapse.golden.json",
+      "sha256": "4456ac64c085aa042b2ea8d59d8630685bba0cc36296c76bdcd4c278afcdaf63",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/golden/v53/v53_collapse.golden.json"
+    },
+    {
+      "bytes": 121668,
+      "category": "harness",
+      "git_blob_sha1": "0eade5129157a44beeb49466b6a99b171b57da2d",
+      "license": "MIT",
+      "md5": "de28c84ce1b749650895b3205b81b706",
+      "repository_path": "witnesses/vol6_1/harness/golden/v53/v53_constant_velocity.golden.json",
+      "sha256": "0bdce9e79fdefffc6999d29f95e36f6b9e1b55082952ab06a8e1a3ce7187e119",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/golden/v53/v53_constant_velocity.golden.json"
+    },
+    {
+      "bytes": 2146,
+      "category": "harness",
+      "git_blob_sha1": "444350d8563417c5bc597cceb9a1011f1edaaf4f",
+      "license": "MIT",
+      "md5": "a59b09942bb7a95785c43cc089403379",
+      "repository_path": "witnesses/vol6_1/harness/golden/v53/v53_feature_ambiguous_recoverable.golden.json",
+      "sha256": "9210660ce9970ab660beef21a9702ce39acf691bf9fb25d71ce561c8b3b779e0",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/golden/v53/v53_feature_ambiguous_recoverable.golden.json"
+    },
+    {
+      "bytes": 1357,
+      "category": "harness",
+      "git_blob_sha1": "2472a50e49516a9a2d4cd69a64f16f56f89e301c",
+      "license": "MIT",
+      "md5": "750507336bb1a033b1238e00664665e3",
+      "repository_path": "witnesses/vol6_1/harness/golden/v53/v53_gap_collapse.golden.json",
+      "sha256": "0fe6cd1b37a428500bfb38d933848fd0d4113ca64b84c62659c6e9489d6f1263",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/golden/v53/v53_gap_collapse.golden.json"
+    },
+    {
+      "bytes": 2269,
+      "category": "harness",
+      "git_blob_sha1": "4f02051a7b1ab80cb417b10b2a207e47f13f1e5d",
+      "license": "MIT",
+      "md5": "74afccf8edac3f16b4bcdf202e6c9b18",
+      "repository_path": "witnesses/vol6_1/harness/golden/v53/v53_missing_cell.golden.json",
+      "sha256": "d343759a9c8f923a45e830ded2791deae1dcfa086f9ffda7f54058466fef9fa6",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/golden/v53/v53_missing_cell.golden.json"
+    },
+    {
+      "bytes": 5126,
+      "category": "harness",
+      "git_blob_sha1": "fe36ff90975f58b0a2192d7133121a8adfa9f4e4",
+      "license": "MIT",
+      "md5": "696f8b82d79324159f70a202372ae048",
+      "repository_path": "witnesses/vol6_1/harness/golden/v53/v53_same_slices_different_edges.golden.json",
+      "sha256": "c7ae664ab51581231025ecf4bff75dc13cfeb4956bbafdceff7332e63bde51af",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/golden/v53/v53_same_slices_different_edges.golden.json"
+    },
+    {
+      "bytes": 1828,
+      "category": "harness",
+      "git_blob_sha1": "5ed2eae56a071fe09c3eb0e175c88efe2ec85500",
+      "license": "MIT",
+      "md5": "d7ec01f2204f1f6b9570a7520f69d5ce",
+      "repository_path": "witnesses/vol6_1/harness/golden/v53/v53_unique_lift.golden.json",
+      "sha256": "e3220179e082d890c7f5602a861a91058d8c89528199f0042c5d850d4c97f633",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/golden/v53/v53_unique_lift.golden.json"
+    },
+    {
+      "bytes": 15134,
+      "category": "harness",
+      "git_blob_sha1": "ccd9461082a8f985c6f4ae432807538a0959e305",
+      "license": "MIT",
+      "md5": "74a332376749121441d131c85f515c25",
+      "repository_path": "witnesses/vol6_1/harness/golden/v54/v54_toy_A_memoryless_fail.golden.json",
+      "sha256": "c4695c6e29ca777f8defc85d3f8c4bfc9ea65c72f2cb8cc20137293aa862e4d5",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/golden/v54/v54_toy_A_memoryless_fail.golden.json"
+    },
+    {
+      "bytes": 1524,
+      "category": "harness",
+      "git_blob_sha1": "4df348e7bdfcb9d95f258ffa4002322222013c5b",
+      "license": "MIT",
+      "md5": "400276ef06d1b44319b8034085851fda",
+      "repository_path": "witnesses/vol6_1/harness/golden/v54/v54_toy_B_bridge_conflict.golden.json",
+      "sha256": "a318f201203f9a7e6cfc33dcdfa3e09efe3f4e3cffe73b4d5e54b0b49013b851",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/golden/v54/v54_toy_B_bridge_conflict.golden.json"
+    },
+    {
+      "bytes": 1312,
+      "category": "harness",
+      "git_blob_sha1": "3b1b8fd47af5b5f02a3fbf10fc0a0b2ac2395669",
+      "license": "MIT",
+      "md5": "6a104e55823bf8f6ded1e1728c301b39",
+      "repository_path": "witnesses/vol6_1/harness/golden/v54/v54_toy_C_nonblocking.golden.json",
+      "sha256": "7339db887c4e23104d0bec3e6c55abe7d3faeab3aab7a9821e2cd062497604e5",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/golden/v54/v54_toy_C_nonblocking.golden.json"
+    },
+    {
+      "bytes": 10615,
+      "category": "harness",
+      "git_blob_sha1": "ecbad48782591895d19236204a1af774b9b7a637",
+      "license": "MIT",
+      "md5": "568a4d44f16e3b1643536d30effbce53",
+      "repository_path": "witnesses/vol6_1/harness/golden/v54/v54_toy_D_retention_memory.golden.json",
+      "sha256": "61e37fc01fd0191b8072b3c1f3e41cc5b38c08d19046f8d53a74ecb6a21ff777",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/golden/v54/v54_toy_D_retention_memory.golden.json"
+    },
+    {
+      "bytes": 3237,
+      "category": "harness",
+      "git_blob_sha1": "d4b40b76c1ffce60a837e2dc41f6cea6f3b97765",
+      "license": "MIT",
+      "md5": "2290de05f4c6b456dda0ca86d64fbb93",
+      "repository_path": "witnesses/vol6_1/harness/golden/v54/v54_toy_E_target_sound_not_selector.golden.json",
+      "sha256": "786e113563955aa982f29e813ec8e935944a4d607ff031596b5d22b93df97856",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/golden/v54/v54_toy_E_target_sound_not_selector.golden.json"
+    },
+    {
+      "bytes": 3332,
+      "category": "harness",
+      "git_blob_sha1": "4e0e5cbe4f83e87d63f217e9e43618b4bd1e00f8",
+      "license": "MIT",
+      "md5": "bf6de835ff913c5281eb6e2ad1433575",
+      "repository_path": "witnesses/vol6_1/harness/golden/v54/v54_toy_F_safe_nonexact.golden.json",
+      "sha256": "7be6951b248c21b2250287327c58dd5c8ec243469f234391d37209cd6698c718",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/golden/v54/v54_toy_F_safe_nonexact.golden.json"
+    },
+    {
+      "bytes": 25966,
+      "category": "harness",
+      "git_blob_sha1": "1d05244c6d978902ed8b15318dad04d2f6485e8a",
+      "license": "MIT",
+      "md5": "2fc0d95dc115f3a82c17a8c0009b9075",
+      "repository_path": "witnesses/vol6_1/harness/independent_check.py",
+      "sha256": "83265405fc70fa636f29c1069c327c11489d68d21b3ce547289133d58f8ec740",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/independent_check.py"
+    },
+    {
+      "bytes": 1078,
+      "category": "harness",
+      "git_blob_sha1": "a5e7d8902df91a4ee6a63ef9bbf882c32f6463b6",
+      "license": "MIT",
+      "md5": "71be0b90d35a29a6040b3115325e292b",
+      "repository_path": "witnesses/vol6_1/harness/output_writer.py",
+      "sha256": "ca06d58d8d10592b5e0b0ecb0885a7d954593fbfefc8e9e9ef1d079f059afacd",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/output_writer.py"
+    },
+    {
+      "bytes": 2521,
+      "category": "harness",
+      "git_blob_sha1": "ea85628273f17664cfb84c67a31179131be0f2c8",
+      "license": "MIT",
+      "md5": "c2e1a448d79dc55c5f4d235ce4c15ba5",
+      "repository_path": "witnesses/vol6_1/harness/report.py",
+      "sha256": "2af0259ee4519457095f273b581196fcc8423f192016773acebc398744bd1d03",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/report.py"
+    },
+    {
+      "bytes": 4132,
+      "category": "harness",
+      "git_blob_sha1": "005cb5624c33b34fe389e99f2a20cd2811233fb2",
+      "license": "MIT",
+      "md5": "7f7c5c3b65c4fdcec1b9f06502fc8465",
+      "repository_path": "witnesses/vol6_1/harness/run_all.py",
+      "sha256": "f9fd393d96551b33392de429a076db1a4af3dbd382f8527b47fffeb1120fd1f4",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/run_all.py"
+    },
+    {
+      "bytes": 177,
+      "category": "harness",
+      "git_blob_sha1": "f91a54b3d2c5cac41a735d5711059f07ad5262dd",
+      "license": "MIT",
+      "md5": "7a095e58402894da5c31ab763e0d944d",
+      "repository_path": "witnesses/vol6_1/harness/schema.py",
+      "sha256": "47ea2e1bde30f517717fe8607dac2705ebb55270603e911ec98ff53f74c799a3",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/schema.py"
+    },
+    {
+      "bytes": 12793,
+      "category": "harness",
+      "git_blob_sha1": "67154c2cc895f084e56cc864d583966792e4e7a7",
+      "license": "MIT",
+      "md5": "021c838bc2227701c80e5b84922c6ece",
+      "repository_path": "witnesses/vol6_1/harness/selftest.py",
+      "sha256": "a2db4ab8a80c67718b1797cc6f64da4822c3291745603be6fb8c8feea45a7beb",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/selftest.py"
+    },
+    {
+      "bytes": 126,
+      "category": "harness",
+      "git_blob_sha1": "dd70da7d5f1eb7047d82c358fe4388d6e3bbc56d",
+      "license": "MIT",
+      "md5": "f62e23af6a95db67be055195be7e9c6f",
+      "repository_path": "witnesses/vol6_1/harness/spec_loader.py",
+      "sha256": "67fd5ec55e92084f5f1edb8ce5312d9b6d7f151987603a5b6bbad95c23b71ea4",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/spec_loader.py"
+    },
+    {
+      "bytes": 1078,
+      "category": "harness",
+      "git_blob_sha1": "07c364c5c6b458126b6486492eb91a878a50a015",
+      "license": "MIT",
+      "md5": "f706d64bd530f96b88d11be284fda0b7",
+      "repository_path": "witnesses/vol6_1/harness/specs/v53/v53_collapse.json",
+      "sha256": "487316a1209e8e8a772bba0219c88664f84bebcc770229015275da11b768504a",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/specs/v53/v53_collapse.json"
+    },
+    {
+      "bytes": 1137,
+      "category": "harness",
+      "git_blob_sha1": "ad0eaf7ebd382f8fbe6f0999536679ec6bcae0c6",
+      "license": "MIT",
+      "md5": "8223009433cd3f2087a5662abcd7551d",
+      "repository_path": "witnesses/vol6_1/harness/specs/v53/v53_constant_velocity.json",
+      "sha256": "1d1a4f91e957f7f1efc22a7b735a591864a9d32be95317510e237c52e2babdd5",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/specs/v53/v53_constant_velocity.json"
+    },
+    {
+      "bytes": 1400,
+      "category": "harness",
+      "git_blob_sha1": "557eb847586fd8bff242a4ed28afd7e6fac8a7e0",
+      "license": "MIT",
+      "md5": "706b095657d2953f00e32c98542b0bf1",
+      "repository_path": "witnesses/vol6_1/harness/specs/v53/v53_feature_ambiguous_recoverable.json",
+      "sha256": "93b5ae347dd63a499f2c7ff575c3cc9ac727da215cf069f2372c23cb962e83ab",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/specs/v53/v53_feature_ambiguous_recoverable.json"
+    },
+    {
+      "bytes": 961,
+      "category": "harness",
+      "git_blob_sha1": "f163e179dd6967e2accd249bf9f1a9f8b26dffdb",
+      "license": "MIT",
+      "md5": "a6e7bcd773a4e74c34e72410fb1a573a",
+      "repository_path": "witnesses/vol6_1/harness/specs/v53/v53_gap_collapse.json",
+      "sha256": "de3b208b632e1f52feeec27dbe836a3b3e1c8a85924cc10df4445533def1456d",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/specs/v53/v53_gap_collapse.json"
+    },
+    {
+      "bytes": 1306,
+      "category": "harness",
+      "git_blob_sha1": "2eb03c69e9e25f2ff63e04dc695f8aa540267361",
+      "license": "MIT",
+      "md5": "acdace3a1fa277ba96fe5667990c764b",
+      "repository_path": "witnesses/vol6_1/harness/specs/v53/v53_missing_cell.json",
+      "sha256": "d13643e06ba0dde7a2184a038691f1df7468be932c0996ff15b3910eb08d7a9d",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/specs/v53/v53_missing_cell.json"
+    },
+    {
+      "bytes": 2033,
+      "category": "harness",
+      "git_blob_sha1": "3a9329be5c4937f333dad6a009713ab4408e52d7",
+      "license": "MIT",
+      "md5": "9303e67a291532ec60b282a3576ce31c",
+      "repository_path": "witnesses/vol6_1/harness/specs/v53/v53_same_slices_different_edges.json",
+      "sha256": "0325f1f0f69f454fc8a3da93746285302c573e3dfc6bab842cfc3c18ed81c145",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/specs/v53/v53_same_slices_different_edges.json"
+    },
+    {
+      "bytes": 1158,
+      "category": "harness",
+      "git_blob_sha1": "789b567ec3ce0e931b5a08151e28f005eea898c9",
+      "license": "MIT",
+      "md5": "12f384df9368025ed175954c34fc5580",
+      "repository_path": "witnesses/vol6_1/harness/specs/v53/v53_unique_lift.json",
+      "sha256": "b6168afd230a50513fe5b528a5f0d49998e04a511564cae73b933ad4ea38e33d",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/specs/v53/v53_unique_lift.json"
+    },
+    {
+      "bytes": 1466,
+      "category": "harness",
+      "git_blob_sha1": "c411144df914a912e32648ed4a596c5b64f590ea",
+      "license": "MIT",
+      "md5": "30cbbca84d149abbc973f632a81ab87c",
+      "repository_path": "witnesses/vol6_1/harness/specs/v54/v54_toy_A_memoryless_fail.json",
+      "sha256": "0f243edc5d2951a7a45b9d7ff3e335440a8598c12d59312c238b0fbccffc91d6",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/specs/v54/v54_toy_A_memoryless_fail.json"
+    },
+    {
+      "bytes": 1286,
+      "category": "harness",
+      "git_blob_sha1": "4f4c8cf160775e9daf82969271d8755f86aeef16",
+      "license": "MIT",
+      "md5": "c80963245c14f634fa8515729be8e288",
+      "repository_path": "witnesses/vol6_1/harness/specs/v54/v54_toy_B_bridge_conflict.json",
+      "sha256": "10d8be2252f1e58efa24dee5072a1d6a2e2dc6a083caffadd995098f89d187ce",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/specs/v54/v54_toy_B_bridge_conflict.json"
+    },
+    {
+      "bytes": 1360,
+      "category": "harness",
+      "git_blob_sha1": "78d28e936d24b144c6e401d0766f09c54f18b258",
+      "license": "MIT",
+      "md5": "5bd88a04d8a15f23dfc39c8460da27d9",
+      "repository_path": "witnesses/vol6_1/harness/specs/v54/v54_toy_C_nonblocking.json",
+      "sha256": "fd4d594f52639165453b62e7d3e30d52020bff9c6c4cfc4bae34198b0086499d",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/specs/v54/v54_toy_C_nonblocking.json"
+    },
+    {
+      "bytes": 1869,
+      "category": "harness",
+      "git_blob_sha1": "7cb7ee164e0914906f1da17d722a6ef6fbefa299",
+      "license": "MIT",
+      "md5": "b615fde3ff747d27978ab735cc26b04d",
+      "repository_path": "witnesses/vol6_1/harness/specs/v54/v54_toy_D_retention_memory.json",
+      "sha256": "76f9da5f60f7573a0b09916ba5c9b1106705429fbc16ff6f53ff347ce75a9743",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/specs/v54/v54_toy_D_retention_memory.json"
+    },
+    {
+      "bytes": 1239,
+      "category": "harness",
+      "git_blob_sha1": "a679c0542bf1c4768bb06b6bed5fd4a28f478b19",
+      "license": "MIT",
+      "md5": "6614700330dce99abee8c8f9d8620932",
+      "repository_path": "witnesses/vol6_1/harness/specs/v54/v54_toy_E_target_sound_not_selector.json",
+      "sha256": "554d48a823ea70f358a8772fa9182d2e887f9792d0de7c944c6ac88fe2bc06c0",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/specs/v54/v54_toy_E_target_sound_not_selector.json"
+    },
+    {
+      "bytes": 1225,
+      "category": "harness",
+      "git_blob_sha1": "26d395ec3ec76776faf513ce77c618efe7511d84",
+      "license": "MIT",
+      "md5": "462294fb07a0d3df45cb8dcc4b8b74a4",
+      "repository_path": "witnesses/vol6_1/harness/specs/v54/v54_toy_F_safe_nonexact.json",
+      "sha256": "8f65262fe85a5a19e6ff0207f3b5b6e8148b3b8f1e4d30c42d8e9b117c4143c5",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/specs/v54/v54_toy_F_safe_nonexact.json"
+    },
+    {
+      "bytes": 2726,
+      "category": "harness",
+      "git_blob_sha1": "5f71ef35235b0454d6496e258dc7b095cb69455a",
+      "license": "MIT",
+      "md5": "2c0138f905a4cf9f6f1e67eb1dca95fc",
+      "repository_path": "witnesses/vol6_1/harness/suite_manifest.json",
+      "sha256": "f520d58fd2ca3737277aaa37bcec2556e2cfa749f126b70134843aea43140b13",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/witnesses/vol6_1/harness/suite_manifest.json"
+    },
+    {
+      "bytes": 3223,
+      "category": "supplementary",
+      "git_blob_sha1": "64bfcd3ddc33785544ab033d766aec6a3960dae8",
+      "license": "MIT",
+      "md5": "4f773792256236182b8d5df70ce736da",
+      "repository_path": "witnesses/vol6_1/checks/toy_d_information_correspondence.py",
+      "sha256": "813ded12e0fae2ca7a2c272aea8a14bbe7a99a8f64a2105e1196278739c6ccc5",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/checks/toy_d_information_correspondence.py"
+    },
+    {
+      "bytes": 15046,
+      "category": "supplementary",
+      "git_blob_sha1": "6617dee30da6197633c988af6a6c8da3da644208",
+      "license": "MIT",
+      "md5": "7a86950155cb4dd3c5c08ea6ecac8193",
+      "repository_path": "witnesses/vol6_1/SYNC_CONTRACT.json",
+      "sha256": "e6345c20a22da251dda11dab2afbcd31982c972d7fd0620eb50547b4dc0278e6",
+      "source_member": "Re_Phase_Vol_6_1_Software_2026-10-23/SYNC_CONTRACT.json"
+    }
+  ],
+  "status_at_creation": "PHASE2_IMPLEMENTATION_STAGING_ONLY",
+  "tests_executed_in_phase2": false,
+  "zenodo_actions": 0
+}

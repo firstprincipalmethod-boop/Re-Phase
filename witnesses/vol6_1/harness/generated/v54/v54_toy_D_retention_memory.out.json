@@ -1,252 +1,415 @@
 {
-  "compute_status": "ok",
-  "computed": {
-    "choice_kind": "action",
-    "variants": {
-      "silent_augmented": {
-        "cells": {
-          "mode:P": {
-            "cell_id": "mode:P",
-            "choice_kind": "action",
-            "choice_sets": {
-              "slip": [
-                "r"
+  "result": {
+    "computed": {
+      "claim_checks": {
+        "silent_full_history_policy_fails": true,
+        "silent_retained_policy_succeeds": true,
+        "silent_section_exists": true,
+        "traceable_lookback_1_succeeds": true,
+        "traceable_memoryless_fails": true
+      },
+      "closed_loop_guarantee_claimed": false,
+      "obligation_type": "terminal_action_policy_not_path_section",
+      "registered_claim_holds": true,
+      "retained_mode_is_additional_information": true,
+      "worlds": {
+        "silent": {
+          "augmented_display_section": {
+            "count": 1,
+            "exists": true,
+            "fibers": {
+              "[[0,0,1],\"P\"]": [
+                "slip"
+              ],
+              "[[0,0,1],\"S\"]": [
+                "stable"
               ]
             },
-            "common_choice_set": [
-              "r"
-            ],
-            "members": [
-              "slip"
-            ],
-            "obstructed_property": "action_valued_selector",
-            "status": "no_conflict"
+            "table": {
+              "[[0,0,1],\"P\"]": "slip",
+              "[[0,0,1],\"S\"]": "stable"
+            }
           },
-          "mode:S": {
-            "cell_id": "mode:S",
-            "choice_kind": "action",
-            "choice_sets": {
-              "stable": [
-                "n"
+          "original_display_section": {
+            "count": 2,
+            "exists": true,
+            "fibers": {
+              "[0,0,1]": [
+                "slip",
+                "stable"
               ]
             },
-            "common_choice_set": [
-              "n"
-            ],
-            "members": [
-              "stable"
-            ],
-            "obstructed_property": "action_valued_selector",
-            "status": "no_conflict"
+            "table": {
+              "[0,0,1]": "slip"
+            }
+          },
+          "policies": {
+            "lookback_1": {
+              "cells": {
+                "[0,1]": {
+                  "allowed_by_member": {
+                    "slip": [
+                      "r"
+                    ],
+                    "stable": [
+                      "n"
+                    ]
+                  },
+                  "common_choices": [],
+                  "conflict": true,
+                  "members": [
+                    "slip",
+                    "stable"
+                  ]
+                }
+              },
+              "count": 0,
+              "exists": false,
+              "obligation_type": "terminal_common_action_policy",
+              "table": null
+            },
+            "lookback_2": {
+              "cells": {
+                "[0,0,1]": {
+                  "allowed_by_member": {
+                    "slip": [
+                      "r"
+                    ],
+                    "stable": [
+                      "n"
+                    ]
+                  },
+                  "common_choices": [],
+                  "conflict": true,
+                  "members": [
+                    "slip",
+                    "stable"
+                  ]
+                }
+              },
+              "count": 0,
+              "exists": false,
+              "obligation_type": "terminal_common_action_policy",
+              "table": null
+            },
+            "memoryless": {
+              "cells": {
+                "[1]": {
+                  "allowed_by_member": {
+                    "slip": [
+                      "r"
+                    ],
+                    "stable": [
+                      "n"
+                    ]
+                  },
+                  "common_choices": [],
+                  "conflict": true,
+                  "members": [
+                    "slip",
+                    "stable"
+                  ]
+                }
+              },
+              "count": 0,
+              "exists": false,
+              "obligation_type": "terminal_common_action_policy",
+              "table": null
+            },
+            "offline": {
+              "cells": {
+                "[0,0,1]": {
+                  "allowed_by_member": {
+                    "slip": [
+                      "r"
+                    ],
+                    "stable": [
+                      "n"
+                    ]
+                  },
+                  "common_choices": [],
+                  "conflict": true,
+                  "members": [
+                    "slip",
+                    "stable"
+                  ]
+                }
+              },
+              "count": 0,
+              "exists": false,
+              "obligation_type": "terminal_common_action_policy",
+              "table": null
+            },
+            "retained_mode_augmented": {
+              "cells": {
+                "[[0,0,1],\"P\"]": {
+                  "allowed_by_member": {
+                    "slip": [
+                      "r"
+                    ]
+                  },
+                  "common_choices": [
+                    "r"
+                  ],
+                  "conflict": false,
+                  "members": [
+                    "slip"
+                  ]
+                },
+                "[[0,0,1],\"S\"]": {
+                  "allowed_by_member": {
+                    "stable": [
+                      "n"
+                    ]
+                  },
+                  "common_choices": [
+                    "n"
+                  ],
+                  "conflict": false,
+                  "members": [
+                    "stable"
+                  ]
+                }
+              },
+              "count": 1,
+              "exists": true,
+              "obligation_type": "terminal_common_action_policy",
+              "table": {
+                "[[0,0,1],\"P\"]": "r",
+                "[[0,0,1],\"S\"]": "n"
+              }
+            }
           }
         },
-        "selector_exists": true,
-        "selector_table": {
-          "mode:P": "r",
-          "mode:S": "n"
+        "traceable": {
+          "augmented_display_section": {
+            "count": 1,
+            "exists": true,
+            "fibers": {
+              "[[0,0,1],\"S\"]": [
+                "stable"
+              ],
+              "[[0,1,1],\"P\"]": [
+                "slip"
+              ]
+            },
+            "table": {
+              "[[0,0,1],\"S\"]": "stable",
+              "[[0,1,1],\"P\"]": "slip"
+            }
+          },
+          "original_display_section": {
+            "count": 1,
+            "exists": true,
+            "fibers": {
+              "[0,0,1]": [
+                "stable"
+              ],
+              "[0,1,1]": [
+                "slip"
+              ]
+            },
+            "table": {
+              "[0,0,1]": "stable",
+              "[0,1,1]": "slip"
+            }
+          },
+          "policies": {
+            "lookback_1": {
+              "cells": {
+                "[0,1]": {
+                  "allowed_by_member": {
+                    "stable": [
+                      "n"
+                    ]
+                  },
+                  "common_choices": [
+                    "n"
+                  ],
+                  "conflict": false,
+                  "members": [
+                    "stable"
+                  ]
+                },
+                "[1,1]": {
+                  "allowed_by_member": {
+                    "slip": [
+                      "r"
+                    ]
+                  },
+                  "common_choices": [
+                    "r"
+                  ],
+                  "conflict": false,
+                  "members": [
+                    "slip"
+                  ]
+                }
+              },
+              "count": 1,
+              "exists": true,
+              "obligation_type": "terminal_common_action_policy",
+              "table": {
+                "[0,1]": "n",
+                "[1,1]": "r"
+              }
+            },
+            "lookback_2": {
+              "cells": {
+                "[0,0,1]": {
+                  "allowed_by_member": {
+                    "stable": [
+                      "n"
+                    ]
+                  },
+                  "common_choices": [
+                    "n"
+                  ],
+                  "conflict": false,
+                  "members": [
+                    "stable"
+                  ]
+                },
+                "[0,1,1]": {
+                  "allowed_by_member": {
+                    "slip": [
+                      "r"
+                    ]
+                  },
+                  "common_choices": [
+                    "r"
+                  ],
+                  "conflict": false,
+                  "members": [
+                    "slip"
+                  ]
+                }
+              },
+              "count": 1,
+              "exists": true,
+              "obligation_type": "terminal_common_action_policy",
+              "table": {
+                "[0,0,1]": "n",
+                "[0,1,1]": "r"
+              }
+            },
+            "memoryless": {
+              "cells": {
+                "[1]": {
+                  "allowed_by_member": {
+                    "slip": [
+                      "r"
+                    ],
+                    "stable": [
+                      "n"
+                    ]
+                  },
+                  "common_choices": [],
+                  "conflict": true,
+                  "members": [
+                    "slip",
+                    "stable"
+                  ]
+                }
+              },
+              "count": 0,
+              "exists": false,
+              "obligation_type": "terminal_common_action_policy",
+              "table": null
+            },
+            "offline": {
+              "cells": {
+                "[0,0,1]": {
+                  "allowed_by_member": {
+                    "stable": [
+                      "n"
+                    ]
+                  },
+                  "common_choices": [
+                    "n"
+                  ],
+                  "conflict": false,
+                  "members": [
+                    "stable"
+                  ]
+                },
+                "[0,1,1]": {
+                  "allowed_by_member": {
+                    "slip": [
+                      "r"
+                    ]
+                  },
+                  "common_choices": [
+                    "r"
+                  ],
+                  "conflict": false,
+                  "members": [
+                    "slip"
+                  ]
+                }
+              },
+              "count": 1,
+              "exists": true,
+              "obligation_type": "terminal_common_action_policy",
+              "table": {
+                "[0,0,1]": "n",
+                "[0,1,1]": "r"
+              }
+            },
+            "retained_mode_augmented": {
+              "cells": {
+                "[[0,0,1],\"S\"]": {
+                  "allowed_by_member": {
+                    "stable": [
+                      "n"
+                    ]
+                  },
+                  "common_choices": [
+                    "n"
+                  ],
+                  "conflict": false,
+                  "members": [
+                    "stable"
+                  ]
+                },
+                "[[0,1,1],\"P\"]": {
+                  "allowed_by_member": {
+                    "slip": [
+                      "r"
+                    ]
+                  },
+                  "common_choices": [
+                    "r"
+                  ],
+                  "conflict": false,
+                  "members": [
+                    "slip"
+                  ]
+                }
+              },
+              "count": 1,
+              "exists": true,
+              "obligation_type": "terminal_common_action_policy",
+              "table": {
+                "[[0,0,1],\"S\"]": "n",
+                "[[0,1,1],\"P\"]": "r"
+              }
+            }
+          }
         }
-      },
-      "silent_original": {
-        "memory_results": {
-          "lookback_1": {
-            "cells": {
-              "tilt:0,1": {
-                "cell_id": "tilt:0,1",
-                "choice_kind": "action",
-                "choice_sets": {
-                  "slip": [
-                    "r"
-                  ],
-                  "stable": [
-                    "n"
-                  ]
-                },
-                "common_choice_set": [],
-                "members": [
-                  "slip",
-                  "stable"
-                ],
-                "obstructed_property": "action_valued_selector",
-                "status": "conflict"
-              }
-            },
-            "selector_exists": false
-          },
-          "lookback_2": {
-            "cells": {
-              "tilt:0,0,1": {
-                "cell_id": "tilt:0,0,1",
-                "choice_kind": "action",
-                "choice_sets": {
-                  "slip": [
-                    "r"
-                  ],
-                  "stable": [
-                    "n"
-                  ]
-                },
-                "common_choice_set": [],
-                "members": [
-                  "slip",
-                  "stable"
-                ],
-                "obstructed_property": "action_valued_selector",
-                "status": "conflict"
-              }
-            },
-            "selector_exists": false
-          },
-          "memoryless": {
-            "cells": {
-              "tilt:1": {
-                "cell_id": "tilt:1",
-                "choice_kind": "action",
-                "choice_sets": {
-                  "slip": [
-                    "r"
-                  ],
-                  "stable": [
-                    "n"
-                  ]
-                },
-                "common_choice_set": [],
-                "members": [
-                  "slip",
-                  "stable"
-                ],
-                "obstructed_property": "action_valued_selector",
-                "status": "conflict"
-              }
-            },
-            "selector_exists": false
-          }
-        },
-        "selector_exists": false
-      },
-      "traceable_original": {
-        "memory_results": {
-          "lookback_1": {
-            "cells": {
-              "tilt:0,1": {
-                "cell_id": "tilt:0,1",
-                "choice_kind": "action",
-                "choice_sets": {
-                  "stable": [
-                    "n"
-                  ]
-                },
-                "common_choice_set": [
-                  "n"
-                ],
-                "members": [
-                  "stable"
-                ],
-                "obstructed_property": "action_valued_selector",
-                "status": "no_conflict"
-              },
-              "tilt:1,1": {
-                "cell_id": "tilt:1,1",
-                "choice_kind": "action",
-                "choice_sets": {
-                  "slip": [
-                    "r"
-                  ]
-                },
-                "common_choice_set": [
-                  "r"
-                ],
-                "members": [
-                  "slip"
-                ],
-                "obstructed_property": "action_valued_selector",
-                "status": "no_conflict"
-              }
-            },
-            "selector_exists": true,
-            "selector_table": {
-              "tilt:0,1": "n",
-              "tilt:1,1": "r"
-            }
-          },
-          "lookback_2": {
-            "cells": {
-              "tilt:0,0,1": {
-                "cell_id": "tilt:0,0,1",
-                "choice_kind": "action",
-                "choice_sets": {
-                  "stable": [
-                    "n"
-                  ]
-                },
-                "common_choice_set": [
-                  "n"
-                ],
-                "members": [
-                  "stable"
-                ],
-                "obstructed_property": "action_valued_selector",
-                "status": "no_conflict"
-              },
-              "tilt:0,1,1": {
-                "cell_id": "tilt:0,1,1",
-                "choice_kind": "action",
-                "choice_sets": {
-                  "slip": [
-                    "r"
-                  ]
-                },
-                "common_choice_set": [
-                  "r"
-                ],
-                "members": [
-                  "slip"
-                ],
-                "obstructed_property": "action_valued_selector",
-                "status": "no_conflict"
-              }
-            },
-            "selector_exists": true,
-            "selector_table": {
-              "tilt:0,0,1": "n",
-              "tilt:0,1,1": "r"
-            }
-          },
-          "memoryless": {
-            "cells": {
-              "tilt:1": {
-                "cell_id": "tilt:1",
-                "choice_kind": "action",
-                "choice_sets": {
-                  "slip": [
-                    "r"
-                  ],
-                  "stable": [
-                    "n"
-                  ]
-                },
-                "common_choice_set": [],
-                "members": [
-                  "slip",
-                  "stable"
-                ],
-                "obstructed_property": "action_valued_selector",
-                "status": "conflict"
-              }
-            },
-            "selector_exists": false
-          }
-        },
-        "selector_exists": true
       }
     },
-    "verdict": "retention_memory_separation"
+    "id": "v54_toy_D_retention_memory",
+    "kind": "selector",
+    "role_label": "terminal_action_policy_memory_retention_separation",
+    "schema_version": 2,
+    "source_volume": "Vol.5.4",
+    "spec_sha256": "76f9da5f60f7573a0b09916ba5c9b1106705429fbc16ff6f53ff347ce75a9743",
+    "suite_version": "2026-10-23"
   },
-  "generated_by": "witnesses/vol6_1/harness/compute.py",
-  "id": "v54_toy_D_retention_memory",
-  "kind": "selector",
-  "source_volume": "Vol.5.4",
   "verification": {
-    "checked_by": "run_all.py",
-    "status": "pass"
+    "finite_claims": "pass",
+    "scope": "fixed_finite_fixture_not_general_proof",
+    "strict_golden": "pass"
   }
 }

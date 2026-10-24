@@ -1,0 +1,23 @@
+{
+  "status": "PASS_BOUNDED_CROSS_IMPLEMENTATION",
+  "path_models": 20740,
+  "path_models_by_horizon": {
+    "0": 4,
+    "1": 256,
+    "2": 16384,
+    "3": 4096
+  },
+  "path_summary_fields_compared": 373320,
+  "one_decision_policy_models": 2696,
+  "policy_models_by_member_count": {
+    "1": 8,
+    "2": 128,
+    "3": 2560
+  },
+  "scope": {
+    "paths": "two states; horizons 0,1,2: all fibers and adjacent relations; horizon 3: full fibers and all adjacent relations",
+    "policies": "one to three members, three actions, all set partitions and allowed-action subsets",
+    "proof_over_arbitrary_domains": false,
+    "external_independent_review": false
+  }
+}

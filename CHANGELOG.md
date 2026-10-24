@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### 2026-10-24 — Vol.6.1 corrected implementation integration (phases 2–3)
+
+- Stage the fixed 2026-10-23 schema-2 harness: 59 files plus unchanged Toy D helper and package synchronization contract. All remain byte-identical to the fixed source package.
+- Clarify G1: the 13 current golden paths now contain corrected snapshots; old v0.4.2 goldens remain at commit `cb592ad34ed6aa8db24fea02595793289919b6cf` and the immutable software DOI `21220093` archive. No old commit or archive is rewritten.
+- Synchronize current README/correction/schema/publication navigation, address C2 and unavailable-tag recovery, and explicitly preserve the MIT software/data exception.
+- Add a non-mutating repository-layout replay with both Python modes, 17 generated-file comparisons and eight fixed manuscript table/metadata comparisons. Runtime outcomes belong to its execution report, not the historical package receipts.
+- Keep both Vol.6.1 successor records publication pending. PR/main merge is separate; no Zenodo edit/Publish, tag/Release, publication-artifact rebuild, or Core/Atlas/Decisions_Log update.
+
 ### 2026-10-22 — Vol.5.3/Vol.5.4 post-publication documentation sync
 
 - Updated current navigation to the published corrected Vol.5.3 DOI `10.5281/zenodo.23499738` (`noheader_r1`) and Vol.5.4 DOI `10.5281/zenodo.23499819` (unchanged 2026-10-21 PDF/source pair).

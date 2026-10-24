@@ -1,167 +1,137 @@
-# Vol.6.1 Witness Verification Harness
+# Vol.6.1 — A Finite Witness Harness
 
-## Current status — 2026-10-21
+**Corrected edition: 2026-10-23; schema 2.** This source tree contains the
+corrected implementation, not the historical v0.4.2 implementation. Its 59
+harness files are unchanged copies of the fixed MIT Software ZIP (SHA-256
+`48abc2ae97e1cf0ea5089f7e9610dfef0d4b6c14194f41e85a8660c4086c181e`).
 
-This directory represents the historical archived v0.4.2 harness. Its historical release gate reported **13/13 PASS** (7 v53 + 6 v54).
+This is the phase-3 integration checkpoint, not a publication announcement.
+The manuscript DOI `10.5281/zenodo.23499925` (CC BY-NC 4.0) and software DOI
+`10.5281/zenodo.23499964` (MIT) remain **publication pending** at the supplied
+2026-10-24 Zenodo checkpoint. PR/merge is a separate step. See
+[publication status](../../docs/publication-status-2026-10-24.md) and
+[CORRECTION_STATUS.md](CORRECTION_STATUS.md).
 
-Later review identified source-correspondence, output-typing, and input-validation issues. The historical PASS must not be interpreted as certification against the corrected 2026-10-21 Vol.5.3 and Vol.5.4.
+## Reproduce from a repository checkout
 
-A synchronized corrected manuscript/software release is in progress. The owner-designated successor DOI identifiers are:
+Use Python 3.10 or later; no third-party Python package is required. From the
+repository root, run:
 
-- Manuscript: 10.5281/zenodo.23499925 — corrective revision in progress / publication pending (CC-BY-NC).
-- Software / witness harness: 10.5281/zenodo.23499964 — corrective revision in progress / publication pending (MIT).
-
-Neither successor is yet published in this workflow. See [CORRECTION_STATUS.md](CORRECTION_STATUS.md) and the [2026-10-21 pre-publication status](../../docs/prepublication-status-2026-10-21.md).
-
-The remaining description documents the historical v0.4.2 implementation and release claims; it is not renewed certification. [ZENODO_DESCRIPTION.md](ZENODO_DESCRIPTION.md) records the historical v0.4.2 archive description and remains unchanged.
-
-## Historical purpose
-
-Purpose: enforce D11/D12/D13 — every certified number in Vol.6.1 is **generated from a finite
-witness spec and verified**, never handwritten. Content is split per source volume (**D15**);
-the verification machinery is shared.
-
-## Historical v0.4.2 status (as recorded at release)
-**Repository-complete for both lanes.** Vol.5.3 (v53, pathwise) has all 7 witnesses live,
-golden-frozen, and release-gate certified. Vol.5.4 (v54, selector) has all 6 Toy A–F witnesses
-live, golden-frozen, and release-gate certified, including a golden **content audit** pass
-(D-v54-07~09) that verified the golden output is faithful to the M1–M3/D-v54 definitions, not
-just internally self-consistent with its own compute. `run_all.py --release` reports
-**13/13 PASS** (7 v53 + 6 v54).
-
-## Archive
-- Manuscript: https://doi.org/10.5281/zenodo.21220080 (v0.4.2)
-- Witness harness (this directory): https://doi.org/10.5281/zenodo.21220093
-- git tag: `vol6.1-v0.4.2`
-
-## Layout (per-volume split, D15)
-```
-specs/v53/       specs/v54/          canonical specs, input-only (NO numbers, D13)
-compute_v53.py   compute_v54.py      @witness compute fns (register into compute.REGISTRY)
-generated/v53/   generated/v54/      per-witness generated output  <id>.out.json
-generated/table_v53.csv, table_v54.csv                aggregate registry tables (root)
-golden/v53/      golden/v54/         frozen snapshots  <id>.golden.json
-```
-`source_volume` selects the bucket (`Vol.5.3 -> v53`, `Vol.5.4 -> v54`). The volume<->kind
-coupling is definitional (D12): 5.3 = pathwise, 5.4 = selector. `spec_loader` **enforces** that a
-spec's physical folder matches its `source_volume` bucket, and `schema.validate_spec` rejects an
-unknown volume or a volume/kind mismatch — a misfiled witness fails loudly, never silently routing
-to the wrong bucket.
-
-## Pipeline (D13)
-```
-specs/<bucket>/*.json (inputs only, NO numbers)
-  -> compute_v53.py / compute_v54.py   recompute Pt/Lift/feature/selector verdicts, tau_pre
-    -> generated/<bucket>/*.out.json   (computed numbers + provenance)
-      -> golden/<bucket>/*.golden.json (frozen snapshot; run_all diffs against it)
-        -> generated/table_v53.csv, table_v54.csv
-          -> Appendix witness sheets -> prose   (sheet generator: TODO)
-```
-Before a golden snapshot is frozen, the generated output is reviewed by hand against the
-canonical spec and the source-volume definitions — `run_all.py --release` passing only proves
-generated==golden, not that golden is *correct*; that review step matters (see the v54 content
-audit, D-v54-07~09, below).
-
-## Files
-- `schema.py`        — spec/output schemas + validator. Enforces **D13** (no expected numbers in a
-                       spec), **D12** (count_objects required), and **D15** (source_volume bucket +
-                       volume/kind coupling). `bucket(spec)` maps source_volume -> v53/v54.
-                       `FORBIDDEN_IN_SPEC` covers both v53-era fields (`lift_status`, `tau_pre`, ...)
-                       and v54 generated fields (`cell_conflict`, `square_commutes`, `exact`, ...).
-- `spec_loader.py`   — loads + validates specs from `specs/` (recursive). Enforces **D15 placement**:
-                       folder bucket must equal source_volume bucket. Only `*.json` is loaded —
-                       `*.json.example` files are ignored, so draft/example specs never affect the
-                       release gate.
-- `compute.py`       — registry core: `@witness`, `compute`, `REGISTRY`.
-- `compute_v53.py`   — Vol.5.3 (pathwise) witness fns. All 7 v53 witnesses registered.
-- `compute_v54.py`   — Vol.5.4 (selector) witness fns. All 6 Toy A–F witnesses registered.
-- `output_writer.py` — writes `generated/<bucket>/<id>.out.json`.
-- `golden.py`        — freeze / compare golden snapshots (drift detection); per-bucket dir.
-- `report.py`        — builds `table_v53.csv` (pathwise) and `table_v54.csv` (selector) at
-                       `generated/` root. Selector witnesses are **not** forced onto |Pt|/|Lift| (D12);
-                       `SELECTOR_COLS` is a summary row (`id`/`choice_kind`/`verdict`/
-                       `verification_status`) — variant-level detail lives only in the JSON.
-- `run_all.py`       — orchestrator. Imports `compute_v53`/`compute_v54` for @witness registration,
-                       routes generated/golden per bucket. In `--release` mode the loaded id set
-                       must equal `schema.REQUIRED_WITNESS_IDS` exactly: missing or unexpected
-                       ids fail the gate, and zero specs fail as 13 missing ids.
-- `selftest.py`      — exercises the machinery with synthetic fixtures (no canonical content);
-                       28 checks, including negative cases for the D-v54-08 cross-check discipline
-                       and for the release manifest (missing / empty / unexpected id sets).
-- `specs/v53/_TEMPLATE_pathwise.json.example`, `specs/v54/_TEMPLATE_selector.json.example`
-                     — input-only spec shapes for adding a new witness.
-
-## Registration side-effect (do not remove)
-`@witness` registers only when its module is imported. `run_all.py` imports `compute_v53` and
-`compute_v54` for that reason. **Drop those imports and every witness reports
-`no-compute-registered`, so the release gate fails.** (Design log D15.)
-
-## Use
-```
-python3 run_all.py            # load specs -> compute -> verify -> report -> pass/fail summary
-python3 run_all.py --release   # certified-release gate (non-zero exit on any blocking item)
-python3 selftest.py            # verify the harness machinery itself (28 checks)
-python3 -O selftest.py         # rejection guarantees must also hold under optimized mode
-python3 -O run_all.py --release
+```sh
+python -I -B witnesses/vol6_1/recheck_integration.py --report ../vol61-repository-replay.json
 ```
 
-**Required-id manifest (implemented):** `schema.REQUIRED_WITNESS_IDS` (derived from the
-registered verdict vocabulary, so there is no second list to drift) is enforced by the
-`--release` gate: a required witness missing from `specs/`, an unexpected id, or an empty spec
-directory all fail the gate with a non-zero exit. Exercised by selftest negative cases; holds
-under `python -O`. Remaining deferred hardening: a hash-pinned golden manifest.
+The wrapper validates the copied bytes, executes the fixed-suite gate,
+primary selftest, checker selftest, independent complete-record checker,
+bounded comparisons and Toy D correspondence in both normal and `-O` modes.
+It writes only to temporary directories and the explicitly chosen external
+report, not to tracked `generated/`, `golden/`, specs or package archives.
+It compares each fresh set of 17 result files to both the repository snapshot
+and the fixed manuscript result hashes, and regenerates the eight manuscript
+table/metadata files using the unchanged MIT table generator in a temporary
+source-layout directory. The generator uses preserved package verification
+records to reproduce the fixed manuscript's tables; those records are not
+relabelled as new runs. Fresh execution records live only in the new report.
 
-## Conventions
+To inspect Toy D directly from the repository root, the relocated helper
+requires its source root explicitly:
 
-### Vol.5.3 (`kind: pathwise`, `specs/v53/`)
-`Pt(y) = product_k F_k(y_k)` (full pointwise relaxation), `Lift(y)` its transition-compatible
-subset. Each sheet declares this in `count_objects` (D12). `tau_pre` (online prefix-failure
-index, §7.2) is generated as a **structured** value — `{"status":"finite","k":2}` or
-`{"status":"no_failure","k":null}` — never a numeric sentinel. Two witnesses
-(`v53_same_slices_different_edges`, `v53_constant_velocity`) compare two variants and return
-nested `variant_a`/`variant_b` (or `full_context`/`thinned_context`) blocks — `report.py`'s flat
-CSV table leaves some columns blank for these rows; the nested detail is only in the JSON.
+```sh
+python -I -B witnesses/vol6_1/checks/toy_d_information_correspondence.py --software-root .
+python -I -B -O witnesses/vol6_1/checks/toy_d_information_correspondence.py --software-root .
+```
 
-### Vol.5.4 (`kind: selector`, `specs/v54/`)
-Family-level; counted objects are the admissible base-path family, per-selector-class
-information cells, and member-relative projected choice sets `V^Q(y)` for a fixed `choice_kind`
-— no forced `|Pt|`/`|Lift|`. Every witness carries a top-level `verdict`
-(`schema.VERDICT_BY_WITNESS`, a controlled vocabulary — see `Decisions_Log.md` D-v54-02).
+`--release` on `harness/run_all.py` is a compatibility name for the strict local
+gate; it does not publish, upload, tag or approve a release. Direct gate calls
+without `--out-dir` write the tracked generated directory, so the wrapper above
+is the preferred non-mutating integration check. `freeze_candidate.py` is not
+used by this process and is never used to make a failed comparison pass.
 
-**cell_conflict certificate** (M2 lock): for an information cell with member -> choice-set data,
-the common choice set is the intersection across members; `cell_conflict` is true iff that
-intersection is empty. For `choice_kind` in `{state, bridge_edge, action}` a nonempty common
-choice set is itself a constructive existence witness. `choice_kind=nonblocking_prefix`
-(Toy C) is nonexistence-only — existence would additionally need cross-time consistency, not
-yet certified.
+## Contents and correspondence
 
-**Variant-bearing witnesses** (D-v54-03: Toy A, Toy D): a single witness id carries multiple
-named `variants` in its generated output rather than being split into separate files, because
-the comparison across variants *is* the witness's claim. The top-level `verdict` names the
-primary claim (D-v54-06); full per-variant detail (including, for Toy D, a per-`memory_class`
-breakdown — D-v54-07) lives only in `variants`, never flattened into a CSV column. An existence
-claim (`selector_exists=true`) is only made alongside an explicit `selector_table` witness
-(D-v54-04), never bare.
+| Location | Meaning |
+|---|---|
+| `harness/specs/v53`, `harness/specs/v54` | 7 pathwise and 6 selection inputs |
+| `harness/contract.py`, `suite_manifest.json` | schema 2, complete IDs and pinned spec/golden bytes |
+| `harness/golden/` | 13 corrected complete-result envelopes |
+| `harness/generated/` | 13 result JSON, 3 CSV and one summary |
+| `checks/toy_d_information_correspondence.py` | finite C1 qualification, not general equivalence |
+| `SYNC_CONTRACT.json` | unchanged standalone package contract, not a repository manifest |
+| `integration/phase2-source-map.json` | phase-2 import mapping |
+| `integration/phase3-manifest.json` | source hashes and fixed manuscript result/table expectations |
+| `integration/table-inputs/` | unchanged table generator, source map and past verification records |
 
-**Quotient witnesses** (M3 lock: Toy E, Toy F): `exact`/`target_sound`/`square_commutes` are
-derived generically from the spec's own `quotient_map`/`target_verdict`/`display_images` (never
-hardcoded); `square_commutes` is grounded via the identity display-quotient assumption when
-`display_quotient="identity"`. `cpre_claim_status` is always `"not_certified"` — CPre inclusion
-is out of scope unless a must/may abstraction mode is fixed.
+See [schema/migration](SCHEMA_AND_MIGRATION.md), [correction map](CORRECTION_MAP.md)
+and [checker coverage](INDEPENDENT_COVERAGE.md). The source correspondence is
+in `integration/table-inputs/provenance/source_map.json`; the fixed upstream
+records are Vol.5.3 `23499738` (2026-10-21 noheader-r1) and Vol.5.4 `23499819`
+(2026-10-21). Their files are not changed by this integration.
 
-**Redundant declared inputs are cross-checked, not just ignored** (D-v54-08): Toy B's
-`left_support`/`right_support` and Toy C's `required_prefix_choice` restate values that are
-independently derivable from `bridge_edges`/`transitions`. Compute derives its own values and
-checks them against the declaration; a mismatch raises an explicit `ValueError` (effective
-under `python -O` as well), surfacing as a compute error, not a silent divergence.
+The copied schema/correction/coverage notes retain original package-relative paths;
+`verification/` in those notes maps to `integration/table-inputs/verification/`
+here. Other archived provenance remains in the fixed source ZIP.
 
-**`lookback_r` window convention** (D-v54-09): `lookback_r` means the current observation plus
-the `r` preceding observations (window `r+1`); `memoryless` is `lookback_0` (window 1). This
-matches Vol.5.4's `q_lookback(k,r,y) = y[max(0,k-r):k+1]`.
+The contract's relative paths are interpreted in the original package layout.
+This repository does not contain the entire software or manuscript archive.
+The archived `verify_package.py` checks the original archive, not this selective
+repository import. The repository wrapper checks the explicitly mapped subset.
+It does not rebuild the PDF or replay archived patch applications.
 
-### Both volumes
-A witness spec NEVER stores expected numbers; those exist only in `generated/` and `golden/`
-(D13). Promoting a witness from draft to certified follows: `*.json.example` (Obsidian-reviewed
-draft) -> `*.json` (live spec, input-only) -> `compute_<bucket>.py` function registered ->
-`generated/<bucket>/<id>.out.json` reviewed by hand -> `golden/<bucket>/<id>.golden.json` frozen
--> `run_all.py --release` re-verified.
+## Typed obligations and evidence limits
+
+Toy A checks every time of the supplied unique paths. Toy B is abstract,
+member-dependent edge choice. Toy C's positive local choice does not establish
+a full-path selector. D/E/F distinguish display/path sections from terminal
+common-action policies. Both E/F have quotient sections; their post-policy
+counts differ. Stable legacy IDs, including `not_selector`, are not current
+semantic claims. `role_label` is metadata; the 50 `claim_checks` are computed.
+
+Target counts are 13 cases, 50 finite predicates, 97 primary selftests, 116
+checker selftests, 20,740 bounded path models (373,320 fields) and 2,696
+one-decision policy models per mode. The two modes repeat the same models;
+they are not additional distinct models. A valid replay report must actually
+record success. Source fidelity, regression equality and numerical checking
+are distinct evidence. Shared validation and same-author checker code do not
+constitute external review, a general proof, controller synthesis, CPre
+certification, minimum-memory result, stability theorem or performance advantage.
+
+## Current golden paths and historical recovery (G1)
+
+`harness/golden/` contains the **2026-10-23 corrected snapshots**. Phase 2
+replaced all 13 golden files at the same repository paths; it did not merely
+add an alternative directory. Old Git commits and original Zenodo archives
+were not modified. The manuscript's statement that old golden snapshots are
+not overwritten in place refers to the preserved **v0.4.2 archives**, not to
+an immutable path on a moving Git branch.
+
+Recover the previous repository golden files at commit
+`cb592ad34ed6aa8db24fea02595793289919b6cf`:
+
+```sh
+git show cb592ad34ed6aa8db24fea02595793289919b6cf:witnesses/vol6_1/harness/golden/v54/v54_toy_E_target_sound_not_selector.golden.json
+```
+
+The historical MIT software archive is DOI
+[10.5281/zenodo.21220093](https://doi.org/10.5281/zenodo.21220093), filename
+`Re_Phase_Vol_6_1_software_v0_4_2.zip`, SHA-256
+`82164beff12de69e1493ba558b30d2a840dd3cd01d2877346a6bbd27dc1cd8c4`.
+The historical manuscript source archive (DOI `10.5281/zenodo.21220080`) has
+SHA-256 `3905df1ba66069ab195accc72c5977f53f00cbc57ae90237aacbf73dcf6e958a`.
+The old `vol6.1-v0.4.2` tag was unavailable in earlier checks; it is not recreated
+and is not the recovery procedure. Historical 13/13 PASS is not a new
+certification against corrected Vol.5.3/Vol.5.4.
+
+## History and licenses
+
+The previous README and correction-status text are preserved byte-for-byte in
+[historical/](historical/). [ZENODO_DESCRIPTION.md](ZENODO_DESCRIPTION.md) is
+explicitly the historical v0.4.2 description; the corrected package description
+is [software-notes/ZENODO_DESCRIPTION_2026-10-23.txt](software-notes/ZENODO_DESCRIPTION_2026-10-23.txt).
+Past reviews, platform observations and packaged contract fields retain their
+original targets. New repository runs do not rewrite them.
+
+Imported code, machine-readable fixtures/results/contracts and explicitly
+identified operational support retain MIT; see [LICENSE-SOFTWARE.md](LICENSE-SOFTWARE.md).
+Manuscript text, figures, tables and PDF remain separately CC BY-NC 4.0 and are
+not included here. The table generator is a declared MIT exception in the
+manuscript source; copying it does not relicense the manuscript.

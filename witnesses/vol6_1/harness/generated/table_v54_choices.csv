@@ -1,0 +1,23 @@
+id,scope,obligation_type,exists,count,table
+v54_toy_A_memoryless_fail,memoryless,all_time_path_selector_on_given_unique_lifts,false,0,null
+v54_toy_A_memoryless_fail,lookback_1,all_time_path_selector_on_given_unique_lifts,true,1,"{""path0"": [""0a"", ""0b"", ""0c""], ""path1"": [""1a"", ""1b"", ""1c""]}"
+v54_toy_A_memoryless_fail,causal,all_time_path_selector_on_given_unique_lifts,true,1,"{""path0"": [""0a"", ""0b"", ""0c""], ""path1"": [""1a"", ""1b"", ""1c""]}"
+v54_toy_A_memoryless_fail,offline,all_time_path_selector_on_given_unique_lifts,true,1,"{""path0"": [""0a"", ""0b"", ""0c""], ""path1"": [""1a"", ""1b"", ""1c""]}"
+v54_toy_B_bridge_conflict,all_information_cells,abstract_edge_choice,false,0,null
+v54_toy_C_nonblocking,shared_prefix_only,one_prefix_continuation_choice,false,0,null
+v54_toy_D_retention_memory,silent/memoryless,terminal_common_action_policy,false,0,null
+v54_toy_D_retention_memory,silent/lookback_1,terminal_common_action_policy,false,0,null
+v54_toy_D_retention_memory,silent/lookback_2,terminal_common_action_policy,false,0,null
+v54_toy_D_retention_memory,silent/offline,terminal_common_action_policy,false,0,null
+v54_toy_D_retention_memory,silent/retained_mode_augmented,terminal_common_action_policy,true,1,"{""[[0,0,1],\""P\""]"": ""r"", ""[[0,0,1],\""S\""]"": ""n""}"
+v54_toy_D_retention_memory,traceable/memoryless,terminal_common_action_policy,false,0,null
+v54_toy_D_retention_memory,traceable/lookback_1,terminal_common_action_policy,true,1,"{""[0,1]"": ""n"", ""[1,1]"": ""r""}"
+v54_toy_D_retention_memory,traceable/lookback_2,terminal_common_action_policy,true,1,"{""[0,0,1]"": ""n"", ""[0,1,1]"": ""r""}"
+v54_toy_D_retention_memory,traceable/offline,terminal_common_action_policy,true,1,"{""[0,0,1]"": ""n"", ""[0,1,1]"": ""r""}"
+v54_toy_D_retention_memory,traceable/retained_mode_augmented,terminal_common_action_policy,true,1,"{""[[0,0,1],\""S\""]"": ""n"", ""[[0,1,1],\""P\""]"": ""r""}"
+v54_toy_E_target_sound_not_selector,pre_member_policy,member_identifying_common_action_policy,true,1,"{""\""x0\"""": ""a"", ""\""x1\"""": ""b""}"
+v54_toy_E_target_sound_not_selector,post_quotient_policy,quotient_common_action_policy,false,0,null
+v54_toy_E_target_sound_not_selector,original_display_policy,original_display_common_action_policy,false,0,null
+v54_toy_F_safe_nonexact,pre_member_policy,member_identifying_common_action_policy,true,1,"{""\""x0\"""": ""n"", ""\""x1\"""": ""n""}"
+v54_toy_F_safe_nonexact,post_quotient_policy,quotient_common_action_policy,true,1,"{""\""z\"""": ""n""}"
+v54_toy_F_safe_nonexact,original_display_policy,original_display_common_action_policy,true,1,"{""\""y\"""": ""n""}"

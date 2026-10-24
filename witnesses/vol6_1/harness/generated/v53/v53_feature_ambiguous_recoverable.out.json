@@ -1,35 +1,147 @@
 {
-  "compute_status": "ok",
-  "computed": {
-    "feature_image_lift": [
-      "c1",
-      "c2"
-    ],
-    "feature_image_pt": [
-      "c1",
-      "c2"
-    ],
-    "lift_size": 2,
-    "lift_status": "ambiguous",
-    "pt_size": 4,
-    "recoverable": true,
-    "target": [
-      "c1",
-      "c2"
-    ],
-    "target_check": "within_target",
-    "tau_pre": {
-      "k": null,
-      "status": "no_failure"
+  "result": {
+    "computed": {
+      "backward_survivable": [
+        [
+          "a0",
+          "b0"
+        ],
+        [
+          "a1",
+          "b1"
+        ],
+        [
+          "d",
+          "g0",
+          "g1"
+        ]
+      ],
+      "claim_checks": {
+        "ambiguous_paths": true,
+        "feature_recovers": true
+      },
+      "feature_image_lift": [
+        "good"
+      ],
+      "feature_image_pt": [
+        "bad",
+        "good"
+      ],
+      "feature_lift_counts": [
+        {
+          "count": 2,
+          "value": "good"
+        }
+      ],
+      "fibers": [
+        [
+          "a0",
+          "b0",
+          "c0"
+        ],
+        [
+          "a1",
+          "b1",
+          "c1"
+        ],
+        [
+          "d",
+          "g0",
+          "g1"
+        ]
+      ],
+      "forward_reachable": [
+        [
+          "a0",
+          "b0",
+          "c0"
+        ],
+        [
+          "a1",
+          "b1",
+          "c1"
+        ],
+        [
+          "g0",
+          "g1"
+        ]
+      ],
+      "lift_size": 2,
+      "lift_status": "ambiguous",
+      "lifts": [
+        [
+          "a0",
+          "a1",
+          "g0"
+        ],
+        [
+          "b0",
+          "b1",
+          "g1"
+        ]
+      ],
+      "live_cone_obstructions": [],
+      "obligation_type": "path_feature_recoverability",
+      "pt_size": 27,
+      "recoverable": true,
+      "registered_claim_holds": true,
+      "retrospective_break": [],
+      "surviving_slices": [
+        [
+          "a0",
+          "b0"
+        ],
+        [
+          "a1",
+          "b1"
+        ],
+        [
+          "g0",
+          "g1"
+        ]
+      ],
+      "target": [
+        "good"
+      ],
+      "target_check": "within_target",
+      "tau_pre": {
+        "k": null,
+        "status": "no_failure"
+      },
+      "viable_bridges": [
+        [
+          [
+            "a0",
+            "a1"
+          ],
+          [
+            "b0",
+            "b1"
+          ]
+        ],
+        [
+          [
+            "a1",
+            "g0"
+          ],
+          [
+            "b1",
+            "g1"
+          ]
+        ]
+      ]
     },
-    "verdict": "feature_sufficient_ambiguity"
+    "id": "v53_feature_ambiguous_recoverable",
+    "kind": "pathwise",
+    "role_label": "ambiguous_paths_with_recovered_feature",
+    "schema_version": 2,
+    "source_volume": "Vol.5.3",
+    "spec_sha256": "93b5ae347dd63a499f2c7ff575c3cc9ac727da215cf069f2372c23cb962e83ab",
+    "suite_version": "2026-10-23"
   },
-  "generated_by": "witnesses/vol6_1/harness/compute.py",
-  "id": "v53_feature_ambiguous_recoverable",
-  "kind": "pathwise",
-  "source_volume": "Vol.5.3",
   "verification": {
-    "checked_by": "run_all.py",
-    "status": "pass"
+    "finite_claims": "pass",
+    "scope": "fixed_finite_fixture_not_general_proof",
+    "strict_golden": "pass"
   }
 }

@@ -1,50 +1,157 @@
 {
-  "compute_status": "ok",
-  "computed": {
-    "choice_kind": "action",
-    "choice_sets": {
-      "x0": [
-        "a"
-      ],
-      "x1": [
-        "b"
-      ]
+  "result": {
+    "computed": {
+      "claim_checks": {
+        "commuting_square": true,
+        "nonexact": true,
+        "original_section_exists": true,
+        "post_policy_lost": true,
+        "pre_policy_exists": true,
+        "quotient_section_exists": true,
+        "target_sound": true
+      },
+      "common_action_policy_preserved": false,
+      "cpre_claim_status": "not_certified",
+      "exact": false,
+      "obligation_type": "separate_sections_and_action_policies",
+      "original_display_policy": {
+        "cells": {
+          "\"y\"": {
+            "allowed_by_member": {
+              "x0": [
+                "a"
+              ],
+              "x1": [
+                "b"
+              ]
+            },
+            "common_choices": [],
+            "conflict": true,
+            "members": [
+              "x0",
+              "x1"
+            ]
+          }
+        },
+        "count": 0,
+        "exists": false,
+        "obligation_type": "original_display_common_action_policy",
+        "table": null
+      },
+      "original_display_section": {
+        "count": 2,
+        "exists": true,
+        "fibers": {
+          "\"y\"": [
+            "x0",
+            "x1"
+          ]
+        },
+        "table": {
+          "\"y\"": "x0"
+        }
+      },
+      "post_information": "quotient_map",
+      "post_quotient_policy": {
+        "cells": {
+          "\"z\"": {
+            "allowed_by_member": {
+              "x0": [
+                "a"
+              ],
+              "x1": [
+                "b"
+              ]
+            },
+            "common_choices": [],
+            "conflict": true,
+            "members": [
+              "x0",
+              "x1"
+            ]
+          }
+        },
+        "count": 0,
+        "exists": false,
+        "obligation_type": "quotient_common_action_policy",
+        "table": null
+      },
+      "pre_information": "member_identity",
+      "pre_member_policy": {
+        "cells": {
+          "\"x0\"": {
+            "allowed_by_member": {
+              "x0": [
+                "a"
+              ]
+            },
+            "common_choices": [
+              "a"
+            ],
+            "conflict": false,
+            "members": [
+              "x0"
+            ]
+          },
+          "\"x1\"": {
+            "allowed_by_member": {
+              "x1": [
+                "b"
+              ]
+            },
+            "common_choices": [
+              "b"
+            ],
+            "conflict": false,
+            "members": [
+              "x1"
+            ]
+          }
+        },
+        "count": 1,
+        "exists": true,
+        "obligation_type": "member_identifying_common_action_policy",
+        "table": {
+          "\"x0\"": "a",
+          "\"x1\"": "b"
+        }
+      },
+      "quotient_cells": {
+        "z": [
+          "x0",
+          "x1"
+        ]
+      },
+      "quotient_display": {
+        "z": "y"
+      },
+      "quotient_display_section": {
+        "count": 1,
+        "exists": true,
+        "fibers": {
+          "\"y\"": [
+            "z"
+          ]
+        },
+        "table": {
+          "\"y\"": "z"
+        }
+      },
+      "registered_claim_holds": true,
+      "square_commutes": true,
+      "target_sound": true
     },
-    "cpre_claim_status": "not_certified",
-    "display_images": {
-      "x0": "y",
-      "x1": "y"
-    },
-    "display_quotient": "identity",
-    "exact": false,
-    "quotient_cells": {
-      "z": [
-        "x0",
-        "x1"
-      ]
-    },
-    "quotient_common_choice_set": {
-      "z": []
-    },
-    "quotient_display": {
-      "z": "y"
-    },
-    "quotient_selector_exists": false,
-    "selector_preserving_action": false,
-    "square_commutes": true,
-    "target_sound": true,
-    "target_verdict_by_member": {
-      "x0": "good",
-      "x1": "good"
-    },
-    "verdict": "target_sound_not_selector_preserving"
+    "id": "v54_toy_E_target_sound_not_selector",
+    "kind": "selector",
+    "role_label": "target_sound_section_exists_action_policy_lost",
+    "schema_version": 2,
+    "source_volume": "Vol.5.4",
+    "spec_sha256": "554d48a823ea70f358a8772fa9182d2e887f9792d0de7c944c6ac88fe2bc06c0",
+    "suite_version": "2026-10-23"
   },
-  "generated_by": "witnesses/vol6_1/harness/compute.py",
-  "id": "v54_toy_E_target_sound_not_selector",
-  "kind": "selector",
-  "source_volume": "Vol.5.4",
   "verification": {
-    "checked_by": "run_all.py",
-    "status": "pass"
+    "finite_claims": "pass",
+    "scope": "fixed_finite_fixture_not_general_proof",
+    "strict_golden": "pass"
   }
 }

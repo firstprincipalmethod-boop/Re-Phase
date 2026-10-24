@@ -1,73 +1,605 @@
 {
   "computed": {
-    "choice_kind": "state",
-    "time": 1,
-    "variants": {
-      "lookback_1": {
-        "cells": {
-          "0,*": {
-            "cell_id": "lookback_1_t1:0,*",
-            "choice_kind": "state",
-            "choice_sets": {
-              "path0": [
-                "0b"
-              ]
-            },
-            "common_choice_set": [
-              "0b"
-            ],
-            "members": [
-              "path0"
-            ],
-            "obstructed_property": "plain_adapted_selector",
-            "status": "no_conflict"
-          },
-          "1,*": {
-            "cell_id": "lookback_1_t1:1,*",
-            "choice_kind": "state",
-            "choice_sets": {
-              "path1": [
-                "1b"
-              ]
-            },
-            "common_choice_set": [
-              "1b"
-            ],
-            "members": [
-              "path1"
-            ],
-            "obstructed_property": "plain_adapted_selector",
-            "status": "no_conflict"
-          }
-        },
-        "selector_exists": true
+    "claim_checks": {
+      "lookback_1_succeeds": true,
+      "memoryless_fails": true,
+      "offline_sections_exist": true
+    },
+    "obligation_type": "all_time_path_selector_on_given_unique_lifts",
+    "offline_section": {
+      "count": 1,
+      "exists": true,
+      "fibers": {
+        "[\"0\",\"*\",\"0\"]": [
+          "path0"
+        ],
+        "[\"1\",\"*\",\"1\"]": [
+          "path1"
+        ]
       },
-      "memoryless": {
-        "cells": {
-          "*": {
-            "cell_id": "memoryless_t1:*",
-            "choice_kind": "state",
-            "choice_sets": {
-              "path0": [
-                "0b"
-              ],
-              "path1": [
-                "1b"
-              ]
-            },
-            "common_choice_set": [],
-            "members": [
-              "path0",
-              "path1"
-            ],
-            "obstructed_property": "plain_adapted_selector",
-            "status": "conflict"
-          }
-        },
-        "selector_exists": false
+      "table": {
+        "[\"0\",\"*\",\"0\"]": "path0",
+        "[\"1\",\"*\",\"1\"]": "path1"
       }
     },
-    "verdict": "memoryless_selector_failure"
+    "registered_claim_holds": true,
+    "variants": {
+      "causal": {
+        "full_path_selector_exists": true,
+        "per_time": [
+          {
+            "cells": {
+              "[\"0\"]": {
+                "allowed_by_member": {
+                  "path0": [
+                    "0a"
+                  ]
+                },
+                "common_choices": [
+                  "0a"
+                ],
+                "conflict": false,
+                "members": [
+                  "path0"
+                ]
+              },
+              "[\"1\"]": {
+                "allowed_by_member": {
+                  "path1": [
+                    "1a"
+                  ]
+                },
+                "common_choices": [
+                  "1a"
+                ],
+                "conflict": false,
+                "members": [
+                  "path1"
+                ]
+              }
+            },
+            "count": 1,
+            "exists": true,
+            "obligation_type": "state_component",
+            "table": {
+              "[\"0\"]": "0a",
+              "[\"1\"]": "1a"
+            },
+            "time": 0
+          },
+          {
+            "cells": {
+              "[\"0\",\"*\"]": {
+                "allowed_by_member": {
+                  "path0": [
+                    "0b"
+                  ]
+                },
+                "common_choices": [
+                  "0b"
+                ],
+                "conflict": false,
+                "members": [
+                  "path0"
+                ]
+              },
+              "[\"1\",\"*\"]": {
+                "allowed_by_member": {
+                  "path1": [
+                    "1b"
+                  ]
+                },
+                "common_choices": [
+                  "1b"
+                ],
+                "conflict": false,
+                "members": [
+                  "path1"
+                ]
+              }
+            },
+            "count": 1,
+            "exists": true,
+            "obligation_type": "state_component",
+            "table": {
+              "[\"0\",\"*\"]": "0b",
+              "[\"1\",\"*\"]": "1b"
+            },
+            "time": 1
+          },
+          {
+            "cells": {
+              "[\"0\",\"*\",\"0\"]": {
+                "allowed_by_member": {
+                  "path0": [
+                    "0c"
+                  ]
+                },
+                "common_choices": [
+                  "0c"
+                ],
+                "conflict": false,
+                "members": [
+                  "path0"
+                ]
+              },
+              "[\"1\",\"*\",\"1\"]": {
+                "allowed_by_member": {
+                  "path1": [
+                    "1c"
+                  ]
+                },
+                "common_choices": [
+                  "1c"
+                ],
+                "conflict": false,
+                "members": [
+                  "path1"
+                ]
+              }
+            },
+            "count": 1,
+            "exists": true,
+            "obligation_type": "state_component",
+            "table": {
+              "[\"0\",\"*\",\"0\"]": "0c",
+              "[\"1\",\"*\",\"1\"]": "1c"
+            },
+            "time": 2
+          }
+        ],
+        "selected_paths": {
+          "path0": [
+            "0a",
+            "0b",
+            "0c"
+          ],
+          "path1": [
+            "1a",
+            "1b",
+            "1c"
+          ]
+        },
+        "selector_count": 1,
+        "selector_tables": [
+          {
+            "[\"0\"]": "0a",
+            "[\"1\"]": "1a"
+          },
+          {
+            "[\"0\",\"*\"]": "0b",
+            "[\"1\",\"*\"]": "1b"
+          },
+          {
+            "[\"0\",\"*\",\"0\"]": "0c",
+            "[\"1\",\"*\",\"1\"]": "1c"
+          }
+        ]
+      },
+      "lookback_1": {
+        "full_path_selector_exists": true,
+        "per_time": [
+          {
+            "cells": {
+              "[\"0\"]": {
+                "allowed_by_member": {
+                  "path0": [
+                    "0a"
+                  ]
+                },
+                "common_choices": [
+                  "0a"
+                ],
+                "conflict": false,
+                "members": [
+                  "path0"
+                ]
+              },
+              "[\"1\"]": {
+                "allowed_by_member": {
+                  "path1": [
+                    "1a"
+                  ]
+                },
+                "common_choices": [
+                  "1a"
+                ],
+                "conflict": false,
+                "members": [
+                  "path1"
+                ]
+              }
+            },
+            "count": 1,
+            "exists": true,
+            "obligation_type": "state_component",
+            "table": {
+              "[\"0\"]": "0a",
+              "[\"1\"]": "1a"
+            },
+            "time": 0
+          },
+          {
+            "cells": {
+              "[\"0\",\"*\"]": {
+                "allowed_by_member": {
+                  "path0": [
+                    "0b"
+                  ]
+                },
+                "common_choices": [
+                  "0b"
+                ],
+                "conflict": false,
+                "members": [
+                  "path0"
+                ]
+              },
+              "[\"1\",\"*\"]": {
+                "allowed_by_member": {
+                  "path1": [
+                    "1b"
+                  ]
+                },
+                "common_choices": [
+                  "1b"
+                ],
+                "conflict": false,
+                "members": [
+                  "path1"
+                ]
+              }
+            },
+            "count": 1,
+            "exists": true,
+            "obligation_type": "state_component",
+            "table": {
+              "[\"0\",\"*\"]": "0b",
+              "[\"1\",\"*\"]": "1b"
+            },
+            "time": 1
+          },
+          {
+            "cells": {
+              "[\"*\",\"0\"]": {
+                "allowed_by_member": {
+                  "path0": [
+                    "0c"
+                  ]
+                },
+                "common_choices": [
+                  "0c"
+                ],
+                "conflict": false,
+                "members": [
+                  "path0"
+                ]
+              },
+              "[\"*\",\"1\"]": {
+                "allowed_by_member": {
+                  "path1": [
+                    "1c"
+                  ]
+                },
+                "common_choices": [
+                  "1c"
+                ],
+                "conflict": false,
+                "members": [
+                  "path1"
+                ]
+              }
+            },
+            "count": 1,
+            "exists": true,
+            "obligation_type": "state_component",
+            "table": {
+              "[\"*\",\"0\"]": "0c",
+              "[\"*\",\"1\"]": "1c"
+            },
+            "time": 2
+          }
+        ],
+        "selected_paths": {
+          "path0": [
+            "0a",
+            "0b",
+            "0c"
+          ],
+          "path1": [
+            "1a",
+            "1b",
+            "1c"
+          ]
+        },
+        "selector_count": 1,
+        "selector_tables": [
+          {
+            "[\"0\"]": "0a",
+            "[\"1\"]": "1a"
+          },
+          {
+            "[\"0\",\"*\"]": "0b",
+            "[\"1\",\"*\"]": "1b"
+          },
+          {
+            "[\"*\",\"0\"]": "0c",
+            "[\"*\",\"1\"]": "1c"
+          }
+        ]
+      },
+      "memoryless": {
+        "full_path_selector_exists": false,
+        "per_time": [
+          {
+            "cells": {
+              "[\"0\"]": {
+                "allowed_by_member": {
+                  "path0": [
+                    "0a"
+                  ]
+                },
+                "common_choices": [
+                  "0a"
+                ],
+                "conflict": false,
+                "members": [
+                  "path0"
+                ]
+              },
+              "[\"1\"]": {
+                "allowed_by_member": {
+                  "path1": [
+                    "1a"
+                  ]
+                },
+                "common_choices": [
+                  "1a"
+                ],
+                "conflict": false,
+                "members": [
+                  "path1"
+                ]
+              }
+            },
+            "count": 1,
+            "exists": true,
+            "obligation_type": "state_component",
+            "table": {
+              "[\"0\"]": "0a",
+              "[\"1\"]": "1a"
+            },
+            "time": 0
+          },
+          {
+            "cells": {
+              "[\"*\"]": {
+                "allowed_by_member": {
+                  "path0": [
+                    "0b"
+                  ],
+                  "path1": [
+                    "1b"
+                  ]
+                },
+                "common_choices": [],
+                "conflict": true,
+                "members": [
+                  "path0",
+                  "path1"
+                ]
+              }
+            },
+            "count": 0,
+            "exists": false,
+            "obligation_type": "state_component",
+            "table": null,
+            "time": 1
+          },
+          {
+            "cells": {
+              "[\"0\"]": {
+                "allowed_by_member": {
+                  "path0": [
+                    "0c"
+                  ]
+                },
+                "common_choices": [
+                  "0c"
+                ],
+                "conflict": false,
+                "members": [
+                  "path0"
+                ]
+              },
+              "[\"1\"]": {
+                "allowed_by_member": {
+                  "path1": [
+                    "1c"
+                  ]
+                },
+                "common_choices": [
+                  "1c"
+                ],
+                "conflict": false,
+                "members": [
+                  "path1"
+                ]
+              }
+            },
+            "count": 1,
+            "exists": true,
+            "obligation_type": "state_component",
+            "table": {
+              "[\"0\"]": "0c",
+              "[\"1\"]": "1c"
+            },
+            "time": 2
+          }
+        ],
+        "selected_paths": null,
+        "selector_count": 0,
+        "selector_tables": null
+      },
+      "offline": {
+        "full_path_selector_exists": true,
+        "per_time": [
+          {
+            "cells": {
+              "[\"0\",\"*\",\"0\"]": {
+                "allowed_by_member": {
+                  "path0": [
+                    "0a"
+                  ]
+                },
+                "common_choices": [
+                  "0a"
+                ],
+                "conflict": false,
+                "members": [
+                  "path0"
+                ]
+              },
+              "[\"1\",\"*\",\"1\"]": {
+                "allowed_by_member": {
+                  "path1": [
+                    "1a"
+                  ]
+                },
+                "common_choices": [
+                  "1a"
+                ],
+                "conflict": false,
+                "members": [
+                  "path1"
+                ]
+              }
+            },
+            "count": 1,
+            "exists": true,
+            "obligation_type": "state_component",
+            "table": {
+              "[\"0\",\"*\",\"0\"]": "0a",
+              "[\"1\",\"*\",\"1\"]": "1a"
+            },
+            "time": 0
+          },
+          {
+            "cells": {
+              "[\"0\",\"*\",\"0\"]": {
+                "allowed_by_member": {
+                  "path0": [
+                    "0b"
+                  ]
+                },
+                "common_choices": [
+                  "0b"
+                ],
+                "conflict": false,
+                "members": [
+                  "path0"
+                ]
+              },
+              "[\"1\",\"*\",\"1\"]": {
+                "allowed_by_member": {
+                  "path1": [
+                    "1b"
+                  ]
+                },
+                "common_choices": [
+                  "1b"
+                ],
+                "conflict": false,
+                "members": [
+                  "path1"
+                ]
+              }
+            },
+            "count": 1,
+            "exists": true,
+            "obligation_type": "state_component",
+            "table": {
+              "[\"0\",\"*\",\"0\"]": "0b",
+              "[\"1\",\"*\",\"1\"]": "1b"
+            },
+            "time": 1
+          },
+          {
+            "cells": {
+              "[\"0\",\"*\",\"0\"]": {
+                "allowed_by_member": {
+                  "path0": [
+                    "0c"
+                  ]
+                },
+                "common_choices": [
+                  "0c"
+                ],
+                "conflict": false,
+                "members": [
+                  "path0"
+                ]
+              },
+              "[\"1\",\"*\",\"1\"]": {
+                "allowed_by_member": {
+                  "path1": [
+                    "1c"
+                  ]
+                },
+                "common_choices": [
+                  "1c"
+                ],
+                "conflict": false,
+                "members": [
+                  "path1"
+                ]
+              }
+            },
+            "count": 1,
+            "exists": true,
+            "obligation_type": "state_component",
+            "table": {
+              "[\"0\",\"*\",\"0\"]": "0c",
+              "[\"1\",\"*\",\"1\"]": "1c"
+            },
+            "time": 2
+          }
+        ],
+        "selected_paths": {
+          "path0": [
+            "0a",
+            "0b",
+            "0c"
+          ],
+          "path1": [
+            "1a",
+            "1b",
+            "1c"
+          ]
+        },
+        "selector_count": 1,
+        "selector_tables": [
+          {
+            "[\"0\",\"*\",\"0\"]": "0a",
+            "[\"1\",\"*\",\"1\"]": "1a"
+          },
+          {
+            "[\"0\",\"*\",\"0\"]": "0b",
+            "[\"1\",\"*\",\"1\"]": "1b"
+          },
+          {
+            "[\"0\",\"*\",\"0\"]": "0c",
+            "[\"1\",\"*\",\"1\"]": "1c"
+          }
+        ]
+      }
+    }
   },
-  "id": "v54_toy_A_memoryless_fail"
+  "id": "v54_toy_A_memoryless_fail",
+  "kind": "selector",
+  "role_label": "unique_lifts_no_memoryless_but_lookback_path_selector",
+  "schema_version": 2,
+  "source_volume": "Vol.5.4",
+  "spec_sha256": "0f243edc5d2951a7a45b9d7ff3e335440a8598c12d59312c238b0fbccffc91d6",
+  "suite_version": "2026-10-23"
 }

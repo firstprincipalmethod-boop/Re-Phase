@@ -1,38 +1,57 @@
 {
-  "compute_status": "ok",
-  "computed": {
-    "cell_conflict": {
-      "cell_id": "s:futures",
-      "choice_kind": "nonblocking_prefix",
-      "choice_sets": {
-        "alpha": [
-          "m"
-        ],
-        "beta": [
-          "n"
-        ]
+  "result": {
+    "computed": {
+      "claim_checks": {
+        "each_full_future_liftable": true,
+        "local_choices_exist": true,
+        "prefix_conflict": true
       },
-      "common_choice_set": [],
-      "members": [
-        "alpha",
-        "beta"
+      "continuation_choice": {
+        "cells": {
+          "shared_prefix": {
+            "allowed_by_member": {
+              "alpha": [
+                "m"
+              ],
+              "beta": [
+                "n"
+              ]
+            },
+            "common_choices": [],
+            "conflict": true,
+            "members": [
+              "alpha",
+              "beta"
+            ]
+          }
+        },
+        "count": 0,
+        "exists": false,
+        "obligation_type": "one_prefix_continuation_choice",
+        "table": null
+      },
+      "each_future_liftable": true,
+      "full_path_selector_exists": false,
+      "full_path_selector_status": "ruled_out_by_prefix_conflict",
+      "general_controller_synthesis_claimed": false,
+      "locally_reachable_choices": [
+        "m",
+        "n"
       ],
-      "obstructed_property": "nonblocking_selector",
-      "status": "conflict"
+      "obligation_type": "prefix_nonexistence_certificate_only",
+      "registered_claim_holds": true
     },
-    "choice_kind": "nonblocking_prefix",
-    "selector_class": "causal",
-    "selector_exists": false,
-    "shared_prefix": "s",
-    "time": 1,
-    "verdict": "nonblocking_failure"
+    "id": "v54_toy_C_nonblocking",
+    "kind": "selector",
+    "role_label": "prefix_continuation_conflict_nonexistence_only",
+    "schema_version": 2,
+    "source_volume": "Vol.5.4",
+    "spec_sha256": "fd4d594f52639165453b62e7d3e30d52020bff9c6c4cfc4bae34198b0086499d",
+    "suite_version": "2026-10-23"
   },
-  "generated_by": "witnesses/vol6_1/harness/compute.py",
-  "id": "v54_toy_C_nonblocking",
-  "kind": "selector",
-  "source_volume": "Vol.5.4",
   "verification": {
-    "checked_by": "run_all.py",
-    "status": "pass"
+    "finite_claims": "pass",
+    "scope": "fixed_finite_fixture_not_general_proof",
+    "strict_golden": "pass"
   }
 }

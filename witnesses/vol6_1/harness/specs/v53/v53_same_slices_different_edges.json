@@ -1,20 +1,118 @@
 {
-  "id": "v53_same_slices_different_edges",
-  "source_volume": "Vol.5.3",
-  "source_section": "4.9",
-  "kind": "pathwise",
-  "role": "time-slice supports do not determine the path fiber: two edge relations share identical state_sets (slices) but produce different Lift(y) and different recoverability verdicts",
-  "status": "core",
   "count_objects": {
-    "pt_object": "full pointwise relaxation Pt(y)=product_k F_k(y_k), identical across both variants",
-    "lift_object": "transition-compatible subset Lift(y) of Pt(y), computed once per edge-relation variant",
-    "feature_object": "image of Pt(y) and Lift(y) under the terminal-state feature map"
+    "scope": "finite input objects in spec; counts and claims are computed, not embedded expectations"
   },
+  "id": "v53_same_slices_different_edges",
+  "kind": "pathwise",
+  "role": "same_surviving_slices_different_path_features",
+  "schema_version": 2,
+  "source": {
+    "doi": "10.5281/zenodo.23499738",
+    "edition": "2026-10-21",
+    "layout": "noheader_r1",
+    "pdf_sha256": "4a2dd6ed2fa2f93a07d195220f203359b5989137fc8d758022e3a02551d2f6f3",
+    "relation": "reproduction_of_declared_finite_example"
+  },
+  "source_section": "12.6",
+  "source_volume": "Vol.5.3",
   "spec": {
-    "state_sets": { "X0": ["a"], "X1": ["p", "q"], "X2": ["r", "s"] },
-    "transitions_variant_a": { "T0": [["a", "p"], ["a", "q"]], "T1": [["p", "r"]] },
-    "transitions_variant_b": { "T0": [["a", "p"], ["a", "q"]], "T1": [["q", "s"]] },
-    "feature": "terminal_state",
-    "target": ["r"]
-  }
+    "feature": {
+      "different_value": "different",
+      "equal_value": "same",
+      "kind": "all_branch_equal",
+      "labels": {
+        "X0": {
+          "a0": "a",
+          "b0": "b"
+        },
+        "X1": {
+          "a1": "a",
+          "b1": "b"
+        },
+        "X2": {
+          "a2": "a",
+          "b2": "b"
+        }
+      }
+    },
+    "state_sets": {
+      "X0": [
+        "a0",
+        "b0"
+      ],
+      "X1": [
+        "a1",
+        "b1"
+      ],
+      "X2": [
+        "a2",
+        "b2"
+      ]
+    },
+    "target": [
+      "same"
+    ],
+    "transitions_variant_a": {
+      "T0": [
+        [
+          "a0",
+          "a1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "T1": [
+        [
+          "a1",
+          "a2"
+        ],
+        [
+          "b1",
+          "b2"
+        ]
+      ]
+    },
+    "transitions_variant_b": {
+      "T0": [
+        [
+          "a0",
+          "a1"
+        ],
+        [
+          "a0",
+          "b1"
+        ],
+        [
+          "b0",
+          "a1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "T1": [
+        [
+          "a1",
+          "a2"
+        ],
+        [
+          "a1",
+          "b2"
+        ],
+        [
+          "b1",
+          "a2"
+        ],
+        [
+          "b1",
+          "b2"
+        ]
+      ]
+    }
+  },
+  "status": "correction_candidate",
+  "suite_version": "2026-10-23"
 }

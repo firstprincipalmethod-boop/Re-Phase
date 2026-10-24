@@ -1,32 +1,71 @@
 {
-  "id": "v54_toy_A_memoryless_fail",
-  "source_volume": "Vol.5.4",
-  "source_section": "5.5",
-  "kind": "selector",
-  "role": "fiberwise liftability does not imply memoryless selector existence",
-  "status": "core",
   "count_objects": {
-    "family_object": "admissible base-path family Y_adm = {path0, path1}",
-    "lift_object": "unique lift trajectory per path",
-    "info_cells": "information cells per selector class (memoryless, lookback_1)",
-    "choice_sets": "projected state choice sets V_1^state(y)",
-    "verdict_object": "per-class selector existence (memoryless vs lookback_1)"
+    "family": "displayed paths with explicitly supplied unique admissible lifts",
+    "selection": "all-time information-adapted sections of this finite unique-lift family"
   },
+  "id": "v54_toy_A_memoryless_fail",
+  "kind": "selector",
+  "role": "unique_lifts_no_memoryless_but_lookback_path_selector",
+  "schema_version": 2,
+  "source": {
+    "doi": "10.5281/zenodo.23499819",
+    "edition": "2026-10-21",
+    "layout": "original_2026-10-21",
+    "pdf_sha256": "f692f7dc4b129a3647562bdeab020db1aa6c82b894f88fcf4e0fea2c22a0aa01",
+    "relation": "reproduction_of_declared_finite_example"
+  },
+  "source_section": "5",
+  "source_volume": "Vol.5.4",
   "spec": {
     "choice_kind": "state",
-    "time": 1,
-    "variants": ["memoryless", "lookback_1"],
     "displayed_paths": {
-      "path0": ["0", "*", "0"],
-      "path1": ["1", "*", "1"]
-    },
-    "lifts": {
-      "path0": ["0a", "0b", "0c"],
-      "path1": ["1a", "1b", "1c"]
+      "path0": [
+        "0",
+        "*",
+        "0"
+      ],
+      "path1": [
+        "1",
+        "*",
+        "1"
+      ]
     },
     "information_cells": {
-      "memoryless_t1": { "*": ["path0", "path1"] },
-      "lookback_1_t1": { "0,*": ["path0"], "1,*": ["path1"] }
-    }
-  }
+      "lookback_1_t1": {
+        "0,*": [
+          "path0"
+        ],
+        "1,*": [
+          "path1"
+        ]
+      },
+      "memoryless_t1": {
+        "*": [
+          "path0",
+          "path1"
+        ]
+      }
+    },
+    "lifts": {
+      "path0": [
+        "0a",
+        "0b",
+        "0c"
+      ],
+      "path1": [
+        "1a",
+        "1b",
+        "1c"
+      ]
+    },
+    "time": 1,
+    "variants": [
+      "memoryless",
+      "lookback_1",
+      "causal",
+      "offline"
+    ]
+  },
+  "status": "correction_candidate",
+  "suite_version": "2026-10-23"
 }

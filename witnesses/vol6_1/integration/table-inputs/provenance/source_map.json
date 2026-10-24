@@ -1,0 +1,151 @@
+{
+  "v53_collapse": {
+    "role_label": "pointwise_nonempty_pathwise_empty",
+    "section": "12.1",
+    "source": {
+      "doi": "10.5281/zenodo.23499738",
+      "edition": "2026-10-21",
+      "layout": "noheader_r1",
+      "pdf_sha256": "4a2dd6ed2fa2f93a07d195220f203359b5989137fc8d758022e3a02551d2f6f3",
+      "relation": "source_fibers_and_relations; harness_terminal_feature_and_target"
+    }
+  },
+  "v53_constant_velocity": {
+    "role_label": "constant_velocity_observation_schedule_comparison",
+    "section": "12.7",
+    "source": {
+      "doi": "10.5281/zenodo.23499738",
+      "edition": "2026-10-21",
+      "layout": "noheader_r1",
+      "pdf_sha256": "4a2dd6ed2fa2f93a07d195220f203359b5989137fc8d758022e3a02551d2f6f3",
+      "relation": "reproduction_of_declared_finite_example"
+    }
+  },
+  "v53_feature_ambiguous_recoverable": {
+    "role_label": "ambiguous_paths_with_recovered_feature",
+    "section": "12.4",
+    "source": {
+      "doi": "10.5281/zenodo.23499738",
+      "edition": "2026-10-21",
+      "layout": "noheader_r1",
+      "pdf_sha256": "4a2dd6ed2fa2f93a07d195220f203359b5989137fc8d758022e3a02551d2f6f3",
+      "relation": "reproduction_of_declared_finite_example"
+    }
+  },
+  "v53_gap_collapse": {
+    "role_label": "empty_lift_without_live_cone_obstruction",
+    "section": "10.4; 12.2",
+    "source": {
+      "doi": "10.5281/zenodo.23499738",
+      "edition": "2026-10-21",
+      "layout": "noheader_r1",
+      "pdf_sha256": "4a2dd6ed2fa2f93a07d195220f203359b5989137fc8d758022e3a02551d2f6f3",
+      "relation": "source_gap_example; harness_terminal_feature_and_target"
+    }
+  },
+  "v53_missing_cell": {
+    "role_label": "feature_narrowing_without_recoverability",
+    "section": "12.5",
+    "source": {
+      "doi": "10.5281/zenodo.23499738",
+      "edition": "2026-10-21",
+      "layout": "noheader_r1",
+      "pdf_sha256": "4a2dd6ed2fa2f93a07d195220f203359b5989137fc8d758022e3a02551d2f6f3",
+      "relation": "reproduction_of_declared_finite_example"
+    }
+  },
+  "v53_same_slices_different_edges": {
+    "role_label": "same_surviving_slices_different_path_features",
+    "section": "12.6",
+    "source": {
+      "doi": "10.5281/zenodo.23499738",
+      "edition": "2026-10-21",
+      "layout": "noheader_r1",
+      "pdf_sha256": "4a2dd6ed2fa2f93a07d195220f203359b5989137fc8d758022e3a02551d2f6f3",
+      "relation": "reproduction_of_declared_finite_example"
+    }
+  },
+  "v53_unique_lift": {
+    "role_label": "unique_lift_from_multiple_pointwise_candidates",
+    "section": "12.3",
+    "source": {
+      "doi": "10.5281/zenodo.23499738",
+      "edition": "2026-10-21",
+      "layout": "noheader_r1",
+      "pdf_sha256": "4a2dd6ed2fa2f93a07d195220f203359b5989137fc8d758022e3a02551d2f6f3",
+      "relation": "reproduction_of_declared_finite_example"
+    }
+  },
+  "v54_toy_A_memoryless_fail": {
+    "role_label": "unique_lifts_no_memoryless_but_lookback_path_selector",
+    "section": "5",
+    "source": {
+      "doi": "10.5281/zenodo.23499819",
+      "edition": "2026-10-21",
+      "layout": "original_2026-10-21",
+      "pdf_sha256": "f692f7dc4b129a3647562bdeab020db1aa6c82b894f88fcf4e0fea2c22a0aa01",
+      "relation": "reproduction_of_declared_finite_example"
+    }
+  },
+  "v54_toy_B_bridge_conflict": {
+    "role_label": "abstract_member_dependent_common_edge_conflict",
+    "section": "7",
+    "source": {
+      "doi": "10.5281/zenodo.23499819",
+      "edition": "2026-10-21",
+      "layout": "original_2026-10-21",
+      "pdf_sha256": "f692f7dc4b129a3647562bdeab020db1aa6c82b894f88fcf4e0fea2c22a0aa01",
+      "relation": "abstract_member_dependent_edges_only; not_fixed_transition_bridge_counterexample"
+    }
+  },
+  "v54_toy_C_nonblocking": {
+    "role_label": "prefix_continuation_conflict_nonexistence_only",
+    "section": "8; 9",
+    "source": {
+      "doi": "10.5281/zenodo.23499819",
+      "edition": "2026-10-21",
+      "layout": "original_2026-10-21",
+      "pdf_sha256": "f692f7dc4b129a3647562bdeab020db1aa6c82b894f88fcf4e0fea2c22a0aa01",
+      "relation": "finite_prefix_conflict; successful_local_choice_does_not_certify_full_path_selector"
+    }
+  },
+  "v54_toy_D_retention_memory": {
+    "r3_information_map_clarification": {
+      "augmented_section_information": "full tilt history and retained mode",
+      "implementation_policy_information": "full tilt history and retained mode",
+      "scope": "both fixed TRACEABLE/SILENT worlds induce the same two singleton member cells; policy counts agree, information-value keys are different; no equivalence for arbitrary inputs",
+      "source_policy_information": "current tilt and retained mode"
+    },
+    "role_label": "terminal_action_policy_memory_retention_separation",
+    "section": "11; 12",
+    "source": {
+      "doi": "10.5281/zenodo.23499819",
+      "edition": "2026-10-21",
+      "layout": "original_2026-10-21",
+      "pdf_sha256": "f692f7dc4b129a3647562bdeab020db1aa6c82b894f88fcf4e0fea2c22a0aa01",
+      "relation": "reproduction_of_declared_finite_example"
+    }
+  },
+  "v54_toy_E_target_sound_not_selector": {
+    "role_label": "target_sound_section_exists_action_policy_lost",
+    "section": "14; 15",
+    "source": {
+      "doi": "10.5281/zenodo.23499819",
+      "edition": "2026-10-21",
+      "layout": "original_2026-10-21",
+      "pdf_sha256": "f692f7dc4b129a3647562bdeab020db1aa6c82b894f88fcf4e0fea2c22a0aa01",
+      "relation": "reproduction_of_declared_finite_example"
+    }
+  },
+  "v54_toy_F_safe_nonexact": {
+    "role_label": "nonexact_target_sound_action_policy_retained",
+    "section": "14; 16",
+    "source": {
+      "doi": "10.5281/zenodo.23499819",
+      "edition": "2026-10-21",
+      "layout": "original_2026-10-21",
+      "pdf_sha256": "f692f7dc4b129a3647562bdeab020db1aa6c82b894f88fcf4e0fea2c22a0aa01",
+      "relation": "reproduction_of_declared_finite_example"
+    }
+  }
+}

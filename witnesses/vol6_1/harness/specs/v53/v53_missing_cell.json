@@ -1,22 +1,71 @@
 {
-  "id": "v53_missing_cell",
-  "source_volume": "Vol.5.3",
-  "source_section": "12.5",
-  "kind": "pathwise",
-  "role": "feature narrowing is not the same as target hitting: feature_image_lift is a strict subset of feature_image_pt, but is not a subset of the target",
-  "status": "core",
   "count_objects": {
-    "pt_object": "full pointwise relaxation Pt(y)=product_k F_k(y_k)",
-    "lift_object": "transition-compatible subset Lift(y) of Pt(y)",
-    "feature_object": "image of Pt(y) and Lift(y) under the terminal-state feature map"
+    "scope": "finite input objects in spec; counts and claims are computed, not embedded expectations"
   },
+  "id": "v53_missing_cell",
+  "kind": "pathwise",
+  "role": "feature_narrowing_without_recoverability",
+  "schema_version": 2,
+  "source": {
+    "doi": "10.5281/zenodo.23499738",
+    "edition": "2026-10-21",
+    "layout": "noheader_r1",
+    "pdf_sha256": "4a2dd6ed2fa2f93a07d195220f203359b5989137fc8d758022e3a02551d2f6f3",
+    "relation": "reproduction_of_declared_finite_example"
+  },
+  "source_section": "12.5",
+  "source_volume": "Vol.5.3",
   "spec": {
-    "state_sets": { "X0": ["a0", "b0", "c0"], "X1": ["a1", "b1", "c1"], "X2": ["good", "ok", "bad"] },
-    "transitions": {
-      "T0": [["a0", "a1"], ["b0", "b1"], ["c0", "c1"]],
-      "T1": [["a1", "good"], ["b1", "ok"]]
+    "feature": {
+      "kind": "terminal_state"
     },
-    "feature": "terminal_state",
-    "target": ["good"]
-  }
+    "state_sets": {
+      "X0": [
+        "a0",
+        "b0",
+        "c0"
+      ],
+      "X1": [
+        "a1",
+        "b1",
+        "c1"
+      ],
+      "X2": [
+        "good",
+        "ok",
+        "bad"
+      ]
+    },
+    "target": [
+      "good"
+    ],
+    "transitions": {
+      "T0": [
+        [
+          "a0",
+          "a1"
+        ],
+        [
+          "b0",
+          "b1"
+        ],
+        [
+          "c0",
+          "c1"
+        ]
+      ],
+      "T1": [
+        [
+          "a1",
+          "good"
+        ],
+        [
+          "b1",
+          "ok"
+        ]
+      ]
+    }
+  },
+  "status": "correction_candidate",
+  "suite_version": "2026-10-23"
 }

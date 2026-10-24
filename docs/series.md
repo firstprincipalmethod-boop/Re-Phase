@@ -57,16 +57,16 @@ The previous records, Vol.5.3 DOI 10.5281/zenodo.20956126 and Vol.5.4 DOI 10.528
 
 See the [publication status and artifact registry](publication-status-2026-10-22.md) for the four fixed files and the screenshot-based post-publication confirmation scope. The [pre-publication status](prepublication-status-2026-10-21.md) is retained as a historical checkpoint.
 
-## Vol.6.1 corrective revision
+## Vol.6.1 corrected implementation / publication pending
 
 Historical v0.4.2 remains an archived release: manuscript DOI 10.5281/zenodo.21220080 and software / witness-harness DOI 10.5281/zenodo.21220093.
 
 | Owner-designated successor record | DOI | Status |
 |---|---|---|
-| Manuscript (CC-BY-NC) | 10.5281/zenodo.23499925 | Corrective revision in progress / publication pending |
-| Software / witness harness (MIT) | 10.5281/zenodo.23499964 | Corrective revision in progress / publication pending |
+| Manuscript (CC-BY-NC) | 10.5281/zenodo.23499925 | Corrected 2026-10-23 artifacts prepared / publication pending |
+| Software / witness harness (MIT) | 10.5281/zenodo.23499964 | Corrected 2026-10-23 artifacts prepared / publication pending |
 
-The historical 13/13 PASS is a regression-gate result, not certification against the corrected 2026-10-21 Vol.5.3 and Vol.5.4. The successor records are not yet published and are not a current certified release. See [Vol.6.1 correction status](../witnesses/vol6_1/CORRECTION_STATUS.md).
+The corrected implementation is present in this source tree; see the [2026-10-24 checkpoint](publication-status-2026-10-24.md) for the separate PR/merge and publication gates. The historical 13/13 PASS is a regression-gate result, not certification against the corrected 2026-10-21 Vol.5.3 and Vol.5.4. The successor records are not yet published and are not a current certified release. See [Vol.6.1 correction status](../witnesses/vol6_1/CORRECTION_STATUS.md).
 
 ## Version History and Superseded Records
 

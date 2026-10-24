@@ -1,0 +1,398 @@
+{
+  "failed": 0,
+  "mode": "optimized",
+  "passed": 97,
+  "results": [
+    {
+      "status": "PASS",
+      "test": "canonical independent v53_collapse"
+    },
+    {
+      "status": "PASS",
+      "test": "canonical independent v53_constant_velocity"
+    },
+    {
+      "status": "PASS",
+      "test": "canonical independent v53_feature_ambiguous_recoverable"
+    },
+    {
+      "status": "PASS",
+      "test": "canonical independent v53_gap_collapse"
+    },
+    {
+      "status": "PASS",
+      "test": "canonical independent v53_missing_cell"
+    },
+    {
+      "status": "PASS",
+      "test": "canonical independent v53_same_slices_different_edges"
+    },
+    {
+      "status": "PASS",
+      "test": "canonical independent v53_unique_lift"
+    },
+    {
+      "status": "PASS",
+      "test": "canonical independent v54_toy_A_memoryless_fail"
+    },
+    {
+      "status": "PASS",
+      "test": "canonical independent v54_toy_B_bridge_conflict"
+    },
+    {
+      "status": "PASS",
+      "test": "canonical independent v54_toy_C_nonblocking"
+    },
+    {
+      "status": "PASS",
+      "test": "canonical independent v54_toy_D_retention_memory"
+    },
+    {
+      "status": "PASS",
+      "test": "canonical independent v54_toy_E_target_sound_not_selector"
+    },
+    {
+      "status": "PASS",
+      "test": "canonical independent v54_toy_F_safe_nonexact"
+    },
+    {
+      "status": "PASS",
+      "test": "strict comparator bool versus int"
+    },
+    {
+      "status": "PASS",
+      "test": "strict comparator extra null"
+    },
+    {
+      "status": "PASS",
+      "test": "strict comparator missing key"
+    },
+    {
+      "status": "PASS",
+      "test": "strict comparator wrong outer id"
+    },
+    {
+      "status": "PASS",
+      "test": "strict comparator wrong source volume"
+    },
+    {
+      "status": "PASS",
+      "test": "strict comparator wrong digest"
+    },
+    {
+      "status": "PASS",
+      "test": "strict comparator wrong suite version"
+    },
+    {
+      "status": "PASS",
+      "test": "strict comparator schema int versus float"
+    },
+    {
+      "status": "PASS",
+      "test": "strict comparator nested bool versus int"
+    },
+    {
+      "status": "PASS",
+      "test": "strict comparator null versus object"
+    },
+    {
+      "status": "PASS",
+      "test": "strict comparator nested extra null"
+    },
+    {
+      "status": "PASS",
+      "test": "strict comparator number versus string"
+    },
+    {
+      "status": "PASS",
+      "test": "strict comparator same"
+    },
+    {
+      "status": "PASS",
+      "test": "strict comparator missing snapshot"
+    },
+    {
+      "status": "PASS",
+      "test": "strict recursive missing/null/type"
+    },
+    {
+      "status": "PASS",
+      "test": "strict JSON duplicate JSON key"
+    },
+    {
+      "status": "PASS",
+      "test": "strict JSON NaN"
+    },
+    {
+      "status": "PASS",
+      "test": "strict JSON Infinity"
+    },
+    {
+      "status": "PASS",
+      "test": "unsafe ID"
+    },
+    {
+      "status": "PASS",
+      "test": "unknown ID"
+    },
+    {
+      "status": "PASS",
+      "test": "wrong pinned source hash"
+    },
+    {
+      "status": "PASS",
+      "test": "wrong source layout"
+    },
+    {
+      "status": "PASS",
+      "test": "volume mismatch"
+    },
+    {
+      "status": "PASS",
+      "test": "kind mismatch"
+    },
+    {
+      "status": "PASS",
+      "test": "extra envelope output"
+    },
+    {
+      "status": "PASS",
+      "test": "unused stage X99"
+    },
+    {
+      "status": "PASS",
+      "test": "wrong stage X2 to X99"
+    },
+    {
+      "status": "PASS",
+      "test": "unused transition T2"
+    },
+    {
+      "status": "PASS",
+      "test": "edge outside state domain"
+    },
+    {
+      "status": "PASS",
+      "test": "duplicate state"
+    },
+    {
+      "status": "PASS",
+      "test": "extra feature key"
+    },
+    {
+      "status": "PASS",
+      "test": "bool horizon"
+    },
+    {
+      "status": "PASS",
+      "test": "bad schedule index"
+    },
+    {
+      "status": "PASS",
+      "test": "unused velocity field"
+    },
+    {
+      "status": "PASS",
+      "test": "duplicate observation index"
+    },
+    {
+      "status": "PASS",
+      "test": "A stale cells with equal display"
+    },
+    {
+      "status": "PASS",
+      "test": "A stale t1 cell grouping"
+    },
+    {
+      "status": "PASS",
+      "test": "A unknown class"
+    },
+    {
+      "status": "PASS",
+      "test": "A path length mismatch"
+    },
+    {
+      "status": "PASS",
+      "test": "B additional overlapping cell"
+    },
+    {
+      "status": "PASS",
+      "test": "B uncovered member"
+    },
+    {
+      "status": "PASS",
+      "test": "B empty cell"
+    },
+    {
+      "status": "PASS",
+      "test": "B unsupported edge"
+    },
+    {
+      "status": "PASS",
+      "test": "B redundant support mismatch"
+    },
+    {
+      "status": "PASS",
+      "test": "C wrong declared prefix choice"
+    },
+    {
+      "status": "PASS",
+      "test": "C extra transition key"
+    },
+    {
+      "status": "PASS",
+      "test": "D extra memory class"
+    },
+    {
+      "status": "PASS",
+      "test": "D missing action"
+    },
+    {
+      "status": "PASS",
+      "test": "D unequal history length"
+    },
+    {
+      "status": "PASS",
+      "test": "v54_toy_E_target_sound_not_selector extra quotient_map"
+    },
+    {
+      "status": "PASS",
+      "test": "v54_toy_E_target_sound_not_selector missing quotient_map"
+    },
+    {
+      "status": "PASS",
+      "test": "v54_toy_E_target_sound_not_selector extra display_images"
+    },
+    {
+      "status": "PASS",
+      "test": "v54_toy_E_target_sound_not_selector missing display_images"
+    },
+    {
+      "status": "PASS",
+      "test": "v54_toy_E_target_sound_not_selector extra target_verdict"
+    },
+    {
+      "status": "PASS",
+      "test": "v54_toy_E_target_sound_not_selector missing target_verdict"
+    },
+    {
+      "status": "PASS",
+      "test": "v54_toy_E_target_sound_not_selector extra required_actions"
+    },
+    {
+      "status": "PASS",
+      "test": "v54_toy_E_target_sound_not_selector missing required_actions"
+    },
+    {
+      "status": "PASS",
+      "test": "v54_toy_F_safe_nonexact extra quotient_map"
+    },
+    {
+      "status": "PASS",
+      "test": "v54_toy_F_safe_nonexact missing quotient_map"
+    },
+    {
+      "status": "PASS",
+      "test": "v54_toy_F_safe_nonexact extra display_images"
+    },
+    {
+      "status": "PASS",
+      "test": "v54_toy_F_safe_nonexact missing display_images"
+    },
+    {
+      "status": "PASS",
+      "test": "v54_toy_F_safe_nonexact extra target_verdict"
+    },
+    {
+      "status": "PASS",
+      "test": "v54_toy_F_safe_nonexact missing target_verdict"
+    },
+    {
+      "status": "PASS",
+      "test": "v54_toy_F_safe_nonexact extra required_actions"
+    },
+    {
+      "status": "PASS",
+      "test": "v54_toy_F_safe_nonexact missing required_actions"
+    },
+    {
+      "status": "PASS",
+      "test": "C positive local choice does not certify full path"
+    },
+    {
+      "status": "PASS",
+      "test": "E changed actions change claims, not role metadata"
+    },
+    {
+      "status": "PASS",
+      "test": "F incompatible action changes computed claims"
+    },
+    {
+      "status": "PASS",
+      "test": "false equals false is not sufficient thinning"
+    },
+    {
+      "status": "PASS",
+      "test": "A off-tested-time components now affect output"
+    },
+    {
+      "status": "PASS",
+      "test": "B all valid information cells are evaluated"
+    },
+    {
+      "status": "PASS",
+      "test": "B supports are sets, not endpoint multiplicities"
+    },
+    {
+      "status": "PASS",
+      "test": "gap role computed from actual cone obstruction"
+    },
+    {
+      "status": "PASS",
+      "test": "E F source section and policy counts"
+    },
+    {
+      "status": "PASS",
+      "test": "current source examples exact finite summaries"
+    },
+    {
+      "status": "PASS",
+      "test": "pre-write gate duplicate"
+    },
+    {
+      "status": "PASS",
+      "test": "pre-write gate missing"
+    },
+    {
+      "status": "PASS",
+      "test": "pre-write gate path_id"
+    },
+    {
+      "status": "PASS",
+      "test": "pre-write gate wrong_filename"
+    },
+    {
+      "status": "PASS",
+      "test": "pre-write gate golden_outer"
+    },
+    {
+      "status": "PASS",
+      "test": "pre-write gate golden_type"
+    },
+    {
+      "status": "PASS",
+      "test": "pre-write gate extra_golden"
+    },
+    {
+      "status": "PASS",
+      "test": "pre-write gate missing_golden"
+    },
+    {
+      "status": "PASS",
+      "test": "pre-write gate valid_mutation"
+    }
+  ],
+  "status": "PASS",
+  "suite_version": "2026-10-23",
+  "tests": 97
+}

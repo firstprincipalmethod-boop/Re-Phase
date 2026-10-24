@@ -1,0 +1,99 @@
+{
+  "results": [
+    {
+      "claim_check_count": 3,
+      "comparison": "complete_record_keys_types_values",
+      "id": "v53_collapse",
+      "registered_claim_holds": true,
+      "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+    },
+    {
+      "claim_check_count": 4,
+      "comparison": "complete_record_keys_types_values",
+      "id": "v53_constant_velocity",
+      "registered_claim_holds": true,
+      "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+    },
+    {
+      "claim_check_count": 2,
+      "comparison": "complete_record_keys_types_values",
+      "id": "v53_feature_ambiguous_recoverable",
+      "registered_claim_holds": true,
+      "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+    },
+    {
+      "claim_check_count": 3,
+      "comparison": "complete_record_keys_types_values",
+      "id": "v53_gap_collapse",
+      "registered_claim_holds": true,
+      "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+    },
+    {
+      "claim_check_count": 3,
+      "comparison": "complete_record_keys_types_values",
+      "id": "v53_missing_cell",
+      "registered_claim_holds": true,
+      "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+    },
+    {
+      "claim_check_count": 5,
+      "comparison": "complete_record_keys_types_values",
+      "id": "v53_same_slices_different_edges",
+      "registered_claim_holds": true,
+      "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+    },
+    {
+      "claim_check_count": 3,
+      "comparison": "complete_record_keys_types_values",
+      "id": "v53_unique_lift",
+      "registered_claim_holds": true,
+      "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+    },
+    {
+      "claim_check_count": 3,
+      "comparison": "complete_record_keys_types_values",
+      "id": "v54_toy_A_memoryless_fail",
+      "registered_claim_holds": true,
+      "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+    },
+    {
+      "claim_check_count": 2,
+      "comparison": "complete_record_keys_types_values",
+      "id": "v54_toy_B_bridge_conflict",
+      "registered_claim_holds": true,
+      "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+    },
+    {
+      "claim_check_count": 3,
+      "comparison": "complete_record_keys_types_values",
+      "id": "v54_toy_C_nonblocking",
+      "registered_claim_holds": true,
+      "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+    },
+    {
+      "claim_check_count": 5,
+      "comparison": "complete_record_keys_types_values",
+      "id": "v54_toy_D_retention_memory",
+      "registered_claim_holds": true,
+      "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+    },
+    {
+      "claim_check_count": 7,
+      "comparison": "complete_record_keys_types_values",
+      "id": "v54_toy_E_target_sound_not_selector",
+      "registered_claim_holds": true,
+      "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+    },
+    {
+      "claim_check_count": 7,
+      "comparison": "complete_record_keys_types_values",
+      "id": "v54_toy_F_safe_nonexact",
+      "registered_claim_holds": true,
+      "status": "PASS_INDEPENDENT_FINITE_EVIDENCE"
+    }
+  ],
+  "scope": "complete fixed suite; independent calculations with shared input validation; not external review",
+  "status": "PASS_INDEPENDENT_FINITE_EVIDENCE",
+  "suite_version": "2026-10-23",
+  "witness_count": 13
+}

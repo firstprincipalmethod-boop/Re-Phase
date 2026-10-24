@@ -1,19 +1,76 @@
 {
-  "id": "v53_feature_ambiguous_recoverable",
-  "source_volume": "Vol.5.3",
-  "source_section": "11",
-  "kind": "pathwise",
-  "role": "full path uniqueness is not necessary for target-feature recoverability: Lift(y) is ambiguous but every surviving path's feature lands in the target",
-  "status": "core",
   "count_objects": {
-    "pt_object": "full pointwise relaxation Pt(y)=product_k F_k(y_k)",
-    "lift_object": "transition-compatible subset Lift(y) of Pt(y)",
-    "feature_object": "image of Pt(y) and Lift(y) under the terminal-state feature map"
+    "scope": "finite input objects in spec; counts and claims are computed, not embedded expectations"
   },
+  "id": "v53_feature_ambiguous_recoverable",
+  "kind": "pathwise",
+  "role": "ambiguous_paths_with_recovered_feature",
+  "schema_version": 2,
+  "source": {
+    "doi": "10.5281/zenodo.23499738",
+    "edition": "2026-10-21",
+    "layout": "noheader_r1",
+    "pdf_sha256": "4a2dd6ed2fa2f93a07d195220f203359b5989137fc8d758022e3a02551d2f6f3",
+    "relation": "reproduction_of_declared_finite_example"
+  },
+  "source_section": "12.4",
+  "source_volume": "Vol.5.3",
   "spec": {
-    "state_sets": { "X0": ["a"], "X1": ["b1", "b2"], "X2": ["c1", "c2"] },
-    "transitions": { "T0": [["a", "b1"], ["a", "b2"]], "T1": [["b1", "c1"], ["b2", "c2"]] },
-    "feature": "terminal_state",
-    "target": ["c1", "c2"]
-  }
+    "feature": {
+      "kind": "terminal_map",
+      "map": {
+        "d": "bad",
+        "g0": "good",
+        "g1": "good"
+      }
+    },
+    "state_sets": {
+      "X0": [
+        "a0",
+        "b0",
+        "c0"
+      ],
+      "X1": [
+        "a1",
+        "b1",
+        "c1"
+      ],
+      "X2": [
+        "g0",
+        "g1",
+        "d"
+      ]
+    },
+    "target": [
+      "good"
+    ],
+    "transitions": {
+      "T0": [
+        [
+          "a0",
+          "a1"
+        ],
+        [
+          "b0",
+          "b1"
+        ],
+        [
+          "c0",
+          "c1"
+        ]
+      ],
+      "T1": [
+        [
+          "a1",
+          "g0"
+        ],
+        [
+          "b1",
+          "g1"
+        ]
+      ]
+    }
+  },
+  "status": "correction_candidate",
+  "suite_version": "2026-10-23"
 }

@@ -1,0 +1,46 @@
+{
+  "native_windows_execution": false,
+  "platform": "Linux",
+  "python": "3.13.5",
+  "results": [
+    {
+      "status": "PASS",
+      "test": "Windows harness key"
+    },
+    {
+      "status": "PASS",
+      "test": "Windows nested result"
+    },
+    {
+      "status": "PASS",
+      "test": "Windows Unicode name"
+    },
+    {
+      "status": "PASS",
+      "test": "POSIX harness key"
+    },
+    {
+      "status": "PASS",
+      "test": "POSIX Unicode name"
+    },
+    {
+      "status": "PASS",
+      "test": "Windows result contract key"
+    },
+    {
+      "status": "PASS",
+      "test": "table LF only"
+    },
+    {
+      "status": "PASS",
+      "test": "table UTF-8"
+    },
+    {
+      "status": "PASS",
+      "test": "table final LF"
+    }
+  ],
+  "scope": "actual helper functions, PureWindowsPath/PurePosixPath, and UTF-8/LF table output; no OS emulation",
+  "status": "PASS_PORTABILITY_UNIT_TESTS",
+  "tests": 9
+}

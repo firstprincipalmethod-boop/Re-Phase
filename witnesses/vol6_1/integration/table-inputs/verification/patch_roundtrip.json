@@ -1,0 +1,83 @@
+{
+  "edition_id": "2026-10-23",
+  "operation": "publication wording and Appendix C presentation",
+  "reports": {
+    "manuscript": {
+      "candidate_id": "2026-10-23",
+      "kind": "manuscript",
+      "old_bytes_pre_normalized": false,
+      "patch_sha256": "20536c0f61402aa12920667571edfce5a75f234297ef9228eab191c8544bf329",
+      "runs": [
+        {
+          "actual_application": true,
+          "direction": "forward",
+          "files": 5,
+          "status": "PASS",
+          "tool": "git"
+        },
+        {
+          "actual_application": true,
+          "direction": "reverse",
+          "files": 6,
+          "status": "PASS",
+          "tool": "git"
+        },
+        {
+          "actual_application": true,
+          "direction": "forward",
+          "files": 5,
+          "status": "PASS",
+          "tool": "gnu_patch"
+        },
+        {
+          "actual_application": true,
+          "direction": "reverse",
+          "files": 6,
+          "status": "PASS",
+          "tool": "gnu_patch"
+        }
+      ],
+      "scope": "authored core TeX/TikZ sources including removal of legacy abstract include; excludes generated tables/results, build scripts, licenses and final PDF",
+      "status": "PASS_PROVENANCE_PATCH_REPLAY"
+    },
+    "software": {
+      "candidate_id": "2026-10-23",
+      "kind": "harness",
+      "old_bytes_pre_normalized": false,
+      "patch_sha256": "a4b7efc3b61dd47b8a9937c39500d651acfe09564f42d3a7858fa3e59adca72e",
+      "runs": [
+        {
+          "actual_application": true,
+          "direction": "forward",
+          "files": 59,
+          "status": "PASS",
+          "tool": "git"
+        },
+        {
+          "actual_application": true,
+          "direction": "reverse",
+          "files": 55,
+          "status": "PASS",
+          "tool": "git"
+        },
+        {
+          "actual_application": true,
+          "direction": "forward",
+          "files": 59,
+          "status": "PASS",
+          "tool": "gnu_patch"
+        },
+        {
+          "actual_application": true,
+          "direction": "reverse",
+          "files": 55,
+          "status": "PASS",
+          "tool": "gnu_patch"
+        }
+      ],
+      "scope": "entire harness subtree; excludes root docs, package manifest, provenance and verification",
+      "status": "PASS_PROVENANCE_PATCH_REPLAY"
+    }
+  },
+  "status": "PASS_ALL_8_ACTUAL_APPLICATIONS"
+}

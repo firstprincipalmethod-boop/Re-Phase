@@ -1,30 +1,62 @@
 {
-  "id": "v54_toy_C_nonblocking",
-  "source_volume": "Vol.5.4",
-  "source_section": "5.7",
-  "kind": "selector",
-  "role": "local common feasibility does not imply causal non-blocking choice",
-  "status": "core",
   "count_objects": {
-    "family_object": "shared prefix s with two continuations (futures alpha, beta)",
-    "lift_object": "member-relative continuations Cont_k(c;y)",
-    "info_cells": "single information cell over futures {alpha, beta}",
-    "choice_sets": "member-relative nonblocking-prefix choice sets V_k^nb(y)",
-    "verdict_object": "nonblocking selector existence (nonexistence witness only; existence side deferred, requires cross-time consistency)"
+    "scope": "finite input objects in spec; counts and claims are computed, not embedded expectations"
   },
+  "id": "v54_toy_C_nonblocking",
+  "kind": "selector",
+  "role": "prefix_continuation_conflict_nonexistence_only",
+  "schema_version": 2,
+  "source": {
+    "doi": "10.5281/zenodo.23499819",
+    "edition": "2026-10-21",
+    "layout": "original_2026-10-21",
+    "pdf_sha256": "f692f7dc4b129a3647562bdeab020db1aa6c82b894f88fcf4e0fea2c22a0aa01",
+    "relation": "finite_prefix_conflict; successful_local_choice_does_not_certify_full_path_selector"
+  },
+  "source_section": "8; 9",
+  "source_volume": "Vol.5.4",
   "spec": {
     "choice_kind": "nonblocking_prefix",
-    "time": 1,
+    "futures": {
+      "alpha": {
+        "required_prefix_choice": "m",
+        "terminal": "a"
+      },
+      "beta": {
+        "required_prefix_choice": "n",
+        "terminal": "b"
+      }
+    },
+    "local_choices": [
+      "m",
+      "n"
+    ],
     "selector_class": "causal",
     "shared_prefix": "s",
-    "local_choices": ["m", "n"],
-    "futures": {
-      "alpha": { "terminal": "a", "required_prefix_choice": "m" },
-      "beta": { "terminal": "b", "required_prefix_choice": "n" }
-    },
+    "time": 1,
     "transitions": {
-      "T0": [["s", "m"], ["s", "n"]],
-      "T1": [["m", "a"], ["n", "b"]]
+      "T0": [
+        [
+          "s",
+          "m"
+        ],
+        [
+          "s",
+          "n"
+        ]
+      ],
+      "T1": [
+        [
+          "m",
+          "a"
+        ],
+        [
+          "n",
+          "b"
+        ]
+      ]
     }
-  }
+  },
+  "status": "correction_candidate",
+  "suite_version": "2026-10-23"
 }
