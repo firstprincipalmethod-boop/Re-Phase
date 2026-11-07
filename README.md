@@ -7,6 +7,7 @@ It turns fibers, projections, path lifts, bridge obstructions, recoverability gu
 ## Current Focus
 
 - DOI series index and conceptual reading guide
+- Published corrected editions 2026-11-07 — Vol.1.1 [10.5281/zenodo.24030607](https://doi.org/10.5281/zenodo.24030607), Vol.1.8 [10.5281/zenodo.24030862](https://doi.org/10.5281/zenodo.24030862), Vol.4.6 [10.5281/zenodo.24030848](https://doi.org/10.5281/zenodo.24030848). See the [publication status](docs/publication-status-2026-11-07-corrections.md).
 - Vol.5.3 corrected edition 2026-10-21 (`noheader_r1`) — published on Zenodo: [10.5281/zenodo.23499738](https://doi.org/10.5281/zenodo.23499738)
 - Vol.5.4 corrected edition 2026-10-21 — published on Zenodo: [10.5281/zenodo.23499819](https://doi.org/10.5281/zenodo.23499819)
 - Vol.6.1 v0.4.2 — historical archived release

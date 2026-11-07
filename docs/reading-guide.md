@@ -11,14 +11,14 @@ Start here to understand the core observation geometry and compatibility framewo
 
 1. **Root: Observation Geometry** (10.5281/zenodo.20258229)
 2. **Vol.1.10: Orientation Note** — From Map/Fiber/Kernel to Compatibility-Based Design (10.5281/zenodo.20688130)
-3. **Vol.1.1** — Compatibility Consistency and Hierarchical Transport (10.5281/zenodo.20319522)
+3. **Vol.1.1** — Compatibility Consistency and Hierarchical Transport. Current corrected edition (2026-11-07) — [10.5281/zenodo.24030607](https://doi.org/10.5281/zenodo.24030607). Historical edition — [10.5281/zenodo.20319522](https://doi.org/10.5281/zenodo.20319522).
 4. **Vol.1.2** — Compatibility Consistency and Existence of Transport (10.5281/zenodo.20328101)
 5. **Vol.1.3** — Joint Observation and Compatibility Lifting (10.5281/zenodo.20338021)
 6. **Vol.1.4.1** — Observation, Compatibility, and Recoverability (10.5281/zenodo.20627326)
 7. **Vol.1.5** — Local-to-Global Compatibility (10.5281/zenodo.20567251)
 8. **Vol.1.6** — Compatibility Propagation (10.5281/zenodo.20570135)
 9. **Vol.1.7** — Observation, Constraint, and Assembly Design (10.5281/zenodo.20576927)
-10. **Vol.1.8** — Compatibility Conditions and Enrichment Axes (10.5281/zenodo.20578505)
+10. **Vol.1.8** — Compatibility Conditions and Enrichment Axes. Current corrected edition (2026-11-07) — [10.5281/zenodo.24030862](https://doi.org/10.5281/zenodo.24030862). Historical edition — [10.5281/zenodo.20578505](https://doi.org/10.5281/zenodo.20578505).
 11. **Vol.1.9** — Compatibility Lattice and Admissible Hierarchy (10.5281/zenodo.20570785)
 
 ### Path 2: Hidden State and Reconstruction
@@ -48,7 +48,7 @@ Extends compatibility to probabilistic and directional settings.
 4. **Vol.4.3** — Posterior Compatibility — Likelihood Updates, Weighted Fibers, and Feature-Risk Revision (10.5281/zenodo.20668039)
 5. **Vol.4.4** — Local Directional Fragility — Fréchet Derivatives, Linearized Admissible Directions, and Feature-Sensitive Perturbations (10.5281/zenodo.20678274)
 6. **Vol.4.5** — Fisher-Weighted Local Compatibility — Likelihood Geometry, Local Information, and Feature-Sensitive Directions (10.5281/zenodo.20680527)
-7. **Vol.4.6** — Target Violation Severity — Failure Depth, Posterior Severity, and Fisher-Weak Boundary Crossing (10.5281/zenodo.20694634)
+7. **Vol.4.6** — Target Violation Severity — Failure Depth, Posterior Severity, and Fisher-Weak Boundary Crossing. Current corrected edition (2026-11-07) — [10.5281/zenodo.24030848](https://doi.org/10.5281/zenodo.24030848). Historical edition — [10.5281/zenodo.20694634](https://doi.org/10.5281/zenodo.20694634).
 
 ### Path 5: Path-Space and Computational Compatibility
 
