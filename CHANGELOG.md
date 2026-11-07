@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### 2026-11-07 — Vol.1.1 / Vol.1.8 / Vol.4.6 corrected-edition publication sync
+
+- Record the three corrected editions published on Zenodo and point current reading navigation to their version-specific DOIs. Retain the original DOIs as historical records.
+- Record the six Zenodo-displayed MD5 values and their matches to the expected local MD5 values in the [publication status](docs/publication-status-2026-11-07-corrections.md). Remote SHA-256 was unmeasured.
+- Limit repository changes to publication documentation and navigation. Research theorems, witnesses, Core, and Atlas retain their existing state.
+
 ### 2026-10-24 — Vol.6.1 post-publication documentation sync
 
 - Record the published corrected 2026-10-23 manuscript DOI `10.5281/zenodo.23499925` (CC BY-NC 4.0) and software DOI `10.5281/zenodo.23499964` (MIT), after PR #29 merged as `854c3dda22830c7cde3ab51efc9a5a8440b1cc33`.

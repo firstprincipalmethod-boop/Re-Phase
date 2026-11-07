@@ -27,13 +27,17 @@ For current publication/integration facts, see the [Vol.6.1 publication status](
 
 ### Vol.1.1 — Compatibility Consistency and Hierarchical Transport
 
-**DOI:** https://doi.org/10.5281/zenodo.20319522
+**Current published corrected DOI:** [10.5281/zenodo.24030607](https://doi.org/10.5281/zenodo.24030607)
 
-**Status:** Archived on Zenodo
+**Published historical DOI:** [10.5281/zenodo.20319522](https://doi.org/10.5281/zenodo.20319522)
+
+**All-versions DOI:** [10.5281/zenodo.20319521](https://doi.org/10.5281/zenodo.20319521)
+
+**Status:** Corrected edition published 2026-11-07
 
 **Core themes:** Compatibility consistency, hierarchical transport
 
-**Current role:** Foundational transport structure
+**Current role:** Foundational transport structure. Read the corrected edition.
 
 ### Vol.1.2 — Compatibility Consistency and Existence of Transport
 
@@ -101,13 +105,17 @@ For current publication/integration facts, see the [Vol.6.1 publication status](
 
 ### Vol.1.8 — Compatibility Conditions and Enrichment Axes
 
-**DOI:** https://doi.org/10.5281/zenodo.20578505
+**Current published corrected DOI:** [10.5281/zenodo.24030862](https://doi.org/10.5281/zenodo.24030862)
 
-**Status:** Archived on Zenodo
+**Published historical DOI:** [10.5281/zenodo.20578505](https://doi.org/10.5281/zenodo.20578505)
+
+**All-versions DOI:** [10.5281/zenodo.20578504](https://doi.org/10.5281/zenodo.20578504)
+
+**Status:** Corrected edition published 2026-11-07
 
 **Core themes:** Enrichment and axis conditions
 
-**Current role:** Structural extension
+**Current role:** Structural extension. Read the corrected edition.
 
 ### Vol.1.9 — Compatibility Lattice and Admissible Hierarchy
 
@@ -273,13 +281,17 @@ For current publication/integration facts, see the [Vol.6.1 publication status](
 
 ### Vol.4.6 — Target Violation Severity
 
-**DOI:** https://doi.org/10.5281/zenodo.20694634
+**Current published corrected DOI:** [10.5281/zenodo.24030848](https://doi.org/10.5281/zenodo.24030848)
 
-**Status:** Archived on Zenodo
+**Published historical DOI:** [10.5281/zenodo.20694634](https://doi.org/10.5281/zenodo.20694634)
+
+**All-versions DOI:** [10.5281/zenodo.20694633](https://doi.org/10.5281/zenodo.20694633)
+
+**Status:** Corrected edition published 2026-11-07
 
 **Core themes:** Failure depth, posterior severity, boundary crossing
 
-**Current role:** Risk quantification
+**Current role:** Risk quantification. Read the corrected edition.
 
 ---
 

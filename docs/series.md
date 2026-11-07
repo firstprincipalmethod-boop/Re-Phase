@@ -11,6 +11,8 @@ GitHub serves as the public navigation, living documentation, and development re
 
 This table retains historical published records and the published Vol.5.3/Vol.5.4 corrected editions. Entries 34–35 follow the owner-reported publication sequence, supported by the supplied post-publication screenshots; see the [2026-10-22 publication status](publication-status-2026-10-22.md) for the evidence scope. Entries 36–37 add the corrected Vol.6.1 software, then manuscript, following the owner's confirmed publication sequence; public DataCite registration timestamps corroborate that order. See the [Vol.6.1 publication status](vol61-publication-sync-2026-10-24.md) for verification scope and date distinctions.
 
+Entries 38–40 follow the publication order in the [2026-11-07 correction receipt summary](publication-status-2026-11-07-corrections.md).
+
 | No. | Series item | Title | DOI | Status |
 |---:|---|---|---|---|
 | 1 | Root | Re-Phase: Observation Geometry | https://doi.org/10.5281/zenodo.20258229 | Archived on Zenodo |
@@ -50,6 +52,9 @@ This table retains historical published records and the published Vol.5.3/Vol.5.
 | 35 | Vol.5.4 corrected 2026-10-21 | Re-Phase Vol.5.4: Information-Adapted Selection — Selector Classes, Retention, and Safe Forgetting | https://doi.org/10.5281/zenodo.23499819 | Published corrected edition; current reading target |
 | 36 | Vol.6.1 software corrected 2026-10-23 | Re-Phase Vol.6.1 — A Finite Witness Harness for Vol.5.3 and Vol.5.4 | https://doi.org/10.5281/zenodo.23499964 | Published corrected software; MIT |
 | 37 | Vol.6.1 manuscript corrected 2026-10-23 | Re-Phase Vol.6.1: A Finite Witness Harness for Vol.5.3 and Vol.5.4 | https://doi.org/10.5281/zenodo.23499925 | Published corrected manuscript; CC BY-NC 4.0 |
+| 38 | Vol.1.1 corrected 2026-11-07 | Re-Phase Vol.1.1: Compatibility Consistency and Hierarchical Transport | https://doi.org/10.5281/zenodo.24030607 | Published corrected edition, current reading target |
+| 39 | Vol.1.8 corrected 2026-11-07 | Re-Phase Vol.1.8: Compatibility Conditions and Enrichment Axes | https://doi.org/10.5281/zenodo.24030862 | Published corrected edition, current reading target |
+| 40 | Vol.4.6 corrected 2026-11-07 | Re-Phase Vol.4.6: Target Violation Severity — Failure Depth, Posterior Severity, and Fisher-Weak Boundary Crossing | https://doi.org/10.5281/zenodo.24030848 | Published corrected edition, current reading target |
 
 ## Published corrected editions — 2026-10-22 documentation checkpoint
 
@@ -83,3 +88,13 @@ The corrected implementation was merged through [PR #29](https://github.com/firs
 - **Vol.5.3 current:** https://doi.org/10.5281/zenodo.23499738; **historical:** https://doi.org/10.5281/zenodo.20956126; **all versions:** https://doi.org/10.5281/zenodo.20956125.
 - **Vol.5.4 current:** https://doi.org/10.5281/zenodo.23499819; **historical:** https://doi.org/10.5281/zenodo.20986204; **all versions:** https://doi.org/10.5281/zenodo.20986203.
 - Version-specific DOI identifiers above identify the corrected records; all-versions identifiers are kept distinct. Earlier validation receipts and archived source packages retain the input identities actually used at the time.
+
+### Vol.1.1, Vol.1.8, and Vol.4.6 corrected editions — 2026-11-07
+
+| Volume | Current corrected version DOI | Historical version DOI | All-versions DOI |
+|---|---|---|---|
+| Vol.1.1 | [10.5281/zenodo.24030607](https://doi.org/10.5281/zenodo.24030607) | [10.5281/zenodo.20319522](https://doi.org/10.5281/zenodo.20319522) | [10.5281/zenodo.20319521](https://doi.org/10.5281/zenodo.20319521) |
+| Vol.1.8 | [10.5281/zenodo.24030862](https://doi.org/10.5281/zenodo.24030862) | [10.5281/zenodo.20578505](https://doi.org/10.5281/zenodo.20578505) | [10.5281/zenodo.20578504](https://doi.org/10.5281/zenodo.20578504) |
+| Vol.4.6 | [10.5281/zenodo.24030848](https://doi.org/10.5281/zenodo.24030848) | [10.5281/zenodo.20694634](https://doi.org/10.5281/zenodo.20694634) | [10.5281/zenodo.20694633](https://doi.org/10.5281/zenodo.20694633) |
+
+Use the corrected version DOI for current reading and the historical version DOI for a citation tied to the original edition. See the [publication status](publication-status-2026-11-07-corrections.md) for evidence scope.
