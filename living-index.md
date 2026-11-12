@@ -195,6 +195,18 @@ For current publication/integration facts, see the [Vol.6.1 publication status](
 
 **Current role:** Information-theoretic perspective
 
+### Vol.3.3 — Actions and Observations — Congruences, Closures, Invariants, and Structured Recovery
+
+**DOI:** [10.5281/zenodo.24138967](https://doi.org/10.5281/zenodo.24138967)
+
+**Status:** Published on Zenodo, 2026-11-12; Version 1; Book; CC BY-NC 4.0
+
+**Core themes:** Group and monoid actions, observation equivalence, congruences, closures, invariants, information compatibility, and structured recovery
+
+**Current role:** Reconnect observation equivalence and structure descent with invariant separation, iterative observation, structured selection, operator representations, and composition under the stated assumptions.
+
+**Upstream references:** Vol.3.1 ([20593016](https://doi.org/10.5281/zenodo.20593016)) and the corrected Vol.5.4 ([23499819](https://doi.org/10.5281/zenodo.23499819)). See the [publication record](docs/publication-status-2026-11-12-vol3-3.md) and [file manifest](docs/publication-manifest-vol3-3-2026-11-12.json).
+
 ### Vol.3.4 — Functional and Operator Admissible Spaces
 
 **DOI:** https://doi.org/10.5281/zenodo.20620797

@@ -1,0 +1,75 @@
+{
+  "schema": "rephase.publication-manifest.v1",
+  "series_item": "Re-Phase Vol.3.3",
+  "title": "Re-Phase Vol.3.3: Actions and Observations — Congruences, Closures, Invariants, and Structured Recovery",
+  "version": "1",
+  "doi": "10.5281/zenodo.24138967",
+  "concept_doi": "10.5281/zenodo.24138966",
+  "publication_date": "2026-11-12",
+  "publication_status": "PUBLISHED",
+  "record_url": "https://zenodo.org/records/24138967",
+  "api_url": "https://zenodo.org/api/records/24138967",
+  "resource_type": "book",
+  "creator": {"name": "Ito, Takashi", "affiliation": "Independent Researcher"},
+  "language": "eng",
+  "access": "open",
+  "license": "cc-by-nc-4.0",
+  "repository_url": "https://github.com/firstprincipalmethod-boop/Re-Phase",
+  "metadata_counts": {"keywords": 8, "references": 38},
+  "related_identifiers": [
+    {"identifier": "10.5281/zenodo.20593016", "scheme": "doi", "relation": "cites"},
+    {"identifier": "10.5281/zenodo.23499819", "scheme": "doi", "relation": "cites"}
+  ],
+  "abandoned_identifier": {
+    "doi": "10.5281/zenodo.24046033",
+    "status": "NOT_USED_FOR_THIS_RELEASE",
+    "published_predecessor": false,
+    "deletion_or_cancellation_verified": false
+  },
+  "evidence": {
+    "owner_report": "Owner reported publication and requested repository/index/manifest/handoff synchronization in Story 12.3.5.",
+    "measured_at_utc": "2026-11-12T14:21:00.039400+00:00",
+    "api_submitted": true,
+    "api_state": "done",
+    "hash_basis": "Complete raw bytes downloaded from each public Zenodo API file links.self URL; no normalization or rewriting.",
+    "expected_identities_source": "Re_Phase_Vol_3_3_Final_Delivery_Record_2026-11-12.json, final GitHub-link delivery",
+    "downloaded_artifacts_match_final_delivery": true
+  },
+  "artifacts": [
+    {
+      "filename": "Re_Phase_Vol_3_3.pdf",
+      "role": "manuscript",
+      "download_url": "https://zenodo.org/records/24138967/files/Re_Phase_Vol_3_3.pdf?download=1",
+      "bytes": 677538,
+      "sha256": "0104c5beb4d60b9448cb5e992c2712aa740b6a14e1305b2d12acdff6b9afcad4",
+      "zenodo_md5": "f70c7e5de856d42b320f413e827666a2",
+      "pages": 105,
+      "pages_evidence": "Final delivery check; public download is byte-identical."
+    },
+    {
+      "filename": "Re_Phase_Vol_3_3_Source.zip",
+      "role": "source_archive",
+      "download_url": "https://zenodo.org/records/24138967/files/Re_Phase_Vol_3_3_Source.zip?download=1",
+      "bytes": 1061270,
+      "sha256": "20358f306da26d9ba15f964913077a50c31e971ce622baf254c71f57eefc388e",
+      "zenodo_md5": "bc2e93254397e4edf9b2505389602a8f",
+      "non_directory_members": 11,
+      "additional_pdf": {
+        "member": "Re_Phase_Vol_3_3_v1/pdf/Re_Phase_Vol_3_3_ja.pdf",
+        "bytes": 836674,
+        "sha256": "b7ff32b77976f1f61c30386b2fe8f536d64251a99b9c5c620ff3a31bbde40d70",
+        "standalone_upload": false
+      }
+    }
+  ],
+  "scope": {
+    "zenodo_is_fixed_archive": true,
+    "github_role": "Navigation, publication receipt, and external file-identity manifest",
+    "zip_embedded_manifest_preserved": true,
+    "bit_identical_rebuild_claimed": false,
+    "new_mathematical_review_performed": false,
+    "private_vault_updated": false,
+    "historical_draft_manifests": "Retained as prior candidate evidence, not adopted as the published file set."
+  },
+  "handoff": "story-12-3-5-vol3-3-publication-handoff-2026-11-12.md"
+}

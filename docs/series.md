@@ -13,6 +13,8 @@ This table retains historical published records and the published Vol.5.3/Vol.5.
 
 Entries 38–40 follow the publication order in the [2026-11-07 correction receipt summary](publication-status-2026-11-07-corrections.md).
 
+Entry 41 records Vol.3.3, published 2026-11-12. The [publication record](publication-status-2026-11-12-vol3-3.md) documents the public Zenodo metadata and downloaded file identities.
+
 | No. | Series item | Title | DOI | Status |
 |---:|---|---|---|---|
 | 1 | Root | Re-Phase: Observation Geometry | https://doi.org/10.5281/zenodo.20258229 | Archived on Zenodo |
@@ -55,6 +57,7 @@ Entries 38–40 follow the publication order in the [2026-11-07 correction recei
 | 38 | Vol.1.1 corrected 2026-11-07 | Re-Phase Vol.1.1: Compatibility Consistency and Hierarchical Transport | https://doi.org/10.5281/zenodo.24030607 | Published corrected edition, current reading target |
 | 39 | Vol.1.8 corrected 2026-11-07 | Re-Phase Vol.1.8: Compatibility Conditions and Enrichment Axes | https://doi.org/10.5281/zenodo.24030862 | Published corrected edition, current reading target |
 | 40 | Vol.4.6 corrected 2026-11-07 | Re-Phase Vol.4.6: Target Violation Severity — Failure Depth, Posterior Severity, and Fisher-Weak Boundary Crossing | https://doi.org/10.5281/zenodo.24030848 | Published corrected edition, current reading target |
+| 41 | Vol.3.3 | Re-Phase Vol.3.3: Actions and Observations — Congruences, Closures, Invariants, and Structured Recovery | https://doi.org/10.5281/zenodo.24138967 | Published 2026-11-12; Version 1; Book; CC BY-NC 4.0 |
 
 ## Published corrected editions — 2026-10-22 documentation checkpoint
 
@@ -76,6 +79,10 @@ Historical v0.4.2 remains an archived release: manuscript DOI 10.5281/zenodo.212
 The corrected implementation was merged through [PR #29](https://github.com/firstprincipalmethod-boop/Re-Phase/pull/29), commit `854c3dda22830c7cde3ab51efc9a5a8440b1cc33`. The [publication status](vol61-publication-sync-2026-10-24.md) records the separate Zenodo publication evidence. The edition, Zenodo Publication date, and Version remain **2026-10-23**; the documentation checkpoint is **2026-10-24**. Neither date is an inferred exact Publish-click timestamp. The historical 13/13 PASS remains a regression-gate result for its original target; publication does not establish external institutional certification or a general proof. See [Vol.6.1 correction status](../witnesses/vol6_1/CORRECTION_STATUS.md).
 
 ## Version History and Superseded Records
+
+### Vol.3.3 — DOI selection and publication
+
+The published Version 1 is [10.5281/zenodo.24138967](https://doi.org/10.5281/zenodo.24138967), publication date 2026-11-12. The earlier planned identifier `10.5281/zenodo.24046033` was abandoned for this release; it is not a published predecessor and is not a related-work or version link. See the [Story 12.3.5 DOI migration record](story-12-3-5-vol3-3-publication-handoff-2026-11-12.md).
 
 ### Vol.1.4.1 (Current Authoritative Version)
 

@@ -7,6 +7,7 @@ It turns fibers, projections, path lifts, bridge obstructions, recoverability gu
 ## Current Focus
 
 - DOI series index and conceptual reading guide
+- Vol.3.3 — *Actions and Observations — Congruences, Closures, Invariants, and Structured Recovery*, Version 1, published 2026-11-12: [10.5281/zenodo.24138967](https://doi.org/10.5281/zenodo.24138967). See the [publication record and verified file identities](docs/publication-status-2026-11-12-vol3-3.md).
 - Published corrected editions 2026-11-07 — Vol.1.1 [10.5281/zenodo.24030607](https://doi.org/10.5281/zenodo.24030607), Vol.1.8 [10.5281/zenodo.24030862](https://doi.org/10.5281/zenodo.24030862), Vol.4.6 [10.5281/zenodo.24030848](https://doi.org/10.5281/zenodo.24030848). See the [publication status](docs/publication-status-2026-11-07-corrections.md).
 - Vol.5.3 corrected edition 2026-10-21 (`noheader_r1`) — published on Zenodo: [10.5281/zenodo.23499738](https://doi.org/10.5281/zenodo.23499738)
 - Vol.5.4 corrected edition 2026-10-21 — published on Zenodo: [10.5281/zenodo.23499819](https://doi.org/10.5281/zenodo.23499819)
@@ -26,6 +27,7 @@ See [docs/series.md](docs/series.md) for the complete publication chronology and
 - **[docs/series.md](docs/series.md)** — Publication chronology and Zenodo DOI registry
 - **[docs/reading-guide.md](docs/reading-guide.md)** — Conceptual reading paths (not publication order)
 - **[living-index.md](living-index.md)** — Cross-volume index and references
+- **[docs/publication-status-2026-11-12-vol3-3.md](docs/publication-status-2026-11-12-vol3-3.md)** — Vol.3.3 publication, DOI migration, and PDF/source archive identities
 - **[docs/vol61-publication-sync-2026-10-24.md](docs/vol61-publication-sync-2026-10-24.md)** — Vol.6.1 published manuscript/software, PR #29 integration, and evidence scope
 - **[docs/publication-status-2026-10-22.md](docs/publication-status-2026-10-22.md)** — Vol.5.3/Vol.5.4 published artifacts, evidence scope, and retained history
 - **[ROADMAP.md](ROADMAP.md)** — Future directions
