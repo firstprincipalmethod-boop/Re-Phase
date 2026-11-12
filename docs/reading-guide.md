@@ -35,8 +35,9 @@ Develops geometric structures for observation and recoverability.
 1. **Vol.3** — Compatibility-Guided Admissible Geometry (10.5281/zenodo.20365334)
 2. **Vol.3.1** — Linear and Algebraic Admissible Structures (10.5281/zenodo.20593016)
 3. **Vol.3.2** — Coding-Theoretic Re-Phase — Encoding Relations, Syndrome Fibers, Cosets, and Structural Recoverability (10.5281/zenodo.20607715)
-4. **Vol.3.4** — Functional and Operator Admissible Spaces — Operator Conditions, Boundary Compatibility, and Structural Recoverability (10.5281/zenodo.20620797)
-5. **Vol.3.5** — Dual and Inner-Product Compatibility — Adjoints, Gram Geometry, and Feature-Relevant Ambiguity (10.5281/zenodo.20674606)
+4. **Vol.3.3** — Actions and Observations — Congruences, Closures, Invariants, and Structured Recovery. Published 2026-11-12, Version 1 — [10.5281/zenodo.24138967](https://doi.org/10.5281/zenodo.24138967). Connects actions and observation equivalence to structure descent, invariants, structured selection, operator representations, and composition. Its information-adapted selection connection also uses the corrected Vol.5.4 in Path 5.
+5. **Vol.3.4** — Functional and Operator Admissible Spaces — Operator Conditions, Boundary Compatibility, and Structural Recoverability (10.5281/zenodo.20620797)
+6. **Vol.3.5** — Dual and Inner-Product Compatibility — Adjoints, Gram Geometry, and Feature-Relevant Ambiguity (10.5281/zenodo.20674606)
 
 ### Path 4: Risk, Posterior, and Directional Compatibility
 

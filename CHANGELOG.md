@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### 2026-11-12 — Vol.3.3 publication and DOI synchronization
+
+- Register *Re-Phase Vol.3.3: Actions and Observations — Congruences, Closures, Invariants, and Structured Recovery*, Version 1, Book, published 2026-11-12 under DOI `10.5281/zenodo.24138967` (CC BY-NC 4.0).
+- Update README, publication chronology (entry 41), living index, and conceptual reading guide. Add the [publication record](docs/publication-status-2026-11-12-vol3-3.md), [manifest](docs/publication-manifest-vol3-3-2026-11-12.json), and [Story 12.3.5 migration handoff](docs/story-12-3-5-vol3-3-publication-handoff-2026-11-12.md).
+- Verify the two public Zenodo downloads against the final delivery SHA-256 values. Retain the earlier planned DOI `10.5281/zenodo.24046033` only as an abandoned identifier in the migration history.
+
 ### 2026-11-07 — Vol.1.1 / Vol.1.8 / Vol.4.6 corrected-edition publication sync
 
 - Record the three corrected editions published on Zenodo and point current reading navigation to their version-specific DOIs. Retain the original DOIs as historical records.
