@@ -26,11 +26,13 @@
       "role": "source archive (without Japanese PDF)",
       "bytes": 232806,
       "zenodo_md5": "8ce05ccfc850f68f34dfdd43e8a44cef",
-      "sha256": null,
-      "sha256_status": "NOT_INDEPENDENTLY_MEASURED",
-      "member_by_member_audit": "NOT_INDEPENDENTLY_REPEATED",
+      "sha256": "0c8c63f120a668954655ad255e874ae21be3321697e1d61c9ac45b9a586e78fa",
+      "sha256_status": "LOCALLY_MEASURED_FROM_USER_UPLOADED_ZIP_2026_11_15",
+      "member_by_member_audit": "10_MEMBERS_ENUMERATED_ZIP_CRC_PASS_SHA256SUMS_9_OF_9_RELEASE_MANIFEST_8_OF_8_PASS",
       "removal_reported": "Japanese PDF excluded",
-      "source_payload_retention": "OWNER_WORK_REPORT_NOT_INDEPENDENTLY_REPLAYED"
+      "source_payload_retention": "ENGLISH_MARKDOWN_AND_TEX_HASHES_MATCH_2026_11_12_VALUES_OTHER_RETAINED_MEMBERS_NOT_INDEPENDENTLY_COMPARED_TO_OLD_ZIP",
+      "removal_verified": "NO_PDF_MEMBER_PRESENT",
+      "archive_member_count": 10
     }
   ],
   "previous_source_zip": {
@@ -56,13 +58,16 @@
     "full_remote_metadata_diff_independently_verified": false
   },
   "evidence": {
-    "current_file_bytes_and_md5": "owner/connected-Work report; PDF and publication page screenshots for partial readback",
+    "current_file_bytes_and_md5": "New ZIP byte size and MD5 independently measured from user-uploaded file; MD5 equals Zenodo display from owner/Work. PDF identity preserved by prior evidence, not rehashed in this operation.",
     "public_postpublish_display": "owner-supplied iPhone screenshots, 2026-11-15",
     "prior_independent_public_hashes": "2026-11-12 publication receipt",
-    "current_source_zip_sha256": "NOT_MEASURED",
-    "current_source_zip_member_audit": "NOT_MEASURED",
+    "current_source_zip_sha256": "0c8c63f120a668954655ad255e874ae21be3321697e1d61c9ac45b9a586e78fa",
+    "current_source_zip_member_audit": "Local user-uploaded ZIP: 10 members; ZIP CRC PASS; no PDF member; SHA256SUMS 9/9 PASS, release_manifest.json 8/8 PASS; Markdown and TeX SHA-256 match recorded 2026-11-12 values. No remote SHA-256 readback or complete cross-version member comparison.",
     "new_version_created": false,
-    "new_doi_created": false
+    "new_doi_created": false,
+    "local_uploaded_basename": "Re_Phase_Vol_3_3_Source(2).zip",
+    "remote_sha256_independently_retrieved": false,
+    "uploaded_zip_md5_matches_reported_zenodo_md5": true
   },
   "publication_code_and_theorems_unchanged_by_documentation_sync": true
 }
