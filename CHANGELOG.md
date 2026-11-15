@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### 2026-11-15 — Vol.3.6 publication and Story 13.0.0 synchronization
+
+- Register *Re-Phase Vol.3.6: Spectral and Modal Compatibility*, Version 1, Book, English, published 2026-11-15 under DOI `10.5281/zenodo.24244146` (CC BY-NC 4.0).
+- Update README, publication chronology (entry 42), living index, and reading guide; add the [publication receipt](docs/publication-status-2026-11-15-vol3-6.md), [manifest](docs/publication-manifest-vol3-6-2026-11-15.json), and [Story 13.0.0 handoff](docs/story-13-0-0-vol3-6-publication-handoff-2026-11-15.md).
+- Independently download and hash the actual published PDF (678,395 bytes; 54 pages) and Source ZIP (122,829 bytes). Verify ZIP CRC, 11/11 SHA256SUMS entries, and 10/10 embedded payload-manifest entries. Preserve the published PDF bytes, including its Content Credentials data.
+- Confirm 9 Zenodo keywords, 20 References, and 7 Related works; the two series identifiers are Zenodo keyword additions to the manuscript's 7 subject terms. The AI-assistance declaration matches between the published PDF, source manuscript, and Zenodo Description at the word level.
+- Confirm the same two series keywords on the already published Vol.3.3 record (10 keywords total); its DOI and publication date remain unchanged.
+
 ### 2026-11-15 — Vol.3.3 post-publication source ZIP replacement and AI disclosure
 
 - Record the Zenodo Version 1 in-place maintenance at DOI `10.5281/zenodo.24138967`: the Japanese supplementary PDF was removed from `Re_Phase_Vol_3_3_Source.zip`, which is now 232,806 bytes with displayed MD5 `8ce05ccfc850f68f34dfdd43e8a44cef`; the 105-page English PDF remains unchanged (MD5 `f70c7e5de856d42b320f413e827666a2`).

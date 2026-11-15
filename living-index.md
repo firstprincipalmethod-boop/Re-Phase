@@ -9,6 +9,8 @@ For publication chronology, see [docs/series.md](docs/series.md).
 For conceptual reading order, see [docs/reading-guide.md](docs/reading-guide.md).
 For current publication/integration facts, see the [Vol.6.1 publication status](docs/vol61-publication-sync-2026-10-24.md); fixed Vol.5.3/5.4 identities remain in the [2026-10-22 publication record](docs/publication-status-2026-10-22.md). The [phase-3 checkpoint](docs/publication-status-2026-10-24.md) and [pre-publication checkpoint](docs/prepublication-status-2026-10-21.md) are retained as history.
 
+For Vol.3.6, see the [2026-11-15 publication receipt](docs/publication-status-2026-11-15-vol3-6.md) and [Story 13.0.0 handoff](docs/story-13-0-0-vol3-6-publication-handoff-2026-11-15.md).
+
 ## Root / Orientation
 
 ### Root — Observation Geometry
@@ -226,6 +228,22 @@ For current publication/integration facts, see the [Vol.6.1 publication status](
 **Core themes:** Duality, Gram geometry, feature-relevant ambiguity
 
 **Current role:** Inner-product geometry
+
+### Vol.3.6 — Spectral and Modal Compatibility
+
+**DOI:** [10.5281/zenodo.24244146](https://doi.org/10.5281/zenodo.24244146)
+
+**All-versions DOI:** [10.5281/zenodo.24244145](https://doi.org/10.5281/zenodo.24244145)
+
+**Status:** Published on Zenodo, 2026-11-15; Version 1; Book; English; CC BY-NC 4.0
+
+**Core themes:** Compatible candidates, spectral and primary decompositions, modal observability, feature recovery, observation design, invariant subspaces, and Gram/SVD noise bounds.
+
+**Current role:** Connect the modal structure of a known linear operator to the original candidate set, a specified feature, and the conditions for recovery or an updatable reduced representation. Distinguish exact recovery, target guarantees, and quantitative noise amplification.
+
+**Connections:** Develops the operator-representation connections in Vol.3.3 and the dual/inner-product viewpoint of Vol.3.5. Sections 9–10 state the additional assumptions connecting these results to already published Vols.4.4–4.6; the foundational role relative to Vols.4.5–4.6 is conceptual, not publication order. Vol.1.3 and corrected Vol.1.8 are series-level References in Zenodo; this does not add entries to the manuscript's 20-item bibliography. Proposed connections to Vol.3.7 and later work retain their stated conditions.
+
+**Files and handoff:** 54-page English PDF and English-only source ZIP. See the [publication receipt](docs/publication-status-2026-11-15-vol3-6.md), [publication manifest](docs/publication-manifest-vol3-6-2026-11-15.json), and [Story 13.0.0 handoff](docs/story-13-0-0-vol3-6-publication-handoff-2026-11-15.md).
 
 ---
 
