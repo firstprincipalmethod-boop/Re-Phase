@@ -205,7 +205,7 @@ For current publication/integration facts, see the [Vol.6.1 publication status](
 
 **Current role:** Reconnect observation equivalence and structure descent with invariant separation, iterative observation, structured selection, operator representations, and composition under the stated assumptions.
 
-**Upstream references:** Vol.3.1 ([20593016](https://doi.org/10.5281/zenodo.20593016)) and the corrected Vol.5.4 ([23499819](https://doi.org/10.5281/zenodo.23499819)). See the [publication record](docs/publication-status-2026-11-12-vol3-3.md) and [file manifest](docs/publication-manifest-vol3-3-2026-11-12.json).
+**Upstream references:** Vol.3.1 ([20593016](https://doi.org/10.5281/zenodo.20593016)) and the corrected Vol.5.4 ([23499819](https://doi.org/10.5281/zenodo.23499819)). **Distribution maintenance (2026-11-15):** supplementary Japanese PDF removed from the source ZIP and AI use disclosed in Zenodo Description; PDF and DOI unchanged. See the [current maintenance record](docs/publication-status-2026-11-15-vol3-3-maintenance.md) and [current file manifest](docs/publication-manifest-vol3-3-2026-11-15.json). The [original publication receipt](docs/publication-status-2026-11-12-vol3-3.md) and [original manifest](docs/publication-manifest-vol3-3-2026-11-12.json) remain historical.
 
 ### Vol.3.4 — Functional and Operator Admissible Spaces
 
