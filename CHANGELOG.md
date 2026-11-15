@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### 2026-11-15 — Vol.3.3 post-publication source ZIP replacement and AI disclosure
+
+- Record the Zenodo Version 1 in-place maintenance at DOI `10.5281/zenodo.24138967`: the Japanese supplementary PDF was removed from `Re_Phase_Vol_3_3_Source.zip`, which is now 232,806 bytes with displayed MD5 `8ce05ccfc850f68f34dfdd43e8a44cef`; the 105-page English PDF remains unchanged (MD5 `f70c7e5de856d42b320f413e827666a2`).
+- Record that Zenodo Description now discloses ChatGPT and Claude assistance; the PDF itself was not revised. Preserve the 2026-11-12 publication date, Version 1, and DOI.
+- Add the [post-publication maintenance record](docs/publication-status-2026-11-15-vol3-3-maintenance.md) and [current manifest](docs/publication-manifest-vol3-3-2026-11-15.json). Preserve the 2026-11-12 publication receipt and original ZIP hash as historical evidence. The owner-uploaded replacement ZIP was independently measured: SHA-256 `0c8c63f120a668954655ad255e874ae21be3321697e1d61c9ac45b9a586e78fa`, MD5 equal to Zenodo's reported value; ZIP CRC and 9/9 internal SHA256SUMS plus 8/8 release-manifest entries passed. No fresh remote Zenodo SHA-256 download or complete old/new member-by-member comparison is claimed. No publication binaries, mathematical content, or Zenodo metadata were changed by GitHub.
+
 ### 2026-11-12 — Vol.3.3 publication and DOI synchronization
 
 - Register *Re-Phase Vol.3.3: Actions and Observations — Congruences, Closures, Invariants, and Structured Recovery*, Version 1, Book, published 2026-11-12 under DOI `10.5281/zenodo.24138967` (CC BY-NC 4.0).

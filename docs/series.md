@@ -13,7 +13,7 @@ This table retains historical published records and the published Vol.5.3/Vol.5.
 
 Entries 38–40 follow the publication order in the [2026-11-07 correction receipt summary](publication-status-2026-11-07-corrections.md).
 
-Entry 41 records Vol.3.3, published 2026-11-12. The [publication record](publication-status-2026-11-12-vol3-3.md) documents the public Zenodo metadata and downloaded file identities.
+Entry 41 records Vol.3.3, published 2026-11-12. The [2026-11-15 maintenance record](publication-status-2026-11-15-vol3-3-maintenance.md) and [current manifest](publication-manifest-vol3-3-2026-11-15.json) document the replacement Source ZIP and AI-use disclosure. The [2026-11-12 publication receipt](publication-status-2026-11-12-vol3-3.md) and [original file manifest](publication-manifest-vol3-3-2026-11-12.json) retain the originally measured identities.
 
 | No. | Series item | Title | DOI | Status |
 |---:|---|---|---|---|
@@ -57,7 +57,7 @@ Entry 41 records Vol.3.3, published 2026-11-12. The [publication record](publica
 | 38 | Vol.1.1 corrected 2026-11-07 | Re-Phase Vol.1.1: Compatibility Consistency and Hierarchical Transport | https://doi.org/10.5281/zenodo.24030607 | Published corrected edition, current reading target |
 | 39 | Vol.1.8 corrected 2026-11-07 | Re-Phase Vol.1.8: Compatibility Conditions and Enrichment Axes | https://doi.org/10.5281/zenodo.24030862 | Published corrected edition, current reading target |
 | 40 | Vol.4.6 corrected 2026-11-07 | Re-Phase Vol.4.6: Target Violation Severity — Failure Depth, Posterior Severity, and Fisher-Weak Boundary Crossing | https://doi.org/10.5281/zenodo.24030848 | Published corrected edition, current reading target |
-| 41 | Vol.3.3 | Re-Phase Vol.3.3: Actions and Observations — Congruences, Closures, Invariants, and Structured Recovery | https://doi.org/10.5281/zenodo.24138967 | Published 2026-11-12; Version 1; Book; CC BY-NC 4.0 |
+| 41 | Vol.3.3 | Re-Phase Vol.3.3: Actions and Observations — Congruences, Closures, Invariants, and Structured Recovery | https://doi.org/10.5281/zenodo.24138967 | Published 2026-11-12; Version 1; Book; CC BY-NC 4.0; files/Description maintained 2026-11-15 |
 
 ## Published corrected editions — 2026-10-22 documentation checkpoint
 
