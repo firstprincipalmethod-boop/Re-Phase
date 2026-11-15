@@ -1,0 +1,154 @@
+{
+  "schema": "rephase.publication.v1",
+  "series_item": "Re-Phase Vol.3.6",
+  "title": "Re-Phase Vol.3.6: Spectral and Modal Compatibility",
+  "record_id": "24244146",
+  "doi": "10.5281/zenodo.24244146",
+  "concept_doi": "10.5281/zenodo.24244145",
+  "publication_date": "2026-11-15",
+  "zenodo_version": "1",
+  "resource_type": "Book",
+  "creator": {
+    "name": "Ito, Takashi",
+    "affiliation": "Independent Researcher"
+  },
+  "language": "eng",
+  "access": "open",
+  "record_license": "CC-BY-NC-4.0",
+  "record_url": "https://zenodo.org/records/24244146",
+  "public_api_status": {
+    "submitted": true,
+    "state": "done",
+    "record_created_at": "2026-11-15T12:43:06.240552+00:00"
+  },
+  "verified_at_utc": "2026-11-15T12:51:04.125493+00:00",
+  "keywords": [
+    "compatible states",
+    "spectral decomposition",
+    "modal observability",
+    "feature recovery",
+    "invariant subspaces",
+    "observation design",
+    "Gram operators",
+    "Re-Phase",
+    "Relative Phase Reconstruction"
+  ],
+  "references_count": 20,
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.24138967",
+      "scheme": "doi",
+      "relation": "cites",
+      "resource_type": "publication"
+    },
+    {
+      "identifier": "10.5281/zenodo.20674606",
+      "scheme": "doi",
+      "relation": "cites",
+      "resource_type": "publication"
+    },
+    {
+      "identifier": "10.5281/zenodo.20678274",
+      "scheme": "doi",
+      "relation": "cites",
+      "resource_type": "publication"
+    },
+    {
+      "identifier": "10.5281/zenodo.20680527",
+      "scheme": "doi",
+      "relation": "cites",
+      "resource_type": "publication"
+    },
+    {
+      "identifier": "10.5281/zenodo.24030848",
+      "scheme": "doi",
+      "relation": "cites",
+      "resource_type": "publication"
+    },
+    {
+      "identifier": "10.5281/zenodo.20338021",
+      "scheme": "doi",
+      "relation": "references",
+      "resource_type": "publication"
+    },
+    {
+      "identifier": "10.5281/zenodo.24030862",
+      "scheme": "doi",
+      "relation": "references",
+      "resource_type": "publication"
+    }
+  ],
+  "files": [
+    {
+      "filename": "Re_Phase_Vol_3_6.pdf",
+      "role": "English manuscript",
+      "bytes": 678395,
+      "pages": 54,
+      "sha256": "7ff08ee0ff09c3ecb08e626961315cb94a80f513a4dfd19605707b121abec2de",
+      "md5": "fb09fc9550663f65c4f1ad5317d7a766",
+      "download_url": "https://zenodo.org/api/records/24244146/files/Re_Phase_Vol_3_6.pdf/content",
+      "content_credentials": {
+        "owner_decision": "RETAIN",
+        "markers_detected": [
+          "c2pa",
+          "C2PA",
+          "Content Credentials",
+          "/AFRelationship"
+        ],
+        "cryptographic_validation": "NOT_PERFORMED",
+        "downloaded_bytes_preserved": true
+      }
+    },
+    {
+      "filename": "Re_Phase_Vol_3_6_Source.zip",
+      "role": "English-only source archive",
+      "bytes": 122829,
+      "sha256": "9e89c90a5a865da57f78fa52a33464f5c2c3fee88d73b8736ac4f726e57b9df9",
+      "md5": "90119a9a78d51a7ba3bf28fb86dace83",
+      "download_url": "https://zenodo.org/api/records/24244146/files/Re_Phase_Vol_3_6_Source.zip/content",
+      "archive_member_count": 12,
+      "root": "Re_Phase_Vol_3_6_v1/",
+      "zip_crc": "PASS",
+      "safe_member_paths": "PASS",
+      "sha256sums": {
+        "passed": 11,
+        "total": 11
+      },
+      "embedded_payload_manifest": {
+        "passed": 10,
+        "total": 10
+      },
+      "matches_final_prepared_source_zip_sha256": true
+    }
+  ],
+  "source_licensing": {
+    "manuscript_and_noncode": "CC-BY-NC-4.0",
+    "python_build_helpers": "MIT",
+    "scope_file": "Re_Phase_Vol_3_6_v1/LICENSE.md"
+  },
+  "ai_assistance": {
+    "tools": [
+      "ChatGPT (OpenAI)",
+      "Claude (Anthropic)"
+    ],
+    "pdf_source_and_description_word_comparison": "PASS_AFTER_TYPOGRAPHY_WHITESPACE_AND_PDF_HYPHENATION_NORMALIZATION"
+  },
+  "metadata_keyword_scope": {
+    "manuscript_and_embedded_manifest_subject_terms": 7,
+    "zenodo_keywords": 9,
+    "zenodo_additional_series_identifiers": [
+      "Re-Phase",
+      "Relative Phase Reconstruction"
+    ]
+  },
+  "evidence": {
+    "publication": "OWNER_REPORT_AND_INDEPENDENT_PUBLIC_API_READ",
+    "sha256_basis": "COMPLETE_PUBLISHED_DOWNLOAD_BYTES",
+    "md5_api_comparison": "BOTH_MATCH",
+    "source_payload_checks": "ZIP_CRC_11_SHA256SUMS_10_EMBEDDED_MANIFEST_ENTRIES_PASS",
+    "public_artifacts_rebuilt_or_modified": false
+  },
+  "story": "13.0.0",
+  "publication_receipt": "publication-status-2026-11-15-vol3-6.md",
+  "handoff": "story-13-0-0-vol3-6-publication-handoff-2026-11-15.md"
+}

@@ -15,6 +15,8 @@ Entries 38–40 follow the publication order in the [2026-11-07 correction recei
 
 Entry 41 records Vol.3.3, published 2026-11-12. The [2026-11-15 maintenance record](publication-status-2026-11-15-vol3-3-maintenance.md) and [current manifest](publication-manifest-vol3-3-2026-11-15.json) document the replacement Source ZIP and AI-use disclosure. The [2026-11-12 publication receipt](publication-status-2026-11-12-vol3-3.md) and [original file manifest](publication-manifest-vol3-3-2026-11-12.json) retain the originally measured identities.
 
+Entry 42 records Vol.3.6, published 2026-11-15, Version 1. The [publication receipt](publication-status-2026-11-15-vol3-6.md), [manifest](publication-manifest-vol3-6-2026-11-15.json), and [Story 13.0.0 handoff](story-13-0-0-vol3-6-publication-handoff-2026-11-15.md) identify the verified English PDF and source archive.
+
 | No. | Series item | Title | DOI | Status |
 |---:|---|---|---|---|
 | 1 | Root | Re-Phase: Observation Geometry | https://doi.org/10.5281/zenodo.20258229 | Archived on Zenodo |
@@ -58,6 +60,7 @@ Entry 41 records Vol.3.3, published 2026-11-12. The [2026-11-15 maintenance reco
 | 39 | Vol.1.8 corrected 2026-11-07 | Re-Phase Vol.1.8: Compatibility Conditions and Enrichment Axes | https://doi.org/10.5281/zenodo.24030862 | Published corrected edition, current reading target |
 | 40 | Vol.4.6 corrected 2026-11-07 | Re-Phase Vol.4.6: Target Violation Severity — Failure Depth, Posterior Severity, and Fisher-Weak Boundary Crossing | https://doi.org/10.5281/zenodo.24030848 | Published corrected edition, current reading target |
 | 41 | Vol.3.3 | Re-Phase Vol.3.3: Actions and Observations — Congruences, Closures, Invariants, and Structured Recovery | https://doi.org/10.5281/zenodo.24138967 | Published 2026-11-12; Version 1; Book; CC BY-NC 4.0; files/Description maintained 2026-11-15 |
+| 42 | Vol.3.6 | Re-Phase Vol.3.6: Spectral and Modal Compatibility | https://doi.org/10.5281/zenodo.24244146 | Published 2026-11-15; Version 1; Book; CC BY-NC 4.0 |
 
 ## Published corrected editions — 2026-10-22 documentation checkpoint
 

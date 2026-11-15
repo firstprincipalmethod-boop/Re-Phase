@@ -38,6 +38,7 @@ Develops geometric structures for observation and recoverability.
 4. **Vol.3.3** — Actions and Observations — Congruences, Closures, Invariants, and Structured Recovery. Published 2026-11-12, Version 1 — [10.5281/zenodo.24138967](https://doi.org/10.5281/zenodo.24138967). Connects actions and observation equivalence to structure descent, invariants, structured selection, operator representations, and composition. Its information-adapted selection connection also uses the corrected Vol.5.4 in Path 5.
 5. **Vol.3.4** — Functional and Operator Admissible Spaces — Operator Conditions, Boundary Compatibility, and Structural Recoverability (10.5281/zenodo.20620797)
 6. **Vol.3.5** — Dual and Inner-Product Compatibility — Adjoints, Gram Geometry, and Feature-Relevant Ambiguity (10.5281/zenodo.20674606)
+7. **Vol.3.6** — Spectral and Modal Compatibility. Published 2026-11-15, Version 1 — [10.5281/zenodo.24244146](https://doi.org/10.5281/zenodo.24244146). Develops spectral/primary structure, feature recovery, observation selection, invariant representations, and Gram/SVD bounds for a known linear operator. It connects the operator-representation results of Vol.3.3 and the inner-product viewpoint of Vol.3.5 to the already published Vols.4.4–4.6 in Path 4 under separate hypotheses. Its foundational role for Vols.4.5–4.6 is conceptual rather than chronological. See the [publication receipt](publication-status-2026-11-15-vol3-6.md).
 
 ### Path 4: Risk, Posterior, and Directional Compatibility
 
