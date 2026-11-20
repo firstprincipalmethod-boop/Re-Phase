@@ -39,6 +39,7 @@ Develops geometric structures for observation and recoverability.
 5. **Vol.3.4** — Functional and Operator Admissible Spaces — Operator Conditions, Boundary Compatibility, and Structural Recoverability (10.5281/zenodo.20620797)
 6. **Vol.3.5** — Dual and Inner-Product Compatibility — Adjoints, Gram Geometry, and Feature-Relevant Ambiguity (10.5281/zenodo.20674606)
 7. **Vol.3.6** — Spectral and Modal Compatibility. Published 2026-11-15, Version 1 — [10.5281/zenodo.24244146](https://doi.org/10.5281/zenodo.24244146). Develops spectral/primary structure, feature recovery, observation selection, invariant representations, and Gram/SVD bounds for a known linear operator. It connects the operator-representation results of Vol.3.3 and the inner-product viewpoint of Vol.3.5 to the already published Vols.4.4–4.6 in Path 4 under separate hypotheses. Its foundational role for Vols.4.5–4.6 is conceptual rather than chronological. See the [publication receipt](publication-status-2026-11-15-vol3-6.md).
+8. **Vol.3.7** — Records for Composition — Recovery, Failure, and Update under Partial Operations. Which distinctions between inputs must a retained record preserve to recover an output, report failure, or update the record after composition? Read after Vol.3.3 for congruences and Vol.3.6 for feature recovery. [10.5281/zenodo.24393585](https://doi.org/10.5281/zenodo.24393585).
 
 ### Path 4: Risk, Posterior, and Directional Compatibility
 
