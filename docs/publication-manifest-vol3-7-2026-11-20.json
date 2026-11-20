@@ -1,0 +1,35 @@
+{
+  "series_item": "Re-Phase Vol.3.7",
+  "title": "Re-Phase Vol.3.7: Records for Composition — Recovery, Failure, and Update under Partial Operations",
+  "doi": "10.5281/zenodo.24393585",
+  "record_id": "24393585",
+  "publication_date": "2026-11-20",
+  "publication_evidence": "Author confirmed publication and supplied the version DOI.",
+  "deposit_metadata": {
+    "source": "Saved deposit preview",
+    "version": "1",
+    "resource_type": "Publication / Book",
+    "creator": "Ito, Takashi",
+    "language": "English",
+    "license": "CC BY-NC 4.0"
+  },
+  "upload_files": [
+    {
+      "name": "Re_Phase_Vol_3_7.pdf",
+      "bytes": 1129177,
+      "sha256": "e3ded327549bfe7879a7ccf69c06f44db1da8cf7e6dbf75aadf9dc8c49136fdb",
+      "md5": "57f08dac3bca1ef704e01350bc1f1c54"
+    },
+    {
+      "name": "Re_Phase_Vol_3_7_Source.zip",
+      "bytes": 2734837,
+      "sha256": "60200147d5400bf67992125dac9f85989fa80def583a9b780d5622df3c6cde64",
+      "md5": "5534ee80fb9d80646df18835b252c665"
+    }
+  ],
+  "checksum_evidence": {
+    "bytes_and_sha256": "Recorded from the final upload originals.",
+    "md5": "Computed on the originals and matched to the saved Zenodo deposit preview.",
+    "post_publication_download_sha256": "Unverified"
+  }
+}

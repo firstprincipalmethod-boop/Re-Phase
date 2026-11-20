@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### 2026-11-20 — Vol.3.7 publication
+
+- Added *Records for Composition — Recovery, Failure, and Update under Partial Operations* to the [series chronology](docs/series.md) as entry 43 and to the conceptual reading guide and Living Index. [10.5281/zenodo.24393585](https://doi.org/10.5281/zenodo.24393585).
+- Recorded the author's publication confirmation, the identities of the two upload files, and the scope of the checksum comparison in the [publication record](docs/publication-status-2026-11-20-vol3-7.md).
+
 ### 2026-11-15 — Vol.3.6 publication and Story 13.0.0 synchronization
 
 - Register *Re-Phase Vol.3.6: Spectral and Modal Compatibility*, Version 1, Book, English, published 2026-11-15 under DOI `10.5281/zenodo.24244146` (CC BY-NC 4.0).

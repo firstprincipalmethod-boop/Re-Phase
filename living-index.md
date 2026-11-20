@@ -245,6 +245,16 @@ For Vol.3.6, see the [2026-11-15 publication receipt](docs/publication-status-20
 
 **Files and handoff:** 54-page English PDF and English-only source ZIP. See the [publication receipt](docs/publication-status-2026-11-15-vol3-6.md), [publication manifest](docs/publication-manifest-vol3-6-2026-11-15.json), and [Story 13.0.0 handoff](docs/story-13-0-0-vol3-6-publication-handoff-2026-11-15.md).
 
+### Vol.3.7 — Records for Composition — Recovery, Failure, and Update under Partial Operations
+
+**DOI:** [10.5281/zenodo.24393585](https://doi.org/10.5281/zenodo.24393585)
+
+**Status:** Published on Zenodo on 2026-11-20, as confirmed by the author.
+
+**Core themes:** Factorization through the attained record image, success and failure under partial composition, and record updates. The signed aggregate, disjoint subset convolution, and shared-variable examples compare the distinctions required by different output specifications.
+
+**Connections:** Vol.3.3 develops congruence and operation descent. Vol.3.6 supplies the feature-recovery viewpoint. See the [publication record](docs/publication-status-2026-11-20-vol3-7.md) for bibliographic details and file identities.
+
 ---
 
 ## Vol.4 — Risk, Posterior, and Directional Compatibility

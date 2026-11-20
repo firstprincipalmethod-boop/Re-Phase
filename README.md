@@ -7,6 +7,7 @@ It turns fibers, projections, path lifts, bridge obstructions, recoverability gu
 ## Current Focus
 
 - DOI series index and conceptual reading guide
+- Vol.3.7 — *Records for Composition — Recovery, Failure, and Update under Partial Operations*. Published 2026-11-20. [10.5281/zenodo.24393585](https://doi.org/10.5281/zenodo.24393585). [Publication record](docs/publication-status-2026-11-20-vol3-7.md).
 - Vol.3.6 — *Spectral and Modal Compatibility*, Version 1, published 2026-11-15: [10.5281/zenodo.24244146](https://doi.org/10.5281/zenodo.24244146). See the [publication receipt and file identities](docs/publication-status-2026-11-15-vol3-6.md) and [Story 13.0.0 handoff](docs/story-13-0-0-vol3-6-publication-handoff-2026-11-15.md).
 - Vol.3.3 — *Actions and Observations — Congruences, Closures, Invariants, and Structured Recovery*, Version 1, published 2026-11-12: [10.5281/zenodo.24138967](https://doi.org/10.5281/zenodo.24138967). See the [2026-11-15 maintenance record and current file identities](docs/publication-status-2026-11-15-vol3-3-maintenance.md); the [2026-11-12 publication receipt](docs/publication-status-2026-11-12-vol3-3.md) retains the original ZIP identity.
 - Published corrected editions 2026-11-07 — Vol.1.1 [10.5281/zenodo.24030607](https://doi.org/10.5281/zenodo.24030607), Vol.1.8 [10.5281/zenodo.24030862](https://doi.org/10.5281/zenodo.24030862), Vol.4.6 [10.5281/zenodo.24030848](https://doi.org/10.5281/zenodo.24030848). See the [publication status](docs/publication-status-2026-11-07-corrections.md).
