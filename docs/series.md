@@ -19,6 +19,8 @@ Entry 42 records Vol.3.6, published 2026-11-15, Version 1. The [publication rece
 
 Entry 43 records Vol.3.7, published 2026-11-20 according to the author. See the [publication record](publication-status-2026-11-20-vol3-7.md) and [file manifest](publication-manifest-vol3-7-2026-11-20.json).
 
+Entry 44 records Vol.4.7, published 2026-11-21, Version 1. See the [publication record](publication-status-2026-11-21-vol4-7.md) and [verified file manifest](publication-manifest-vol4-7-2026-11-21.json).
+
 | No. | Series item | Title | DOI | Status |
 |---:|---|---|---|---|
 | 1 | Root | Re-Phase: Observation Geometry | https://doi.org/10.5281/zenodo.20258229 | Archived on Zenodo |
@@ -64,6 +66,7 @@ Entry 43 records Vol.3.7, published 2026-11-20 according to the author. See the 
 | 41 | Vol.3.3 | Re-Phase Vol.3.3: Actions and Observations — Congruences, Closures, Invariants, and Structured Recovery | https://doi.org/10.5281/zenodo.24138967 | Published 2026-11-12; Version 1; Book; CC BY-NC 4.0; files/Description maintained 2026-11-15 |
 | 42 | Vol.3.6 | Re-Phase Vol.3.6: Spectral and Modal Compatibility | https://doi.org/10.5281/zenodo.24244146 | Published 2026-11-15; Version 1; Book; CC BY-NC 4.0 |
 | 43 | Vol.3.7 | Re-Phase Vol.3.7: Records for Composition — Recovery, Failure, and Update under Partial Operations | https://doi.org/10.5281/zenodo.24393585 | Published 2026-11-20 (author confirmation) |
+| 44 | Vol.4.7 | Re-Phase Vol.4.7: Records for Required Answers — Effective Diversity, Exact Recovery, and Sharp Loss Bounds | https://doi.org/10.5281/zenodo.24412419 | Published 2026-11-21, Version 1, Book, CC BY-NC 4.0 |
 
 ## Published corrected editions — 2026-10-22 documentation checkpoint
 

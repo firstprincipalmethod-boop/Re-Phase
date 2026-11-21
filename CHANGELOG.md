@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### 2026-11-21 — Vol.4.7 publication
+
+- Registered *Records for Required Answers — Effective Diversity, Exact Recovery, and Sharp Loss Bounds* as entry 44 in the [publication chronology](docs/series.md) and added it to the conceptual reading guide and Living Index. [10.5281/zenodo.24412419](https://doi.org/10.5281/zenodo.24412419).
+- Recorded the published metadata and checksums of both Zenodo downloads in the [publication record](docs/publication-status-2026-11-21-vol4-7.md) and [file manifest](docs/publication-manifest-vol4-7-2026-11-21.json).
+
 ### 2026-11-20 — Vol.3.7 publication
 
 - Added *Records for Composition — Recovery, Failure, and Update under Partial Operations* to the [series chronology](docs/series.md) as entry 43 and to the conceptual reading guide and Living Index. [10.5281/zenodo.24393585](https://doi.org/10.5281/zenodo.24393585).

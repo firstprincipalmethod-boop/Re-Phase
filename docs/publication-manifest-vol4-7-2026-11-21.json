@@ -1,0 +1,79 @@
+{
+  "series_item": "Re-Phase Vol.4.7",
+  "title": "Re-Phase Vol.4.7: Records for Required Answers — Effective Diversity, Exact Recovery, and Sharp Loss Bounds",
+  "doi": "10.5281/zenodo.24412419",
+  "all_versions_doi": "10.5281/zenodo.24412418",
+  "record_id": "24412419",
+  "publication_date": "2026-11-21",
+  "deposit_metadata": {
+    "source": "https://zenodo.org/api/records/24412419",
+    "version": "1",
+    "resource_type": "Publication / Book",
+    "creator": "Ito, Takashi",
+    "language": "English",
+    "license": "CC BY-NC 4.0",
+    "access": "open",
+    "status": "published",
+    "state": "done",
+    "submitted": true,
+    "keywords": [
+      "observational fiber",
+      "feature recovery",
+      "conditional law",
+      "effective diversity",
+      "Shannon entropy",
+      "Hill numbers",
+      "lower and upper expectations",
+      "Re-Phase",
+      "Relative Phase Reconstruction"
+    ],
+    "references_count": 22,
+    "related_works": [
+      {
+        "doi": "10.5281/zenodo.20328101",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "doi": "10.5281/zenodo.20338021",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "doi": "10.5281/zenodo.24393585",
+        "relation": "cites",
+        "resource_type": "publication-book"
+      },
+      {
+        "doi": "10.24432/C5X01N",
+        "relation": "references",
+        "resource_type": "dataset"
+      }
+    ]
+  },
+  "published_files": [
+    {
+      "name": "Re_Phase_Vol_4_7.pdf",
+      "bytes": 479283,
+      "sha256": "6ff8b8622eeee13d67660c9b4df8cd55a21c8ae7da18ab23d55da21bb7228a53",
+      "md5": "97477d73e8e0fb89d2255de379832a72",
+      "pages": 18,
+      "download_url": "https://zenodo.org/api/records/24412419/files/Re_Phase_Vol_4_7.pdf/content"
+    },
+    {
+      "name": "Re_Phase_Vol_4_7_Source.zip",
+      "bytes": 373469,
+      "sha256": "4b474551328c3c5da7bcf756b2d125520a5a47b0f4b737194c4ef029dfe6ad67",
+      "md5": "f89906dae32c11e5297a74aae37f4859",
+      "file_count": 24,
+      "zip_crc": "passed",
+      "download_url": "https://zenodo.org/api/records/24412419/files/Re_Phase_Vol_4_7_Source.zip/content"
+    }
+  ],
+  "verification": {
+    "date": "2026-11-21",
+    "doi_resolution": "https://zenodo.org/records/24412419",
+    "bytes_and_sha256": "Measured on complete public downloads and matched the final upload originals byte for byte.",
+    "md5": "Measured on complete public downloads and matched the public Zenodo API."
+  }
+}
