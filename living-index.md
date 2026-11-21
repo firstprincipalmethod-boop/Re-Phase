@@ -333,6 +333,16 @@ For Vol.3.6, see the [2026-11-15 publication receipt](docs/publication-status-20
 
 **Current role:** Risk quantification. Read the corrected edition.
 
+### Vol.4.7 — Records for Required Answers — Effective Diversity, Exact Recovery, and Sharp Loss Bounds
+
+**DOI:** [10.5281/zenodo.24412419](https://doi.org/10.5281/zenodo.24412419)
+
+**Status:** Version 1, published on Zenodo on 2026-11-21 (English, CC BY-NC 4.0).
+
+**Core themes:** Joint fibers of finite records and required answers, exact recovery, conditional effective diversity, and sharp expected loss bounds. The office occupancy example compares fixed decoders across periods using public sensor data.
+
+**Connections:** Vol.1.2 supplies the fiberwise constancy condition, Vol.1.3 the joint-observation construction, and Vol.3.7 the composition and record-update viewpoint. See the [publication record](docs/publication-status-2026-11-21-vol4-7.md) for file identities.
+
 ---
 
 ## Vol.5 — Path-Space and Selection

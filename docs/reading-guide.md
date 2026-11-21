@@ -53,6 +53,8 @@ Extends compatibility to probabilistic and directional settings.
 6. **Vol.4.5** — Fisher-Weighted Local Compatibility — Likelihood Geometry, Local Information, and Feature-Sensitive Directions (10.5281/zenodo.20680527)
 7. **Vol.4.6** — Target Violation Severity — Failure Depth, Posterior Severity, and Fisher-Weak Boundary Crossing. Current corrected edition (2026-11-07) — [10.5281/zenodo.24030848](https://doi.org/10.5281/zenodo.24030848). Historical edition — [10.5281/zenodo.20694634](https://doi.org/10.5281/zenodo.20694634).
 
+8. **Vol.4.7** — Records for Required Answers — Effective Diversity, Exact Recovery, and Sharp Loss Bounds. Read after Vol.1.2 for constancy on fibers and Vol.1.3 for joint observation. Vol.4.7 uses joint record and answer fibers to test exact recovery and derive sharp expected loss bounds when only record masses and statewise losses are known. See Vol.3.7 for the composition and update viewpoint. [10.5281/zenodo.24412419](https://doi.org/10.5281/zenodo.24412419).
+
 ### Path 5: Path-Space and Computational Compatibility
 
 Develops pathwise compatibility and computational feasibility.
