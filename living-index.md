@@ -401,6 +401,16 @@ For Vol.3.6, see the [2026-11-15 publication receipt](docs/publication-status-20
 
 **Current role:** Selector existence and safety; witness lane for Vol.6.1
 
+### Vol.5.5 — Common Actions under Partial Information — Jointly Realizable Candidates, Finite-Horizon Reachability, and Observation–Memory Trade-offs
+
+**DOI:** [10.5281/zenodo.24464018](https://doi.org/10.5281/zenodo.24464018)
+
+**Status:** Version 1, published on Zenodo on 2026-11-23 (English, CC BY-NC 4.0).
+
+**Core themes:** Join past and future fragments before projecting to the current display, select common inputs from pre-action records, and distinguish safe first arrival by a deadline from maintenance after arrival. Finite examples compare observation, memory, and horizon.
+
+**Connections:** Vol.5.1 provides the path-compatibility setting, Vol.5.4 the common-input criterion, and Vol.4.7 and Vol.3.7 the record and update viewpoints. See the [publication record](docs/publication-status-2026-11-23-vol5-5.md) for file identities.
+
 ---
 
 ## Vol.6 — Computational Compatibility

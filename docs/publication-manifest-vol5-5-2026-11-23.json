@@ -1,0 +1,77 @@
+{
+  "series_item": "Re-Phase Vol.5.5",
+  "title": "Re-Phase Vol.5.5: Common Actions under Partial Information — Jointly Realizable Candidates, Finite-Horizon Reachability, and Observation–Memory Trade-offs",
+  "doi": "10.5281/zenodo.24464018",
+  "record_id": "24464018",
+  "record_url": "https://zenodo.org/records/24464018",
+  "publication_date": "2026-11-23",
+  "deposit_metadata": {
+    "version": "1",
+    "resource_type": "Publication / Book",
+    "creator": "Ito, Takashi",
+    "language": "English",
+    "license": "CC BY-NC 4.0",
+    "copyright": "Copyright (C) 2026 Takashi Ito",
+    "access": "open",
+    "status": "published",
+    "source": "Author's publication report and Zenodo Work handoff",
+    "related_works": [
+      {
+        "volume": "Vol.5.1",
+        "doi": "10.5281/zenodo.20716544",
+        "relation": "references",
+        "resource_type": "Technical note"
+      },
+      {
+        "volume": "Vol.5.4",
+        "doi": "10.5281/zenodo.23499819",
+        "relation": "references",
+        "resource_type": "Technical note"
+      },
+      {
+        "volume": "Vol.4.7",
+        "doi": "10.5281/zenodo.24412419",
+        "relation": "references",
+        "resource_type": "Book"
+      },
+      {
+        "volume": "Vol.5.2",
+        "doi": "10.5281/zenodo.20732578",
+        "relation": "references",
+        "resource_type": "Technical note"
+      },
+      {
+        "volume": "Vol.5.3",
+        "doi": "10.5281/zenodo.23499738",
+        "relation": "references",
+        "resource_type": "Technical note"
+      },
+      {
+        "volume": "Vol.3.7",
+        "doi": "10.5281/zenodo.24393585",
+        "relation": "references",
+        "resource_type": "Book"
+      }
+    ]
+  },
+  "published_files": [
+    {
+      "name": "Re_Phase_Vol_5_5.pdf",
+      "bytes": 485160,
+      "sha256": "76ed24d32cf935a22b970682635a8d0236c3200b95a149c240434104d4f58c0a",
+      "pages": 23,
+      "c2pa": "absent",
+      "download_url": "https://zenodo.org/records/24464018/files/Re_Phase_Vol_5_5.pdf?download=1"
+    },
+    {
+      "name": "Re_Phase_Vol_5_5_Source.zip",
+      "bytes": 38672,
+      "sha256": "1f070ed155d44519da553b42cde0f20617402aed525c30d42ee3082f93d3a098",
+      "download_url": "https://zenodo.org/records/24464018/files/Re_Phase_Vol_5_5_Source.zip?download=1"
+    }
+  ],
+  "verification": {
+    "bytes_and_sha256": "The Zenodo Work handoff reports fresh public downloads. Those local copies were rehashed and both byte counts and SHA-256 digests match the V55-07 release candidates.",
+    "c2pa": "The downloaded PDF has the same SHA-256 as the V55-07 PDF checked for an embedded C2PA manifest. The result ABSENT therefore applies to the downloaded PDF."
+  }
+}

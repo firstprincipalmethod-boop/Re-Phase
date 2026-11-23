@@ -21,6 +21,8 @@ Entry 43 records Vol.3.7, published 2026-11-20 according to the author. See the 
 
 Entry 44 records Vol.4.7, published 2026-11-21, Version 1. See the [publication record](publication-status-2026-11-21-vol4-7.md) and [verified file manifest](publication-manifest-vol4-7-2026-11-21.json).
 
+Entry 45 records Vol.5.5, published 2026-11-23, Version 1. See the [publication record](publication-status-2026-11-23-vol5-5.md) and [file manifest](publication-manifest-vol5-5-2026-11-23.json).
+
 | No. | Series item | Title | DOI | Status |
 |---:|---|---|---|---|
 | 1 | Root | Re-Phase: Observation Geometry | https://doi.org/10.5281/zenodo.20258229 | Archived on Zenodo |
@@ -67,6 +69,7 @@ Entry 44 records Vol.4.7, published 2026-11-21, Version 1. See the [publication 
 | 42 | Vol.3.6 | Re-Phase Vol.3.6: Spectral and Modal Compatibility | https://doi.org/10.5281/zenodo.24244146 | Published 2026-11-15; Version 1; Book; CC BY-NC 4.0 |
 | 43 | Vol.3.7 | Re-Phase Vol.3.7: Records for Composition — Recovery, Failure, and Update under Partial Operations | https://doi.org/10.5281/zenodo.24393585 | Published 2026-11-20 (author confirmation) |
 | 44 | Vol.4.7 | Re-Phase Vol.4.7: Records for Required Answers — Effective Diversity, Exact Recovery, and Sharp Loss Bounds | https://doi.org/10.5281/zenodo.24412419 | Published 2026-11-21, Version 1, Book, CC BY-NC 4.0 |
+| 45 | Vol.5.5 | Re-Phase Vol.5.5: Common Actions under Partial Information — Jointly Realizable Candidates, Finite-Horizon Reachability, and Observation–Memory Trade-offs | https://doi.org/10.5281/zenodo.24464018 | Published 2026-11-23, Version 1, Book, CC BY-NC 4.0 |
 
 ## Published corrected editions — 2026-10-22 documentation checkpoint
 
