@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### 2026-11-23 — Vol.5.5 publication
+
+- Registered *Common Actions under Partial Information — Jointly Realizable Candidates, Finite-Horizon Reachability, and Observation–Memory Trade-offs* as entry 45 in the [publication chronology](docs/series.md) and added it to the conceptual reading guide and Living Index. [10.5281/zenodo.24464018](https://doi.org/10.5281/zenodo.24464018).
+- Recorded the public PDF and English source archive checksums in the [publication record](docs/publication-status-2026-11-23-vol5-5.md) and [file manifest](docs/publication-manifest-vol5-5-2026-11-23.json).
+
 ### 2026-11-21 — Vol.4.7 publication
 
 - Registered *Records for Required Answers — Effective Diversity, Exact Recovery, and Sharp Loss Bounds* as entry 44 in the [publication chronology](docs/series.md) and added it to the conceptual reading guide and Living Index. [10.5281/zenodo.24412419](https://doi.org/10.5281/zenodo.24412419).
